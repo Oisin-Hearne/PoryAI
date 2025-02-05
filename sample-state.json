@@ -1,0 +1,694 @@
+{
+    "playerSide": {
+        "activeMon" : {
+            "id": 0,
+            "type1" :0,
+            "type2" : 0,
+            "ability" : 0,
+            "item" : 0,
+            "teraType" : 0,
+            "terrastillized" : 0,
+            "moves" : [
+                {
+                    "id" : 0,
+                    "pp" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
+                },
+                {
+                    "id" : 0,
+                    "pp" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
+                },
+                {
+                    "id" : 0,
+                    "pp" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
+                },
+                {
+                    "id" : 0,
+                    "pp" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
+                }
+            ],
+            "condition": {
+                "hp" : 0,
+                "status" : 0,
+                "taunted" : 0,
+                "encored" : 0,
+                "perishSong" : 0,
+                "substitute" : 0,
+                "confusion" : 0,
+                "leechSeed" : 0,
+                "trapped" : 0
+            },
+            "stats" : {
+                "atk" : 0,
+                "atkMod" : 0,
+                "def" : 0,
+                "defMod" : 0,
+                "spa" : 0,
+                "spaMod" : 0,
+                "spd" : 0,
+                "spdMod" : 0,
+                "spe" : 0,
+                "speMod" : 0,
+                "baseSpeed" : 0,
+                "accMod" : 0
+            }
+        },
+        "reserves" : [
+            {
+                "id": 0,
+                "type1" :0,
+                "type2" : 0,
+                "ability" : 0,
+                "item" : 0,
+                "teraType" : 0,
+                "terrastillized" : 0,
+                "moves" : [
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    }
+                ],
+                "condition": {
+                    "hp" : 0,
+                    "status" : 0
+                },
+                "stats" : {
+                    "atk" : 0,
+                    "def" : 0,
+                    "spa" : 0,
+                    "spd" : 0,
+                    "spe" : 0,
+                    "baseSpeed" : 0
+                }
+            },
+            {
+                "id": 0,
+                "type1" :0,
+                "type2" : 0,
+                "ability" : 0,
+                "item" : 0,
+                "teraType" : 0,
+                "terrastillized" : 0,
+                "moves" : [
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    }
+                ],
+                "condition": {
+                    "hp" : 0,
+                    "status" : 0
+                },
+                "stats" : {
+                    "atk" : 0,
+                    "def" : 0,
+                    "spa" : 0,
+                    "spd" : 0,
+                    "spe" : 0,
+                    "baseSpeed" : 0
+                }
+            },
+            {
+                "id": 0,
+                "type1" :0,
+                "type2" : 0,
+                "ability" : 0,
+                "item" : 0,
+                "teraType" : 0,
+                "terrastillized" : 0,
+                "moves" : [
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    }
+                ],
+                "condition": {
+                    "hp" : 0,
+                    "status" : 0
+                },
+                "stats" : {
+                    "atk" : 0,
+                    "def" : 0,
+                    "spa" : 0,
+                    "spd" : 0,
+                    "spe" : 0,
+                    "baseSpeed" : 0
+                }
+            },
+            {
+                "id": 0,
+                "type1" :0,
+                "type2" : 0,
+                "ability" : 0,
+                "item" : 0,
+                "teraType" : 0,
+                "terrastillized" : 0,
+                "moves" : [
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    }
+                ],
+                "condition": {
+                    "hp" : 0,
+                    "status" : 0
+                },
+                "stats" : {
+                    "atk" : 0,
+                    "def" : 0,
+                    "spa" : 0,
+                    "spd" : 0,
+                    "spe" : 0,
+                    "baseSpeed" : 0
+                }
+            },
+            {
+                "id": 0,
+                "type1" :0,
+                "type2" : 0,
+                "ability" : 0,
+                "item" : 0,
+                "teraType" : 0,
+                "terrastillized" : 0,
+                "moves" : [
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    }
+                ],
+                "condition": {
+                    "hp" : 0,
+                    "status" : 0
+                },
+                "stats" : {
+                    "atk" : 0,
+                    "def" : 0,
+                    "spa" : 0,
+                    "spd" : 0,
+                    "spe" : 0,
+                    "baseSpeed" : 0
+                }
+            }
+
+        ],
+        "effects" : {
+            "stealthrock" : 0,
+            "spikes" : 0,
+            "toxicspikes" : 0,
+            "stickyweb" : 0,
+            "reflect" : 0,
+            "lightscreen" : 0,
+            "auroraveil" : 0,
+            "tailwind" : 0
+        }
+
+    }, 
+    "opposingSide": {
+        "activeMon" : {
+            "id": 0,
+            "type1" :0,
+            "type2" : 0,
+            "ability" : 0,
+            "item" : 0,
+            "teraType" : 0,
+            "terrastillized" : 0,
+            "moves" : [
+                {
+                    "id" : 0,
+                    "pp" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
+                },
+                {
+                    "id" : 0,
+                    "pp" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
+                },
+                {
+                    "id" : 0,
+                    "pp" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
+                },
+                {
+                    "id" : 0,
+                    "pp" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
+                }
+            ],
+            "condition": {
+                "hp" : 0,
+                "status" : 0,
+                "taunted" : 0,
+                "encored" : 0,
+                "perishSong" : 0,
+                "substitute" : 0,
+                "confusion" : 0,
+                "leechSeed" : 0,
+                "trapped" : 0
+            },
+            "stats" : {
+                "atkMod" : 0,
+                "defMod" : 0,
+                "spaMod" : 0,
+                "spdMod" : 0,
+                "speMod" : 0,
+                "baseSpeed" : 0,
+                "accMod" : 0
+            }
+        },
+        "reserves" : [
+            {
+                "id": 0,
+                "type1" :0,
+                "type2" : 0,
+                "ability" : 0,
+                "item" : 0,
+                "teraType" : 0,
+                "terrastillized" : 0,
+                "moves" : [
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    }
+                ],
+                "condition": {
+                    "hp" : 0,
+                    "status" : 0
+                },
+                "stats" : {
+                    "baseSpeed" : 0
+                }
+            },
+            {
+                "id": 0,
+                "type1" :0,
+                "type2" : 0,
+                "ability" : 0,
+                "item" : 0,
+                "teraType" : 0,
+                "terrastillized" : 0,
+                "moves" : [
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    }
+                ],
+                "condition": {
+                    "hp" : 0,
+                    "status" : 0
+                },
+                "stats" : {
+                    "baseSpeed" : 0
+                }
+            },
+            {
+                "id": 0,
+                "type1" :0,
+                "type2" : 0,
+                "ability" : 0,
+                "item" : 0,
+                "teraType" : 0,
+                "terrastillized" : 0,
+                "moves" : [
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    }
+                ],
+                "condition": {
+                    "hp" : 0,
+                    "status" : 0
+                },
+                "stats" : {
+                    "baseSpeed" : 0
+                }
+            },
+            {
+                "id": 0,
+                "type1" :0,
+                "type2" : 0,
+                "ability" : 0,
+                "item" : 0,
+                "teraType" : 0,
+                "terrastillized" : 0,
+                "moves" : [
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    }
+                ],
+                "condition": {
+                    "hp" : 0,
+                    "status" : 0
+                },
+                "stats" : {
+                    "baseSpeed" : 0
+                }
+            },
+            {
+                "id": 0,
+                "type1" :0,
+                "type2" : 0,
+                "ability" : 0,
+                "item" : 0,
+                "teraType" : 0,
+                "terrastillized" : 0,
+                "moves" : [
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    },
+                    {
+                        "id" : 0,
+                        "pp" : 0,
+                        "disabled" : 0,
+                        "type" :0,
+                        "category" : 0,
+                        "power" : 0
+                    }
+                ],
+                "condition": {
+                    "hp" : 0,
+                    "status" : 0
+                },
+                "stats" : {
+                    "baseSpeed" : 0
+                }
+            }
+
+        ],
+        "effects" : {
+            "stealthrock" : 0,
+            "spikes" : 0,
+            "toxicspikes" : 0,
+            "stickyweb" : 0,
+            "reflect" : 0,
+            "lightscreen" : 0,
+            "auroraveil" : 0,
+            "tailwind" : 0
+        }
+    },
+    "universal": {
+        "weather" : 0,
+        "field" : 0,
+        "trickroom" : 0
+    }
+}
