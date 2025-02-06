@@ -1,0 +1,52 @@
+{
+    "moveCats": {
+        "status": 0,
+        "physical": 1,
+        "special": 2
+    },
+    "types": {
+        "normal": 0, 
+        "fire": 1, 
+        "water": 2, 
+        "grass": 3, 
+        "electric" : 4, 
+        "psychic": 5, 
+        "ice": 6, 
+        "dragon": 7, 
+        "dark": 8, 
+        "fairy": 9, 
+        "fighting": 10, 
+        "flying": 11, 
+        "poison": 12, 
+        "ground": 13, 
+        "rock": 14, 
+        "bug": 15, 
+        "ghost": 16, 
+        "steel": 17, 
+        "stellar": 18, 
+        "???": 19
+    },
+    "conditions": {
+        "none": 0,
+        "brn": 1,
+        "frz": 2,
+        "par": 3,
+        "slp": 4,
+        "poi": 5,
+        "tox": 6
+    },
+    "weather": {
+        "none": 0,
+        "rain": 1,
+        "sun": 2,
+        "sand": 3,
+        "snow": 4
+    },
+    "field": {
+        "none":0,
+        "electric":1,
+        "grassy":2,
+        "misty":3,
+        "psychic":4
+    }
+}
