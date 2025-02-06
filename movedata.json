@@ -1,0 +1,5516 @@
+{
+    "pound": {
+        "id": 1,
+        "category": 1,
+        "power": 40,
+        "type": 0
+    },
+    "karatechop": {
+        "id": 2,
+        "category": 1,
+        "power": 50,
+        "type": 10
+    },
+    "doubleslap": {
+        "id": 3,
+        "category": 1,
+        "power": 15,
+        "type": 0
+    },
+    "cometpunch": {
+        "id": 4,
+        "category": 1,
+        "power": 18,
+        "type": 0
+    },
+    "megapunch": {
+        "id": 5,
+        "category": 1,
+        "power": 80,
+        "type": 0
+    },
+    "payday": {
+        "id": 6,
+        "category": 1,
+        "power": 40,
+        "type": 0
+    },
+    "firepunch": {
+        "id": 7,
+        "category": 1,
+        "power": 75,
+        "type": 1
+    },
+    "icepunch": {
+        "id": 8,
+        "category": 1,
+        "power": 75,
+        "type": 6
+    },
+    "thunderpunch": {
+        "id": 9,
+        "category": 1,
+        "power": 75,
+        "type": 4
+    },
+    "scratch": {
+        "id": 10,
+        "category": 1,
+        "power": 40,
+        "type": 0
+    },
+    "vicegrip": {
+        "id": 11,
+        "category": 1,
+        "power": 55,
+        "type": 0
+    },
+    "guillotine": {
+        "id": 12,
+        "category": 1,
+        "power": 0,
+        "type": 0
+    },
+    "razorwind": {
+        "id": 13,
+        "category": 2,
+        "power": 80,
+        "type": 0
+    },
+    "swordsdance": {
+        "id": 14,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "cut": {
+        "id": 15,
+        "category": 1,
+        "power": 50,
+        "type": 0
+    },
+    "gust": {
+        "id": 16,
+        "category": 2,
+        "power": 40,
+        "type": 11
+    },
+    "wingattack": {
+        "id": 17,
+        "category": 1,
+        "power": 60,
+        "type": 11
+    },
+    "whirlwind": {
+        "id": 18,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "fly": {
+        "id": 19,
+        "category": 1,
+        "power": 90,
+        "type": 11
+    },
+    "bind": {
+        "id": 20,
+        "category": 1,
+        "power": 15,
+        "type": 0
+    },
+    "slam": {
+        "id": 21,
+        "category": 1,
+        "power": 80,
+        "type": 0
+    },
+    "vinewhip": {
+        "id": 22,
+        "category": 1,
+        "power": 45,
+        "type": 3
+    },
+    "stomp": {
+        "id": 23,
+        "category": 1,
+        "power": 65,
+        "type": 0
+    },
+    "doublekick": {
+        "id": 24,
+        "category": 1,
+        "power": 30,
+        "type": 10
+    },
+    "megakick": {
+        "id": 25,
+        "category": 1,
+        "power": 120,
+        "type": 0
+    },
+    "jumpkick": {
+        "id": 26,
+        "category": 1,
+        "power": 100,
+        "type": 10
+    },
+    "rollingkick": {
+        "id": 27,
+        "category": 1,
+        "power": 60,
+        "type": 10
+    },
+    "sandattack": {
+        "id": 28,
+        "category": 0,
+        "power": 0,
+        "type": 13
+    },
+    "headbutt": {
+        "id": 29,
+        "category": 1,
+        "power": 70,
+        "type": 0
+    },
+    "hornattack": {
+        "id": 30,
+        "category": 1,
+        "power": 65,
+        "type": 0
+    },
+    "furyattack": {
+        "id": 31,
+        "category": 1,
+        "power": 15,
+        "type": 0
+    },
+    "horndrill": {
+        "id": 32,
+        "category": 1,
+        "power": 0,
+        "type": 0
+    },
+    "tackle": {
+        "id": 33,
+        "category": 1,
+        "power": 40,
+        "type": 0
+    },
+    "bodyslam": {
+        "id": 34,
+        "category": 1,
+        "power": 85,
+        "type": 0
+    },
+    "wrap": {
+        "id": 35,
+        "category": 1,
+        "power": 15,
+        "type": 0
+    },
+    "takedown": {
+        "id": 36,
+        "category": 1,
+        "power": 90,
+        "type": 0
+    },
+    "thrash": {
+        "id": 37,
+        "category": 1,
+        "power": 120,
+        "type": 0
+    },
+    "doubleedge": {
+        "id": 38,
+        "category": 1,
+        "power": 120,
+        "type": 0
+    },
+    "tailwhip": {
+        "id": 39,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "poisonsting": {
+        "id": 40,
+        "category": 1,
+        "power": 15,
+        "type": 12
+    },
+    "twineedle": {
+        "id": 41,
+        "category": 1,
+        "power": 25,
+        "type": 15
+    },
+    "pinmissile": {
+        "id": 42,
+        "category": 1,
+        "power": 25,
+        "type": 15
+    },
+    "leer": {
+        "id": 43,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "bite": {
+        "id": 44,
+        "category": 1,
+        "power": 60,
+        "type": 8
+    },
+    "growl": {
+        "id": 45,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "roar": {
+        "id": 46,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "sing": {
+        "id": 47,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "supersonic": {
+        "id": 48,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "sonicboom": {
+        "id": 49,
+        "category": 2,
+        "power": 0,
+        "type": 0
+    },
+    "disable": {
+        "id": 50,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "acid": {
+        "id": 51,
+        "category": 2,
+        "power": 40,
+        "type": 12
+    },
+    "ember": {
+        "id": 52,
+        "category": 2,
+        "power": 40,
+        "type": 1
+    },
+    "flamethrower": {
+        "id": 53,
+        "category": 2,
+        "power": 90,
+        "type": 1
+    },
+    "mist": {
+        "id": 54,
+        "category": 0,
+        "power": 0,
+        "type": 6
+    },
+    "watergun": {
+        "id": 55,
+        "category": 2,
+        "power": 40,
+        "type": 2
+    },
+    "hydropump": {
+        "id": 56,
+        "category": 2,
+        "power": 110,
+        "type": 2
+    },
+    "surf": {
+        "id": 57,
+        "category": 2,
+        "power": 90,
+        "type": 2
+    },
+    "icebeam": {
+        "id": 58,
+        "category": 2,
+        "power": 90,
+        "type": 6
+    },
+    "blizzard": {
+        "id": 59,
+        "category": 2,
+        "power": 110,
+        "type": 6
+    },
+    "psybeam": {
+        "id": 60,
+        "category": 2,
+        "power": 65,
+        "type": 5
+    },
+    "bubblebeam": {
+        "id": 61,
+        "category": 2,
+        "power": 65,
+        "type": 2
+    },
+    "aurorabeam": {
+        "id": 62,
+        "category": 2,
+        "power": 65,
+        "type": 6
+    },
+    "hyperbeam": {
+        "id": 63,
+        "category": 2,
+        "power": 150,
+        "type": 0
+    },
+    "peck": {
+        "id": 64,
+        "category": 1,
+        "power": 35,
+        "type": 11
+    },
+    "drillpeck": {
+        "id": 65,
+        "category": 1,
+        "power": 80,
+        "type": 11
+    },
+    "submission": {
+        "id": 66,
+        "category": 1,
+        "power": 80,
+        "type": 10
+    },
+    "lowkick": {
+        "id": 67,
+        "category": 1,
+        "power": 0,
+        "type": 10
+    },
+    "counter": {
+        "id": 68,
+        "category": 1,
+        "power": 0,
+        "type": 10
+    },
+    "seismictoss": {
+        "id": 69,
+        "category": 1,
+        "power": 0,
+        "type": 10
+    },
+    "strength": {
+        "id": 70,
+        "category": 1,
+        "power": 80,
+        "type": 0
+    },
+    "absorb": {
+        "id": 71,
+        "category": 2,
+        "power": 20,
+        "type": 3
+    },
+    "megadrain": {
+        "id": 72,
+        "category": 2,
+        "power": 40,
+        "type": 3
+    },
+    "leechseed": {
+        "id": 73,
+        "category": 0,
+        "power": 0,
+        "type": 3
+    },
+    "growth": {
+        "id": 74,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "razorleaf": {
+        "id": 75,
+        "category": 1,
+        "power": 55,
+        "type": 3
+    },
+    "solarbeam": {
+        "id": 76,
+        "category": 2,
+        "power": 120,
+        "type": 3
+    },
+    "poisonpowder": {
+        "id": 77,
+        "category": 0,
+        "power": 0,
+        "type": 12
+    },
+    "stunspore": {
+        "id": 78,
+        "category": 0,
+        "power": 0,
+        "type": 3
+    },
+    "sleeppowder": {
+        "id": 79,
+        "category": 0,
+        "power": 0,
+        "type": 3
+    },
+    "petaldance": {
+        "id": 80,
+        "category": 2,
+        "power": 120,
+        "type": 3
+    },
+    "stringshot": {
+        "id": 81,
+        "category": 0,
+        "power": 0,
+        "type": 15
+    },
+    "dragonrage": {
+        "id": 82,
+        "category": 2,
+        "power": 0,
+        "type": 7
+    },
+    "firespin": {
+        "id": 83,
+        "category": 2,
+        "power": 35,
+        "type": 1
+    },
+    "thundershock": {
+        "id": 84,
+        "category": 2,
+        "power": 40,
+        "type": 4
+    },
+    "thunderbolt": {
+        "id": 85,
+        "category": 2,
+        "power": 90,
+        "type": 4
+    },
+    "thunderwave": {
+        "id": 86,
+        "category": 0,
+        "power": 0,
+        "type": 4
+    },
+    "thunder": {
+        "id": 87,
+        "category": 2,
+        "power": 110,
+        "type": 4
+    },
+    "rockthrow": {
+        "id": 88,
+        "category": 1,
+        "power": 50,
+        "type": 14
+    },
+    "earthquake": {
+        "id": 89,
+        "category": 1,
+        "power": 100,
+        "type": 13
+    },
+    "fissure": {
+        "id": 90,
+        "category": 1,
+        "power": 0,
+        "type": 13
+    },
+    "dig": {
+        "id": 91,
+        "category": 1,
+        "power": 80,
+        "type": 13
+    },
+    "toxic": {
+        "id": 92,
+        "category": 0,
+        "power": 0,
+        "type": 12
+    },
+    "confusion": {
+        "id": 93,
+        "category": 2,
+        "power": 50,
+        "type": 5
+    },
+    "psychic": {
+        "id": 94,
+        "category": 2,
+        "power": 90,
+        "type": 5
+    },
+    "hypnosis": {
+        "id": 95,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "meditate": {
+        "id": 96,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "agility": {
+        "id": 97,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "quickattack": {
+        "id": 98,
+        "category": 1,
+        "power": 40,
+        "type": 0
+    },
+    "rage": {
+        "id": 99,
+        "category": 1,
+        "power": 20,
+        "type": 0
+    },
+    "teleport": {
+        "id": 100,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "nightshade": {
+        "id": 101,
+        "category": 2,
+        "power": 0,
+        "type": 16
+    },
+    "mimic": {
+        "id": 102,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "screech": {
+        "id": 103,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "doubleteam": {
+        "id": 104,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "recover": {
+        "id": 105,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "harden": {
+        "id": 106,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "minimize": {
+        "id": 107,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "smokescreen": {
+        "id": 108,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "confuseray": {
+        "id": 109,
+        "category": 0,
+        "power": 0,
+        "type": 16
+    },
+    "withdraw": {
+        "id": 110,
+        "category": 0,
+        "power": 0,
+        "type": 2
+    },
+    "defensecurl": {
+        "id": 111,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "barrier": {
+        "id": 112,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "lightscreen": {
+        "id": 113,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "haze": {
+        "id": 114,
+        "category": 0,
+        "power": 0,
+        "type": 6
+    },
+    "reflect": {
+        "id": 115,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "focusenergy": {
+        "id": 116,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "bide": {
+        "id": 117,
+        "category": 1,
+        "power": 0,
+        "type": 0
+    },
+    "metronome": {
+        "id": 118,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "mirrormove": {
+        "id": 119,
+        "category": 0,
+        "power": 0,
+        "type": 11
+    },
+    "selfdestruct": {
+        "id": 120,
+        "category": 1,
+        "power": 200,
+        "type": 0
+    },
+    "eggbomb": {
+        "id": 121,
+        "category": 1,
+        "power": 100,
+        "type": 0
+    },
+    "lick": {
+        "id": 122,
+        "category": 1,
+        "power": 30,
+        "type": 16
+    },
+    "smog": {
+        "id": 123,
+        "category": 2,
+        "power": 30,
+        "type": 12
+    },
+    "sludge": {
+        "id": 124,
+        "category": 2,
+        "power": 65,
+        "type": 12
+    },
+    "boneclub": {
+        "id": 125,
+        "category": 1,
+        "power": 65,
+        "type": 13
+    },
+    "fireblast": {
+        "id": 126,
+        "category": 2,
+        "power": 110,
+        "type": 1
+    },
+    "waterfall": {
+        "id": 127,
+        "category": 1,
+        "power": 80,
+        "type": 2
+    },
+    "clamp": {
+        "id": 128,
+        "category": 1,
+        "power": 35,
+        "type": 2
+    },
+    "swift": {
+        "id": 129,
+        "category": 2,
+        "power": 60,
+        "type": 0
+    },
+    "skullbash": {
+        "id": 130,
+        "category": 1,
+        "power": 130,
+        "type": 0
+    },
+    "spikecannon": {
+        "id": 131,
+        "category": 1,
+        "power": 20,
+        "type": 0
+    },
+    "constrict": {
+        "id": 132,
+        "category": 1,
+        "power": 10,
+        "type": 0
+    },
+    "amnesia": {
+        "id": 133,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "kinesis": {
+        "id": 134,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "softboiled": {
+        "id": 135,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "highjumpkick": {
+        "id": 136,
+        "category": 1,
+        "power": 130,
+        "type": 10
+    },
+    "glare": {
+        "id": 137,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "dreameater": {
+        "id": 138,
+        "category": 2,
+        "power": 100,
+        "type": 5
+    },
+    "poisongas": {
+        "id": 139,
+        "category": 0,
+        "power": 0,
+        "type": 12
+    },
+    "barrage": {
+        "id": 140,
+        "category": 1,
+        "power": 15,
+        "type": 0
+    },
+    "leechlife": {
+        "id": 141,
+        "category": 1,
+        "power": 80,
+        "type": 15
+    },
+    "lovelykiss": {
+        "id": 142,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "skyattack": {
+        "id": 143,
+        "category": 1,
+        "power": 140,
+        "type": 11
+    },
+    "transform": {
+        "id": 144,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "bubble": {
+        "id": 145,
+        "category": 2,
+        "power": 40,
+        "type": 2
+    },
+    "dizzypunch": {
+        "id": 146,
+        "category": 1,
+        "power": 70,
+        "type": 0
+    },
+    "spore": {
+        "id": 147,
+        "category": 0,
+        "power": 0,
+        "type": 3
+    },
+    "flash": {
+        "id": 148,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "psywave": {
+        "id": 149,
+        "category": 2,
+        "power": 0,
+        "type": 5
+    },
+    "splash": {
+        "id": 150,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "acidarmor": {
+        "id": 151,
+        "category": 0,
+        "power": 0,
+        "type": 12
+    },
+    "crabhammer": {
+        "id": 152,
+        "category": 1,
+        "power": 100,
+        "type": 2
+    },
+    "explosion": {
+        "id": 153,
+        "category": 1,
+        "power": 250,
+        "type": 0
+    },
+    "furyswipes": {
+        "id": 154,
+        "category": 1,
+        "power": 18,
+        "type": 0
+    },
+    "bonemerang": {
+        "id": 155,
+        "category": 1,
+        "power": 50,
+        "type": 13
+    },
+    "rest": {
+        "id": 156,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "rockslide": {
+        "id": 157,
+        "category": 1,
+        "power": 75,
+        "type": 14
+    },
+    "hyperfang": {
+        "id": 158,
+        "category": 1,
+        "power": 80,
+        "type": 0
+    },
+    "sharpen": {
+        "id": 159,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "conversion": {
+        "id": 160,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "triattack": {
+        "id": 161,
+        "category": 2,
+        "power": 80,
+        "type": 0
+    },
+    "superfang": {
+        "id": 162,
+        "category": 1,
+        "power": 0,
+        "type": 0
+    },
+    "slash": {
+        "id": 163,
+        "category": 1,
+        "power": 70,
+        "type": 0
+    },
+    "substitute": {
+        "id": 164,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "struggle": {
+        "id": 165,
+        "category": 1,
+        "power": 50,
+        "type": 0
+    },
+    "sketch": {
+        "id": 166,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "triplekick": {
+        "id": 167,
+        "category": 1,
+        "power": 10,
+        "type": 10
+    },
+    "thief": {
+        "id": 168,
+        "category": 1,
+        "power": 60,
+        "type": 8
+    },
+    "spiderweb": {
+        "id": 169,
+        "category": 0,
+        "power": 0,
+        "type": 15
+    },
+    "mindreader": {
+        "id": 170,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "nightmare": {
+        "id": 171,
+        "category": 0,
+        "power": 0,
+        "type": 16
+    },
+    "flamewheel": {
+        "id": 172,
+        "category": 1,
+        "power": 60,
+        "type": 1
+    },
+    "snore": {
+        "id": 173,
+        "category": 2,
+        "power": 50,
+        "type": 0
+    },
+    "curse": {
+        "id": 174,
+        "category": 0,
+        "power": 0,
+        "type": 16
+    },
+    "flail": {
+        "id": 175,
+        "category": 1,
+        "power": 0,
+        "type": 0
+    },
+    "conversion2": {
+        "id": 176,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "aeroblast": {
+        "id": 177,
+        "category": 2,
+        "power": 100,
+        "type": 11
+    },
+    "cottonspore": {
+        "id": 178,
+        "category": 0,
+        "power": 0,
+        "type": 3
+    },
+    "reversal": {
+        "id": 179,
+        "category": 1,
+        "power": 0,
+        "type": 10
+    },
+    "spite": {
+        "id": 180,
+        "category": 0,
+        "power": 0,
+        "type": 16
+    },
+    "powdersnow": {
+        "id": 181,
+        "category": 2,
+        "power": 40,
+        "type": 6
+    },
+    "protect": {
+        "id": 182,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "machpunch": {
+        "id": 183,
+        "category": 1,
+        "power": 40,
+        "type": 10
+    },
+    "scaryface": {
+        "id": 184,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "feintattack": {
+        "id": 185,
+        "category": 1,
+        "power": 60,
+        "type": 8
+    },
+    "sweetkiss": {
+        "id": 186,
+        "category": 0,
+        "power": 0,
+        "type": 9
+    },
+    "bellydrum": {
+        "id": 187,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "sludgebomb": {
+        "id": 188,
+        "category": 2,
+        "power": 90,
+        "type": 12
+    },
+    "mudslap": {
+        "id": 189,
+        "category": 2,
+        "power": 20,
+        "type": 13
+    },
+    "octazooka": {
+        "id": 190,
+        "category": 2,
+        "power": 65,
+        "type": 2
+    },
+    "spikes": {
+        "id": 191,
+        "category": 0,
+        "power": 0,
+        "type": 13
+    },
+    "zapcannon": {
+        "id": 192,
+        "category": 2,
+        "power": 120,
+        "type": 4
+    },
+    "foresight": {
+        "id": 193,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "destinybond": {
+        "id": 194,
+        "category": 0,
+        "power": 0,
+        "type": 16
+    },
+    "perishsong": {
+        "id": 195,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "icywind": {
+        "id": 196,
+        "category": 2,
+        "power": 55,
+        "type": 6
+    },
+    "detect": {
+        "id": 197,
+        "category": 0,
+        "power": 0,
+        "type": 10
+    },
+    "bonerush": {
+        "id": 198,
+        "category": 1,
+        "power": 25,
+        "type": 13
+    },
+    "lockon": {
+        "id": 199,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "outrage": {
+        "id": 200,
+        "category": 1,
+        "power": 120,
+        "type": 7
+    },
+    "sandstorm": {
+        "id": 201,
+        "category": 0,
+        "power": 0,
+        "type": 14
+    },
+    "gigadrain": {
+        "id": 202,
+        "category": 2,
+        "power": 75,
+        "type": 3
+    },
+    "endure": {
+        "id": 203,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "charm": {
+        "id": 204,
+        "category": 0,
+        "power": 0,
+        "type": 9
+    },
+    "rollout": {
+        "id": 205,
+        "category": 1,
+        "power": 30,
+        "type": 14
+    },
+    "falseswipe": {
+        "id": 206,
+        "category": 1,
+        "power": 40,
+        "type": 0
+    },
+    "swagger": {
+        "id": 207,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "milkdrink": {
+        "id": 208,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "spark": {
+        "id": 209,
+        "category": 1,
+        "power": 65,
+        "type": 4
+    },
+    "furycutter": {
+        "id": 210,
+        "category": 1,
+        "power": 40,
+        "type": 15
+    },
+    "steelwing": {
+        "id": 211,
+        "category": 1,
+        "power": 70,
+        "type": 17
+    },
+    "meanlook": {
+        "id": 212,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "attract": {
+        "id": 213,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "sleeptalk": {
+        "id": 214,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "healbell": {
+        "id": 215,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "return": {
+        "id": 216,
+        "category": 1,
+        "power": 0,
+        "type": 0
+    },
+    "present": {
+        "id": 217,
+        "category": 1,
+        "power": 0,
+        "type": 0
+    },
+    "frustration": {
+        "id": 218,
+        "category": 1,
+        "power": 0,
+        "type": 0
+    },
+    "safeguard": {
+        "id": 219,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "painsplit": {
+        "id": 220,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "sacredfire": {
+        "id": 221,
+        "category": 1,
+        "power": 100,
+        "type": 1
+    },
+    "magnitude": {
+        "id": 222,
+        "category": 1,
+        "power": 0,
+        "type": 13
+    },
+    "dynamicpunch": {
+        "id": 223,
+        "category": 1,
+        "power": 100,
+        "type": 10
+    },
+    "megahorn": {
+        "id": 224,
+        "category": 1,
+        "power": 120,
+        "type": 15
+    },
+    "dragonbreath": {
+        "id": 225,
+        "category": 2,
+        "power": 60,
+        "type": 7
+    },
+    "batonpass": {
+        "id": 226,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "encore": {
+        "id": 227,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "pursuit": {
+        "id": 228,
+        "category": 1,
+        "power": 40,
+        "type": 8
+    },
+    "rapidspin": {
+        "id": 229,
+        "category": 1,
+        "power": 50,
+        "type": 0
+    },
+    "sweetscent": {
+        "id": 230,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "irontail": {
+        "id": 231,
+        "category": 1,
+        "power": 100,
+        "type": 17
+    },
+    "metalclaw": {
+        "id": 232,
+        "category": 1,
+        "power": 50,
+        "type": 17
+    },
+    "vitalthrow": {
+        "id": 233,
+        "category": 1,
+        "power": 70,
+        "type": 10
+    },
+    "morningsun": {
+        "id": 234,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "synthesis": {
+        "id": 235,
+        "category": 0,
+        "power": 0,
+        "type": 3
+    },
+    "moonlight": {
+        "id": 236,
+        "category": 0,
+        "power": 0,
+        "type": 9
+    },
+    "hiddenpower": {
+        "id": 237,
+        "category": 2,
+        "power": 60,
+        "type": 0
+    },
+    "crosschop": {
+        "id": 238,
+        "category": 1,
+        "power": 100,
+        "type": 10
+    },
+    "twister": {
+        "id": 239,
+        "category": 2,
+        "power": 40,
+        "type": 7
+    },
+    "raindance": {
+        "id": 240,
+        "category": 0,
+        "power": 0,
+        "type": 2
+    },
+    "sunnyday": {
+        "id": 241,
+        "category": 0,
+        "power": 0,
+        "type": 1
+    },
+    "crunch": {
+        "id": 242,
+        "category": 1,
+        "power": 80,
+        "type": 8
+    },
+    "mirrorcoat": {
+        "id": 243,
+        "category": 2,
+        "power": 0,
+        "type": 5
+    },
+    "psychup": {
+        "id": 244,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "extremespeed": {
+        "id": 245,
+        "category": 1,
+        "power": 80,
+        "type": 0
+    },
+    "ancientpower": {
+        "id": 246,
+        "category": 2,
+        "power": 60,
+        "type": 14
+    },
+    "shadowball": {
+        "id": 247,
+        "category": 2,
+        "power": 80,
+        "type": 16
+    },
+    "futuresight": {
+        "id": 248,
+        "category": 2,
+        "power": 120,
+        "type": 5
+    },
+    "rocksmash": {
+        "id": 249,
+        "category": 1,
+        "power": 40,
+        "type": 10
+    },
+    "whirlpool": {
+        "id": 250,
+        "category": 2,
+        "power": 35,
+        "type": 2
+    },
+    "beatup": {
+        "id": 251,
+        "category": 1,
+        "power": 0,
+        "type": 8
+    },
+    "fakeout": {
+        "id": 252,
+        "category": 1,
+        "power": 40,
+        "type": 0
+    },
+    "uproar": {
+        "id": 253,
+        "category": 2,
+        "power": 90,
+        "type": 0
+    },
+    "stockpile": {
+        "id": 254,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "spitup": {
+        "id": 255,
+        "category": 2,
+        "power": 0,
+        "type": 0
+    },
+    "swallow": {
+        "id": 256,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "heatwave": {
+        "id": 257,
+        "category": 2,
+        "power": 95,
+        "type": 1
+    },
+    "hail": {
+        "id": 258,
+        "category": 0,
+        "power": 0,
+        "type": 6
+    },
+    "torment": {
+        "id": 259,
+        "category": 0,
+        "power": 0,
+        "type": 8
+    },
+    "flatter": {
+        "id": 260,
+        "category": 0,
+        "power": 0,
+        "type": 8
+    },
+    "willowisp": {
+        "id": 261,
+        "category": 0,
+        "power": 0,
+        "type": 1
+    },
+    "memento": {
+        "id": 262,
+        "category": 0,
+        "power": 0,
+        "type": 8
+    },
+    "facade": {
+        "id": 263,
+        "category": 1,
+        "power": 70,
+        "type": 0
+    },
+    "focuspunch": {
+        "id": 264,
+        "category": 1,
+        "power": 150,
+        "type": 10
+    },
+    "smellingsalts": {
+        "id": 265,
+        "category": 1,
+        "power": 70,
+        "type": 0
+    },
+    "followme": {
+        "id": 266,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "naturepower": {
+        "id": 267,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "charge": {
+        "id": 268,
+        "category": 0,
+        "power": 0,
+        "type": 4
+    },
+    "taunt": {
+        "id": 269,
+        "category": 0,
+        "power": 0,
+        "type": 8
+    },
+    "helpinghand": {
+        "id": 270,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "trick": {
+        "id": 271,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "roleplay": {
+        "id": 272,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "wish": {
+        "id": 273,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "assist": {
+        "id": 274,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "ingrain": {
+        "id": 275,
+        "category": 0,
+        "power": 0,
+        "type": 3
+    },
+    "superpower": {
+        "id": 276,
+        "category": 1,
+        "power": 120,
+        "type": 10
+    },
+    "magiccoat": {
+        "id": 277,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "recycle": {
+        "id": 278,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "revenge": {
+        "id": 279,
+        "category": 1,
+        "power": 60,
+        "type": 10
+    },
+    "brickbreak": {
+        "id": 280,
+        "category": 1,
+        "power": 75,
+        "type": 10
+    },
+    "yawn": {
+        "id": 281,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "knockoff": {
+        "id": 282,
+        "category": 1,
+        "power": 65,
+        "type": 8
+    },
+    "endeavor": {
+        "id": 283,
+        "category": 1,
+        "power": 0,
+        "type": 0
+    },
+    "eruption": {
+        "id": 284,
+        "category": 2,
+        "power": 150,
+        "type": 1
+    },
+    "skillswap": {
+        "id": 285,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "imprison": {
+        "id": 286,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "refresh": {
+        "id": 287,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "grudge": {
+        "id": 288,
+        "category": 0,
+        "power": 0,
+        "type": 16
+    },
+    "snatch": {
+        "id": 289,
+        "category": 0,
+        "power": 0,
+        "type": 8
+    },
+    "secretpower": {
+        "id": 290,
+        "category": 1,
+        "power": 70,
+        "type": 0
+    },
+    "dive": {
+        "id": 291,
+        "category": 1,
+        "power": 80,
+        "type": 2
+    },
+    "armthrust": {
+        "id": 292,
+        "category": 1,
+        "power": 15,
+        "type": 10
+    },
+    "camouflage": {
+        "id": 293,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "tailglow": {
+        "id": 294,
+        "category": 0,
+        "power": 0,
+        "type": 15
+    },
+    "lusterpurge": {
+        "id": 295,
+        "category": 2,
+        "power": 95,
+        "type": 5
+    },
+    "mistball": {
+        "id": 296,
+        "category": 2,
+        "power": 95,
+        "type": 5
+    },
+    "featherdance": {
+        "id": 297,
+        "category": 0,
+        "power": 0,
+        "type": 11
+    },
+    "teeterdance": {
+        "id": 298,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "blazekick": {
+        "id": 299,
+        "category": 1,
+        "power": 85,
+        "type": 1
+    },
+    "mudsport": {
+        "id": 300,
+        "category": 0,
+        "power": 0,
+        "type": 13
+    },
+    "iceball": {
+        "id": 301,
+        "category": 1,
+        "power": 30,
+        "type": 6
+    },
+    "needlearm": {
+        "id": 302,
+        "category": 1,
+        "power": 60,
+        "type": 3
+    },
+    "slackoff": {
+        "id": 303,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "hypervoice": {
+        "id": 304,
+        "category": 2,
+        "power": 90,
+        "type": 0
+    },
+    "poisonfang": {
+        "id": 305,
+        "category": 1,
+        "power": 50,
+        "type": 12
+    },
+    "crushclaw": {
+        "id": 306,
+        "category": 1,
+        "power": 75,
+        "type": 0
+    },
+    "blastburn": {
+        "id": 307,
+        "category": 2,
+        "power": 150,
+        "type": 1
+    },
+    "hydrocannon": {
+        "id": 308,
+        "category": 2,
+        "power": 150,
+        "type": 2
+    },
+    "meteormash": {
+        "id": 309,
+        "category": 1,
+        "power": 90,
+        "type": 17
+    },
+    "astonish": {
+        "id": 310,
+        "category": 1,
+        "power": 30,
+        "type": 16
+    },
+    "weatherball": {
+        "id": 311,
+        "category": 2,
+        "power": 50,
+        "type": 0
+    },
+    "aromatherapy": {
+        "id": 312,
+        "category": 0,
+        "power": 0,
+        "type": 3
+    },
+    "faketears": {
+        "id": 313,
+        "category": 0,
+        "power": 0,
+        "type": 8
+    },
+    "aircutter": {
+        "id": 314,
+        "category": 2,
+        "power": 60,
+        "type": 11
+    },
+    "overheat": {
+        "id": 315,
+        "category": 2,
+        "power": 130,
+        "type": 1
+    },
+    "odorsleuth": {
+        "id": 316,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "rocktomb": {
+        "id": 317,
+        "category": 1,
+        "power": 60,
+        "type": 14
+    },
+    "silverwind": {
+        "id": 318,
+        "category": 2,
+        "power": 60,
+        "type": 15
+    },
+    "metalsound": {
+        "id": 319,
+        "category": 0,
+        "power": 0,
+        "type": 17
+    },
+    "grasswhistle": {
+        "id": 320,
+        "category": 0,
+        "power": 0,
+        "type": 3
+    },
+    "tickle": {
+        "id": 321,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "cosmicpower": {
+        "id": 322,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "waterspout": {
+        "id": 323,
+        "category": 2,
+        "power": 150,
+        "type": 2
+    },
+    "signalbeam": {
+        "id": 324,
+        "category": 2,
+        "power": 75,
+        "type": 15
+    },
+    "shadowpunch": {
+        "id": 325,
+        "category": 1,
+        "power": 60,
+        "type": 16
+    },
+    "extrasensory": {
+        "id": 326,
+        "category": 2,
+        "power": 80,
+        "type": 5
+    },
+    "skyuppercut": {
+        "id": 327,
+        "category": 1,
+        "power": 85,
+        "type": 10
+    },
+    "sandtomb": {
+        "id": 328,
+        "category": 1,
+        "power": 35,
+        "type": 13
+    },
+    "sheercold": {
+        "id": 329,
+        "category": 2,
+        "power": 0,
+        "type": 6
+    },
+    "muddywater": {
+        "id": 330,
+        "category": 2,
+        "power": 90,
+        "type": 2
+    },
+    "bulletseed": {
+        "id": 331,
+        "category": 1,
+        "power": 25,
+        "type": 3
+    },
+    "aerialace": {
+        "id": 332,
+        "category": 1,
+        "power": 60,
+        "type": 11
+    },
+    "iciclespear": {
+        "id": 333,
+        "category": 1,
+        "power": 25,
+        "type": 6
+    },
+    "irondefense": {
+        "id": 334,
+        "category": 0,
+        "power": 0,
+        "type": 17
+    },
+    "block": {
+        "id": 335,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "howl": {
+        "id": 336,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "dragonclaw": {
+        "id": 337,
+        "category": 1,
+        "power": 80,
+        "type": 7
+    },
+    "frenzyplant": {
+        "id": 338,
+        "category": 2,
+        "power": 150,
+        "type": 3
+    },
+    "bulkup": {
+        "id": 339,
+        "category": 0,
+        "power": 0,
+        "type": 10
+    },
+    "bounce": {
+        "id": 340,
+        "category": 1,
+        "power": 85,
+        "type": 11
+    },
+    "mudshot": {
+        "id": 341,
+        "category": 2,
+        "power": 55,
+        "type": 13
+    },
+    "poisontail": {
+        "id": 342,
+        "category": 1,
+        "power": 50,
+        "type": 12
+    },
+    "covet": {
+        "id": 343,
+        "category": 1,
+        "power": 60,
+        "type": 0
+    },
+    "volttackle": {
+        "id": 344,
+        "category": 1,
+        "power": 120,
+        "type": 4
+    },
+    "magicalleaf": {
+        "id": 345,
+        "category": 2,
+        "power": 60,
+        "type": 3
+    },
+    "watersport": {
+        "id": 346,
+        "category": 0,
+        "power": 0,
+        "type": 2
+    },
+    "calmmind": {
+        "id": 347,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "leafblade": {
+        "id": 348,
+        "category": 1,
+        "power": 90,
+        "type": 3
+    },
+    "dragondance": {
+        "id": 349,
+        "category": 0,
+        "power": 0,
+        "type": 7
+    },
+    "rockblast": {
+        "id": 350,
+        "category": 1,
+        "power": 25,
+        "type": 14
+    },
+    "shockwave": {
+        "id": 351,
+        "category": 2,
+        "power": 60,
+        "type": 4
+    },
+    "waterpulse": {
+        "id": 352,
+        "category": 2,
+        "power": 60,
+        "type": 2
+    },
+    "doomdesire": {
+        "id": 353,
+        "category": 2,
+        "power": 140,
+        "type": 17
+    },
+    "psychoboost": {
+        "id": 354,
+        "category": 2,
+        "power": 140,
+        "type": 5
+    },
+    "roost": {
+        "id": 355,
+        "category": 0,
+        "power": 0,
+        "type": 11
+    },
+    "gravity": {
+        "id": 356,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "miracleeye": {
+        "id": 357,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "wakeupslap": {
+        "id": 358,
+        "category": 1,
+        "power": 70,
+        "type": 10
+    },
+    "hammerarm": {
+        "id": 359,
+        "category": 1,
+        "power": 100,
+        "type": 10
+    },
+    "gyroball": {
+        "id": 360,
+        "category": 1,
+        "power": 0,
+        "type": 17
+    },
+    "healingwish": {
+        "id": 361,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "brine": {
+        "id": 362,
+        "category": 2,
+        "power": 65,
+        "type": 2
+    },
+    "naturalgift": {
+        "id": 363,
+        "category": 1,
+        "power": 0,
+        "type": 0
+    },
+    "feint": {
+        "id": 364,
+        "category": 1,
+        "power": 30,
+        "type": 0
+    },
+    "pluck": {
+        "id": 365,
+        "category": 1,
+        "power": 60,
+        "type": 11
+    },
+    "tailwind": {
+        "id": 366,
+        "category": 0,
+        "power": 0,
+        "type": 11
+    },
+    "acupressure": {
+        "id": 367,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "metalburst": {
+        "id": 368,
+        "category": 1,
+        "power": 0,
+        "type": 17
+    },
+    "uturn": {
+        "id": 369,
+        "category": 1,
+        "power": 70,
+        "type": 15
+    },
+    "closecombat": {
+        "id": 370,
+        "category": 1,
+        "power": 120,
+        "type": 10
+    },
+    "payback": {
+        "id": 371,
+        "category": 1,
+        "power": 50,
+        "type": 8
+    },
+    "assurance": {
+        "id": 372,
+        "category": 1,
+        "power": 60,
+        "type": 8
+    },
+    "embargo": {
+        "id": 373,
+        "category": 0,
+        "power": 0,
+        "type": 8
+    },
+    "fling": {
+        "id": 374,
+        "category": 1,
+        "power": 0,
+        "type": 8
+    },
+    "psychoshift": {
+        "id": 375,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "trumpcard": {
+        "id": 376,
+        "category": 2,
+        "power": 0,
+        "type": 0
+    },
+    "healblock": {
+        "id": 377,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "wringout": {
+        "id": 378,
+        "category": 2,
+        "power": 0,
+        "type": 0
+    },
+    "powertrick": {
+        "id": 379,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "gastroacid": {
+        "id": 380,
+        "category": 0,
+        "power": 0,
+        "type": 12
+    },
+    "luckychant": {
+        "id": 381,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "mefirst": {
+        "id": 382,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "copycat": {
+        "id": 383,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "powerswap": {
+        "id": 384,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "guardswap": {
+        "id": 385,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "punishment": {
+        "id": 386,
+        "category": 1,
+        "power": 0,
+        "type": 8
+    },
+    "lastresort": {
+        "id": 387,
+        "category": 1,
+        "power": 140,
+        "type": 0
+    },
+    "worryseed": {
+        "id": 388,
+        "category": 0,
+        "power": 0,
+        "type": 3
+    },
+    "suckerpunch": {
+        "id": 389,
+        "category": 1,
+        "power": 70,
+        "type": 8
+    },
+    "toxicspikes": {
+        "id": 390,
+        "category": 0,
+        "power": 0,
+        "type": 12
+    },
+    "heartswap": {
+        "id": 391,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "aquaring": {
+        "id": 392,
+        "category": 0,
+        "power": 0,
+        "type": 2
+    },
+    "magnetrise": {
+        "id": 393,
+        "category": 0,
+        "power": 0,
+        "type": 4
+    },
+    "flareblitz": {
+        "id": 394,
+        "category": 1,
+        "power": 120,
+        "type": 1
+    },
+    "forcepalm": {
+        "id": 395,
+        "category": 1,
+        "power": 60,
+        "type": 10
+    },
+    "aurasphere": {
+        "id": 396,
+        "category": 2,
+        "power": 80,
+        "type": 10
+    },
+    "rockpolish": {
+        "id": 397,
+        "category": 0,
+        "power": 0,
+        "type": 14
+    },
+    "poisonjab": {
+        "id": 398,
+        "category": 1,
+        "power": 80,
+        "type": 12
+    },
+    "darkpulse": {
+        "id": 399,
+        "category": 2,
+        "power": 80,
+        "type": 8
+    },
+    "nightslash": {
+        "id": 400,
+        "category": 1,
+        "power": 70,
+        "type": 8
+    },
+    "aquatail": {
+        "id": 401,
+        "category": 1,
+        "power": 90,
+        "type": 2
+    },
+    "seedbomb": {
+        "id": 402,
+        "category": 1,
+        "power": 80,
+        "type": 3
+    },
+    "airslash": {
+        "id": 403,
+        "category": 2,
+        "power": 75,
+        "type": 11
+    },
+    "xscissor": {
+        "id": 404,
+        "category": 1,
+        "power": 80,
+        "type": 15
+    },
+    "bugbuzz": {
+        "id": 405,
+        "category": 2,
+        "power": 90,
+        "type": 15
+    },
+    "dragonpulse": {
+        "id": 406,
+        "category": 2,
+        "power": 85,
+        "type": 7
+    },
+    "dragonrush": {
+        "id": 407,
+        "category": 1,
+        "power": 100,
+        "type": 7
+    },
+    "powergem": {
+        "id": 408,
+        "category": 2,
+        "power": 80,
+        "type": 14
+    },
+    "drainpunch": {
+        "id": 409,
+        "category": 1,
+        "power": 75,
+        "type": 10
+    },
+    "vacuumwave": {
+        "id": 410,
+        "category": 2,
+        "power": 40,
+        "type": 10
+    },
+    "focusblast": {
+        "id": 411,
+        "category": 2,
+        "power": 120,
+        "type": 10
+    },
+    "energyball": {
+        "id": 412,
+        "category": 2,
+        "power": 90,
+        "type": 3
+    },
+    "bravebird": {
+        "id": 413,
+        "category": 1,
+        "power": 120,
+        "type": 11
+    },
+    "earthpower": {
+        "id": 414,
+        "category": 2,
+        "power": 90,
+        "type": 13
+    },
+    "switcheroo": {
+        "id": 415,
+        "category": 0,
+        "power": 0,
+        "type": 8
+    },
+    "gigaimpact": {
+        "id": 416,
+        "category": 1,
+        "power": 150,
+        "type": 0
+    },
+    "nastyplot": {
+        "id": 417,
+        "category": 0,
+        "power": 0,
+        "type": 8
+    },
+    "bulletpunch": {
+        "id": 418,
+        "category": 1,
+        "power": 40,
+        "type": 17
+    },
+    "avalanche": {
+        "id": 419,
+        "category": 1,
+        "power": 60,
+        "type": 6
+    },
+    "iceshard": {
+        "id": 420,
+        "category": 1,
+        "power": 40,
+        "type": 6
+    },
+    "shadowclaw": {
+        "id": 421,
+        "category": 1,
+        "power": 70,
+        "type": 16
+    },
+    "thunderfang": {
+        "id": 422,
+        "category": 1,
+        "power": 65,
+        "type": 4
+    },
+    "icefang": {
+        "id": 423,
+        "category": 1,
+        "power": 65,
+        "type": 6
+    },
+    "firefang": {
+        "id": 424,
+        "category": 1,
+        "power": 65,
+        "type": 1
+    },
+    "shadowsneak": {
+        "id": 425,
+        "category": 1,
+        "power": 40,
+        "type": 16
+    },
+    "mudbomb": {
+        "id": 426,
+        "category": 2,
+        "power": 65,
+        "type": 13
+    },
+    "psychocut": {
+        "id": 427,
+        "category": 1,
+        "power": 70,
+        "type": 5
+    },
+    "zenheadbutt": {
+        "id": 428,
+        "category": 1,
+        "power": 80,
+        "type": 5
+    },
+    "mirrorshot": {
+        "id": 429,
+        "category": 2,
+        "power": 65,
+        "type": 17
+    },
+    "flashcannon": {
+        "id": 430,
+        "category": 2,
+        "power": 80,
+        "type": 17
+    },
+    "rockclimb": {
+        "id": 431,
+        "category": 1,
+        "power": 90,
+        "type": 0
+    },
+    "defog": {
+        "id": 432,
+        "category": 0,
+        "power": 0,
+        "type": 11
+    },
+    "trickroom": {
+        "id": 433,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "dracometeor": {
+        "id": 434,
+        "category": 2,
+        "power": 130,
+        "type": 7
+    },
+    "discharge": {
+        "id": 435,
+        "category": 2,
+        "power": 80,
+        "type": 4
+    },
+    "lavaplume": {
+        "id": 436,
+        "category": 2,
+        "power": 80,
+        "type": 1
+    },
+    "leafstorm": {
+        "id": 437,
+        "category": 2,
+        "power": 130,
+        "type": 3
+    },
+    "powerwhip": {
+        "id": 438,
+        "category": 1,
+        "power": 120,
+        "type": 3
+    },
+    "rockwrecker": {
+        "id": 439,
+        "category": 1,
+        "power": 150,
+        "type": 14
+    },
+    "crosspoison": {
+        "id": 440,
+        "category": 1,
+        "power": 70,
+        "type": 12
+    },
+    "gunkshot": {
+        "id": 441,
+        "category": 1,
+        "power": 120,
+        "type": 12
+    },
+    "ironhead": {
+        "id": 442,
+        "category": 1,
+        "power": 80,
+        "type": 17
+    },
+    "magnetbomb": {
+        "id": 443,
+        "category": 1,
+        "power": 60,
+        "type": 17
+    },
+    "stoneedge": {
+        "id": 444,
+        "category": 1,
+        "power": 100,
+        "type": 14
+    },
+    "captivate": {
+        "id": 445,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "stealthrock": {
+        "id": 446,
+        "category": 0,
+        "power": 0,
+        "type": 14
+    },
+    "grassknot": {
+        "id": 447,
+        "category": 2,
+        "power": 0,
+        "type": 3
+    },
+    "chatter": {
+        "id": 448,
+        "category": 2,
+        "power": 65,
+        "type": 11
+    },
+    "judgment": {
+        "id": 449,
+        "category": 2,
+        "power": 100,
+        "type": 0
+    },
+    "bugbite": {
+        "id": 450,
+        "category": 1,
+        "power": 60,
+        "type": 15
+    },
+    "chargebeam": {
+        "id": 451,
+        "category": 2,
+        "power": 50,
+        "type": 4
+    },
+    "woodhammer": {
+        "id": 452,
+        "category": 1,
+        "power": 120,
+        "type": 3
+    },
+    "aquajet": {
+        "id": 453,
+        "category": 1,
+        "power": 40,
+        "type": 2
+    },
+    "attackorder": {
+        "id": 454,
+        "category": 1,
+        "power": 90,
+        "type": 15
+    },
+    "defendorder": {
+        "id": 455,
+        "category": 0,
+        "power": 0,
+        "type": 15
+    },
+    "healorder": {
+        "id": 456,
+        "category": 0,
+        "power": 0,
+        "type": 15
+    },
+    "headsmash": {
+        "id": 457,
+        "category": 1,
+        "power": 150,
+        "type": 14
+    },
+    "doublehit": {
+        "id": 458,
+        "category": 1,
+        "power": 35,
+        "type": 0
+    },
+    "roaroftime": {
+        "id": 459,
+        "category": 2,
+        "power": 150,
+        "type": 7
+    },
+    "spacialrend": {
+        "id": 460,
+        "category": 2,
+        "power": 100,
+        "type": 7
+    },
+    "lunardance": {
+        "id": 461,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "crushgrip": {
+        "id": 462,
+        "category": 1,
+        "power": 0,
+        "type": 0
+    },
+    "magmastorm": {
+        "id": 463,
+        "category": 2,
+        "power": 100,
+        "type": 1
+    },
+    "darkvoid": {
+        "id": 464,
+        "category": 0,
+        "power": 0,
+        "type": 8
+    },
+    "seedflare": {
+        "id": 465,
+        "category": 2,
+        "power": 120,
+        "type": 3
+    },
+    "ominouswind": {
+        "id": 466,
+        "category": 2,
+        "power": 60,
+        "type": 16
+    },
+    "shadowforce": {
+        "id": 467,
+        "category": 1,
+        "power": 120,
+        "type": 16
+    },
+    "honeclaws": {
+        "id": 468,
+        "category": 0,
+        "power": 0,
+        "type": 8
+    },
+    "wideguard": {
+        "id": 469,
+        "category": 0,
+        "power": 0,
+        "type": 14
+    },
+    "guardsplit": {
+        "id": 470,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "powersplit": {
+        "id": 471,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "wonderroom": {
+        "id": 472,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "psyshock": {
+        "id": 473,
+        "category": 2,
+        "power": 80,
+        "type": 5
+    },
+    "venoshock": {
+        "id": 474,
+        "category": 2,
+        "power": 65,
+        "type": 12
+    },
+    "autotomize": {
+        "id": 475,
+        "category": 0,
+        "power": 0,
+        "type": 17
+    },
+    "ragepowder": {
+        "id": 476,
+        "category": 0,
+        "power": 0,
+        "type": 15
+    },
+    "telekinesis": {
+        "id": 477,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "magicroom": {
+        "id": 478,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "smackdown": {
+        "id": 479,
+        "category": 1,
+        "power": 50,
+        "type": 14
+    },
+    "stormthrow": {
+        "id": 480,
+        "category": 1,
+        "power": 60,
+        "type": 10
+    },
+    "flameburst": {
+        "id": 481,
+        "category": 2,
+        "power": 70,
+        "type": 1
+    },
+    "sludgewave": {
+        "id": 482,
+        "category": 2,
+        "power": 95,
+        "type": 12
+    },
+    "quiverdance": {
+        "id": 483,
+        "category": 0,
+        "power": 0,
+        "type": 15
+    },
+    "heavyslam": {
+        "id": 484,
+        "category": 1,
+        "power": 0,
+        "type": 17
+    },
+    "synchronoise": {
+        "id": 485,
+        "category": 2,
+        "power": 120,
+        "type": 5
+    },
+    "electroball": {
+        "id": 486,
+        "category": 2,
+        "power": 0,
+        "type": 4
+    },
+    "soak": {
+        "id": 487,
+        "category": 0,
+        "power": 0,
+        "type": 2
+    },
+    "flamecharge": {
+        "id": 488,
+        "category": 1,
+        "power": 50,
+        "type": 1
+    },
+    "coil": {
+        "id": 489,
+        "category": 0,
+        "power": 0,
+        "type": 12
+    },
+    "lowsweep": {
+        "id": 490,
+        "category": 1,
+        "power": 65,
+        "type": 10
+    },
+    "acidspray": {
+        "id": 491,
+        "category": 2,
+        "power": 40,
+        "type": 12
+    },
+    "foulplay": {
+        "id": 492,
+        "category": 1,
+        "power": 95,
+        "type": 8
+    },
+    "simplebeam": {
+        "id": 493,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "entrainment": {
+        "id": 494,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "afteryou": {
+        "id": 495,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "round": {
+        "id": 496,
+        "category": 2,
+        "power": 60,
+        "type": 0
+    },
+    "echoedvoice": {
+        "id": 497,
+        "category": 2,
+        "power": 40,
+        "type": 0
+    },
+    "chipaway": {
+        "id": 498,
+        "category": 1,
+        "power": 70,
+        "type": 0
+    },
+    "clearsmog": {
+        "id": 499,
+        "category": 2,
+        "power": 50,
+        "type": 12
+    },
+    "storedpower": {
+        "id": 500,
+        "category": 2,
+        "power": 20,
+        "type": 5
+    },
+    "quickguard": {
+        "id": 501,
+        "category": 0,
+        "power": 0,
+        "type": 10
+    },
+    "allyswitch": {
+        "id": 502,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "scald": {
+        "id": 503,
+        "category": 2,
+        "power": 80,
+        "type": 2
+    },
+    "shellsmash": {
+        "id": 504,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "healpulse": {
+        "id": 505,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "hex": {
+        "id": 506,
+        "category": 2,
+        "power": 65,
+        "type": 16
+    },
+    "skydrop": {
+        "id": 507,
+        "category": 1,
+        "power": 60,
+        "type": 11
+    },
+    "shiftgear": {
+        "id": 508,
+        "category": 0,
+        "power": 0,
+        "type": 17
+    },
+    "circlethrow": {
+        "id": 509,
+        "category": 1,
+        "power": 60,
+        "type": 10
+    },
+    "incinerate": {
+        "id": 510,
+        "category": 2,
+        "power": 60,
+        "type": 1
+    },
+    "quash": {
+        "id": 511,
+        "category": 0,
+        "power": 0,
+        "type": 8
+    },
+    "acrobatics": {
+        "id": 512,
+        "category": 1,
+        "power": 55,
+        "type": 11
+    },
+    "reflecttype": {
+        "id": 513,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "retaliate": {
+        "id": 514,
+        "category": 1,
+        "power": 70,
+        "type": 0
+    },
+    "finalgambit": {
+        "id": 515,
+        "category": 2,
+        "power": 0,
+        "type": 10
+    },
+    "bestow": {
+        "id": 516,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "inferno": {
+        "id": 517,
+        "category": 2,
+        "power": 100,
+        "type": 1
+    },
+    "waterpledge": {
+        "id": 518,
+        "category": 2,
+        "power": 80,
+        "type": 2
+    },
+    "firepledge": {
+        "id": 519,
+        "category": 2,
+        "power": 80,
+        "type": 1
+    },
+    "grasspledge": {
+        "id": 520,
+        "category": 2,
+        "power": 80,
+        "type": 3
+    },
+    "voltswitch": {
+        "id": 521,
+        "category": 2,
+        "power": 70,
+        "type": 4
+    },
+    "strugglebug": {
+        "id": 522,
+        "category": 2,
+        "power": 50,
+        "type": 15
+    },
+    "bulldoze": {
+        "id": 523,
+        "category": 1,
+        "power": 60,
+        "type": 13
+    },
+    "frostbreath": {
+        "id": 524,
+        "category": 2,
+        "power": 60,
+        "type": 6
+    },
+    "dragontail": {
+        "id": 525,
+        "category": 1,
+        "power": 60,
+        "type": 7
+    },
+    "workup": {
+        "id": 526,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "electroweb": {
+        "id": 527,
+        "category": 2,
+        "power": 55,
+        "type": 4
+    },
+    "wildcharge": {
+        "id": 528,
+        "category": 1,
+        "power": 90,
+        "type": 4
+    },
+    "drillrun": {
+        "id": 529,
+        "category": 1,
+        "power": 80,
+        "type": 13
+    },
+    "dualchop": {
+        "id": 530,
+        "category": 1,
+        "power": 40,
+        "type": 7
+    },
+    "heartstamp": {
+        "id": 531,
+        "category": 1,
+        "power": 60,
+        "type": 5
+    },
+    "hornleech": {
+        "id": 532,
+        "category": 1,
+        "power": 75,
+        "type": 3
+    },
+    "sacredsword": {
+        "id": 533,
+        "category": 1,
+        "power": 90,
+        "type": 10
+    },
+    "razorshell": {
+        "id": 534,
+        "category": 1,
+        "power": 75,
+        "type": 2
+    },
+    "heatcrash": {
+        "id": 535,
+        "category": 1,
+        "power": 0,
+        "type": 1
+    },
+    "leaftornado": {
+        "id": 536,
+        "category": 2,
+        "power": 65,
+        "type": 3
+    },
+    "steamroller": {
+        "id": 537,
+        "category": 1,
+        "power": 65,
+        "type": 15
+    },
+    "cottonguard": {
+        "id": 538,
+        "category": 0,
+        "power": 0,
+        "type": 3
+    },
+    "nightdaze": {
+        "id": 539,
+        "category": 2,
+        "power": 85,
+        "type": 8
+    },
+    "psystrike": {
+        "id": 540,
+        "category": 2,
+        "power": 100,
+        "type": 5
+    },
+    "tailslap": {
+        "id": 541,
+        "category": 1,
+        "power": 25,
+        "type": 0
+    },
+    "hurricane": {
+        "id": 542,
+        "category": 2,
+        "power": 110,
+        "type": 11
+    },
+    "headcharge": {
+        "id": 543,
+        "category": 1,
+        "power": 120,
+        "type": 0
+    },
+    "geargrind": {
+        "id": 544,
+        "category": 1,
+        "power": 50,
+        "type": 17
+    },
+    "searingshot": {
+        "id": 545,
+        "category": 2,
+        "power": 100,
+        "type": 1
+    },
+    "technoblast": {
+        "id": 546,
+        "category": 2,
+        "power": 120,
+        "type": 0
+    },
+    "relicsong": {
+        "id": 547,
+        "category": 2,
+        "power": 75,
+        "type": 0
+    },
+    "secretsword": {
+        "id": 548,
+        "category": 2,
+        "power": 85,
+        "type": 10
+    },
+    "glaciate": {
+        "id": 549,
+        "category": 2,
+        "power": 65,
+        "type": 6
+    },
+    "boltstrike": {
+        "id": 550,
+        "category": 1,
+        "power": 130,
+        "type": 4
+    },
+    "blueflare": {
+        "id": 551,
+        "category": 2,
+        "power": 130,
+        "type": 1
+    },
+    "fierydance": {
+        "id": 552,
+        "category": 2,
+        "power": 80,
+        "type": 1
+    },
+    "freezeshock": {
+        "id": 553,
+        "category": 1,
+        "power": 140,
+        "type": 6
+    },
+    "iceburn": {
+        "id": 554,
+        "category": 2,
+        "power": 140,
+        "type": 6
+    },
+    "snarl": {
+        "id": 555,
+        "category": 2,
+        "power": 55,
+        "type": 8
+    },
+    "iciclecrash": {
+        "id": 556,
+        "category": 1,
+        "power": 85,
+        "type": 6
+    },
+    "vcreate": {
+        "id": 557,
+        "category": 1,
+        "power": 180,
+        "type": 1
+    },
+    "fusionflare": {
+        "id": 558,
+        "category": 2,
+        "power": 100,
+        "type": 1
+    },
+    "fusionbolt": {
+        "id": 559,
+        "category": 1,
+        "power": 100,
+        "type": 4
+    },
+    "flyingpress": {
+        "id": 560,
+        "category": 1,
+        "power": 100,
+        "type": 10
+    },
+    "matblock": {
+        "id": 561,
+        "category": 0,
+        "power": 0,
+        "type": 10
+    },
+    "belch": {
+        "id": 562,
+        "category": 2,
+        "power": 120,
+        "type": 12
+    },
+    "rototiller": {
+        "id": 563,
+        "category": 0,
+        "power": 0,
+        "type": 13
+    },
+    "stickyweb": {
+        "id": 564,
+        "category": 0,
+        "power": 0,
+        "type": 15
+    },
+    "fellstinger": {
+        "id": 565,
+        "category": 1,
+        "power": 50,
+        "type": 15
+    },
+    "phantomforce": {
+        "id": 566,
+        "category": 1,
+        "power": 90,
+        "type": 16
+    },
+    "trickortreat": {
+        "id": 567,
+        "category": 0,
+        "power": 0,
+        "type": 16
+    },
+    "nobleroar": {
+        "id": 568,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "iondeluge": {
+        "id": 569,
+        "category": 0,
+        "power": 0,
+        "type": 4
+    },
+    "paraboliccharge": {
+        "id": 570,
+        "category": 2,
+        "power": 65,
+        "type": 4
+    },
+    "forestscurse": {
+        "id": 571,
+        "category": 0,
+        "power": 0,
+        "type": 3
+    },
+    "petalblizzard": {
+        "id": 572,
+        "category": 1,
+        "power": 90,
+        "type": 3
+    },
+    "freezedry": {
+        "id": 573,
+        "category": 2,
+        "power": 70,
+        "type": 6
+    },
+    "disarmingvoice": {
+        "id": 574,
+        "category": 2,
+        "power": 40,
+        "type": 9
+    },
+    "partingshot": {
+        "id": 575,
+        "category": 0,
+        "power": 0,
+        "type": 8
+    },
+    "topsyturvy": {
+        "id": 576,
+        "category": 0,
+        "power": 0,
+        "type": 8
+    },
+    "drainingkiss": {
+        "id": 577,
+        "category": 2,
+        "power": 50,
+        "type": 9
+    },
+    "craftyshield": {
+        "id": 578,
+        "category": 0,
+        "power": 0,
+        "type": 9
+    },
+    "flowershield": {
+        "id": 579,
+        "category": 0,
+        "power": 0,
+        "type": 9
+    },
+    "grassyterrain": {
+        "id": 580,
+        "category": 0,
+        "power": 0,
+        "type": 3
+    },
+    "mistyterrain": {
+        "id": 581,
+        "category": 0,
+        "power": 0,
+        "type": 9
+    },
+    "electrify": {
+        "id": 582,
+        "category": 0,
+        "power": 0,
+        "type": 4
+    },
+    "playrough": {
+        "id": 583,
+        "category": 1,
+        "power": 90,
+        "type": 9
+    },
+    "fairywind": {
+        "id": 584,
+        "category": 2,
+        "power": 40,
+        "type": 9
+    },
+    "moonblast": {
+        "id": 585,
+        "category": 2,
+        "power": 95,
+        "type": 9
+    },
+    "boomburst": {
+        "id": 586,
+        "category": 2,
+        "power": 140,
+        "type": 0
+    },
+    "fairylock": {
+        "id": 587,
+        "category": 0,
+        "power": 0,
+        "type": 9
+    },
+    "kingsshield": {
+        "id": 588,
+        "category": 0,
+        "power": 0,
+        "type": 17
+    },
+    "playnice": {
+        "id": 589,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "confide": {
+        "id": 590,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "diamondstorm": {
+        "id": 591,
+        "category": 1,
+        "power": 100,
+        "type": 14
+    },
+    "steameruption": {
+        "id": 592,
+        "category": 2,
+        "power": 110,
+        "type": 2
+    },
+    "hyperspacehole": {
+        "id": 593,
+        "category": 2,
+        "power": 80,
+        "type": 5
+    },
+    "watershuriken": {
+        "id": 594,
+        "category": 2,
+        "power": 15,
+        "type": 2
+    },
+    "mysticalfire": {
+        "id": 595,
+        "category": 2,
+        "power": 75,
+        "type": 1
+    },
+    "spikyshield": {
+        "id": 596,
+        "category": 0,
+        "power": 0,
+        "type": 3
+    },
+    "aromaticmist": {
+        "id": 597,
+        "category": 0,
+        "power": 0,
+        "type": 9
+    },
+    "eerieimpulse": {
+        "id": 598,
+        "category": 0,
+        "power": 0,
+        "type": 4
+    },
+    "venomdrench": {
+        "id": 599,
+        "category": 0,
+        "power": 0,
+        "type": 12
+    },
+    "powder": {
+        "id": 600,
+        "category": 0,
+        "power": 0,
+        "type": 15
+    },
+    "geomancy": {
+        "id": 601,
+        "category": 0,
+        "power": 0,
+        "type": 9
+    },
+    "magneticflux": {
+        "id": 602,
+        "category": 0,
+        "power": 0,
+        "type": 4
+    },
+    "happyhour": {
+        "id": 603,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "electricterrain": {
+        "id": 604,
+        "category": 0,
+        "power": 0,
+        "type": 4
+    },
+    "dazzlinggleam": {
+        "id": 605,
+        "category": 2,
+        "power": 80,
+        "type": 9
+    },
+    "celebrate": {
+        "id": 606,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "holdhands": {
+        "id": 607,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "babydolleyes": {
+        "id": 608,
+        "category": 0,
+        "power": 0,
+        "type": 9
+    },
+    "nuzzle": {
+        "id": 609,
+        "category": 1,
+        "power": 20,
+        "type": 4
+    },
+    "holdback": {
+        "id": 610,
+        "category": 1,
+        "power": 40,
+        "type": 0
+    },
+    "infestation": {
+        "id": 611,
+        "category": 2,
+        "power": 20,
+        "type": 15
+    },
+    "poweruppunch": {
+        "id": 612,
+        "category": 1,
+        "power": 40,
+        "type": 10
+    },
+    "oblivionwing": {
+        "id": 613,
+        "category": 2,
+        "power": 80,
+        "type": 11
+    },
+    "thousandarrows": {
+        "id": 614,
+        "category": 1,
+        "power": 90,
+        "type": 13
+    },
+    "thousandwaves": {
+        "id": 615,
+        "category": 1,
+        "power": 90,
+        "type": 13
+    },
+    "landswrath": {
+        "id": 616,
+        "category": 1,
+        "power": 90,
+        "type": 13
+    },
+    "lightofruin": {
+        "id": 617,
+        "category": 2,
+        "power": 140,
+        "type": 9
+    },
+    "originpulse": {
+        "id": 618,
+        "category": 2,
+        "power": 110,
+        "type": 2
+    },
+    "precipiceblades": {
+        "id": 619,
+        "category": 1,
+        "power": 120,
+        "type": 13
+    },
+    "dragonascent": {
+        "id": 620,
+        "category": 1,
+        "power": 120,
+        "type": 11
+    },
+    "hyperspacefury": {
+        "id": 621,
+        "category": 1,
+        "power": 100,
+        "type": 8
+    },
+    "breakneckblitzphysical": {
+        "id": 622,
+        "category": 1,
+        "power": 0,
+        "type": 0
+    },
+    "breakneckblitzspecial": {
+        "id": 623,
+        "category": 2,
+        "power": 0,
+        "type": 0
+    },
+    "alloutpummelingphysical": {
+        "id": 624,
+        "category": 1,
+        "power": 0,
+        "type": 10
+    },
+    "alloutpummelingspecial": {
+        "id": 625,
+        "category": 2,
+        "power": 0,
+        "type": 10
+    },
+    "supersonicskystrikephysical": {
+        "id": 626,
+        "category": 1,
+        "power": 0,
+        "type": 11
+    },
+    "supersonicskystrikespecial": {
+        "id": 627,
+        "category": 2,
+        "power": 0,
+        "type": 11
+    },
+    "aciddownpourphysical": {
+        "id": 628,
+        "category": 1,
+        "power": 0,
+        "type": 12
+    },
+    "aciddownpourspecial": {
+        "id": 629,
+        "category": 2,
+        "power": 0,
+        "type": 12
+    },
+    "tectonicragephysical": {
+        "id": 630,
+        "category": 1,
+        "power": 0,
+        "type": 13
+    },
+    "tectonicragespecial": {
+        "id": 631,
+        "category": 2,
+        "power": 0,
+        "type": 13
+    },
+    "continentalcrushphysical": {
+        "id": 632,
+        "category": 1,
+        "power": 0,
+        "type": 14
+    },
+    "continentalcrushspecial": {
+        "id": 633,
+        "category": 2,
+        "power": 0,
+        "type": 14
+    },
+    "savagespinoutphysical": {
+        "id": 634,
+        "category": 1,
+        "power": 0,
+        "type": 15
+    },
+    "savagespinoutspecial": {
+        "id": 635,
+        "category": 2,
+        "power": 0,
+        "type": 15
+    },
+    "neverendingnightmarephysical": {
+        "id": 636,
+        "category": 1,
+        "power": 0,
+        "type": 16
+    },
+    "neverendingnightmarespecial": {
+        "id": 637,
+        "category": 2,
+        "power": 0,
+        "type": 16
+    },
+    "corkscrewcrashphysical": {
+        "id": 638,
+        "category": 1,
+        "power": 0,
+        "type": 17
+    },
+    "corkscrewcrashspecial": {
+        "id": 639,
+        "category": 2,
+        "power": 0,
+        "type": 17
+    },
+    "infernooverdrivephysical": {
+        "id": 640,
+        "category": 1,
+        "power": 0,
+        "type": 1
+    },
+    "infernooverdrivespecial": {
+        "id": 641,
+        "category": 2,
+        "power": 0,
+        "type": 1
+    },
+    "hydrovortexphysical": {
+        "id": 642,
+        "category": 1,
+        "power": 0,
+        "type": 2
+    },
+    "hydrovortexspecial": {
+        "id": 643,
+        "category": 2,
+        "power": 0,
+        "type": 2
+    },
+    "bloomdoomphysical": {
+        "id": 644,
+        "category": 1,
+        "power": 0,
+        "type": 3
+    },
+    "bloomdoomspecial": {
+        "id": 645,
+        "category": 2,
+        "power": 0,
+        "type": 3
+    },
+    "gigavolthavocphysical": {
+        "id": 646,
+        "category": 1,
+        "power": 0,
+        "type": 4
+    },
+    "gigavolthavocspecial": {
+        "id": 647,
+        "category": 2,
+        "power": 0,
+        "type": 4
+    },
+    "shatteredpsychephysical": {
+        "id": 648,
+        "category": 1,
+        "power": 0,
+        "type": 5
+    },
+    "shatteredpsychespecial": {
+        "id": 649,
+        "category": 2,
+        "power": 0,
+        "type": 5
+    },
+    "subzeroslammerphysical": {
+        "id": 650,
+        "category": 1,
+        "power": 0,
+        "type": 6
+    },
+    "subzeroslammerspecial": {
+        "id": 651,
+        "category": 2,
+        "power": 0,
+        "type": 6
+    },
+    "devastatingdrakephysical": {
+        "id": 652,
+        "category": 1,
+        "power": 0,
+        "type": 7
+    },
+    "devastatingdrakespecial": {
+        "id": 653,
+        "category": 2,
+        "power": 0,
+        "type": 7
+    },
+    "blackholeeclipsephysical": {
+        "id": 654,
+        "category": 1,
+        "power": 0,
+        "type": 8
+    },
+    "blackholeeclipsespecial": {
+        "id": 655,
+        "category": 2,
+        "power": 0,
+        "type": 8
+    },
+    "twinkletacklephysical": {
+        "id": 656,
+        "category": 1,
+        "power": 0,
+        "type": 9
+    },
+    "twinkletacklespecial": {
+        "id": 657,
+        "category": 2,
+        "power": 0,
+        "type": 9
+    },
+    "catastropika": {
+        "id": 658,
+        "category": 1,
+        "power": 210,
+        "type": 4
+    },
+    "shoreup": {
+        "id": 659,
+        "category": 0,
+        "power": 0,
+        "type": 13
+    },
+    "firstimpression": {
+        "id": 660,
+        "category": 1,
+        "power": 90,
+        "type": 15
+    },
+    "banefulbunker": {
+        "id": 661,
+        "category": 0,
+        "power": 0,
+        "type": 12
+    },
+    "spiritshackle": {
+        "id": 662,
+        "category": 1,
+        "power": 80,
+        "type": 16
+    },
+    "darkestlariat": {
+        "id": 663,
+        "category": 1,
+        "power": 85,
+        "type": 8
+    },
+    "sparklingaria": {
+        "id": 664,
+        "category": 2,
+        "power": 90,
+        "type": 2
+    },
+    "icehammer": {
+        "id": 665,
+        "category": 1,
+        "power": 100,
+        "type": 6
+    },
+    "floralhealing": {
+        "id": 666,
+        "category": 0,
+        "power": 0,
+        "type": 9
+    },
+    "highhorsepower": {
+        "id": 667,
+        "category": 1,
+        "power": 95,
+        "type": 13
+    },
+    "strengthsap": {
+        "id": 668,
+        "category": 0,
+        "power": 0,
+        "type": 3
+    },
+    "solarblade": {
+        "id": 669,
+        "category": 1,
+        "power": 125,
+        "type": 3
+    },
+    "leafage": {
+        "id": 670,
+        "category": 1,
+        "power": 40,
+        "type": 3
+    },
+    "spotlight": {
+        "id": 671,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "toxicthread": {
+        "id": 672,
+        "category": 0,
+        "power": 0,
+        "type": 12
+    },
+    "laserfocus": {
+        "id": 673,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "gearup": {
+        "id": 674,
+        "category": 0,
+        "power": 0,
+        "type": 17
+    },
+    "throatchop": {
+        "id": 675,
+        "category": 1,
+        "power": 80,
+        "type": 8
+    },
+    "pollenpuff": {
+        "id": 676,
+        "category": 2,
+        "power": 90,
+        "type": 15
+    },
+    "anchorshot": {
+        "id": 677,
+        "category": 1,
+        "power": 80,
+        "type": 17
+    },
+    "psychicterrain": {
+        "id": 678,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "lunge": {
+        "id": 679,
+        "category": 1,
+        "power": 80,
+        "type": 15
+    },
+    "firelash": {
+        "id": 680,
+        "category": 1,
+        "power": 80,
+        "type": 1
+    },
+    "powertrip": {
+        "id": 681,
+        "category": 1,
+        "power": 20,
+        "type": 8
+    },
+    "burnup": {
+        "id": 682,
+        "category": 2,
+        "power": 130,
+        "type": 1
+    },
+    "speedswap": {
+        "id": 683,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "smartstrike": {
+        "id": 684,
+        "category": 1,
+        "power": 70,
+        "type": 17
+    },
+    "purify": {
+        "id": 685,
+        "category": 0,
+        "power": 0,
+        "type": 12
+    },
+    "revelationdance": {
+        "id": 686,
+        "category": 2,
+        "power": 90,
+        "type": 0
+    },
+    "coreenforcer": {
+        "id": 687,
+        "category": 2,
+        "power": 100,
+        "type": 7
+    },
+    "tropkick": {
+        "id": 688,
+        "category": 1,
+        "power": 70,
+        "type": 3
+    },
+    "instruct": {
+        "id": 689,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "beakblast": {
+        "id": 690,
+        "category": 1,
+        "power": 100,
+        "type": 11
+    },
+    "clangingscales": {
+        "id": 691,
+        "category": 2,
+        "power": 110,
+        "type": 7
+    },
+    "dragonhammer": {
+        "id": 692,
+        "category": 1,
+        "power": 90,
+        "type": 7
+    },
+    "brutalswing": {
+        "id": 693,
+        "category": 1,
+        "power": 60,
+        "type": 8
+    },
+    "auroraveil": {
+        "id": 694,
+        "category": 0,
+        "power": 0,
+        "type": 6
+    },
+    "sinisterarrowraid": {
+        "id": 695,
+        "category": 1,
+        "power": 180,
+        "type": 16
+    },
+    "maliciousmoonsault": {
+        "id": 696,
+        "category": 1,
+        "power": 180,
+        "type": 8
+    },
+    "oceanicoperetta": {
+        "id": 697,
+        "category": 2,
+        "power": 195,
+        "type": 2
+    },
+    "guardianofalola": {
+        "id": 698,
+        "category": 2,
+        "power": 0,
+        "type": 9
+    },
+    "soulstealing7starstrike": {
+        "id": 699,
+        "category": 1,
+        "power": 195,
+        "type": 16
+    },
+    "stokedsparksurfer": {
+        "id": 700,
+        "category": 2,
+        "power": 175,
+        "type": 4
+    },
+    "pulverizingpancake": {
+        "id": 701,
+        "category": 1,
+        "power": 210,
+        "type": 0
+    },
+    "extremeevoboost": {
+        "id": 702,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "genesissupernova": {
+        "id": 703,
+        "category": 2,
+        "power": 185,
+        "type": 5
+    },
+    "shelltrap": {
+        "id": 704,
+        "category": 2,
+        "power": 150,
+        "type": 1
+    },
+    "fleurcannon": {
+        "id": 705,
+        "category": 2,
+        "power": 130,
+        "type": 9
+    },
+    "psychicfangs": {
+        "id": 706,
+        "category": 1,
+        "power": 85,
+        "type": 5
+    },
+    "stompingtantrum": {
+        "id": 707,
+        "category": 1,
+        "power": 75,
+        "type": 13
+    },
+    "shadowbone": {
+        "id": 708,
+        "category": 1,
+        "power": 85,
+        "type": 16
+    },
+    "accelerock": {
+        "id": 709,
+        "category": 1,
+        "power": 40,
+        "type": 14
+    },
+    "liquidation": {
+        "id": 710,
+        "category": 1,
+        "power": 85,
+        "type": 2
+    },
+    "prismaticlaser": {
+        "id": 711,
+        "category": 2,
+        "power": 160,
+        "type": 5
+    },
+    "spectralthief": {
+        "id": 712,
+        "category": 1,
+        "power": 90,
+        "type": 16
+    },
+    "sunsteelstrike": {
+        "id": 713,
+        "category": 1,
+        "power": 100,
+        "type": 17
+    },
+    "moongeistbeam": {
+        "id": 714,
+        "category": 2,
+        "power": 100,
+        "type": 16
+    },
+    "tearfullook": {
+        "id": 715,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "zingzap": {
+        "id": 716,
+        "category": 1,
+        "power": 80,
+        "type": 4
+    },
+    "naturesmadness": {
+        "id": 717,
+        "category": 2,
+        "power": 0,
+        "type": 9
+    },
+    "multiattack": {
+        "id": 718,
+        "category": 1,
+        "power": 120,
+        "type": 0
+    },
+    "10000000voltthunderbolt": {
+        "id": 719,
+        "category": 2,
+        "power": 195,
+        "type": 4
+    },
+    "mindblown": {
+        "id": 720,
+        "category": 2,
+        "power": 150,
+        "type": 1
+    },
+    "plasmafists": {
+        "id": 721,
+        "category": 1,
+        "power": 100,
+        "type": 4
+    },
+    "photongeyser": {
+        "id": 722,
+        "category": 2,
+        "power": 100,
+        "type": 5
+    },
+    "lightthatburnsthesky": {
+        "id": 723,
+        "category": 2,
+        "power": 200,
+        "type": 5
+    },
+    "searingsunrazesmash": {
+        "id": 724,
+        "category": 1,
+        "power": 200,
+        "type": 17
+    },
+    "menacingmoonrazemaelstrom": {
+        "id": 725,
+        "category": 2,
+        "power": 200,
+        "type": 16
+    },
+    "letssnuggleforever": {
+        "id": 726,
+        "category": 1,
+        "power": 190,
+        "type": 9
+    },
+    "splinteredstormshards": {
+        "id": 727,
+        "category": 1,
+        "power": 190,
+        "type": 14
+    },
+    "clangoroussoulblaze": {
+        "id": 728,
+        "category": 2,
+        "power": 185,
+        "type": 7
+    },
+    "zippyzap": {
+        "id": 729,
+        "category": 1,
+        "power": 80,
+        "type": 4
+    },
+    "splishysplash": {
+        "id": 730,
+        "category": 2,
+        "power": 90,
+        "type": 2
+    },
+    "floatyfall": {
+        "id": 731,
+        "category": 1,
+        "power": 90,
+        "type": 11
+    },
+    "pikapapow": {
+        "id": 732,
+        "category": 2,
+        "power": 0,
+        "type": 4
+    },
+    "bouncybubble": {
+        "id": 733,
+        "category": 2,
+        "power": 60,
+        "type": 2
+    },
+    "buzzybuzz": {
+        "id": 734,
+        "category": 2,
+        "power": 60,
+        "type": 4
+    },
+    "sizzlyslide": {
+        "id": 735,
+        "category": 1,
+        "power": 60,
+        "type": 1
+    },
+    "glitzyglow": {
+        "id": 736,
+        "category": 2,
+        "power": 80,
+        "type": 5
+    },
+    "baddybad": {
+        "id": 737,
+        "category": 2,
+        "power": 80,
+        "type": 8
+    },
+    "sappyseed": {
+        "id": 738,
+        "category": 1,
+        "power": 100,
+        "type": 3
+    },
+    "freezyfrost": {
+        "id": 739,
+        "category": 2,
+        "power": 100,
+        "type": 6
+    },
+    "sparklyswirl": {
+        "id": 740,
+        "category": 2,
+        "power": 120,
+        "type": 9
+    },
+    "veeveevolley": {
+        "id": 741,
+        "category": 1,
+        "power": 0,
+        "type": 0
+    },
+    "doubleironbash": {
+        "id": 742,
+        "category": 1,
+        "power": 60,
+        "type": 17
+    },
+    "maxguard": {
+        "id": 743,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "dynamaxcannon": {
+        "id": 744,
+        "category": 2,
+        "power": 100,
+        "type": 7
+    },
+    "snipeshot": {
+        "id": 745,
+        "category": 2,
+        "power": 80,
+        "type": 2
+    },
+    "jawlock": {
+        "id": 746,
+        "category": 1,
+        "power": 80,
+        "type": 8
+    },
+    "stuffcheeks": {
+        "id": 747,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "noretreat": {
+        "id": 748,
+        "category": 0,
+        "power": 0,
+        "type": 10
+    },
+    "tarshot": {
+        "id": 749,
+        "category": 0,
+        "power": 0,
+        "type": 14
+    },
+    "magicpowder": {
+        "id": 750,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "dragondarts": {
+        "id": 751,
+        "category": 1,
+        "power": 50,
+        "type": 7
+    },
+    "teatime": {
+        "id": 752,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "octolock": {
+        "id": 753,
+        "category": 0,
+        "power": 0,
+        "type": 10
+    },
+    "boltbeak": {
+        "id": 754,
+        "category": 1,
+        "power": 85,
+        "type": 4
+    },
+    "fishiousrend": {
+        "id": 755,
+        "category": 1,
+        "power": 85,
+        "type": 2
+    },
+    "courtchange": {
+        "id": 756,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "maxflare": {
+        "id": 757,
+        "category": 1,
+        "power": 100,
+        "type": 1
+    },
+    "maxflutterby": {
+        "id": 758,
+        "category": 1,
+        "power": 10,
+        "type": 15
+    },
+    "maxlightning": {
+        "id": 759,
+        "category": 1,
+        "power": 10,
+        "type": 4
+    },
+    "maxstrike": {
+        "id": 760,
+        "category": 1,
+        "power": 10,
+        "type": 0
+    },
+    "maxknuckle": {
+        "id": 761,
+        "category": 1,
+        "power": 10,
+        "type": 10
+    },
+    "maxphantasm": {
+        "id": 762,
+        "category": 1,
+        "power": 10,
+        "type": 16
+    },
+    "maxhailstorm": {
+        "id": 763,
+        "category": 1,
+        "power": 10,
+        "type": 6
+    },
+    "maxooze": {
+        "id": 764,
+        "category": 1,
+        "power": 10,
+        "type": 12
+    },
+    "maxgeyser": {
+        "id": 765,
+        "category": 1,
+        "power": 10,
+        "type": 2
+    },
+    "maxairstream": {
+        "id": 766,
+        "category": 1,
+        "power": 10,
+        "type": 11
+    },
+    "maxstarfall": {
+        "id": 767,
+        "category": 1,
+        "power": 10,
+        "type": 9
+    },
+    "maxwyrmwind": {
+        "id": 768,
+        "category": 1,
+        "power": 10,
+        "type": 7
+    },
+    "maxmindstorm": {
+        "id": 769,
+        "category": 1,
+        "power": 10,
+        "type": 5
+    },
+    "maxrockfall": {
+        "id": 770,
+        "category": 1,
+        "power": 10,
+        "type": 14
+    },
+    "maxquake": {
+        "id": 771,
+        "category": 1,
+        "power": 10,
+        "type": 13
+    },
+    "maxdarkness": {
+        "id": 772,
+        "category": 1,
+        "power": 10,
+        "type": 8
+    },
+    "maxovergrowth": {
+        "id": 773,
+        "category": 1,
+        "power": 10,
+        "type": 3
+    },
+    "maxsteelspike": {
+        "id": 774,
+        "category": 1,
+        "power": 10,
+        "type": 17
+    },
+    "clangoroussoul": {
+        "id": 775,
+        "category": 0,
+        "power": 0,
+        "type": 7
+    },
+    "bodypress": {
+        "id": 776,
+        "category": 1,
+        "power": 80,
+        "type": 10
+    },
+    "decorate": {
+        "id": 777,
+        "category": 0,
+        "power": 0,
+        "type": 9
+    },
+    "drumbeating": {
+        "id": 778,
+        "category": 1,
+        "power": 80,
+        "type": 3
+    },
+    "snaptrap": {
+        "id": 779,
+        "category": 1,
+        "power": 35,
+        "type": 3
+    },
+    "pyroball": {
+        "id": 780,
+        "category": 1,
+        "power": 120,
+        "type": 1
+    },
+    "behemothblade": {
+        "id": 781,
+        "category": 1,
+        "power": 100,
+        "type": 17
+    },
+    "behemothbash": {
+        "id": 782,
+        "category": 1,
+        "power": 100,
+        "type": 17
+    },
+    "aurawheel": {
+        "id": 783,
+        "category": 1,
+        "power": 110,
+        "type": 4
+    },
+    "breakingswipe": {
+        "id": 784,
+        "category": 1,
+        "power": 60,
+        "type": 7
+    },
+    "branchpoke": {
+        "id": 785,
+        "category": 1,
+        "power": 40,
+        "type": 3
+    },
+    "overdrive": {
+        "id": 786,
+        "category": 2,
+        "power": 80,
+        "type": 4
+    },
+    "appleacid": {
+        "id": 787,
+        "category": 2,
+        "power": 80,
+        "type": 3
+    },
+    "gravapple": {
+        "id": 788,
+        "category": 1,
+        "power": 80,
+        "type": 3
+    },
+    "spiritbreak": {
+        "id": 789,
+        "category": 1,
+        "power": 75,
+        "type": 9
+    },
+    "strangesteam": {
+        "id": 790,
+        "category": 2,
+        "power": 90,
+        "type": 9
+    },
+    "lifedew": {
+        "id": 791,
+        "category": 0,
+        "power": 0,
+        "type": 2
+    },
+    "obstruct": {
+        "id": 792,
+        "category": 0,
+        "power": 0,
+        "type": 8
+    },
+    "falsesurrender": {
+        "id": 793,
+        "category": 1,
+        "power": 80,
+        "type": 8
+    },
+    "meteorassault": {
+        "id": 794,
+        "category": 1,
+        "power": 150,
+        "type": 10
+    },
+    "eternabeam": {
+        "id": 795,
+        "category": 2,
+        "power": 160,
+        "type": 7
+    },
+    "steelbeam": {
+        "id": 796,
+        "category": 2,
+        "power": 140,
+        "type": 17
+    },
+    "expandingforce": {
+        "id": 797,
+        "category": 2,
+        "power": 80,
+        "type": 5
+    },
+    "steelroller": {
+        "id": 798,
+        "category": 1,
+        "power": 130,
+        "type": 17
+    },
+    "scaleshot": {
+        "id": 799,
+        "category": 1,
+        "power": 25,
+        "type": 7
+    },
+    "meteorbeam": {
+        "id": 800,
+        "category": 2,
+        "power": 120,
+        "type": 14
+    },
+    "shellsidearm": {
+        "id": 801,
+        "category": 2,
+        "power": 90,
+        "type": 12
+    },
+    "mistyexplosion": {
+        "id": 802,
+        "category": 2,
+        "power": 100,
+        "type": 9
+    },
+    "grassyglide": {
+        "id": 803,
+        "category": 1,
+        "power": 55,
+        "type": 3
+    },
+    "risingvoltage": {
+        "id": 804,
+        "category": 2,
+        "power": 70,
+        "type": 4
+    },
+    "terrainpulse": {
+        "id": 805,
+        "category": 2,
+        "power": 50,
+        "type": 0
+    },
+    "skittersmack": {
+        "id": 806,
+        "category": 1,
+        "power": 70,
+        "type": 15
+    },
+    "burningjealousy": {
+        "id": 807,
+        "category": 2,
+        "power": 70,
+        "type": 1
+    },
+    "lashout": {
+        "id": 808,
+        "category": 1,
+        "power": 75,
+        "type": 8
+    },
+    "poltergeist": {
+        "id": 809,
+        "category": 1,
+        "power": 110,
+        "type": 16
+    },
+    "corrosivegas": {
+        "id": 810,
+        "category": 0,
+        "power": 0,
+        "type": 12
+    },
+    "coaching": {
+        "id": 811,
+        "category": 0,
+        "power": 0,
+        "type": 10
+    },
+    "flipturn": {
+        "id": 812,
+        "category": 1,
+        "power": 60,
+        "type": 2
+    },
+    "tripleaxel": {
+        "id": 813,
+        "category": 1,
+        "power": 20,
+        "type": 6
+    },
+    "dualwingbeat": {
+        "id": 814,
+        "category": 1,
+        "power": 40,
+        "type": 11
+    },
+    "scorchingsands": {
+        "id": 815,
+        "category": 2,
+        "power": 70,
+        "type": 13
+    },
+    "junglehealing": {
+        "id": 816,
+        "category": 0,
+        "power": 0,
+        "type": 3
+    },
+    "wickedblow": {
+        "id": 817,
+        "category": 1,
+        "power": 75,
+        "type": 8
+    },
+    "surgingstrikes": {
+        "id": 818,
+        "category": 1,
+        "power": 25,
+        "type": 2
+    },
+    "thundercage": {
+        "id": 819,
+        "category": 2,
+        "power": 80,
+        "type": 4
+    },
+    "dragonenergy": {
+        "id": 820,
+        "category": 2,
+        "power": 150,
+        "type": 7
+    },
+    "freezingglare": {
+        "id": 821,
+        "category": 2,
+        "power": 90,
+        "type": 5
+    },
+    "fierywrath": {
+        "id": 822,
+        "category": 2,
+        "power": 90,
+        "type": 8
+    },
+    "thunderouskick": {
+        "id": 823,
+        "category": 1,
+        "power": 90,
+        "type": 10
+    },
+    "glaciallance": {
+        "id": 824,
+        "category": 1,
+        "power": 120,
+        "type": 6
+    },
+    "astralbarrage": {
+        "id": 825,
+        "category": 2,
+        "power": 120,
+        "type": 16
+    },
+    "eeriespell": {
+        "id": 826,
+        "category": 2,
+        "power": 80,
+        "type": 5
+    },
+    "direclaw": {
+        "id": 827,
+        "category": 1,
+        "power": 80,
+        "type": 12
+    },
+    "psyshieldbash": {
+        "id": 828,
+        "category": 1,
+        "power": 70,
+        "type": 5
+    },
+    "powershift": {
+        "id": 829,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "stoneaxe": {
+        "id": 830,
+        "category": 1,
+        "power": 65,
+        "type": 14
+    },
+    "springtidestorm": {
+        "id": 831,
+        "category": 2,
+        "power": 100,
+        "type": 9
+    },
+    "mysticalpower": {
+        "id": 832,
+        "category": 2,
+        "power": 70,
+        "type": 5
+    },
+    "ragingfury": {
+        "id": 833,
+        "category": 1,
+        "power": 120,
+        "type": 1
+    },
+    "wavecrash": {
+        "id": 834,
+        "category": 1,
+        "power": 120,
+        "type": 2
+    },
+    "chloroblast": {
+        "id": 835,
+        "category": 2,
+        "power": 150,
+        "type": 3
+    },
+    "mountaingale": {
+        "id": 836,
+        "category": 1,
+        "power": 100,
+        "type": 6
+    },
+    "victorydance": {
+        "id": 837,
+        "category": 0,
+        "power": 0,
+        "type": 10
+    },
+    "headlongrush": {
+        "id": 838,
+        "category": 1,
+        "power": 120,
+        "type": 13
+    },
+    "barbbarrage": {
+        "id": 839,
+        "category": 1,
+        "power": 60,
+        "type": 12
+    },
+    "esperwing": {
+        "id": 840,
+        "category": 2,
+        "power": 80,
+        "type": 5
+    },
+    "bittermalice": {
+        "id": 841,
+        "category": 2,
+        "power": 75,
+        "type": 16
+    },
+    "shelter": {
+        "id": 842,
+        "category": 0,
+        "power": 0,
+        "type": 17
+    },
+    "triplearrows": {
+        "id": 843,
+        "category": 1,
+        "power": 90,
+        "type": 10
+    },
+    "infernalparade": {
+        "id": 844,
+        "category": 2,
+        "power": 60,
+        "type": 16
+    },
+    "ceaselessedge": {
+        "id": 845,
+        "category": 1,
+        "power": 65,
+        "type": 8
+    },
+    "bleakwindstorm": {
+        "id": 846,
+        "category": 2,
+        "power": 100,
+        "type": 11
+    },
+    "wildboltstorm": {
+        "id": 847,
+        "category": 2,
+        "power": 100,
+        "type": 4
+    },
+    "sandsearstorm": {
+        "id": 848,
+        "category": 2,
+        "power": 100,
+        "type": 13
+    },
+    "lunarblessing": {
+        "id": 849,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "takeheart": {
+        "id": 850,
+        "category": 0,
+        "power": 0,
+        "type": 5
+    },
+    "terablast": {
+        "id": 851,
+        "category": 2,
+        "power": 80,
+        "type": 0
+    },
+    "silktrap": {
+        "id": 852,
+        "category": 0,
+        "power": 0,
+        "type": 15
+    },
+    "axekick": {
+        "id": 853,
+        "category": 1,
+        "power": 120,
+        "type": 10
+    },
+    "lastrespects": {
+        "id": 854,
+        "category": 1,
+        "power": 50,
+        "type": 16
+    },
+    "luminacrash": {
+        "id": 855,
+        "category": 2,
+        "power": 80,
+        "type": 5
+    },
+    "orderup": {
+        "id": 856,
+        "category": 1,
+        "power": 80,
+        "type": 7
+    },
+    "jetpunch": {
+        "id": 857,
+        "category": 1,
+        "power": 60,
+        "type": 2
+    },
+    "spicyextract": {
+        "id": 858,
+        "category": 0,
+        "power": 0,
+        "type": 3
+    },
+    "spinout": {
+        "id": 859,
+        "category": 1,
+        "power": 100,
+        "type": 17
+    },
+    "populationbomb": {
+        "id": 860,
+        "category": 1,
+        "power": 20,
+        "type": 0
+    },
+    "icespinner": {
+        "id": 861,
+        "category": 1,
+        "power": 80,
+        "type": 6
+    },
+    "glaiverush": {
+        "id": 862,
+        "category": 1,
+        "power": 120,
+        "type": 7
+    },
+    "revivalblessing": {
+        "id": 863,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "saltcure": {
+        "id": 864,
+        "category": 1,
+        "power": 40,
+        "type": 14
+    },
+    "tripledive": {
+        "id": 865,
+        "category": 1,
+        "power": 30,
+        "type": 2
+    },
+    "mortalspin": {
+        "id": 866,
+        "category": 1,
+        "power": 30,
+        "type": 12
+    },
+    "doodle": {
+        "id": 867,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "filletaway": {
+        "id": 868,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "kowtowcleave": {
+        "id": 869,
+        "category": 1,
+        "power": 85,
+        "type": 8
+    },
+    "flowertrick": {
+        "id": 870,
+        "category": 1,
+        "power": 70,
+        "type": 3
+    },
+    "torchsong": {
+        "id": 871,
+        "category": 2,
+        "power": 80,
+        "type": 1
+    },
+    "aquastep": {
+        "id": 872,
+        "category": 1,
+        "power": 80,
+        "type": 2
+    },
+    "ragingbull": {
+        "id": 873,
+        "category": 1,
+        "power": 90,
+        "type": 0
+    },
+    "makeitrain": {
+        "id": 874,
+        "category": 2,
+        "power": 120,
+        "type": 17
+    },
+    "psyblade": {
+        "id": 875,
+        "category": 1,
+        "power": 80,
+        "type": 5
+    },
+    "hydrosteam": {
+        "id": 876,
+        "category": 2,
+        "power": 80,
+        "type": 2
+    },
+    "ruination": {
+        "id": 877,
+        "category": 2,
+        "power": 1,
+        "type": 8
+    },
+    "collisioncourse": {
+        "id": 878,
+        "category": 1,
+        "power": 100,
+        "type": 10
+    },
+    "electrodrift": {
+        "id": 879,
+        "category": 2,
+        "power": 100,
+        "type": 4
+    },
+    "shedtail": {
+        "id": 880,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "chillyreception": {
+        "id": 881,
+        "category": 0,
+        "power": 0,
+        "type": 6
+    },
+    "tidyup": {
+        "id": 882,
+        "category": 0,
+        "power": 0,
+        "type": 0
+    },
+    "snowscape": {
+        "id": 883,
+        "category": 0,
+        "power": 0,
+        "type": 6
+    },
+    "pounce": {
+        "id": 884,
+        "category": 1,
+        "power": 50,
+        "type": 15
+    },
+    "trailblaze": {
+        "id": 885,
+        "category": 1,
+        "power": 50,
+        "type": 3
+    },
+    "chillingwater": {
+        "id": 886,
+        "category": 2,
+        "power": 50,
+        "type": 2
+    },
+    "hyperdrill": {
+        "id": 887,
+        "category": 1,
+        "power": 100,
+        "type": 0
+    },
+    "twinbeam": {
+        "id": 888,
+        "category": 2,
+        "power": 40,
+        "type": 5
+    },
+    "ragefist": {
+        "id": 889,
+        "category": 1,
+        "power": 50,
+        "type": 16
+    },
+    "armorcannon": {
+        "id": 890,
+        "category": 2,
+        "power": 120,
+        "type": 1
+    },
+    "bitterblade": {
+        "id": 891,
+        "category": 1,
+        "power": 90,
+        "type": 1
+    },
+    "doubleshock": {
+        "id": 892,
+        "category": 1,
+        "power": 120,
+        "type": 4
+    },
+    "gigatonhammer": {
+        "id": 893,
+        "category": 1,
+        "power": 160,
+        "type": 17
+    },
+    "comeuppance": {
+        "id": 894,
+        "category": 1,
+        "power": 1,
+        "type": 8
+    },
+    "aquacutter": {
+        "id": 895,
+        "category": 1,
+        "power": 70,
+        "type": 2
+    },
+    "blazingtorque": {
+        "id": 896,
+        "category": 1,
+        "power": 80,
+        "type": 1
+    },
+    "wickedtorque": {
+        "id": 897,
+        "category": 1,
+        "power": 80,
+        "type": 8
+    },
+    "noxioustorque": {
+        "id": 898,
+        "category": 1,
+        "power": 100,
+        "type": 12
+    },
+    "combattorque": {
+        "id": 899,
+        "category": 1,
+        "power": 100,
+        "type": 10
+    },
+    "magicaltorque": {
+        "id": 900,
+        "category": 1,
+        "power": 100,
+        "type": 9
+    },
+    "bloodmoon": {
+        "id": 901,
+        "category": 2,
+        "power": 140,
+        "type": 0
+    },
+    "matchagotcha": {
+        "id": 902,
+        "category": 2,
+        "power": 80,
+        "type": 3
+    },
+    "syrupbomb": {
+        "id": 903,
+        "category": 2,
+        "power": 60,
+        "type": 3
+    },
+    "ivycudgel": {
+        "id": 904,
+        "category": 1,
+        "power": 100,
+        "type": 3
+    },
+    "electroshot": {
+        "id": 905,
+        "category": 2,
+        "power": 130,
+        "type": 4
+    },
+    "terastarstorm": {
+        "id": 906,
+        "category": 2,
+        "power": 120,
+        "type": 0
+    },
+    "ficklebeam": {
+        "id": 907,
+        "category": 2,
+        "power": 80,
+        "type": 7
+    },
+    "burningbulwark": {
+        "id": 908,
+        "category": 0,
+        "power": 0,
+        "type": 1
+    },
+    "thunderclap": {
+        "id": 909,
+        "category": 2,
+        "power": 70,
+        "type": 4
+    },
+    "mightycleave": {
+        "id": 910,
+        "category": 1,
+        "power": 95,
+        "type": 14
+    },
+    "tachyoncutter": {
+        "id": 911,
+        "category": 2,
+        "power": 50,
+        "type": 17
+    },
+    "hardpress": {
+        "id": 912,
+        "category": 1,
+        "power": 0,
+        "type": 17
+    },
+    "dragoncheer": {
+        "id": 913,
+        "category": 0,
+        "power": 0,
+        "type": 7
+    },
+    "alluringvoice": {
+        "id": 914,
+        "category": 2,
+        "power": 80,
+        "type": 9
+    },
+    "temperflare": {
+        "id": 915,
+        "category": 1,
+        "power": 75,
+        "type": 1
+    },
+    "supercellslam": {
+        "id": 916,
+        "category": 1,
+        "power": 100,
+        "type": 4
+    },
+    "psychicnoise": {
+        "id": 917,
+        "category": 2,
+        "power": 75,
+        "type": 5
+    },
+    "upperhand": {
+        "id": 918,
+        "category": 1,
+        "power": 65,
+        "type": 10
+    },
+    "malignantchain": {
+        "id": 919,
+        "category": 2,
+        "power": 100,
+        "type": 12
+    }
+}
