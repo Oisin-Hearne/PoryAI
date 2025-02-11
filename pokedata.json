@@ -1,0 +1,7760 @@
+{
+    "bulbasaur": {
+        "id": 1,
+        "type1": 3,
+        "type2": 12,
+        "baseSpeed": 45
+    },
+    "ivysaur": {
+        "id": 2,
+        "type1": 3,
+        "type2": 12,
+        "baseSpeed": 60
+    },
+    "venusaur": {
+        "id": 3,
+        "type1": 3,
+        "type2": 12,
+        "baseSpeed": 80
+    },
+    "charmander": {
+        "id": 4,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 65
+    },
+    "charmeleon": {
+        "id": 5,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 80
+    },
+    "charizard": {
+        "id": 6,
+        "type1": 1,
+        "type2": 11,
+        "baseSpeed": 100
+    },
+    "squirtle": {
+        "id": 7,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 43
+    },
+    "wartortle": {
+        "id": 8,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 58
+    },
+    "blastoise": {
+        "id": 9,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 78
+    },
+    "caterpie": {
+        "id": 10,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 45
+    },
+    "metapod": {
+        "id": 11,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 30
+    },
+    "butterfree": {
+        "id": 12,
+        "type1": 15,
+        "type2": 11,
+        "baseSpeed": 70
+    },
+    "weedle": {
+        "id": 13,
+        "type1": 15,
+        "type2": 12,
+        "baseSpeed": 50
+    },
+    "kakuna": {
+        "id": 14,
+        "type1": 15,
+        "type2": 12,
+        "baseSpeed": 35
+    },
+    "beedrill": {
+        "id": 15,
+        "type1": 15,
+        "type2": 12,
+        "baseSpeed": 75
+    },
+    "pidgey": {
+        "id": 16,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 56
+    },
+    "pidgeotto": {
+        "id": 17,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 71
+    },
+    "pidgeot": {
+        "id": 18,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 101
+    },
+    "rattata": {
+        "id": 19,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 72
+    },
+    "raticate": {
+        "id": 20,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 97
+    },
+    "spearow": {
+        "id": 21,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 70
+    },
+    "fearow": {
+        "id": 22,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 100
+    },
+    "ekans": {
+        "id": 23,
+        "type1": 12,
+        "type2": 12,
+        "baseSpeed": 55
+    },
+    "arbok": {
+        "id": 24,
+        "type1": 12,
+        "type2": 12,
+        "baseSpeed": 80
+    },
+    "pikachu": {
+        "id": 25,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 90
+    },
+    "raichu": {
+        "id": 26,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 110
+    },
+    "sandshrew": {
+        "id": 27,
+        "type1": 13,
+        "type2": 13,
+        "baseSpeed": 40
+    },
+    "sandslash": {
+        "id": 28,
+        "type1": 13,
+        "type2": 13,
+        "baseSpeed": 65
+    },
+    "nidoranf": {
+        "id": 29,
+        "type1": 12,
+        "type2": 12,
+        "baseSpeed": 41
+    },
+    "nidorina": {
+        "id": 30,
+        "type1": 12,
+        "type2": 12,
+        "baseSpeed": 56
+    },
+    "nidoqueen": {
+        "id": 31,
+        "type1": 12,
+        "type2": 13,
+        "baseSpeed": 76
+    },
+    "nidoranm": {
+        "id": 32,
+        "type1": 12,
+        "type2": 12,
+        "baseSpeed": 50
+    },
+    "nidorino": {
+        "id": 33,
+        "type1": 12,
+        "type2": 12,
+        "baseSpeed": 65
+    },
+    "nidoking": {
+        "id": 34,
+        "type1": 12,
+        "type2": 13,
+        "baseSpeed": 85
+    },
+    "clefairy": {
+        "id": 35,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 35
+    },
+    "clefable": {
+        "id": 36,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 60
+    },
+    "vulpix": {
+        "id": 37,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 65
+    },
+    "ninetales": {
+        "id": 38,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 100
+    },
+    "jigglypuff": {
+        "id": 39,
+        "type1": 0,
+        "type2": 9,
+        "baseSpeed": 20
+    },
+    "wigglytuff": {
+        "id": 40,
+        "type1": 0,
+        "type2": 9,
+        "baseSpeed": 45
+    },
+    "zubat": {
+        "id": 41,
+        "type1": 12,
+        "type2": 11,
+        "baseSpeed": 55
+    },
+    "golbat": {
+        "id": 42,
+        "type1": 12,
+        "type2": 11,
+        "baseSpeed": 90
+    },
+    "oddish": {
+        "id": 43,
+        "type1": 3,
+        "type2": 12,
+        "baseSpeed": 30
+    },
+    "gloom": {
+        "id": 44,
+        "type1": 3,
+        "type2": 12,
+        "baseSpeed": 40
+    },
+    "vileplume": {
+        "id": 45,
+        "type1": 3,
+        "type2": 12,
+        "baseSpeed": 50
+    },
+    "paras": {
+        "id": 46,
+        "type1": 15,
+        "type2": 3,
+        "baseSpeed": 25
+    },
+    "parasect": {
+        "id": 47,
+        "type1": 15,
+        "type2": 3,
+        "baseSpeed": 30
+    },
+    "venonat": {
+        "id": 48,
+        "type1": 15,
+        "type2": 12,
+        "baseSpeed": 45
+    },
+    "venomoth": {
+        "id": 49,
+        "type1": 15,
+        "type2": 12,
+        "baseSpeed": 90
+    },
+    "diglett": {
+        "id": 50,
+        "type1": 13,
+        "type2": 13,
+        "baseSpeed": 95
+    },
+    "dugtrio": {
+        "id": 51,
+        "type1": 13,
+        "type2": 13,
+        "baseSpeed": 120
+    },
+    "meowth": {
+        "id": 52,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 90
+    },
+    "persian": {
+        "id": 53,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 115
+    },
+    "psyduck": {
+        "id": 54,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 55
+    },
+    "golduck": {
+        "id": 55,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 85
+    },
+    "mankey": {
+        "id": 56,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 70
+    },
+    "primeape": {
+        "id": 57,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 95
+    },
+    "growlithe": {
+        "id": 58,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 60
+    },
+    "arcanine": {
+        "id": 59,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 95
+    },
+    "poliwag": {
+        "id": 60,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 90
+    },
+    "poliwhirl": {
+        "id": 61,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 90
+    },
+    "poliwrath": {
+        "id": 62,
+        "type1": 2,
+        "type2": 10,
+        "baseSpeed": 70
+    },
+    "abra": {
+        "id": 63,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 90
+    },
+    "kadabra": {
+        "id": 64,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 105
+    },
+    "alakazam": {
+        "id": 65,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 120
+    },
+    "machop": {
+        "id": 66,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 35
+    },
+    "machoke": {
+        "id": 67,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 45
+    },
+    "machamp": {
+        "id": 68,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 55
+    },
+    "bellsprout": {
+        "id": 69,
+        "type1": 3,
+        "type2": 12,
+        "baseSpeed": 40
+    },
+    "weepinbell": {
+        "id": 70,
+        "type1": 3,
+        "type2": 12,
+        "baseSpeed": 55
+    },
+    "victreebel": {
+        "id": 71,
+        "type1": 3,
+        "type2": 12,
+        "baseSpeed": 70
+    },
+    "tentacool": {
+        "id": 72,
+        "type1": 2,
+        "type2": 12,
+        "baseSpeed": 70
+    },
+    "tentacruel": {
+        "id": 73,
+        "type1": 2,
+        "type2": 12,
+        "baseSpeed": 100
+    },
+    "geodude": {
+        "id": 74,
+        "type1": 14,
+        "type2": 13,
+        "baseSpeed": 20
+    },
+    "graveler": {
+        "id": 75,
+        "type1": 14,
+        "type2": 13,
+        "baseSpeed": 35
+    },
+    "golem": {
+        "id": 76,
+        "type1": 14,
+        "type2": 13,
+        "baseSpeed": 45
+    },
+    "ponyta": {
+        "id": 77,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 90
+    },
+    "rapidash": {
+        "id": 78,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 105
+    },
+    "slowpoke": {
+        "id": 79,
+        "type1": 2,
+        "type2": 5,
+        "baseSpeed": 15
+    },
+    "slowbro": {
+        "id": 80,
+        "type1": 2,
+        "type2": 5,
+        "baseSpeed": 30
+    },
+    "magnemite": {
+        "id": 81,
+        "type1": 4,
+        "type2": 17,
+        "baseSpeed": 45
+    },
+    "magneton": {
+        "id": 82,
+        "type1": 4,
+        "type2": 17,
+        "baseSpeed": 70
+    },
+    "farfetchd": {
+        "id": 83,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 60
+    },
+    "doduo": {
+        "id": 84,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 75
+    },
+    "dodrio": {
+        "id": 85,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 110
+    },
+    "seel": {
+        "id": 86,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 45
+    },
+    "dewgong": {
+        "id": 87,
+        "type1": 2,
+        "type2": 6,
+        "baseSpeed": 70
+    },
+    "grimer": {
+        "id": 88,
+        "type1": 12,
+        "type2": 12,
+        "baseSpeed": 25
+    },
+    "muk": {
+        "id": 89,
+        "type1": 12,
+        "type2": 12,
+        "baseSpeed": 50
+    },
+    "shellder": {
+        "id": 90,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 40
+    },
+    "cloyster": {
+        "id": 91,
+        "type1": 2,
+        "type2": 6,
+        "baseSpeed": 70
+    },
+    "gastly": {
+        "id": 92,
+        "type1": 16,
+        "type2": 12,
+        "baseSpeed": 80
+    },
+    "haunter": {
+        "id": 93,
+        "type1": 16,
+        "type2": 12,
+        "baseSpeed": 95
+    },
+    "gengar": {
+        "id": 94,
+        "type1": 16,
+        "type2": 12,
+        "baseSpeed": 110
+    },
+    "onix": {
+        "id": 95,
+        "type1": 14,
+        "type2": 13,
+        "baseSpeed": 70
+    },
+    "drowzee": {
+        "id": 96,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 42
+    },
+    "hypno": {
+        "id": 97,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 67
+    },
+    "krabby": {
+        "id": 98,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 50
+    },
+    "kingler": {
+        "id": 99,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 75
+    },
+    "voltorb": {
+        "id": 100,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 100
+    },
+    "electrode": {
+        "id": 101,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 150
+    },
+    "exeggcute": {
+        "id": 102,
+        "type1": 3,
+        "type2": 5,
+        "baseSpeed": 40
+    },
+    "exeggutor": {
+        "id": 103,
+        "type1": 3,
+        "type2": 5,
+        "baseSpeed": 55
+    },
+    "cubone": {
+        "id": 104,
+        "type1": 13,
+        "type2": 13,
+        "baseSpeed": 35
+    },
+    "marowak": {
+        "id": 105,
+        "type1": 13,
+        "type2": 13,
+        "baseSpeed": 45
+    },
+    "hitmonlee": {
+        "id": 106,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 87
+    },
+    "hitmonchan": {
+        "id": 107,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 76
+    },
+    "lickitung": {
+        "id": 108,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 30
+    },
+    "koffing": {
+        "id": 109,
+        "type1": 12,
+        "type2": 12,
+        "baseSpeed": 35
+    },
+    "weezing": {
+        "id": 110,
+        "type1": 12,
+        "type2": 12,
+        "baseSpeed": 60
+    },
+    "rhyhorn": {
+        "id": 111,
+        "type1": 13,
+        "type2": 14,
+        "baseSpeed": 25
+    },
+    "rhydon": {
+        "id": 112,
+        "type1": 13,
+        "type2": 14,
+        "baseSpeed": 40
+    },
+    "chansey": {
+        "id": 113,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 50
+    },
+    "tangela": {
+        "id": 114,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 60
+    },
+    "kangaskhan": {
+        "id": 115,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 90
+    },
+    "horsea": {
+        "id": 116,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 60
+    },
+    "seadra": {
+        "id": 117,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 85
+    },
+    "goldeen": {
+        "id": 118,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 63
+    },
+    "seaking": {
+        "id": 119,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 68
+    },
+    "staryu": {
+        "id": 120,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 85
+    },
+    "starmie": {
+        "id": 121,
+        "type1": 2,
+        "type2": 5,
+        "baseSpeed": 115
+    },
+    "mrmime": {
+        "id": 122,
+        "type1": 5,
+        "type2": 9,
+        "baseSpeed": 90
+    },
+    "scyther": {
+        "id": 123,
+        "type1": 15,
+        "type2": 11,
+        "baseSpeed": 105
+    },
+    "jynx": {
+        "id": 124,
+        "type1": 6,
+        "type2": 5,
+        "baseSpeed": 95
+    },
+    "electabuzz": {
+        "id": 125,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 105
+    },
+    "magmar": {
+        "id": 126,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 93
+    },
+    "pinsir": {
+        "id": 127,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 85
+    },
+    "tauros": {
+        "id": 128,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 110
+    },
+    "magikarp": {
+        "id": 129,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 80
+    },
+    "gyarados": {
+        "id": 130,
+        "type1": 2,
+        "type2": 11,
+        "baseSpeed": 81
+    },
+    "lapras": {
+        "id": 131,
+        "type1": 2,
+        "type2": 6,
+        "baseSpeed": 60
+    },
+    "ditto": {
+        "id": 132,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 48
+    },
+    "eevee": {
+        "id": 133,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 55
+    },
+    "vaporeon": {
+        "id": 134,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 65
+    },
+    "jolteon": {
+        "id": 135,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 130
+    },
+    "flareon": {
+        "id": 136,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 65
+    },
+    "porygon": {
+        "id": 137,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 40
+    },
+    "omanyte": {
+        "id": 138,
+        "type1": 14,
+        "type2": 2,
+        "baseSpeed": 35
+    },
+    "omastar": {
+        "id": 139,
+        "type1": 14,
+        "type2": 2,
+        "baseSpeed": 55
+    },
+    "kabuto": {
+        "id": 140,
+        "type1": 14,
+        "type2": 2,
+        "baseSpeed": 55
+    },
+    "kabutops": {
+        "id": 141,
+        "type1": 14,
+        "type2": 2,
+        "baseSpeed": 80
+    },
+    "aerodactyl": {
+        "id": 142,
+        "type1": 14,
+        "type2": 11,
+        "baseSpeed": 130
+    },
+    "snorlax": {
+        "id": 143,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 30
+    },
+    "articuno": {
+        "id": 144,
+        "type1": 6,
+        "type2": 11,
+        "baseSpeed": 85
+    },
+    "zapdos": {
+        "id": 145,
+        "type1": 4,
+        "type2": 11,
+        "baseSpeed": 100
+    },
+    "moltres": {
+        "id": 146,
+        "type1": 1,
+        "type2": 11,
+        "baseSpeed": 90
+    },
+    "dratini": {
+        "id": 147,
+        "type1": 7,
+        "type2": 7,
+        "baseSpeed": 50
+    },
+    "dragonair": {
+        "id": 148,
+        "type1": 7,
+        "type2": 7,
+        "baseSpeed": 70
+    },
+    "dragonite": {
+        "id": 149,
+        "type1": 7,
+        "type2": 11,
+        "baseSpeed": 80
+    },
+    "mewtwo": {
+        "id": 150,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 130
+    },
+    "mew": {
+        "id": 151,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 100
+    },
+    "chikorita": {
+        "id": 152,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 45
+    },
+    "bayleef": {
+        "id": 153,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 60
+    },
+    "meganium": {
+        "id": 154,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 80
+    },
+    "cyndaquil": {
+        "id": 155,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 65
+    },
+    "quilava": {
+        "id": 156,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 80
+    },
+    "typhlosion": {
+        "id": 157,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 100
+    },
+    "totodile": {
+        "id": 158,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 43
+    },
+    "croconaw": {
+        "id": 159,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 58
+    },
+    "feraligatr": {
+        "id": 160,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 78
+    },
+    "sentret": {
+        "id": 161,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 20
+    },
+    "furret": {
+        "id": 162,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 90
+    },
+    "hoothoot": {
+        "id": 163,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 50
+    },
+    "noctowl": {
+        "id": 164,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 70
+    },
+    "ledyba": {
+        "id": 165,
+        "type1": 15,
+        "type2": 11,
+        "baseSpeed": 55
+    },
+    "ledian": {
+        "id": 166,
+        "type1": 15,
+        "type2": 11,
+        "baseSpeed": 85
+    },
+    "spinarak": {
+        "id": 167,
+        "type1": 15,
+        "type2": 12,
+        "baseSpeed": 30
+    },
+    "ariados": {
+        "id": 168,
+        "type1": 15,
+        "type2": 12,
+        "baseSpeed": 40
+    },
+    "crobat": {
+        "id": 169,
+        "type1": 12,
+        "type2": 11,
+        "baseSpeed": 130
+    },
+    "chinchou": {
+        "id": 170,
+        "type1": 2,
+        "type2": 4,
+        "baseSpeed": 67
+    },
+    "lanturn": {
+        "id": 171,
+        "type1": 2,
+        "type2": 4,
+        "baseSpeed": 67
+    },
+    "pichu": {
+        "id": 172,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 60
+    },
+    "cleffa": {
+        "id": 173,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 15
+    },
+    "igglybuff": {
+        "id": 174,
+        "type1": 0,
+        "type2": 9,
+        "baseSpeed": 15
+    },
+    "togepi": {
+        "id": 175,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 20
+    },
+    "togetic": {
+        "id": 176,
+        "type1": 9,
+        "type2": 11,
+        "baseSpeed": 40
+    },
+    "natu": {
+        "id": 177,
+        "type1": 5,
+        "type2": 11,
+        "baseSpeed": 70
+    },
+    "xatu": {
+        "id": 178,
+        "type1": 5,
+        "type2": 11,
+        "baseSpeed": 95
+    },
+    "mareep": {
+        "id": 179,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 35
+    },
+    "flaaffy": {
+        "id": 180,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 45
+    },
+    "ampharos": {
+        "id": 181,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 55
+    },
+    "bellossom": {
+        "id": 182,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 50
+    },
+    "marill": {
+        "id": 183,
+        "type1": 2,
+        "type2": 9,
+        "baseSpeed": 40
+    },
+    "azumarill": {
+        "id": 184,
+        "type1": 2,
+        "type2": 9,
+        "baseSpeed": 50
+    },
+    "sudowoodo": {
+        "id": 185,
+        "type1": 14,
+        "type2": 14,
+        "baseSpeed": 30
+    },
+    "politoed": {
+        "id": 186,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 70
+    },
+    "hoppip": {
+        "id": 187,
+        "type1": 3,
+        "type2": 11,
+        "baseSpeed": 50
+    },
+    "skiploom": {
+        "id": 188,
+        "type1": 3,
+        "type2": 11,
+        "baseSpeed": 80
+    },
+    "jumpluff": {
+        "id": 189,
+        "type1": 3,
+        "type2": 11,
+        "baseSpeed": 110
+    },
+    "aipom": {
+        "id": 190,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 85
+    },
+    "sunkern": {
+        "id": 191,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 30
+    },
+    "sunflora": {
+        "id": 192,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 30
+    },
+    "yanma": {
+        "id": 193,
+        "type1": 15,
+        "type2": 11,
+        "baseSpeed": 95
+    },
+    "wooper": {
+        "id": 194,
+        "type1": 2,
+        "type2": 13,
+        "baseSpeed": 15
+    },
+    "quagsire": {
+        "id": 195,
+        "type1": 2,
+        "type2": 13,
+        "baseSpeed": 35
+    },
+    "espeon": {
+        "id": 196,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 110
+    },
+    "umbreon": {
+        "id": 197,
+        "type1": 8,
+        "type2": 8,
+        "baseSpeed": 65
+    },
+    "murkrow": {
+        "id": 198,
+        "type1": 8,
+        "type2": 11,
+        "baseSpeed": 91
+    },
+    "slowking": {
+        "id": 199,
+        "type1": 2,
+        "type2": 5,
+        "baseSpeed": 30
+    },
+    "misdreavus": {
+        "id": 200,
+        "type1": 16,
+        "type2": 16,
+        "baseSpeed": 85
+    },
+    "unown": {
+        "id": 201,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 48
+    },
+    "wobbuffet": {
+        "id": 202,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 33
+    },
+    "girafarig": {
+        "id": 203,
+        "type1": 0,
+        "type2": 5,
+        "baseSpeed": 85
+    },
+    "pineco": {
+        "id": 204,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 15
+    },
+    "forretress": {
+        "id": 205,
+        "type1": 15,
+        "type2": 17,
+        "baseSpeed": 40
+    },
+    "dunsparce": {
+        "id": 206,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 45
+    },
+    "gligar": {
+        "id": 207,
+        "type1": 13,
+        "type2": 11,
+        "baseSpeed": 85
+    },
+    "steelix": {
+        "id": 208,
+        "type1": 17,
+        "type2": 13,
+        "baseSpeed": 30
+    },
+    "snubbull": {
+        "id": 209,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 30
+    },
+    "granbull": {
+        "id": 210,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 45
+    },
+    "qwilfish": {
+        "id": 211,
+        "type1": 2,
+        "type2": 12,
+        "baseSpeed": 85
+    },
+    "scizor": {
+        "id": 212,
+        "type1": 15,
+        "type2": 17,
+        "baseSpeed": 65
+    },
+    "shuckle": {
+        "id": 213,
+        "type1": 15,
+        "type2": 14,
+        "baseSpeed": 5
+    },
+    "heracross": {
+        "id": 214,
+        "type1": 15,
+        "type2": 10,
+        "baseSpeed": 85
+    },
+    "sneasel": {
+        "id": 215,
+        "type1": 8,
+        "type2": 6,
+        "baseSpeed": 115
+    },
+    "teddiursa": {
+        "id": 216,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 40
+    },
+    "ursaring": {
+        "id": 217,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 55
+    },
+    "slugma": {
+        "id": 218,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 20
+    },
+    "magcargo": {
+        "id": 219,
+        "type1": 1,
+        "type2": 14,
+        "baseSpeed": 30
+    },
+    "swinub": {
+        "id": 220,
+        "type1": 6,
+        "type2": 13,
+        "baseSpeed": 50
+    },
+    "piloswine": {
+        "id": 221,
+        "type1": 6,
+        "type2": 13,
+        "baseSpeed": 50
+    },
+    "corsola": {
+        "id": 222,
+        "type1": 2,
+        "type2": 14,
+        "baseSpeed": 35
+    },
+    "remoraid": {
+        "id": 223,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 65
+    },
+    "octillery": {
+        "id": 224,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 45
+    },
+    "delibird": {
+        "id": 225,
+        "type1": 6,
+        "type2": 11,
+        "baseSpeed": 75
+    },
+    "mantine": {
+        "id": 226,
+        "type1": 2,
+        "type2": 11,
+        "baseSpeed": 70
+    },
+    "skarmory": {
+        "id": 227,
+        "type1": 17,
+        "type2": 11,
+        "baseSpeed": 70
+    },
+    "houndour": {
+        "id": 228,
+        "type1": 8,
+        "type2": 1,
+        "baseSpeed": 65
+    },
+    "houndoom": {
+        "id": 229,
+        "type1": 8,
+        "type2": 1,
+        "baseSpeed": 95
+    },
+    "kingdra": {
+        "id": 230,
+        "type1": 2,
+        "type2": 7,
+        "baseSpeed": 85
+    },
+    "phanpy": {
+        "id": 231,
+        "type1": 13,
+        "type2": 13,
+        "baseSpeed": 40
+    },
+    "donphan": {
+        "id": 232,
+        "type1": 13,
+        "type2": 13,
+        "baseSpeed": 50
+    },
+    "porygon2": {
+        "id": 233,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 60
+    },
+    "stantler": {
+        "id": 234,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 85
+    },
+    "smeargle": {
+        "id": 235,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 75
+    },
+    "tyrogue": {
+        "id": 236,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 35
+    },
+    "hitmontop": {
+        "id": 237,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 70
+    },
+    "smoochum": {
+        "id": 238,
+        "type1": 6,
+        "type2": 5,
+        "baseSpeed": 65
+    },
+    "elekid": {
+        "id": 239,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 95
+    },
+    "magby": {
+        "id": 240,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 83
+    },
+    "miltank": {
+        "id": 241,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 100
+    },
+    "blissey": {
+        "id": 242,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 55
+    },
+    "raikou": {
+        "id": 243,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 115
+    },
+    "entei": {
+        "id": 244,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 100
+    },
+    "suicune": {
+        "id": 245,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 85
+    },
+    "larvitar": {
+        "id": 246,
+        "type1": 14,
+        "type2": 13,
+        "baseSpeed": 41
+    },
+    "pupitar": {
+        "id": 247,
+        "type1": 14,
+        "type2": 13,
+        "baseSpeed": 51
+    },
+    "tyranitar": {
+        "id": 248,
+        "type1": 14,
+        "type2": 8,
+        "baseSpeed": 61
+    },
+    "lugia": {
+        "id": 249,
+        "type1": 5,
+        "type2": 11,
+        "baseSpeed": 110
+    },
+    "hooh": {
+        "id": 250,
+        "type1": 1,
+        "type2": 11,
+        "baseSpeed": 90
+    },
+    "celebi": {
+        "id": 251,
+        "type1": 5,
+        "type2": 3,
+        "baseSpeed": 100
+    },
+    "treecko": {
+        "id": 252,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 70
+    },
+    "grovyle": {
+        "id": 253,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 95
+    },
+    "sceptile": {
+        "id": 254,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 120
+    },
+    "torchic": {
+        "id": 255,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 45
+    },
+    "combusken": {
+        "id": 256,
+        "type1": 1,
+        "type2": 10,
+        "baseSpeed": 55
+    },
+    "blaziken": {
+        "id": 257,
+        "type1": 1,
+        "type2": 10,
+        "baseSpeed": 80
+    },
+    "mudkip": {
+        "id": 258,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 40
+    },
+    "marshtomp": {
+        "id": 259,
+        "type1": 2,
+        "type2": 13,
+        "baseSpeed": 50
+    },
+    "swampert": {
+        "id": 260,
+        "type1": 2,
+        "type2": 13,
+        "baseSpeed": 60
+    },
+    "poochyena": {
+        "id": 261,
+        "type1": 8,
+        "type2": 8,
+        "baseSpeed": 35
+    },
+    "mightyena": {
+        "id": 262,
+        "type1": 8,
+        "type2": 8,
+        "baseSpeed": 70
+    },
+    "zigzagoon": {
+        "id": 263,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 60
+    },
+    "linoone": {
+        "id": 264,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 100
+    },
+    "wurmple": {
+        "id": 265,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 20
+    },
+    "silcoon": {
+        "id": 266,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 15
+    },
+    "beautifly": {
+        "id": 267,
+        "type1": 15,
+        "type2": 11,
+        "baseSpeed": 65
+    },
+    "cascoon": {
+        "id": 268,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 15
+    },
+    "dustox": {
+        "id": 269,
+        "type1": 15,
+        "type2": 12,
+        "baseSpeed": 65
+    },
+    "lotad": {
+        "id": 270,
+        "type1": 2,
+        "type2": 3,
+        "baseSpeed": 30
+    },
+    "lombre": {
+        "id": 271,
+        "type1": 2,
+        "type2": 3,
+        "baseSpeed": 50
+    },
+    "ludicolo": {
+        "id": 272,
+        "type1": 2,
+        "type2": 3,
+        "baseSpeed": 70
+    },
+    "seedot": {
+        "id": 273,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 30
+    },
+    "nuzleaf": {
+        "id": 274,
+        "type1": 3,
+        "type2": 8,
+        "baseSpeed": 60
+    },
+    "shiftry": {
+        "id": 275,
+        "type1": 3,
+        "type2": 8,
+        "baseSpeed": 80
+    },
+    "taillow": {
+        "id": 276,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 85
+    },
+    "swellow": {
+        "id": 277,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 125
+    },
+    "wingull": {
+        "id": 278,
+        "type1": 2,
+        "type2": 11,
+        "baseSpeed": 85
+    },
+    "pelipper": {
+        "id": 279,
+        "type1": 2,
+        "type2": 11,
+        "baseSpeed": 65
+    },
+    "ralts": {
+        "id": 280,
+        "type1": 5,
+        "type2": 9,
+        "baseSpeed": 40
+    },
+    "kirlia": {
+        "id": 281,
+        "type1": 5,
+        "type2": 9,
+        "baseSpeed": 50
+    },
+    "gardevoir": {
+        "id": 282,
+        "type1": 5,
+        "type2": 9,
+        "baseSpeed": 80
+    },
+    "surskit": {
+        "id": 283,
+        "type1": 15,
+        "type2": 2,
+        "baseSpeed": 65
+    },
+    "masquerain": {
+        "id": 284,
+        "type1": 15,
+        "type2": 11,
+        "baseSpeed": 80
+    },
+    "shroomish": {
+        "id": 285,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 35
+    },
+    "breloom": {
+        "id": 286,
+        "type1": 3,
+        "type2": 10,
+        "baseSpeed": 70
+    },
+    "slakoth": {
+        "id": 287,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 30
+    },
+    "vigoroth": {
+        "id": 288,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 90
+    },
+    "slaking": {
+        "id": 289,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 100
+    },
+    "nincada": {
+        "id": 290,
+        "type1": 15,
+        "type2": 13,
+        "baseSpeed": 40
+    },
+    "ninjask": {
+        "id": 291,
+        "type1": 15,
+        "type2": 11,
+        "baseSpeed": 160
+    },
+    "shedinja": {
+        "id": 292,
+        "type1": 15,
+        "type2": 16,
+        "baseSpeed": 40
+    },
+    "whismur": {
+        "id": 293,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 28
+    },
+    "loudred": {
+        "id": 294,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 48
+    },
+    "exploud": {
+        "id": 295,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 68
+    },
+    "makuhita": {
+        "id": 296,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 25
+    },
+    "hariyama": {
+        "id": 297,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 50
+    },
+    "azurill": {
+        "id": 298,
+        "type1": 0,
+        "type2": 9,
+        "baseSpeed": 20
+    },
+    "nosepass": {
+        "id": 299,
+        "type1": 14,
+        "type2": 14,
+        "baseSpeed": 30
+    },
+    "skitty": {
+        "id": 300,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 50
+    },
+    "delcatty": {
+        "id": 301,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 90
+    },
+    "sableye": {
+        "id": 302,
+        "type1": 8,
+        "type2": 16,
+        "baseSpeed": 50
+    },
+    "mawile": {
+        "id": 303,
+        "type1": 17,
+        "type2": 9,
+        "baseSpeed": 50
+    },
+    "aron": {
+        "id": 304,
+        "type1": 17,
+        "type2": 14,
+        "baseSpeed": 30
+    },
+    "lairon": {
+        "id": 305,
+        "type1": 17,
+        "type2": 14,
+        "baseSpeed": 40
+    },
+    "aggron": {
+        "id": 306,
+        "type1": 17,
+        "type2": 14,
+        "baseSpeed": 50
+    },
+    "meditite": {
+        "id": 307,
+        "type1": 10,
+        "type2": 5,
+        "baseSpeed": 60
+    },
+    "medicham": {
+        "id": 308,
+        "type1": 10,
+        "type2": 5,
+        "baseSpeed": 80
+    },
+    "electrike": {
+        "id": 309,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 65
+    },
+    "manectric": {
+        "id": 310,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 105
+    },
+    "plusle": {
+        "id": 311,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 95
+    },
+    "minun": {
+        "id": 312,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 95
+    },
+    "volbeat": {
+        "id": 313,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 85
+    },
+    "illumise": {
+        "id": 314,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 85
+    },
+    "roselia": {
+        "id": 315,
+        "type1": 3,
+        "type2": 12,
+        "baseSpeed": 65
+    },
+    "gulpin": {
+        "id": 316,
+        "type1": 12,
+        "type2": 12,
+        "baseSpeed": 40
+    },
+    "swalot": {
+        "id": 317,
+        "type1": 12,
+        "type2": 12,
+        "baseSpeed": 55
+    },
+    "carvanha": {
+        "id": 318,
+        "type1": 2,
+        "type2": 8,
+        "baseSpeed": 65
+    },
+    "sharpedo": {
+        "id": 319,
+        "type1": 2,
+        "type2": 8,
+        "baseSpeed": 95
+    },
+    "wailmer": {
+        "id": 320,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 60
+    },
+    "wailord": {
+        "id": 321,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 60
+    },
+    "numel": {
+        "id": 322,
+        "type1": 1,
+        "type2": 13,
+        "baseSpeed": 35
+    },
+    "camerupt": {
+        "id": 323,
+        "type1": 1,
+        "type2": 13,
+        "baseSpeed": 40
+    },
+    "torkoal": {
+        "id": 324,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 20
+    },
+    "spoink": {
+        "id": 325,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 60
+    },
+    "grumpig": {
+        "id": 326,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 80
+    },
+    "spinda": {
+        "id": 327,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 60
+    },
+    "trapinch": {
+        "id": 328,
+        "type1": 13,
+        "type2": 13,
+        "baseSpeed": 10
+    },
+    "vibrava": {
+        "id": 329,
+        "type1": 13,
+        "type2": 7,
+        "baseSpeed": 70
+    },
+    "flygon": {
+        "id": 330,
+        "type1": 13,
+        "type2": 7,
+        "baseSpeed": 100
+    },
+    "cacnea": {
+        "id": 331,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 35
+    },
+    "cacturne": {
+        "id": 332,
+        "type1": 3,
+        "type2": 8,
+        "baseSpeed": 55
+    },
+    "swablu": {
+        "id": 333,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 50
+    },
+    "altaria": {
+        "id": 334,
+        "type1": 7,
+        "type2": 11,
+        "baseSpeed": 80
+    },
+    "zangoose": {
+        "id": 335,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 90
+    },
+    "seviper": {
+        "id": 336,
+        "type1": 12,
+        "type2": 12,
+        "baseSpeed": 65
+    },
+    "lunatone": {
+        "id": 337,
+        "type1": 14,
+        "type2": 5,
+        "baseSpeed": 70
+    },
+    "solrock": {
+        "id": 338,
+        "type1": 14,
+        "type2": 5,
+        "baseSpeed": 70
+    },
+    "barboach": {
+        "id": 339,
+        "type1": 2,
+        "type2": 13,
+        "baseSpeed": 60
+    },
+    "whiscash": {
+        "id": 340,
+        "type1": 2,
+        "type2": 13,
+        "baseSpeed": 60
+    },
+    "corphish": {
+        "id": 341,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 35
+    },
+    "crawdaunt": {
+        "id": 342,
+        "type1": 2,
+        "type2": 8,
+        "baseSpeed": 55
+    },
+    "baltoy": {
+        "id": 343,
+        "type1": 13,
+        "type2": 5,
+        "baseSpeed": 55
+    },
+    "claydol": {
+        "id": 344,
+        "type1": 13,
+        "type2": 5,
+        "baseSpeed": 75
+    },
+    "lileep": {
+        "id": 345,
+        "type1": 14,
+        "type2": 3,
+        "baseSpeed": 23
+    },
+    "cradily": {
+        "id": 346,
+        "type1": 14,
+        "type2": 3,
+        "baseSpeed": 43
+    },
+    "anorith": {
+        "id": 347,
+        "type1": 14,
+        "type2": 15,
+        "baseSpeed": 75
+    },
+    "armaldo": {
+        "id": 348,
+        "type1": 14,
+        "type2": 15,
+        "baseSpeed": 45
+    },
+    "feebas": {
+        "id": 349,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 80
+    },
+    "milotic": {
+        "id": 350,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 81
+    },
+    "castform": {
+        "id": 351,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 70
+    },
+    "kecleon": {
+        "id": 352,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 40
+    },
+    "shuppet": {
+        "id": 353,
+        "type1": 16,
+        "type2": 16,
+        "baseSpeed": 45
+    },
+    "banette": {
+        "id": 354,
+        "type1": 16,
+        "type2": 16,
+        "baseSpeed": 65
+    },
+    "duskull": {
+        "id": 355,
+        "type1": 16,
+        "type2": 16,
+        "baseSpeed": 25
+    },
+    "dusclops": {
+        "id": 356,
+        "type1": 16,
+        "type2": 16,
+        "baseSpeed": 25
+    },
+    "tropius": {
+        "id": 357,
+        "type1": 3,
+        "type2": 11,
+        "baseSpeed": 51
+    },
+    "chimecho": {
+        "id": 358,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 65
+    },
+    "absol": {
+        "id": 359,
+        "type1": 8,
+        "type2": 8,
+        "baseSpeed": 75
+    },
+    "wynaut": {
+        "id": 360,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 23
+    },
+    "snorunt": {
+        "id": 361,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 50
+    },
+    "glalie": {
+        "id": 362,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 80
+    },
+    "spheal": {
+        "id": 363,
+        "type1": 6,
+        "type2": 2,
+        "baseSpeed": 25
+    },
+    "sealeo": {
+        "id": 364,
+        "type1": 6,
+        "type2": 2,
+        "baseSpeed": 45
+    },
+    "walrein": {
+        "id": 365,
+        "type1": 6,
+        "type2": 2,
+        "baseSpeed": 65
+    },
+    "clamperl": {
+        "id": 366,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 32
+    },
+    "huntail": {
+        "id": 367,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 52
+    },
+    "gorebyss": {
+        "id": 368,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 52
+    },
+    "relicanth": {
+        "id": 369,
+        "type1": 2,
+        "type2": 14,
+        "baseSpeed": 55
+    },
+    "luvdisc": {
+        "id": 370,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 97
+    },
+    "bagon": {
+        "id": 371,
+        "type1": 7,
+        "type2": 7,
+        "baseSpeed": 50
+    },
+    "shelgon": {
+        "id": 372,
+        "type1": 7,
+        "type2": 7,
+        "baseSpeed": 50
+    },
+    "salamence": {
+        "id": 373,
+        "type1": 7,
+        "type2": 11,
+        "baseSpeed": 100
+    },
+    "beldum": {
+        "id": 374,
+        "type1": 17,
+        "type2": 5,
+        "baseSpeed": 30
+    },
+    "metang": {
+        "id": 375,
+        "type1": 17,
+        "type2": 5,
+        "baseSpeed": 50
+    },
+    "metagross": {
+        "id": 376,
+        "type1": 17,
+        "type2": 5,
+        "baseSpeed": 70
+    },
+    "regirock": {
+        "id": 377,
+        "type1": 14,
+        "type2": 14,
+        "baseSpeed": 50
+    },
+    "regice": {
+        "id": 378,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 50
+    },
+    "registeel": {
+        "id": 379,
+        "type1": 17,
+        "type2": 17,
+        "baseSpeed": 50
+    },
+    "latias": {
+        "id": 380,
+        "type1": 7,
+        "type2": 5,
+        "baseSpeed": 110
+    },
+    "latios": {
+        "id": 381,
+        "type1": 7,
+        "type2": 5,
+        "baseSpeed": 110
+    },
+    "kyogre": {
+        "id": 382,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 90
+    },
+    "groudon": {
+        "id": 383,
+        "type1": 13,
+        "type2": 13,
+        "baseSpeed": 90
+    },
+    "rayquaza": {
+        "id": 384,
+        "type1": 7,
+        "type2": 11,
+        "baseSpeed": 95
+    },
+    "jirachi": {
+        "id": 385,
+        "type1": 17,
+        "type2": 5,
+        "baseSpeed": 100
+    },
+    "deoxysnormal": {
+        "id": 386,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 150
+    },
+    "turtwig": {
+        "id": 387,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 31
+    },
+    "grotle": {
+        "id": 388,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 36
+    },
+    "torterra": {
+        "id": 389,
+        "type1": 3,
+        "type2": 13,
+        "baseSpeed": 56
+    },
+    "chimchar": {
+        "id": 390,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 61
+    },
+    "monferno": {
+        "id": 391,
+        "type1": 1,
+        "type2": 10,
+        "baseSpeed": 81
+    },
+    "infernape": {
+        "id": 392,
+        "type1": 1,
+        "type2": 10,
+        "baseSpeed": 108
+    },
+    "piplup": {
+        "id": 393,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 40
+    },
+    "prinplup": {
+        "id": 394,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 50
+    },
+    "empoleon": {
+        "id": 395,
+        "type1": 2,
+        "type2": 17,
+        "baseSpeed": 60
+    },
+    "starly": {
+        "id": 396,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 60
+    },
+    "staravia": {
+        "id": 397,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 80
+    },
+    "staraptor": {
+        "id": 398,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 100
+    },
+    "bidoof": {
+        "id": 399,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 31
+    },
+    "bibarel": {
+        "id": 400,
+        "type1": 0,
+        "type2": 2,
+        "baseSpeed": 71
+    },
+    "kricketot": {
+        "id": 401,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 25
+    },
+    "kricketune": {
+        "id": 402,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 65
+    },
+    "shinx": {
+        "id": 403,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 45
+    },
+    "luxio": {
+        "id": 404,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 60
+    },
+    "luxray": {
+        "id": 405,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 70
+    },
+    "budew": {
+        "id": 406,
+        "type1": 3,
+        "type2": 12,
+        "baseSpeed": 55
+    },
+    "roserade": {
+        "id": 407,
+        "type1": 3,
+        "type2": 12,
+        "baseSpeed": 90
+    },
+    "cranidos": {
+        "id": 408,
+        "type1": 14,
+        "type2": 14,
+        "baseSpeed": 58
+    },
+    "rampardos": {
+        "id": 409,
+        "type1": 14,
+        "type2": 14,
+        "baseSpeed": 58
+    },
+    "shieldon": {
+        "id": 410,
+        "type1": 14,
+        "type2": 17,
+        "baseSpeed": 30
+    },
+    "bastiodon": {
+        "id": 411,
+        "type1": 14,
+        "type2": 17,
+        "baseSpeed": 30
+    },
+    "burmy": {
+        "id": 412,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 36
+    },
+    "wormadamplant": {
+        "id": 413,
+        "type1": 15,
+        "type2": 3,
+        "baseSpeed": 36
+    },
+    "mothim": {
+        "id": 414,
+        "type1": 15,
+        "type2": 11,
+        "baseSpeed": 66
+    },
+    "combee": {
+        "id": 415,
+        "type1": 15,
+        "type2": 11,
+        "baseSpeed": 70
+    },
+    "vespiquen": {
+        "id": 416,
+        "type1": 15,
+        "type2": 11,
+        "baseSpeed": 40
+    },
+    "pachirisu": {
+        "id": 417,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 95
+    },
+    "buizel": {
+        "id": 418,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 85
+    },
+    "floatzel": {
+        "id": 419,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 115
+    },
+    "cherubi": {
+        "id": 420,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 35
+    },
+    "cherrim": {
+        "id": 421,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 85
+    },
+    "shellos": {
+        "id": 422,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 34
+    },
+    "gastrodon": {
+        "id": 423,
+        "type1": 2,
+        "type2": 13,
+        "baseSpeed": 39
+    },
+    "ambipom": {
+        "id": 424,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 115
+    },
+    "drifloon": {
+        "id": 425,
+        "type1": 16,
+        "type2": 11,
+        "baseSpeed": 70
+    },
+    "drifblim": {
+        "id": 426,
+        "type1": 16,
+        "type2": 11,
+        "baseSpeed": 80
+    },
+    "buneary": {
+        "id": 427,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 85
+    },
+    "lopunny": {
+        "id": 428,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 105
+    },
+    "mismagius": {
+        "id": 429,
+        "type1": 16,
+        "type2": 16,
+        "baseSpeed": 105
+    },
+    "honchkrow": {
+        "id": 430,
+        "type1": 8,
+        "type2": 11,
+        "baseSpeed": 71
+    },
+    "glameow": {
+        "id": 431,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 85
+    },
+    "purugly": {
+        "id": 432,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 112
+    },
+    "chingling": {
+        "id": 433,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 45
+    },
+    "stunky": {
+        "id": 434,
+        "type1": 12,
+        "type2": 8,
+        "baseSpeed": 74
+    },
+    "skuntank": {
+        "id": 435,
+        "type1": 12,
+        "type2": 8,
+        "baseSpeed": 84
+    },
+    "bronzor": {
+        "id": 436,
+        "type1": 17,
+        "type2": 5,
+        "baseSpeed": 23
+    },
+    "bronzong": {
+        "id": 437,
+        "type1": 17,
+        "type2": 5,
+        "baseSpeed": 33
+    },
+    "bonsly": {
+        "id": 438,
+        "type1": 14,
+        "type2": 14,
+        "baseSpeed": 10
+    },
+    "mimejr": {
+        "id": 439,
+        "type1": 5,
+        "type2": 9,
+        "baseSpeed": 60
+    },
+    "happiny": {
+        "id": 440,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 30
+    },
+    "chatot": {
+        "id": 441,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 91
+    },
+    "spiritomb": {
+        "id": 442,
+        "type1": 16,
+        "type2": 8,
+        "baseSpeed": 35
+    },
+    "gible": {
+        "id": 443,
+        "type1": 7,
+        "type2": 13,
+        "baseSpeed": 42
+    },
+    "gabite": {
+        "id": 444,
+        "type1": 7,
+        "type2": 13,
+        "baseSpeed": 82
+    },
+    "garchomp": {
+        "id": 445,
+        "type1": 7,
+        "type2": 13,
+        "baseSpeed": 102
+    },
+    "munchlax": {
+        "id": 446,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 5
+    },
+    "riolu": {
+        "id": 447,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 60
+    },
+    "lucario": {
+        "id": 448,
+        "type1": 10,
+        "type2": 17,
+        "baseSpeed": 90
+    },
+    "hippopotas": {
+        "id": 449,
+        "type1": 13,
+        "type2": 13,
+        "baseSpeed": 32
+    },
+    "hippowdon": {
+        "id": 450,
+        "type1": 13,
+        "type2": 13,
+        "baseSpeed": 47
+    },
+    "skorupi": {
+        "id": 451,
+        "type1": 12,
+        "type2": 15,
+        "baseSpeed": 65
+    },
+    "drapion": {
+        "id": 452,
+        "type1": 12,
+        "type2": 8,
+        "baseSpeed": 95
+    },
+    "croagunk": {
+        "id": 453,
+        "type1": 12,
+        "type2": 10,
+        "baseSpeed": 50
+    },
+    "toxicroak": {
+        "id": 454,
+        "type1": 12,
+        "type2": 10,
+        "baseSpeed": 85
+    },
+    "carnivine": {
+        "id": 455,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 46
+    },
+    "finneon": {
+        "id": 456,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 66
+    },
+    "lumineon": {
+        "id": 457,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 91
+    },
+    "mantyke": {
+        "id": 458,
+        "type1": 2,
+        "type2": 11,
+        "baseSpeed": 50
+    },
+    "snover": {
+        "id": 459,
+        "type1": 3,
+        "type2": 6,
+        "baseSpeed": 40
+    },
+    "abomasnow": {
+        "id": 460,
+        "type1": 3,
+        "type2": 6,
+        "baseSpeed": 60
+    },
+    "weavile": {
+        "id": 461,
+        "type1": 8,
+        "type2": 6,
+        "baseSpeed": 125
+    },
+    "magnezone": {
+        "id": 462,
+        "type1": 4,
+        "type2": 17,
+        "baseSpeed": 60
+    },
+    "lickilicky": {
+        "id": 463,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 50
+    },
+    "rhyperior": {
+        "id": 464,
+        "type1": 13,
+        "type2": 14,
+        "baseSpeed": 40
+    },
+    "tangrowth": {
+        "id": 465,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 50
+    },
+    "electivire": {
+        "id": 466,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 95
+    },
+    "magmortar": {
+        "id": 467,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 83
+    },
+    "togekiss": {
+        "id": 468,
+        "type1": 9,
+        "type2": 11,
+        "baseSpeed": 80
+    },
+    "yanmega": {
+        "id": 469,
+        "type1": 15,
+        "type2": 11,
+        "baseSpeed": 95
+    },
+    "leafeon": {
+        "id": 470,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 95
+    },
+    "glaceon": {
+        "id": 471,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 65
+    },
+    "gliscor": {
+        "id": 472,
+        "type1": 13,
+        "type2": 11,
+        "baseSpeed": 95
+    },
+    "mamoswine": {
+        "id": 473,
+        "type1": 6,
+        "type2": 13,
+        "baseSpeed": 80
+    },
+    "porygonz": {
+        "id": 474,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 90
+    },
+    "gallade": {
+        "id": 475,
+        "type1": 5,
+        "type2": 10,
+        "baseSpeed": 80
+    },
+    "probopass": {
+        "id": 476,
+        "type1": 14,
+        "type2": 17,
+        "baseSpeed": 40
+    },
+    "dusknoir": {
+        "id": 477,
+        "type1": 16,
+        "type2": 16,
+        "baseSpeed": 45
+    },
+    "froslass": {
+        "id": 478,
+        "type1": 6,
+        "type2": 16,
+        "baseSpeed": 110
+    },
+    "rotom": {
+        "id": 479,
+        "type1": 4,
+        "type2": 16,
+        "baseSpeed": 91
+    },
+    "uxie": {
+        "id": 480,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 95
+    },
+    "mesprit": {
+        "id": 481,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 80
+    },
+    "azelf": {
+        "id": 482,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 115
+    },
+    "dialga": {
+        "id": 483,
+        "type1": 17,
+        "type2": 7,
+        "baseSpeed": 90
+    },
+    "palkia": {
+        "id": 484,
+        "type1": 2,
+        "type2": 7,
+        "baseSpeed": 100
+    },
+    "heatran": {
+        "id": 485,
+        "type1": 1,
+        "type2": 17,
+        "baseSpeed": 77
+    },
+    "regigigas": {
+        "id": 486,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 100
+    },
+    "giratinaaltered": {
+        "id": 487,
+        "type1": 16,
+        "type2": 7,
+        "baseSpeed": 90
+    },
+    "cresselia": {
+        "id": 488,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 85
+    },
+    "phione": {
+        "id": 489,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 80
+    },
+    "manaphy": {
+        "id": 490,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 100
+    },
+    "darkrai": {
+        "id": 491,
+        "type1": 8,
+        "type2": 8,
+        "baseSpeed": 125
+    },
+    "shayminland": {
+        "id": 492,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 100
+    },
+    "arceus": {
+        "id": 493,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 120
+    },
+    "victini": {
+        "id": 494,
+        "type1": 5,
+        "type2": 1,
+        "baseSpeed": 100
+    },
+    "snivy": {
+        "id": 495,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 63
+    },
+    "servine": {
+        "id": 496,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 83
+    },
+    "serperior": {
+        "id": 497,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 113
+    },
+    "tepig": {
+        "id": 498,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 45
+    },
+    "pignite": {
+        "id": 499,
+        "type1": 1,
+        "type2": 10,
+        "baseSpeed": 55
+    },
+    "emboar": {
+        "id": 500,
+        "type1": 1,
+        "type2": 10,
+        "baseSpeed": 65
+    },
+    "oshawott": {
+        "id": 501,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 45
+    },
+    "dewott": {
+        "id": 502,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 60
+    },
+    "samurott": {
+        "id": 503,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 70
+    },
+    "patrat": {
+        "id": 504,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 42
+    },
+    "watchog": {
+        "id": 505,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 77
+    },
+    "lillipup": {
+        "id": 506,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 55
+    },
+    "herdier": {
+        "id": 507,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 60
+    },
+    "stoutland": {
+        "id": 508,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 80
+    },
+    "purrloin": {
+        "id": 509,
+        "type1": 8,
+        "type2": 8,
+        "baseSpeed": 66
+    },
+    "liepard": {
+        "id": 510,
+        "type1": 8,
+        "type2": 8,
+        "baseSpeed": 106
+    },
+    "pansage": {
+        "id": 511,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 64
+    },
+    "simisage": {
+        "id": 512,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 101
+    },
+    "pansear": {
+        "id": 513,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 64
+    },
+    "simisear": {
+        "id": 514,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 101
+    },
+    "panpour": {
+        "id": 515,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 64
+    },
+    "simipour": {
+        "id": 516,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 101
+    },
+    "munna": {
+        "id": 517,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 24
+    },
+    "musharna": {
+        "id": 518,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 29
+    },
+    "pidove": {
+        "id": 519,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 43
+    },
+    "tranquill": {
+        "id": 520,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 65
+    },
+    "unfezant": {
+        "id": 521,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 93
+    },
+    "blitzle": {
+        "id": 522,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 76
+    },
+    "zebstrika": {
+        "id": 523,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 116
+    },
+    "roggenrola": {
+        "id": 524,
+        "type1": 14,
+        "type2": 14,
+        "baseSpeed": 15
+    },
+    "boldore": {
+        "id": 525,
+        "type1": 14,
+        "type2": 14,
+        "baseSpeed": 20
+    },
+    "gigalith": {
+        "id": 526,
+        "type1": 14,
+        "type2": 14,
+        "baseSpeed": 25
+    },
+    "woobat": {
+        "id": 527,
+        "type1": 5,
+        "type2": 11,
+        "baseSpeed": 72
+    },
+    "swoobat": {
+        "id": 528,
+        "type1": 5,
+        "type2": 11,
+        "baseSpeed": 114
+    },
+    "drilbur": {
+        "id": 529,
+        "type1": 13,
+        "type2": 13,
+        "baseSpeed": 68
+    },
+    "excadrill": {
+        "id": 530,
+        "type1": 13,
+        "type2": 17,
+        "baseSpeed": 88
+    },
+    "audino": {
+        "id": 531,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 50
+    },
+    "timburr": {
+        "id": 532,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 35
+    },
+    "gurdurr": {
+        "id": 533,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 40
+    },
+    "conkeldurr": {
+        "id": 534,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 45
+    },
+    "tympole": {
+        "id": 535,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 64
+    },
+    "palpitoad": {
+        "id": 536,
+        "type1": 2,
+        "type2": 13,
+        "baseSpeed": 69
+    },
+    "seismitoad": {
+        "id": 537,
+        "type1": 2,
+        "type2": 13,
+        "baseSpeed": 74
+    },
+    "throh": {
+        "id": 538,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 45
+    },
+    "sawk": {
+        "id": 539,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 85
+    },
+    "sewaddle": {
+        "id": 540,
+        "type1": 15,
+        "type2": 3,
+        "baseSpeed": 42
+    },
+    "swadloon": {
+        "id": 541,
+        "type1": 15,
+        "type2": 3,
+        "baseSpeed": 42
+    },
+    "leavanny": {
+        "id": 542,
+        "type1": 15,
+        "type2": 3,
+        "baseSpeed": 92
+    },
+    "venipede": {
+        "id": 543,
+        "type1": 15,
+        "type2": 12,
+        "baseSpeed": 57
+    },
+    "whirlipede": {
+        "id": 544,
+        "type1": 15,
+        "type2": 12,
+        "baseSpeed": 47
+    },
+    "scolipede": {
+        "id": 545,
+        "type1": 15,
+        "type2": 12,
+        "baseSpeed": 112
+    },
+    "cottonee": {
+        "id": 546,
+        "type1": 3,
+        "type2": 9,
+        "baseSpeed": 66
+    },
+    "whimsicott": {
+        "id": 547,
+        "type1": 3,
+        "type2": 9,
+        "baseSpeed": 116
+    },
+    "petilil": {
+        "id": 548,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 30
+    },
+    "lilligant": {
+        "id": 549,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 90
+    },
+    "basculinredstriped": {
+        "id": 550,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 98
+    },
+    "sandile": {
+        "id": 551,
+        "type1": 13,
+        "type2": 8,
+        "baseSpeed": 65
+    },
+    "krokorok": {
+        "id": 552,
+        "type1": 13,
+        "type2": 8,
+        "baseSpeed": 74
+    },
+    "krookodile": {
+        "id": 553,
+        "type1": 13,
+        "type2": 8,
+        "baseSpeed": 92
+    },
+    "darumaka": {
+        "id": 554,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 50
+    },
+    "darmanitanstandard": {
+        "id": 555,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 95
+    },
+    "maractus": {
+        "id": 556,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 60
+    },
+    "dwebble": {
+        "id": 557,
+        "type1": 15,
+        "type2": 14,
+        "baseSpeed": 55
+    },
+    "crustle": {
+        "id": 558,
+        "type1": 15,
+        "type2": 14,
+        "baseSpeed": 45
+    },
+    "scraggy": {
+        "id": 559,
+        "type1": 8,
+        "type2": 10,
+        "baseSpeed": 48
+    },
+    "scrafty": {
+        "id": 560,
+        "type1": 8,
+        "type2": 10,
+        "baseSpeed": 58
+    },
+    "sigilyph": {
+        "id": 561,
+        "type1": 5,
+        "type2": 11,
+        "baseSpeed": 97
+    },
+    "yamask": {
+        "id": 562,
+        "type1": 16,
+        "type2": 16,
+        "baseSpeed": 30
+    },
+    "cofagrigus": {
+        "id": 563,
+        "type1": 16,
+        "type2": 16,
+        "baseSpeed": 30
+    },
+    "tirtouga": {
+        "id": 564,
+        "type1": 2,
+        "type2": 14,
+        "baseSpeed": 22
+    },
+    "carracosta": {
+        "id": 565,
+        "type1": 2,
+        "type2": 14,
+        "baseSpeed": 32
+    },
+    "archen": {
+        "id": 566,
+        "type1": 14,
+        "type2": 11,
+        "baseSpeed": 70
+    },
+    "archeops": {
+        "id": 567,
+        "type1": 14,
+        "type2": 11,
+        "baseSpeed": 110
+    },
+    "trubbish": {
+        "id": 568,
+        "type1": 12,
+        "type2": 12,
+        "baseSpeed": 65
+    },
+    "garbodor": {
+        "id": 569,
+        "type1": 12,
+        "type2": 12,
+        "baseSpeed": 75
+    },
+    "zorua": {
+        "id": 570,
+        "type1": 8,
+        "type2": 8,
+        "baseSpeed": 65
+    },
+    "zoroark": {
+        "id": 571,
+        "type1": 8,
+        "type2": 8,
+        "baseSpeed": 105
+    },
+    "minccino": {
+        "id": 572,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 75
+    },
+    "cinccino": {
+        "id": 573,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 115
+    },
+    "gothita": {
+        "id": 574,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 45
+    },
+    "gothorita": {
+        "id": 575,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 55
+    },
+    "gothitelle": {
+        "id": 576,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 65
+    },
+    "solosis": {
+        "id": 577,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 20
+    },
+    "duosion": {
+        "id": 578,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 30
+    },
+    "reuniclus": {
+        "id": 579,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 30
+    },
+    "ducklett": {
+        "id": 580,
+        "type1": 2,
+        "type2": 11,
+        "baseSpeed": 55
+    },
+    "swanna": {
+        "id": 581,
+        "type1": 2,
+        "type2": 11,
+        "baseSpeed": 98
+    },
+    "vanillite": {
+        "id": 582,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 44
+    },
+    "vanillish": {
+        "id": 583,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 59
+    },
+    "vanilluxe": {
+        "id": 584,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 79
+    },
+    "deerling": {
+        "id": 585,
+        "type1": 0,
+        "type2": 3,
+        "baseSpeed": 75
+    },
+    "sawsbuck": {
+        "id": 586,
+        "type1": 0,
+        "type2": 3,
+        "baseSpeed": 95
+    },
+    "emolga": {
+        "id": 587,
+        "type1": 4,
+        "type2": 11,
+        "baseSpeed": 103
+    },
+    "karrablast": {
+        "id": 588,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 60
+    },
+    "escavalier": {
+        "id": 589,
+        "type1": 15,
+        "type2": 17,
+        "baseSpeed": 20
+    },
+    "foongus": {
+        "id": 590,
+        "type1": 3,
+        "type2": 12,
+        "baseSpeed": 15
+    },
+    "amoonguss": {
+        "id": 591,
+        "type1": 3,
+        "type2": 12,
+        "baseSpeed": 30
+    },
+    "frillish": {
+        "id": 592,
+        "type1": 2,
+        "type2": 16,
+        "baseSpeed": 40
+    },
+    "jellicent": {
+        "id": 593,
+        "type1": 2,
+        "type2": 16,
+        "baseSpeed": 60
+    },
+    "alomomola": {
+        "id": 594,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 65
+    },
+    "joltik": {
+        "id": 595,
+        "type1": 15,
+        "type2": 4,
+        "baseSpeed": 65
+    },
+    "galvantula": {
+        "id": 596,
+        "type1": 15,
+        "type2": 4,
+        "baseSpeed": 108
+    },
+    "ferroseed": {
+        "id": 597,
+        "type1": 3,
+        "type2": 17,
+        "baseSpeed": 10
+    },
+    "ferrothorn": {
+        "id": 598,
+        "type1": 3,
+        "type2": 17,
+        "baseSpeed": 20
+    },
+    "klink": {
+        "id": 599,
+        "type1": 17,
+        "type2": 17,
+        "baseSpeed": 30
+    },
+    "klang": {
+        "id": 600,
+        "type1": 17,
+        "type2": 17,
+        "baseSpeed": 50
+    },
+    "klinklang": {
+        "id": 601,
+        "type1": 17,
+        "type2": 17,
+        "baseSpeed": 90
+    },
+    "tynamo": {
+        "id": 602,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 60
+    },
+    "eelektrik": {
+        "id": 603,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 40
+    },
+    "eelektross": {
+        "id": 604,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 50
+    },
+    "elgyem": {
+        "id": 605,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 30
+    },
+    "beheeyem": {
+        "id": 606,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 40
+    },
+    "litwick": {
+        "id": 607,
+        "type1": 16,
+        "type2": 1,
+        "baseSpeed": 20
+    },
+    "lampent": {
+        "id": 608,
+        "type1": 16,
+        "type2": 1,
+        "baseSpeed": 55
+    },
+    "chandelure": {
+        "id": 609,
+        "type1": 16,
+        "type2": 1,
+        "baseSpeed": 80
+    },
+    "axew": {
+        "id": 610,
+        "type1": 7,
+        "type2": 7,
+        "baseSpeed": 57
+    },
+    "fraxure": {
+        "id": 611,
+        "type1": 7,
+        "type2": 7,
+        "baseSpeed": 67
+    },
+    "haxorus": {
+        "id": 612,
+        "type1": 7,
+        "type2": 7,
+        "baseSpeed": 97
+    },
+    "cubchoo": {
+        "id": 613,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 40
+    },
+    "beartic": {
+        "id": 614,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 50
+    },
+    "cryogonal": {
+        "id": 615,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 105
+    },
+    "shelmet": {
+        "id": 616,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 25
+    },
+    "accelgor": {
+        "id": 617,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 145
+    },
+    "stunfisk": {
+        "id": 618,
+        "type1": 13,
+        "type2": 4,
+        "baseSpeed": 32
+    },
+    "mienfoo": {
+        "id": 619,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 65
+    },
+    "mienshao": {
+        "id": 620,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 105
+    },
+    "druddigon": {
+        "id": 621,
+        "type1": 7,
+        "type2": 7,
+        "baseSpeed": 48
+    },
+    "golett": {
+        "id": 622,
+        "type1": 13,
+        "type2": 16,
+        "baseSpeed": 35
+    },
+    "golurk": {
+        "id": 623,
+        "type1": 13,
+        "type2": 16,
+        "baseSpeed": 55
+    },
+    "pawniard": {
+        "id": 624,
+        "type1": 8,
+        "type2": 17,
+        "baseSpeed": 60
+    },
+    "bisharp": {
+        "id": 625,
+        "type1": 8,
+        "type2": 17,
+        "baseSpeed": 70
+    },
+    "bouffalant": {
+        "id": 626,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 55
+    },
+    "rufflet": {
+        "id": 627,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 60
+    },
+    "braviary": {
+        "id": 628,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 80
+    },
+    "vullaby": {
+        "id": 629,
+        "type1": 8,
+        "type2": 11,
+        "baseSpeed": 60
+    },
+    "mandibuzz": {
+        "id": 630,
+        "type1": 8,
+        "type2": 11,
+        "baseSpeed": 80
+    },
+    "heatmor": {
+        "id": 631,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 65
+    },
+    "durant": {
+        "id": 632,
+        "type1": 15,
+        "type2": 17,
+        "baseSpeed": 109
+    },
+    "deino": {
+        "id": 633,
+        "type1": 8,
+        "type2": 7,
+        "baseSpeed": 38
+    },
+    "zweilous": {
+        "id": 634,
+        "type1": 8,
+        "type2": 7,
+        "baseSpeed": 58
+    },
+    "hydreigon": {
+        "id": 635,
+        "type1": 8,
+        "type2": 7,
+        "baseSpeed": 98
+    },
+    "larvesta": {
+        "id": 636,
+        "type1": 15,
+        "type2": 1,
+        "baseSpeed": 60
+    },
+    "volcarona": {
+        "id": 637,
+        "type1": 15,
+        "type2": 1,
+        "baseSpeed": 100
+    },
+    "cobalion": {
+        "id": 638,
+        "type1": 17,
+        "type2": 10,
+        "baseSpeed": 108
+    },
+    "terrakion": {
+        "id": 639,
+        "type1": 14,
+        "type2": 10,
+        "baseSpeed": 108
+    },
+    "virizion": {
+        "id": 640,
+        "type1": 3,
+        "type2": 10,
+        "baseSpeed": 108
+    },
+    "tornadusincarnate": {
+        "id": 641,
+        "type1": 11,
+        "type2": 11,
+        "baseSpeed": 111
+    },
+    "thundurusincarnate": {
+        "id": 642,
+        "type1": 4,
+        "type2": 11,
+        "baseSpeed": 111
+    },
+    "reshiram": {
+        "id": 643,
+        "type1": 7,
+        "type2": 1,
+        "baseSpeed": 90
+    },
+    "zekrom": {
+        "id": 644,
+        "type1": 7,
+        "type2": 4,
+        "baseSpeed": 90
+    },
+    "landorusincarnate": {
+        "id": 645,
+        "type1": 13,
+        "type2": 11,
+        "baseSpeed": 101
+    },
+    "kyurem": {
+        "id": 646,
+        "type1": 7,
+        "type2": 6,
+        "baseSpeed": 95
+    },
+    "keldeoordinary": {
+        "id": 647,
+        "type1": 2,
+        "type2": 10,
+        "baseSpeed": 108
+    },
+    "meloettaaria": {
+        "id": 648,
+        "type1": 0,
+        "type2": 5,
+        "baseSpeed": 90
+    },
+    "genesect": {
+        "id": 649,
+        "type1": 15,
+        "type2": 17,
+        "baseSpeed": 99
+    },
+    "chespin": {
+        "id": 650,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 38
+    },
+    "quilladin": {
+        "id": 651,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 57
+    },
+    "chesnaught": {
+        "id": 652,
+        "type1": 3,
+        "type2": 10,
+        "baseSpeed": 64
+    },
+    "fennekin": {
+        "id": 653,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 60
+    },
+    "braixen": {
+        "id": 654,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 73
+    },
+    "delphox": {
+        "id": 655,
+        "type1": 1,
+        "type2": 5,
+        "baseSpeed": 104
+    },
+    "froakie": {
+        "id": 656,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 71
+    },
+    "frogadier": {
+        "id": 657,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 97
+    },
+    "greninja": {
+        "id": 658,
+        "type1": 2,
+        "type2": 8,
+        "baseSpeed": 122
+    },
+    "bunnelby": {
+        "id": 659,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 57
+    },
+    "diggersby": {
+        "id": 660,
+        "type1": 0,
+        "type2": 13,
+        "baseSpeed": 78
+    },
+    "fletchling": {
+        "id": 661,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 62
+    },
+    "fletchinder": {
+        "id": 662,
+        "type1": 1,
+        "type2": 11,
+        "baseSpeed": 84
+    },
+    "talonflame": {
+        "id": 663,
+        "type1": 1,
+        "type2": 11,
+        "baseSpeed": 126
+    },
+    "scatterbug": {
+        "id": 664,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 35
+    },
+    "spewpa": {
+        "id": 665,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 29
+    },
+    "vivillon": {
+        "id": 666,
+        "type1": 15,
+        "type2": 11,
+        "baseSpeed": 89
+    },
+    "litleo": {
+        "id": 667,
+        "type1": 1,
+        "type2": 0,
+        "baseSpeed": 72
+    },
+    "pyroar": {
+        "id": 668,
+        "type1": 1,
+        "type2": 0,
+        "baseSpeed": 106
+    },
+    "flabebe": {
+        "id": 669,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 42
+    },
+    "floette": {
+        "id": 670,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 52
+    },
+    "florges": {
+        "id": 671,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 75
+    },
+    "skiddo": {
+        "id": 672,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 52
+    },
+    "gogoat": {
+        "id": 673,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 68
+    },
+    "pancham": {
+        "id": 674,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 43
+    },
+    "pangoro": {
+        "id": 675,
+        "type1": 10,
+        "type2": 8,
+        "baseSpeed": 58
+    },
+    "furfrou": {
+        "id": 676,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 102
+    },
+    "espurr": {
+        "id": 677,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 68
+    },
+    "meowsticmale": {
+        "id": 678,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 104
+    },
+    "honedge": {
+        "id": 679,
+        "type1": 17,
+        "type2": 16,
+        "baseSpeed": 28
+    },
+    "doublade": {
+        "id": 680,
+        "type1": 17,
+        "type2": 16,
+        "baseSpeed": 35
+    },
+    "aegislashshield": {
+        "id": 681,
+        "type1": 17,
+        "type2": 16,
+        "baseSpeed": 60
+    },
+    "spritzee": {
+        "id": 682,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 23
+    },
+    "aromatisse": {
+        "id": 683,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 29
+    },
+    "swirlix": {
+        "id": 684,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 49
+    },
+    "slurpuff": {
+        "id": 685,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 72
+    },
+    "inkay": {
+        "id": 686,
+        "type1": 8,
+        "type2": 5,
+        "baseSpeed": 45
+    },
+    "malamar": {
+        "id": 687,
+        "type1": 8,
+        "type2": 5,
+        "baseSpeed": 73
+    },
+    "binacle": {
+        "id": 688,
+        "type1": 14,
+        "type2": 2,
+        "baseSpeed": 50
+    },
+    "barbaracle": {
+        "id": 689,
+        "type1": 14,
+        "type2": 2,
+        "baseSpeed": 68
+    },
+    "skrelp": {
+        "id": 690,
+        "type1": 12,
+        "type2": 2,
+        "baseSpeed": 30
+    },
+    "dragalge": {
+        "id": 691,
+        "type1": 12,
+        "type2": 7,
+        "baseSpeed": 44
+    },
+    "clauncher": {
+        "id": 692,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 44
+    },
+    "clawitzer": {
+        "id": 693,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 59
+    },
+    "helioptile": {
+        "id": 694,
+        "type1": 4,
+        "type2": 0,
+        "baseSpeed": 70
+    },
+    "heliolisk": {
+        "id": 695,
+        "type1": 4,
+        "type2": 0,
+        "baseSpeed": 109
+    },
+    "tyrunt": {
+        "id": 696,
+        "type1": 14,
+        "type2": 7,
+        "baseSpeed": 48
+    },
+    "tyrantrum": {
+        "id": 697,
+        "type1": 14,
+        "type2": 7,
+        "baseSpeed": 71
+    },
+    "amaura": {
+        "id": 698,
+        "type1": 14,
+        "type2": 6,
+        "baseSpeed": 46
+    },
+    "aurorus": {
+        "id": 699,
+        "type1": 14,
+        "type2": 6,
+        "baseSpeed": 58
+    },
+    "sylveon": {
+        "id": 700,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 60
+    },
+    "hawlucha": {
+        "id": 701,
+        "type1": 10,
+        "type2": 11,
+        "baseSpeed": 118
+    },
+    "dedenne": {
+        "id": 702,
+        "type1": 4,
+        "type2": 9,
+        "baseSpeed": 101
+    },
+    "carbink": {
+        "id": 703,
+        "type1": 14,
+        "type2": 9,
+        "baseSpeed": 50
+    },
+    "goomy": {
+        "id": 704,
+        "type1": 7,
+        "type2": 7,
+        "baseSpeed": 40
+    },
+    "sliggoo": {
+        "id": 705,
+        "type1": 7,
+        "type2": 7,
+        "baseSpeed": 60
+    },
+    "goodra": {
+        "id": 706,
+        "type1": 7,
+        "type2": 7,
+        "baseSpeed": 80
+    },
+    "klefki": {
+        "id": 707,
+        "type1": 17,
+        "type2": 9,
+        "baseSpeed": 75
+    },
+    "phantump": {
+        "id": 708,
+        "type1": 16,
+        "type2": 3,
+        "baseSpeed": 38
+    },
+    "trevenant": {
+        "id": 709,
+        "type1": 16,
+        "type2": 3,
+        "baseSpeed": 56
+    },
+    "pumpkabooaverage": {
+        "id": 710,
+        "type1": 16,
+        "type2": 3,
+        "baseSpeed": 51
+    },
+    "gourgeistaverage": {
+        "id": 711,
+        "type1": 16,
+        "type2": 3,
+        "baseSpeed": 84
+    },
+    "bergmite": {
+        "id": 712,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 28
+    },
+    "avalugg": {
+        "id": 713,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 28
+    },
+    "noibat": {
+        "id": 714,
+        "type1": 11,
+        "type2": 7,
+        "baseSpeed": 55
+    },
+    "noivern": {
+        "id": 715,
+        "type1": 11,
+        "type2": 7,
+        "baseSpeed": 123
+    },
+    "xerneas": {
+        "id": 716,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 99
+    },
+    "yveltal": {
+        "id": 717,
+        "type1": 8,
+        "type2": 11,
+        "baseSpeed": 99
+    },
+    "zygarde50": {
+        "id": 718,
+        "type1": 7,
+        "type2": 13,
+        "baseSpeed": 95
+    },
+    "diancie": {
+        "id": 719,
+        "type1": 14,
+        "type2": 9,
+        "baseSpeed": 50
+    },
+    "hoopa": {
+        "id": 720,
+        "type1": 5,
+        "type2": 16,
+        "baseSpeed": 70
+    },
+    "volcanion": {
+        "id": 721,
+        "type1": 1,
+        "type2": 2,
+        "baseSpeed": 70
+    },
+    "rowlet": {
+        "id": 722,
+        "type1": 3,
+        "type2": 11,
+        "baseSpeed": 42
+    },
+    "dartrix": {
+        "id": 723,
+        "type1": 3,
+        "type2": 11,
+        "baseSpeed": 52
+    },
+    "decidueye": {
+        "id": 724,
+        "type1": 3,
+        "type2": 16,
+        "baseSpeed": 70
+    },
+    "litten": {
+        "id": 725,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 70
+    },
+    "torracat": {
+        "id": 726,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 90
+    },
+    "incineroar": {
+        "id": 727,
+        "type1": 1,
+        "type2": 8,
+        "baseSpeed": 60
+    },
+    "popplio": {
+        "id": 728,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 40
+    },
+    "brionne": {
+        "id": 729,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 50
+    },
+    "primarina": {
+        "id": 730,
+        "type1": 2,
+        "type2": 9,
+        "baseSpeed": 60
+    },
+    "pikipek": {
+        "id": 731,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 65
+    },
+    "trumbeak": {
+        "id": 732,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 75
+    },
+    "toucannon": {
+        "id": 733,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 60
+    },
+    "yungoos": {
+        "id": 734,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 45
+    },
+    "gumshoos": {
+        "id": 735,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 45
+    },
+    "grubbin": {
+        "id": 736,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 46
+    },
+    "charjabug": {
+        "id": 737,
+        "type1": 15,
+        "type2": 4,
+        "baseSpeed": 36
+    },
+    "vikavolt": {
+        "id": 738,
+        "type1": 15,
+        "type2": 4,
+        "baseSpeed": 43
+    },
+    "crabrawler": {
+        "id": 739,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 63
+    },
+    "crabominable": {
+        "id": 740,
+        "type1": 10,
+        "type2": 6,
+        "baseSpeed": 43
+    },
+    "oricoriobaile": {
+        "id": 741,
+        "type1": 1,
+        "type2": 11,
+        "baseSpeed": 93
+    },
+    "cutiefly": {
+        "id": 742,
+        "type1": 15,
+        "type2": 9,
+        "baseSpeed": 84
+    },
+    "ribombee": {
+        "id": 743,
+        "type1": 15,
+        "type2": 9,
+        "baseSpeed": 124
+    },
+    "rockruff": {
+        "id": 744,
+        "type1": 14,
+        "type2": 14,
+        "baseSpeed": 60
+    },
+    "lycanrocmidday": {
+        "id": 745,
+        "type1": 14,
+        "type2": 14,
+        "baseSpeed": 112
+    },
+    "wishiwashisolo": {
+        "id": 746,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 40
+    },
+    "mareanie": {
+        "id": 747,
+        "type1": 12,
+        "type2": 2,
+        "baseSpeed": 45
+    },
+    "toxapex": {
+        "id": 748,
+        "type1": 12,
+        "type2": 2,
+        "baseSpeed": 35
+    },
+    "mudbray": {
+        "id": 749,
+        "type1": 13,
+        "type2": 13,
+        "baseSpeed": 45
+    },
+    "mudsdale": {
+        "id": 750,
+        "type1": 13,
+        "type2": 13,
+        "baseSpeed": 35
+    },
+    "dewpider": {
+        "id": 751,
+        "type1": 2,
+        "type2": 15,
+        "baseSpeed": 27
+    },
+    "araquanid": {
+        "id": 752,
+        "type1": 2,
+        "type2": 15,
+        "baseSpeed": 42
+    },
+    "fomantis": {
+        "id": 753,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 35
+    },
+    "lurantis": {
+        "id": 754,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 45
+    },
+    "morelull": {
+        "id": 755,
+        "type1": 3,
+        "type2": 9,
+        "baseSpeed": 15
+    },
+    "shiinotic": {
+        "id": 756,
+        "type1": 3,
+        "type2": 9,
+        "baseSpeed": 30
+    },
+    "salandit": {
+        "id": 757,
+        "type1": 12,
+        "type2": 1,
+        "baseSpeed": 77
+    },
+    "salazzle": {
+        "id": 758,
+        "type1": 12,
+        "type2": 1,
+        "baseSpeed": 117
+    },
+    "stufful": {
+        "id": 759,
+        "type1": 0,
+        "type2": 10,
+        "baseSpeed": 50
+    },
+    "bewear": {
+        "id": 760,
+        "type1": 0,
+        "type2": 10,
+        "baseSpeed": 60
+    },
+    "bounsweet": {
+        "id": 761,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 32
+    },
+    "steenee": {
+        "id": 762,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 62
+    },
+    "tsareena": {
+        "id": 763,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 72
+    },
+    "comfey": {
+        "id": 764,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 100
+    },
+    "oranguru": {
+        "id": 765,
+        "type1": 0,
+        "type2": 5,
+        "baseSpeed": 60
+    },
+    "passimian": {
+        "id": 766,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 80
+    },
+    "wimpod": {
+        "id": 767,
+        "type1": 15,
+        "type2": 2,
+        "baseSpeed": 80
+    },
+    "golisopod": {
+        "id": 768,
+        "type1": 15,
+        "type2": 2,
+        "baseSpeed": 40
+    },
+    "sandygast": {
+        "id": 769,
+        "type1": 16,
+        "type2": 13,
+        "baseSpeed": 15
+    },
+    "palossand": {
+        "id": 770,
+        "type1": 16,
+        "type2": 13,
+        "baseSpeed": 35
+    },
+    "pyukumuku": {
+        "id": 771,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 5
+    },
+    "typenull": {
+        "id": 772,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 59
+    },
+    "silvally": {
+        "id": 773,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 95
+    },
+    "miniorredmeteor": {
+        "id": 774,
+        "type1": 14,
+        "type2": 11,
+        "baseSpeed": 60
+    },
+    "komala": {
+        "id": 775,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 65
+    },
+    "turtonator": {
+        "id": 776,
+        "type1": 1,
+        "type2": 7,
+        "baseSpeed": 36
+    },
+    "togedemaru": {
+        "id": 777,
+        "type1": 4,
+        "type2": 17,
+        "baseSpeed": 96
+    },
+    "mimikyudisguised": {
+        "id": 778,
+        "type1": 16,
+        "type2": 9,
+        "baseSpeed": 96
+    },
+    "bruxish": {
+        "id": 779,
+        "type1": 2,
+        "type2": 5,
+        "baseSpeed": 92
+    },
+    "drampa": {
+        "id": 780,
+        "type1": 0,
+        "type2": 7,
+        "baseSpeed": 36
+    },
+    "dhelmise": {
+        "id": 781,
+        "type1": 16,
+        "type2": 3,
+        "baseSpeed": 40
+    },
+    "jangmoo": {
+        "id": 782,
+        "type1": 7,
+        "type2": 7,
+        "baseSpeed": 45
+    },
+    "hakamoo": {
+        "id": 783,
+        "type1": 7,
+        "type2": 10,
+        "baseSpeed": 65
+    },
+    "kommoo": {
+        "id": 784,
+        "type1": 7,
+        "type2": 10,
+        "baseSpeed": 85
+    },
+    "tapukoko": {
+        "id": 785,
+        "type1": 4,
+        "type2": 9,
+        "baseSpeed": 130
+    },
+    "tapulele": {
+        "id": 786,
+        "type1": 5,
+        "type2": 9,
+        "baseSpeed": 95
+    },
+    "tapubulu": {
+        "id": 787,
+        "type1": 3,
+        "type2": 9,
+        "baseSpeed": 75
+    },
+    "tapufini": {
+        "id": 788,
+        "type1": 2,
+        "type2": 9,
+        "baseSpeed": 85
+    },
+    "cosmog": {
+        "id": 789,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 37
+    },
+    "cosmoem": {
+        "id": 790,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 37
+    },
+    "solgaleo": {
+        "id": 791,
+        "type1": 5,
+        "type2": 17,
+        "baseSpeed": 97
+    },
+    "lunala": {
+        "id": 792,
+        "type1": 5,
+        "type2": 16,
+        "baseSpeed": 97
+    },
+    "nihilego": {
+        "id": 793,
+        "type1": 14,
+        "type2": 12,
+        "baseSpeed": 103
+    },
+    "buzzwole": {
+        "id": 794,
+        "type1": 15,
+        "type2": 10,
+        "baseSpeed": 79
+    },
+    "pheromosa": {
+        "id": 795,
+        "type1": 15,
+        "type2": 10,
+        "baseSpeed": 151
+    },
+    "xurkitree": {
+        "id": 796,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 83
+    },
+    "celesteela": {
+        "id": 797,
+        "type1": 17,
+        "type2": 11,
+        "baseSpeed": 61
+    },
+    "kartana": {
+        "id": 798,
+        "type1": 3,
+        "type2": 17,
+        "baseSpeed": 109
+    },
+    "guzzlord": {
+        "id": 799,
+        "type1": 8,
+        "type2": 7,
+        "baseSpeed": 43
+    },
+    "necrozma": {
+        "id": 800,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 79
+    },
+    "magearna": {
+        "id": 801,
+        "type1": 17,
+        "type2": 9,
+        "baseSpeed": 65
+    },
+    "marshadow": {
+        "id": 802,
+        "type1": 10,
+        "type2": 16,
+        "baseSpeed": 125
+    },
+    "poipole": {
+        "id": 803,
+        "type1": 12,
+        "type2": 12,
+        "baseSpeed": 73
+    },
+    "naganadel": {
+        "id": 804,
+        "type1": 12,
+        "type2": 7,
+        "baseSpeed": 121
+    },
+    "stakataka": {
+        "id": 805,
+        "type1": 14,
+        "type2": 17,
+        "baseSpeed": 13
+    },
+    "blacephalon": {
+        "id": 806,
+        "type1": 1,
+        "type2": 16,
+        "baseSpeed": 107
+    },
+    "zeraora": {
+        "id": 807,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 143
+    },
+    "meltan": {
+        "id": 808,
+        "type1": 17,
+        "type2": 17,
+        "baseSpeed": 34
+    },
+    "melmetal": {
+        "id": 809,
+        "type1": 17,
+        "type2": 17,
+        "baseSpeed": 34
+    },
+    "grookey": {
+        "id": 810,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 65
+    },
+    "thwackey": {
+        "id": 811,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 80
+    },
+    "rillaboom": {
+        "id": 812,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 85
+    },
+    "scorbunny": {
+        "id": 813,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 69
+    },
+    "raboot": {
+        "id": 814,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 94
+    },
+    "cinderace": {
+        "id": 815,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 119
+    },
+    "sobble": {
+        "id": 816,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 70
+    },
+    "drizzile": {
+        "id": 817,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 90
+    },
+    "inteleon": {
+        "id": 818,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 120
+    },
+    "skwovet": {
+        "id": 819,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 25
+    },
+    "greedent": {
+        "id": 820,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 20
+    },
+    "rookidee": {
+        "id": 821,
+        "type1": 11,
+        "type2": 11,
+        "baseSpeed": 57
+    },
+    "corvisquire": {
+        "id": 822,
+        "type1": 11,
+        "type2": 11,
+        "baseSpeed": 77
+    },
+    "corviknight": {
+        "id": 823,
+        "type1": 11,
+        "type2": 17,
+        "baseSpeed": 67
+    },
+    "blipbug": {
+        "id": 824,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 45
+    },
+    "dottler": {
+        "id": 825,
+        "type1": 15,
+        "type2": 5,
+        "baseSpeed": 30
+    },
+    "orbeetle": {
+        "id": 826,
+        "type1": 15,
+        "type2": 5,
+        "baseSpeed": 90
+    },
+    "nickit": {
+        "id": 827,
+        "type1": 8,
+        "type2": 8,
+        "baseSpeed": 50
+    },
+    "thievul": {
+        "id": 828,
+        "type1": 8,
+        "type2": 8,
+        "baseSpeed": 90
+    },
+    "gossifleur": {
+        "id": 829,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 10
+    },
+    "eldegoss": {
+        "id": 830,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 60
+    },
+    "wooloo": {
+        "id": 831,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 48
+    },
+    "dubwool": {
+        "id": 832,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 88
+    },
+    "chewtle": {
+        "id": 833,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 44
+    },
+    "drednaw": {
+        "id": 834,
+        "type1": 2,
+        "type2": 14,
+        "baseSpeed": 74
+    },
+    "yamper": {
+        "id": 835,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 26
+    },
+    "boltund": {
+        "id": 836,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 121
+    },
+    "rolycoly": {
+        "id": 837,
+        "type1": 14,
+        "type2": 14,
+        "baseSpeed": 30
+    },
+    "carkol": {
+        "id": 838,
+        "type1": 14,
+        "type2": 1,
+        "baseSpeed": 50
+    },
+    "coalossal": {
+        "id": 839,
+        "type1": 14,
+        "type2": 1,
+        "baseSpeed": 30
+    },
+    "applin": {
+        "id": 840,
+        "type1": 3,
+        "type2": 7,
+        "baseSpeed": 20
+    },
+    "flapple": {
+        "id": 841,
+        "type1": 3,
+        "type2": 7,
+        "baseSpeed": 70
+    },
+    "appletun": {
+        "id": 842,
+        "type1": 3,
+        "type2": 7,
+        "baseSpeed": 30
+    },
+    "silicobra": {
+        "id": 843,
+        "type1": 13,
+        "type2": 13,
+        "baseSpeed": 46
+    },
+    "sandaconda": {
+        "id": 844,
+        "type1": 13,
+        "type2": 13,
+        "baseSpeed": 71
+    },
+    "cramorant": {
+        "id": 845,
+        "type1": 11,
+        "type2": 2,
+        "baseSpeed": 85
+    },
+    "arrokuda": {
+        "id": 846,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 66
+    },
+    "barraskewda": {
+        "id": 847,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 136
+    },
+    "toxel": {
+        "id": 848,
+        "type1": 4,
+        "type2": 12,
+        "baseSpeed": 40
+    },
+    "toxtricityamped": {
+        "id": 849,
+        "type1": 4,
+        "type2": 12,
+        "baseSpeed": 75
+    },
+    "sizzlipede": {
+        "id": 850,
+        "type1": 1,
+        "type2": 15,
+        "baseSpeed": 45
+    },
+    "centiskorch": {
+        "id": 851,
+        "type1": 1,
+        "type2": 15,
+        "baseSpeed": 65
+    },
+    "clobbopus": {
+        "id": 852,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 32
+    },
+    "grapploct": {
+        "id": 853,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 42
+    },
+    "sinistea": {
+        "id": 854,
+        "type1": 16,
+        "type2": 16,
+        "baseSpeed": 50
+    },
+    "polteageist": {
+        "id": 855,
+        "type1": 16,
+        "type2": 16,
+        "baseSpeed": 70
+    },
+    "hatenna": {
+        "id": 856,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 39
+    },
+    "hattrem": {
+        "id": 857,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 49
+    },
+    "hatterene": {
+        "id": 858,
+        "type1": 5,
+        "type2": 9,
+        "baseSpeed": 29
+    },
+    "impidimp": {
+        "id": 859,
+        "type1": 8,
+        "type2": 9,
+        "baseSpeed": 50
+    },
+    "morgrem": {
+        "id": 860,
+        "type1": 8,
+        "type2": 9,
+        "baseSpeed": 70
+    },
+    "grimmsnarl": {
+        "id": 861,
+        "type1": 8,
+        "type2": 9,
+        "baseSpeed": 60
+    },
+    "obstagoon": {
+        "id": 862,
+        "type1": 8,
+        "type2": 0,
+        "baseSpeed": 95
+    },
+    "perrserker": {
+        "id": 863,
+        "type1": 17,
+        "type2": 17,
+        "baseSpeed": 50
+    },
+    "cursola": {
+        "id": 864,
+        "type1": 16,
+        "type2": 16,
+        "baseSpeed": 30
+    },
+    "sirfetchd": {
+        "id": 865,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 65
+    },
+    "mrrime": {
+        "id": 866,
+        "type1": 6,
+        "type2": 5,
+        "baseSpeed": 70
+    },
+    "runerigus": {
+        "id": 867,
+        "type1": 13,
+        "type2": 16,
+        "baseSpeed": 30
+    },
+    "milcery": {
+        "id": 868,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 34
+    },
+    "alcremie": {
+        "id": 869,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 64
+    },
+    "falinks": {
+        "id": 870,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 75
+    },
+    "pincurchin": {
+        "id": 871,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 15
+    },
+    "snom": {
+        "id": 872,
+        "type1": 6,
+        "type2": 15,
+        "baseSpeed": 20
+    },
+    "frosmoth": {
+        "id": 873,
+        "type1": 6,
+        "type2": 15,
+        "baseSpeed": 65
+    },
+    "stonjourner": {
+        "id": 874,
+        "type1": 14,
+        "type2": 14,
+        "baseSpeed": 70
+    },
+    "eiscueice": {
+        "id": 875,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 50
+    },
+    "indeedeemale": {
+        "id": 876,
+        "type1": 5,
+        "type2": 0,
+        "baseSpeed": 95
+    },
+    "morpekofullbelly": {
+        "id": 877,
+        "type1": 4,
+        "type2": 8,
+        "baseSpeed": 97
+    },
+    "cufant": {
+        "id": 878,
+        "type1": 17,
+        "type2": 17,
+        "baseSpeed": 40
+    },
+    "copperajah": {
+        "id": 879,
+        "type1": 17,
+        "type2": 17,
+        "baseSpeed": 30
+    },
+    "dracozolt": {
+        "id": 880,
+        "type1": 4,
+        "type2": 7,
+        "baseSpeed": 75
+    },
+    "arctozolt": {
+        "id": 881,
+        "type1": 4,
+        "type2": 6,
+        "baseSpeed": 55
+    },
+    "dracovish": {
+        "id": 882,
+        "type1": 2,
+        "type2": 7,
+        "baseSpeed": 75
+    },
+    "arctovish": {
+        "id": 883,
+        "type1": 2,
+        "type2": 6,
+        "baseSpeed": 55
+    },
+    "duraludon": {
+        "id": 884,
+        "type1": 17,
+        "type2": 7,
+        "baseSpeed": 85
+    },
+    "dreepy": {
+        "id": 885,
+        "type1": 7,
+        "type2": 16,
+        "baseSpeed": 82
+    },
+    "drakloak": {
+        "id": 886,
+        "type1": 7,
+        "type2": 16,
+        "baseSpeed": 102
+    },
+    "dragapult": {
+        "id": 887,
+        "type1": 7,
+        "type2": 16,
+        "baseSpeed": 142
+    },
+    "zacian": {
+        "id": 888,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 138
+    },
+    "zamazenta": {
+        "id": 889,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 138
+    },
+    "eternatus": {
+        "id": 890,
+        "type1": 12,
+        "type2": 7,
+        "baseSpeed": 130
+    },
+    "kubfu": {
+        "id": 891,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 72
+    },
+    "urshifusinglestrike": {
+        "id": 892,
+        "type1": 10,
+        "type2": 8,
+        "baseSpeed": 97
+    },
+    "zarude": {
+        "id": 893,
+        "type1": 8,
+        "type2": 3,
+        "baseSpeed": 105
+    },
+    "regieleki": {
+        "id": 894,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 200
+    },
+    "regidrago": {
+        "id": 895,
+        "type1": 7,
+        "type2": 7,
+        "baseSpeed": 80
+    },
+    "glastrier": {
+        "id": 896,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 30
+    },
+    "spectrier": {
+        "id": 897,
+        "type1": 16,
+        "type2": 16,
+        "baseSpeed": 130
+    },
+    "calyrex": {
+        "id": 898,
+        "type1": 5,
+        "type2": 3,
+        "baseSpeed": 80
+    },
+    "wyrdeer": {
+        "id": 899,
+        "type1": 0,
+        "type2": 5,
+        "baseSpeed": 65
+    },
+    "kleavor": {
+        "id": 900,
+        "type1": 15,
+        "type2": 14,
+        "baseSpeed": 85
+    },
+    "ursaluna": {
+        "id": 901,
+        "type1": 13,
+        "type2": 0,
+        "baseSpeed": 50
+    },
+    "basculegionmale": {
+        "id": 902,
+        "type1": 2,
+        "type2": 16,
+        "baseSpeed": 78
+    },
+    "sneasler": {
+        "id": 903,
+        "type1": 10,
+        "type2": 12,
+        "baseSpeed": 120
+    },
+    "overqwil": {
+        "id": 904,
+        "type1": 8,
+        "type2": 12,
+        "baseSpeed": 85
+    },
+    "enamorusincarnate": {
+        "id": 905,
+        "type1": 9,
+        "type2": 11,
+        "baseSpeed": 106
+    },
+    "sprigatito": {
+        "id": 906,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 65
+    },
+    "floragato": {
+        "id": 907,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 83
+    },
+    "meowscarada": {
+        "id": 908,
+        "type1": 3,
+        "type2": 8,
+        "baseSpeed": 123
+    },
+    "fuecoco": {
+        "id": 909,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 36
+    },
+    "crocalor": {
+        "id": 910,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 49
+    },
+    "skeledirge": {
+        "id": 911,
+        "type1": 1,
+        "type2": 16,
+        "baseSpeed": 66
+    },
+    "quaxly": {
+        "id": 912,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 50
+    },
+    "quaxwell": {
+        "id": 913,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 65
+    },
+    "quaquaval": {
+        "id": 914,
+        "type1": 2,
+        "type2": 10,
+        "baseSpeed": 85
+    },
+    "lechonk": {
+        "id": 915,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 35
+    },
+    "oinkolognemale": {
+        "id": 916,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 65
+    },
+    "tarountula": {
+        "id": 917,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 20
+    },
+    "spidops": {
+        "id": 918,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 35
+    },
+    "nymble": {
+        "id": 919,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 45
+    },
+    "lokix": {
+        "id": 920,
+        "type1": 15,
+        "type2": 8,
+        "baseSpeed": 92
+    },
+    "pawmi": {
+        "id": 921,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 60
+    },
+    "pawmo": {
+        "id": 922,
+        "type1": 4,
+        "type2": 10,
+        "baseSpeed": 85
+    },
+    "pawmot": {
+        "id": 923,
+        "type1": 4,
+        "type2": 10,
+        "baseSpeed": 105
+    },
+    "tandemaus": {
+        "id": 924,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 75
+    },
+    "mausholdfamilyoffour": {
+        "id": 925,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 111
+    },
+    "fidough": {
+        "id": 926,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 65
+    },
+    "dachsbun": {
+        "id": 927,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 95
+    },
+    "smoliv": {
+        "id": 928,
+        "type1": 3,
+        "type2": 0,
+        "baseSpeed": 30
+    },
+    "dolliv": {
+        "id": 929,
+        "type1": 3,
+        "type2": 0,
+        "baseSpeed": 33
+    },
+    "arboliva": {
+        "id": 930,
+        "type1": 3,
+        "type2": 0,
+        "baseSpeed": 39
+    },
+    "squawkabillygreenplumage": {
+        "id": 931,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 92
+    },
+    "nacli": {
+        "id": 932,
+        "type1": 14,
+        "type2": 14,
+        "baseSpeed": 25
+    },
+    "naclstack": {
+        "id": 933,
+        "type1": 14,
+        "type2": 14,
+        "baseSpeed": 35
+    },
+    "garganacl": {
+        "id": 934,
+        "type1": 14,
+        "type2": 14,
+        "baseSpeed": 35
+    },
+    "charcadet": {
+        "id": 935,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 35
+    },
+    "armarouge": {
+        "id": 936,
+        "type1": 1,
+        "type2": 5,
+        "baseSpeed": 75
+    },
+    "ceruledge": {
+        "id": 937,
+        "type1": 1,
+        "type2": 16,
+        "baseSpeed": 85
+    },
+    "tadbulb": {
+        "id": 938,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 45
+    },
+    "bellibolt": {
+        "id": 939,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 45
+    },
+    "wattrel": {
+        "id": 940,
+        "type1": 4,
+        "type2": 11,
+        "baseSpeed": 70
+    },
+    "kilowattrel": {
+        "id": 941,
+        "type1": 4,
+        "type2": 11,
+        "baseSpeed": 125
+    },
+    "maschiff": {
+        "id": 942,
+        "type1": 8,
+        "type2": 8,
+        "baseSpeed": 51
+    },
+    "mabosstiff": {
+        "id": 943,
+        "type1": 8,
+        "type2": 8,
+        "baseSpeed": 85
+    },
+    "shroodle": {
+        "id": 944,
+        "type1": 12,
+        "type2": 0,
+        "baseSpeed": 75
+    },
+    "grafaiai": {
+        "id": 945,
+        "type1": 12,
+        "type2": 0,
+        "baseSpeed": 110
+    },
+    "bramblin": {
+        "id": 946,
+        "type1": 3,
+        "type2": 16,
+        "baseSpeed": 60
+    },
+    "brambleghast": {
+        "id": 947,
+        "type1": 3,
+        "type2": 16,
+        "baseSpeed": 90
+    },
+    "toedscool": {
+        "id": 948,
+        "type1": 13,
+        "type2": 3,
+        "baseSpeed": 70
+    },
+    "toedscruel": {
+        "id": 949,
+        "type1": 13,
+        "type2": 3,
+        "baseSpeed": 100
+    },
+    "klawf": {
+        "id": 950,
+        "type1": 14,
+        "type2": 14,
+        "baseSpeed": 75
+    },
+    "capsakid": {
+        "id": 951,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 50
+    },
+    "scovillain": {
+        "id": 952,
+        "type1": 3,
+        "type2": 1,
+        "baseSpeed": 75
+    },
+    "rellor": {
+        "id": 953,
+        "type1": 15,
+        "type2": 15,
+        "baseSpeed": 30
+    },
+    "rabsca": {
+        "id": 954,
+        "type1": 15,
+        "type2": 5,
+        "baseSpeed": 45
+    },
+    "flittle": {
+        "id": 955,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 75
+    },
+    "espathra": {
+        "id": 956,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 105
+    },
+    "tinkatink": {
+        "id": 957,
+        "type1": 9,
+        "type2": 17,
+        "baseSpeed": 58
+    },
+    "tinkatuff": {
+        "id": 958,
+        "type1": 9,
+        "type2": 17,
+        "baseSpeed": 78
+    },
+    "tinkaton": {
+        "id": 959,
+        "type1": 9,
+        "type2": 17,
+        "baseSpeed": 94
+    },
+    "wiglett": {
+        "id": 960,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 95
+    },
+    "wugtrio": {
+        "id": 961,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 120
+    },
+    "bombirdier": {
+        "id": 962,
+        "type1": 11,
+        "type2": 8,
+        "baseSpeed": 82
+    },
+    "finizen": {
+        "id": 963,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 75
+    },
+    "palafinzero": {
+        "id": 964,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 100
+    },
+    "varoom": {
+        "id": 965,
+        "type1": 17,
+        "type2": 12,
+        "baseSpeed": 47
+    },
+    "revavroom": {
+        "id": 966,
+        "type1": 17,
+        "type2": 12,
+        "baseSpeed": 90
+    },
+    "cyclizar": {
+        "id": 967,
+        "type1": 7,
+        "type2": 0,
+        "baseSpeed": 121
+    },
+    "orthworm": {
+        "id": 968,
+        "type1": 17,
+        "type2": 17,
+        "baseSpeed": 65
+    },
+    "glimmet": {
+        "id": 969,
+        "type1": 14,
+        "type2": 12,
+        "baseSpeed": 60
+    },
+    "glimmora": {
+        "id": 970,
+        "type1": 14,
+        "type2": 12,
+        "baseSpeed": 86
+    },
+    "greavard": {
+        "id": 971,
+        "type1": 16,
+        "type2": 16,
+        "baseSpeed": 34
+    },
+    "houndstone": {
+        "id": 972,
+        "type1": 16,
+        "type2": 16,
+        "baseSpeed": 68
+    },
+    "flamigo": {
+        "id": 973,
+        "type1": 11,
+        "type2": 10,
+        "baseSpeed": 90
+    },
+    "cetoddle": {
+        "id": 974,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 43
+    },
+    "cetitan": {
+        "id": 975,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 73
+    },
+    "veluza": {
+        "id": 976,
+        "type1": 2,
+        "type2": 5,
+        "baseSpeed": 70
+    },
+    "dondozo": {
+        "id": 977,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 35
+    },
+    "tatsugiricurly": {
+        "id": 978,
+        "type1": 7,
+        "type2": 2,
+        "baseSpeed": 82
+    },
+    "annihilape": {
+        "id": 979,
+        "type1": 10,
+        "type2": 16,
+        "baseSpeed": 90
+    },
+    "clodsire": {
+        "id": 980,
+        "type1": 12,
+        "type2": 13,
+        "baseSpeed": 20
+    },
+    "farigiraf": {
+        "id": 981,
+        "type1": 0,
+        "type2": 5,
+        "baseSpeed": 60
+    },
+    "dudunsparcetwosegment": {
+        "id": 982,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 55
+    },
+    "kingambit": {
+        "id": 983,
+        "type1": 8,
+        "type2": 17,
+        "baseSpeed": 50
+    },
+    "greattusk": {
+        "id": 984,
+        "type1": 13,
+        "type2": 10,
+        "baseSpeed": 87
+    },
+    "screamtail": {
+        "id": 985,
+        "type1": 9,
+        "type2": 5,
+        "baseSpeed": 111
+    },
+    "brutebonnet": {
+        "id": 986,
+        "type1": 3,
+        "type2": 8,
+        "baseSpeed": 55
+    },
+    "fluttermane": {
+        "id": 987,
+        "type1": 16,
+        "type2": 9,
+        "baseSpeed": 135
+    },
+    "slitherwing": {
+        "id": 988,
+        "type1": 15,
+        "type2": 10,
+        "baseSpeed": 81
+    },
+    "sandyshocks": {
+        "id": 989,
+        "type1": 4,
+        "type2": 13,
+        "baseSpeed": 101
+    },
+    "irontreads": {
+        "id": 990,
+        "type1": 13,
+        "type2": 17,
+        "baseSpeed": 106
+    },
+    "ironbundle": {
+        "id": 991,
+        "type1": 6,
+        "type2": 2,
+        "baseSpeed": 136
+    },
+    "ironhands": {
+        "id": 992,
+        "type1": 10,
+        "type2": 4,
+        "baseSpeed": 50
+    },
+    "ironjugulis": {
+        "id": 993,
+        "type1": 8,
+        "type2": 11,
+        "baseSpeed": 108
+    },
+    "ironmoth": {
+        "id": 994,
+        "type1": 1,
+        "type2": 12,
+        "baseSpeed": 110
+    },
+    "ironthorns": {
+        "id": 995,
+        "type1": 14,
+        "type2": 4,
+        "baseSpeed": 72
+    },
+    "frigibax": {
+        "id": 996,
+        "type1": 7,
+        "type2": 6,
+        "baseSpeed": 55
+    },
+    "arctibax": {
+        "id": 997,
+        "type1": 7,
+        "type2": 6,
+        "baseSpeed": 62
+    },
+    "baxcalibur": {
+        "id": 998,
+        "type1": 7,
+        "type2": 6,
+        "baseSpeed": 87
+    },
+    "gimmighoul": {
+        "id": 999,
+        "type1": 16,
+        "type2": 16,
+        "baseSpeed": 10
+    },
+    "gholdengo": {
+        "id": 1000,
+        "type1": 17,
+        "type2": 16,
+        "baseSpeed": 84
+    },
+    "wochien": {
+        "id": 1001,
+        "type1": 8,
+        "type2": 3,
+        "baseSpeed": 70
+    },
+    "chienpao": {
+        "id": 1002,
+        "type1": 8,
+        "type2": 6,
+        "baseSpeed": 135
+    },
+    "tinglu": {
+        "id": 1003,
+        "type1": 8,
+        "type2": 13,
+        "baseSpeed": 45
+    },
+    "chiyu": {
+        "id": 1004,
+        "type1": 8,
+        "type2": 1,
+        "baseSpeed": 100
+    },
+    "roaringmoon": {
+        "id": 1005,
+        "type1": 7,
+        "type2": 8,
+        "baseSpeed": 119
+    },
+    "ironvaliant": {
+        "id": 1006,
+        "type1": 9,
+        "type2": 10,
+        "baseSpeed": 116
+    },
+    "koraidon": {
+        "id": 1007,
+        "type1": 10,
+        "type2": 7,
+        "baseSpeed": 135
+    },
+    "miraidon": {
+        "id": 1008,
+        "type1": 4,
+        "type2": 7,
+        "baseSpeed": 135
+    },
+    "walkingwake": {
+        "id": 1009,
+        "type1": 2,
+        "type2": 7,
+        "baseSpeed": 109
+    },
+    "ironleaves": {
+        "id": 1010,
+        "type1": 3,
+        "type2": 5,
+        "baseSpeed": 104
+    },
+    "dipplin": {
+        "id": 1011,
+        "type1": 3,
+        "type2": 7,
+        "baseSpeed": 40
+    },
+    "poltchageist": {
+        "id": 1012,
+        "type1": 3,
+        "type2": 16,
+        "baseSpeed": 50
+    },
+    "sinistcha": {
+        "id": 1013,
+        "type1": 3,
+        "type2": 16,
+        "baseSpeed": 70
+    },
+    "okidogi": {
+        "id": 1014,
+        "type1": 12,
+        "type2": 10,
+        "baseSpeed": 80
+    },
+    "munkidori": {
+        "id": 1015,
+        "type1": 12,
+        "type2": 5,
+        "baseSpeed": 106
+    },
+    "fezandipiti": {
+        "id": 1016,
+        "type1": 12,
+        "type2": 9,
+        "baseSpeed": 99
+    },
+    "ogerpon": {
+        "id": 1017,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 110
+    },
+    "archaludon": {
+        "id": 1018,
+        "type1": 17,
+        "type2": 7,
+        "baseSpeed": 85
+    },
+    "hydrapple": {
+        "id": 1019,
+        "type1": 3,
+        "type2": 7,
+        "baseSpeed": 44
+    },
+    "gougingfire": {
+        "id": 1020,
+        "type1": 1,
+        "type2": 7,
+        "baseSpeed": 91
+    },
+    "ragingbolt": {
+        "id": 1021,
+        "type1": 4,
+        "type2": 7,
+        "baseSpeed": 75
+    },
+    "ironboulder": {
+        "id": 1022,
+        "type1": 14,
+        "type2": 5,
+        "baseSpeed": 124
+    },
+    "ironcrown": {
+        "id": 1023,
+        "type1": 17,
+        "type2": 5,
+        "baseSpeed": 98
+    },
+    "terapagos": {
+        "id": 1024,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 60
+    },
+    "pecharunt": {
+        "id": 1025,
+        "type1": 12,
+        "type2": 16,
+        "baseSpeed": 88
+    },
+    "deoxysdefense": {
+        "id": 10002,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 90
+    },
+    "deoxysspeed": {
+        "id": 10003,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 180
+    },
+    "wormadamsandy": {
+        "id": 10004,
+        "type1": 15,
+        "type2": 13,
+        "baseSpeed": 36
+    },
+    "wormadamtrash": {
+        "id": 10005,
+        "type1": 15,
+        "type2": 17,
+        "baseSpeed": 36
+    },
+    "shayminsky": {
+        "id": 10006,
+        "type1": 3,
+        "type2": 11,
+        "baseSpeed": 127
+    },
+    "giratinaorigin": {
+        "id": 10007,
+        "type1": 16,
+        "type2": 7,
+        "baseSpeed": 90
+    },
+    "rotomheat": {
+        "id": 10008,
+        "type1": 4,
+        "type2": 1,
+        "baseSpeed": 86
+    },
+    "rotomwash": {
+        "id": 10009,
+        "type1": 4,
+        "type2": 2,
+        "baseSpeed": 86
+    },
+    "rotomfrost": {
+        "id": 10010,
+        "type1": 4,
+        "type2": 6,
+        "baseSpeed": 86
+    },
+    "rotomfan": {
+        "id": 10011,
+        "type1": 4,
+        "type2": 11,
+        "baseSpeed": 86
+    },
+    "rotommow": {
+        "id": 10012,
+        "type1": 4,
+        "type2": 3,
+        "baseSpeed": 86
+    },
+    "castformsunny": {
+        "id": 10013,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 70
+    },
+    "castformrainy": {
+        "id": 10014,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 70
+    },
+    "castformsnowy": {
+        "id": 10015,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 70
+    },
+    "basculinbluestriped": {
+        "id": 10016,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 98
+    },
+    "darmanitanzen": {
+        "id": 10017,
+        "type1": 1,
+        "type2": 5,
+        "baseSpeed": 55
+    },
+    "meloettapirouette": {
+        "id": 10018,
+        "type1": 0,
+        "type2": 10,
+        "baseSpeed": 128
+    },
+    "tornadustherian": {
+        "id": 10019,
+        "type1": 11,
+        "type2": 11,
+        "baseSpeed": 121
+    },
+    "thundurustherian": {
+        "id": 10020,
+        "type1": 4,
+        "type2": 11,
+        "baseSpeed": 101
+    },
+    "landorustherian": {
+        "id": 10021,
+        "type1": 13,
+        "type2": 11,
+        "baseSpeed": 91
+    },
+    "kyuremblack": {
+        "id": 10022,
+        "type1": 7,
+        "type2": 6,
+        "baseSpeed": 95
+    },
+    "kyuremwhite": {
+        "id": 10023,
+        "type1": 7,
+        "type2": 6,
+        "baseSpeed": 95
+    },
+    "keldeoresolute": {
+        "id": 10024,
+        "type1": 2,
+        "type2": 10,
+        "baseSpeed": 108
+    },
+    "meowsticfemale": {
+        "id": 10025,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 104
+    },
+    "aegislashblade": {
+        "id": 10026,
+        "type1": 17,
+        "type2": 16,
+        "baseSpeed": 60
+    },
+    "pumpkaboosmall": {
+        "id": 10027,
+        "type1": 16,
+        "type2": 3,
+        "baseSpeed": 56
+    },
+    "pumpkaboolarge": {
+        "id": 10028,
+        "type1": 16,
+        "type2": 3,
+        "baseSpeed": 46
+    },
+    "pumpkaboosuper": {
+        "id": 10029,
+        "type1": 16,
+        "type2": 3,
+        "baseSpeed": 41
+    },
+    "gourgeistsmall": {
+        "id": 10030,
+        "type1": 16,
+        "type2": 3,
+        "baseSpeed": 99
+    },
+    "gourgeistlarge": {
+        "id": 10031,
+        "type1": 16,
+        "type2": 3,
+        "baseSpeed": 69
+    },
+    "gourgeistsuper": {
+        "id": 10032,
+        "type1": 16,
+        "type2": 3,
+        "baseSpeed": 54
+    },
+    "venusaurmega": {
+        "id": 10033,
+        "type1": 3,
+        "type2": 12,
+        "baseSpeed": 80
+    },
+    "charizardmegax": {
+        "id": 10034,
+        "type1": 1,
+        "type2": 7,
+        "baseSpeed": 100
+    },
+    "charizardmegay": {
+        "id": 10035,
+        "type1": 1,
+        "type2": 11,
+        "baseSpeed": 100
+    },
+    "blastoisemega": {
+        "id": 10036,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 78
+    },
+    "alakazammega": {
+        "id": 10037,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 150
+    },
+    "gengarmega": {
+        "id": 10038,
+        "type1": 16,
+        "type2": 12,
+        "baseSpeed": 130
+    },
+    "kangaskhanmega": {
+        "id": 10039,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 100
+    },
+    "pinsirmega": {
+        "id": 10040,
+        "type1": 15,
+        "type2": 11,
+        "baseSpeed": 105
+    },
+    "gyaradosmega": {
+        "id": 10041,
+        "type1": 2,
+        "type2": 8,
+        "baseSpeed": 81
+    },
+    "aerodactylmega": {
+        "id": 10042,
+        "type1": 14,
+        "type2": 11,
+        "baseSpeed": 150
+    },
+    "mewtwomegax": {
+        "id": 10043,
+        "type1": 5,
+        "type2": 10,
+        "baseSpeed": 130
+    },
+    "mewtwomegay": {
+        "id": 10044,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 140
+    },
+    "ampharosmega": {
+        "id": 10045,
+        "type1": 4,
+        "type2": 7,
+        "baseSpeed": 45
+    },
+    "scizormega": {
+        "id": 10046,
+        "type1": 15,
+        "type2": 17,
+        "baseSpeed": 75
+    },
+    "heracrossmega": {
+        "id": 10047,
+        "type1": 15,
+        "type2": 10,
+        "baseSpeed": 75
+    },
+    "houndoommega": {
+        "id": 10048,
+        "type1": 8,
+        "type2": 1,
+        "baseSpeed": 115
+    },
+    "tyranitarmega": {
+        "id": 10049,
+        "type1": 14,
+        "type2": 8,
+        "baseSpeed": 71
+    },
+    "blazikenmega": {
+        "id": 10050,
+        "type1": 1,
+        "type2": 10,
+        "baseSpeed": 100
+    },
+    "gardevoirmega": {
+        "id": 10051,
+        "type1": 5,
+        "type2": 9,
+        "baseSpeed": 100
+    },
+    "mawilemega": {
+        "id": 10052,
+        "type1": 17,
+        "type2": 9,
+        "baseSpeed": 50
+    },
+    "aggronmega": {
+        "id": 10053,
+        "type1": 17,
+        "type2": 17,
+        "baseSpeed": 50
+    },
+    "medichammega": {
+        "id": 10054,
+        "type1": 10,
+        "type2": 5,
+        "baseSpeed": 100
+    },
+    "manectricmega": {
+        "id": 10055,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 135
+    },
+    "banettemega": {
+        "id": 10056,
+        "type1": 16,
+        "type2": 16,
+        "baseSpeed": 75
+    },
+    "absolmega": {
+        "id": 10057,
+        "type1": 8,
+        "type2": 8,
+        "baseSpeed": 115
+    },
+    "garchompmega": {
+        "id": 10058,
+        "type1": 7,
+        "type2": 13,
+        "baseSpeed": 92
+    },
+    "lucariomega": {
+        "id": 10059,
+        "type1": 10,
+        "type2": 17,
+        "baseSpeed": 112
+    },
+    "abomasnowmega": {
+        "id": 10060,
+        "type1": 3,
+        "type2": 6,
+        "baseSpeed": 30
+    },
+    "floetteeternal": {
+        "id": 10061,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 92
+    },
+    "latiasmega": {
+        "id": 10062,
+        "type1": 7,
+        "type2": 5,
+        "baseSpeed": 110
+    },
+    "latiosmega": {
+        "id": 10063,
+        "type1": 7,
+        "type2": 5,
+        "baseSpeed": 110
+    },
+    "swampertmega": {
+        "id": 10064,
+        "type1": 2,
+        "type2": 13,
+        "baseSpeed": 70
+    },
+    "sceptilemega": {
+        "id": 10065,
+        "type1": 3,
+        "type2": 7,
+        "baseSpeed": 145
+    },
+    "sableyemega": {
+        "id": 10066,
+        "type1": 8,
+        "type2": 16,
+        "baseSpeed": 20
+    },
+    "altariamega": {
+        "id": 10067,
+        "type1": 7,
+        "type2": 9,
+        "baseSpeed": 80
+    },
+    "gallademega": {
+        "id": 10068,
+        "type1": 5,
+        "type2": 10,
+        "baseSpeed": 110
+    },
+    "audinomega": {
+        "id": 10069,
+        "type1": 0,
+        "type2": 9,
+        "baseSpeed": 50
+    },
+    "sharpedomega": {
+        "id": 10070,
+        "type1": 2,
+        "type2": 8,
+        "baseSpeed": 105
+    },
+    "slowbromega": {
+        "id": 10071,
+        "type1": 2,
+        "type2": 5,
+        "baseSpeed": 30
+    },
+    "steelixmega": {
+        "id": 10072,
+        "type1": 17,
+        "type2": 13,
+        "baseSpeed": 30
+    },
+    "pidgeotmega": {
+        "id": 10073,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 121
+    },
+    "glaliemega": {
+        "id": 10074,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 100
+    },
+    "dianciemega": {
+        "id": 10075,
+        "type1": 14,
+        "type2": 9,
+        "baseSpeed": 110
+    },
+    "metagrossmega": {
+        "id": 10076,
+        "type1": 17,
+        "type2": 5,
+        "baseSpeed": 110
+    },
+    "kyogreprimal": {
+        "id": 10077,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 90
+    },
+    "groudonprimal": {
+        "id": 10078,
+        "type1": 13,
+        "type2": 1,
+        "baseSpeed": 90
+    },
+    "rayquazamega": {
+        "id": 10079,
+        "type1": 7,
+        "type2": 11,
+        "baseSpeed": 115
+    },
+    "pikachurockstar": {
+        "id": 10080,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 90
+    },
+    "pikachubelle": {
+        "id": 10081,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 90
+    },
+    "pikachupopstar": {
+        "id": 10082,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 90
+    },
+    "pikachuphd": {
+        "id": 10083,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 90
+    },
+    "pikachulibre": {
+        "id": 10084,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 90
+    },
+    "pikachucosplay": {
+        "id": 10085,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 90
+    },
+    "hoopaunbound": {
+        "id": 10086,
+        "type1": 5,
+        "type2": 8,
+        "baseSpeed": 80
+    },
+    "cameruptmega": {
+        "id": 10087,
+        "type1": 1,
+        "type2": 13,
+        "baseSpeed": 20
+    },
+    "lopunnymega": {
+        "id": 10088,
+        "type1": 0,
+        "type2": 10,
+        "baseSpeed": 135
+    },
+    "salamencemega": {
+        "id": 10089,
+        "type1": 7,
+        "type2": 11,
+        "baseSpeed": 120
+    },
+    "beedrillmega": {
+        "id": 10090,
+        "type1": 15,
+        "type2": 12,
+        "baseSpeed": 145
+    },
+    "rattataalola": {
+        "id": 10091,
+        "type1": 8,
+        "type2": 0,
+        "baseSpeed": 72
+    },
+    "raticatealola": {
+        "id": 10092,
+        "type1": 8,
+        "type2": 0,
+        "baseSpeed": 77
+    },
+    "raticatetotemalola": {
+        "id": 10093,
+        "type1": 8,
+        "type2": 0,
+        "baseSpeed": 77
+    },
+    "pikachuoriginalcap": {
+        "id": 10094,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 90
+    },
+    "pikachuhoenncap": {
+        "id": 10095,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 90
+    },
+    "pikachusinnohcap": {
+        "id": 10096,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 90
+    },
+    "pikachuunovacap": {
+        "id": 10097,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 90
+    },
+    "pikachukaloscap": {
+        "id": 10098,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 90
+    },
+    "pikachualolacap": {
+        "id": 10099,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 90
+    },
+    "raichualola": {
+        "id": 10100,
+        "type1": 4,
+        "type2": 5,
+        "baseSpeed": 110
+    },
+    "sandshrewalola": {
+        "id": 10101,
+        "type1": 6,
+        "type2": 17,
+        "baseSpeed": 40
+    },
+    "sandslashalola": {
+        "id": 10102,
+        "type1": 6,
+        "type2": 17,
+        "baseSpeed": 65
+    },
+    "vulpixalola": {
+        "id": 10103,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 65
+    },
+    "ninetalesalola": {
+        "id": 10104,
+        "type1": 6,
+        "type2": 9,
+        "baseSpeed": 109
+    },
+    "diglettalola": {
+        "id": 10105,
+        "type1": 13,
+        "type2": 17,
+        "baseSpeed": 90
+    },
+    "dugtrioalola": {
+        "id": 10106,
+        "type1": 13,
+        "type2": 17,
+        "baseSpeed": 110
+    },
+    "meowthalola": {
+        "id": 10107,
+        "type1": 8,
+        "type2": 8,
+        "baseSpeed": 90
+    },
+    "persianalola": {
+        "id": 10108,
+        "type1": 8,
+        "type2": 8,
+        "baseSpeed": 115
+    },
+    "geodudealola": {
+        "id": 10109,
+        "type1": 14,
+        "type2": 4,
+        "baseSpeed": 20
+    },
+    "graveleralola": {
+        "id": 10110,
+        "type1": 14,
+        "type2": 4,
+        "baseSpeed": 35
+    },
+    "golemalola": {
+        "id": 10111,
+        "type1": 14,
+        "type2": 4,
+        "baseSpeed": 45
+    },
+    "grimeralola": {
+        "id": 10112,
+        "type1": 12,
+        "type2": 8,
+        "baseSpeed": 25
+    },
+    "mukalola": {
+        "id": 10113,
+        "type1": 12,
+        "type2": 8,
+        "baseSpeed": 50
+    },
+    "exeggutoralola": {
+        "id": 10114,
+        "type1": 3,
+        "type2": 7,
+        "baseSpeed": 45
+    },
+    "marowakalola": {
+        "id": 10115,
+        "type1": 1,
+        "type2": 16,
+        "baseSpeed": 45
+    },
+    "greninjabattlebond": {
+        "id": 10116,
+        "type1": 2,
+        "type2": 8,
+        "baseSpeed": 122
+    },
+    "greninjaash": {
+        "id": 10117,
+        "type1": 2,
+        "type2": 8,
+        "baseSpeed": 132
+    },
+    "zygarde10powerconstruct": {
+        "id": 10118,
+        "type1": 7,
+        "type2": 13,
+        "baseSpeed": 115
+    },
+    "zygarde50powerconstruct": {
+        "id": 10119,
+        "type1": 7,
+        "type2": 13,
+        "baseSpeed": 95
+    },
+    "zygardecomplete": {
+        "id": 10120,
+        "type1": 7,
+        "type2": 13,
+        "baseSpeed": 85
+    },
+    "gumshoostotem": {
+        "id": 10121,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 45
+    },
+    "vikavolttotem": {
+        "id": 10122,
+        "type1": 15,
+        "type2": 4,
+        "baseSpeed": 43
+    },
+    "oricoriopompom": {
+        "id": 10123,
+        "type1": 4,
+        "type2": 11,
+        "baseSpeed": 93
+    },
+    "oricoriopau": {
+        "id": 10124,
+        "type1": 5,
+        "type2": 11,
+        "baseSpeed": 93
+    },
+    "oricoriosensu": {
+        "id": 10125,
+        "type1": 16,
+        "type2": 11,
+        "baseSpeed": 93
+    },
+    "lycanrocmidnight": {
+        "id": 10126,
+        "type1": 14,
+        "type2": 14,
+        "baseSpeed": 82
+    },
+    "wishiwashischool": {
+        "id": 10127,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 30
+    },
+    "lurantistotem": {
+        "id": 10128,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 45
+    },
+    "salazzletotem": {
+        "id": 10129,
+        "type1": 12,
+        "type2": 1,
+        "baseSpeed": 117
+    },
+    "miniororangemeteor": {
+        "id": 10130,
+        "type1": 14,
+        "type2": 11,
+        "baseSpeed": 60
+    },
+    "minioryellowmeteor": {
+        "id": 10131,
+        "type1": 14,
+        "type2": 11,
+        "baseSpeed": 60
+    },
+    "miniorgreenmeteor": {
+        "id": 10132,
+        "type1": 14,
+        "type2": 11,
+        "baseSpeed": 60
+    },
+    "miniorbluemeteor": {
+        "id": 10133,
+        "type1": 14,
+        "type2": 11,
+        "baseSpeed": 60
+    },
+    "miniorindigometeor": {
+        "id": 10134,
+        "type1": 14,
+        "type2": 11,
+        "baseSpeed": 60
+    },
+    "miniorvioletmeteor": {
+        "id": 10135,
+        "type1": 14,
+        "type2": 11,
+        "baseSpeed": 60
+    },
+    "miniorred": {
+        "id": 10136,
+        "type1": 14,
+        "type2": 11,
+        "baseSpeed": 120
+    },
+    "miniororange": {
+        "id": 10137,
+        "type1": 14,
+        "type2": 11,
+        "baseSpeed": 120
+    },
+    "minioryellow": {
+        "id": 10138,
+        "type1": 14,
+        "type2": 11,
+        "baseSpeed": 120
+    },
+    "miniorgreen": {
+        "id": 10139,
+        "type1": 14,
+        "type2": 11,
+        "baseSpeed": 120
+    },
+    "miniorblue": {
+        "id": 10140,
+        "type1": 14,
+        "type2": 11,
+        "baseSpeed": 120
+    },
+    "miniorindigo": {
+        "id": 10141,
+        "type1": 14,
+        "type2": 11,
+        "baseSpeed": 120
+    },
+    "miniorviolet": {
+        "id": 10142,
+        "type1": 14,
+        "type2": 11,
+        "baseSpeed": 120
+    },
+    "mimikyubusted": {
+        "id": 10143,
+        "type1": 16,
+        "type2": 9,
+        "baseSpeed": 96
+    },
+    "mimikyutotemdisguised": {
+        "id": 10144,
+        "type1": 16,
+        "type2": 9,
+        "baseSpeed": 96
+    },
+    "mimikyutotembusted": {
+        "id": 10145,
+        "type1": 16,
+        "type2": 9,
+        "baseSpeed": 96
+    },
+    "kommoototem": {
+        "id": 10146,
+        "type1": 7,
+        "type2": 10,
+        "baseSpeed": 85
+    },
+    "magearnaoriginal": {
+        "id": 10147,
+        "type1": 17,
+        "type2": 9,
+        "baseSpeed": 65
+    },
+    "pikachupartnercap": {
+        "id": 10148,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 90
+    },
+    "marowaktotem": {
+        "id": 10149,
+        "type1": 1,
+        "type2": 16,
+        "baseSpeed": 45
+    },
+    "ribombeetotem": {
+        "id": 10150,
+        "type1": 15,
+        "type2": 9,
+        "baseSpeed": 124
+    },
+    "rockruffowntempo": {
+        "id": 10151,
+        "type1": 14,
+        "type2": 14,
+        "baseSpeed": 60
+    },
+    "lycanrocdusk": {
+        "id": 10152,
+        "type1": 14,
+        "type2": 14,
+        "baseSpeed": 110
+    },
+    "araquanidtotem": {
+        "id": 10153,
+        "type1": 2,
+        "type2": 15,
+        "baseSpeed": 42
+    },
+    "togedemarutotem": {
+        "id": 10154,
+        "type1": 4,
+        "type2": 17,
+        "baseSpeed": 96
+    },
+    "necrozmadusk": {
+        "id": 10155,
+        "type1": 5,
+        "type2": 17,
+        "baseSpeed": 77
+    },
+    "necrozmadawn": {
+        "id": 10156,
+        "type1": 5,
+        "type2": 16,
+        "baseSpeed": 77
+    },
+    "necrozmaultra": {
+        "id": 10157,
+        "type1": 5,
+        "type2": 7,
+        "baseSpeed": 129
+    },
+    "pikachustarter": {
+        "id": 10158,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 120
+    },
+    "eeveestarter": {
+        "id": 10159,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 75
+    },
+    "pikachuworldcap": {
+        "id": 10160,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 90
+    },
+    "meowthgalar": {
+        "id": 10161,
+        "type1": 17,
+        "type2": 17,
+        "baseSpeed": 40
+    },
+    "ponytagalar": {
+        "id": 10162,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 90
+    },
+    "rapidashgalar": {
+        "id": 10163,
+        "type1": 5,
+        "type2": 9,
+        "baseSpeed": 105
+    },
+    "slowpokegalar": {
+        "id": 10164,
+        "type1": 5,
+        "type2": 5,
+        "baseSpeed": 15
+    },
+    "slowbrogalar": {
+        "id": 10165,
+        "type1": 12,
+        "type2": 5,
+        "baseSpeed": 30
+    },
+    "farfetchdgalar": {
+        "id": 10166,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 55
+    },
+    "weezinggalar": {
+        "id": 10167,
+        "type1": 12,
+        "type2": 9,
+        "baseSpeed": 60
+    },
+    "mrmimegalar": {
+        "id": 10168,
+        "type1": 6,
+        "type2": 5,
+        "baseSpeed": 100
+    },
+    "articunogalar": {
+        "id": 10169,
+        "type1": 5,
+        "type2": 11,
+        "baseSpeed": 95
+    },
+    "zapdosgalar": {
+        "id": 10170,
+        "type1": 10,
+        "type2": 11,
+        "baseSpeed": 100
+    },
+    "moltresgalar": {
+        "id": 10171,
+        "type1": 8,
+        "type2": 11,
+        "baseSpeed": 90
+    },
+    "slowkinggalar": {
+        "id": 10172,
+        "type1": 12,
+        "type2": 5,
+        "baseSpeed": 30
+    },
+    "corsolagalar": {
+        "id": 10173,
+        "type1": 16,
+        "type2": 16,
+        "baseSpeed": 30
+    },
+    "zigzagoongalar": {
+        "id": 10174,
+        "type1": 8,
+        "type2": 0,
+        "baseSpeed": 60
+    },
+    "linoonegalar": {
+        "id": 10175,
+        "type1": 8,
+        "type2": 0,
+        "baseSpeed": 100
+    },
+    "darumakagalar": {
+        "id": 10176,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 50
+    },
+    "darmanitangalarstandard": {
+        "id": 10177,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 95
+    },
+    "darmanitangalarzen": {
+        "id": 10178,
+        "type1": 6,
+        "type2": 1,
+        "baseSpeed": 135
+    },
+    "yamaskgalar": {
+        "id": 10179,
+        "type1": 13,
+        "type2": 16,
+        "baseSpeed": 30
+    },
+    "stunfiskgalar": {
+        "id": 10180,
+        "type1": 13,
+        "type2": 17,
+        "baseSpeed": 32
+    },
+    "zygarde10": {
+        "id": 10181,
+        "type1": 7,
+        "type2": 13,
+        "baseSpeed": 115
+    },
+    "cramorantgulping": {
+        "id": 10182,
+        "type1": 11,
+        "type2": 2,
+        "baseSpeed": 85
+    },
+    "cramorantgorging": {
+        "id": 10183,
+        "type1": 11,
+        "type2": 2,
+        "baseSpeed": 85
+    },
+    "toxtricitylowkey": {
+        "id": 10184,
+        "type1": 4,
+        "type2": 12,
+        "baseSpeed": 75
+    },
+    "eiscuenoice": {
+        "id": 10185,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 130
+    },
+    "indeedeefemale": {
+        "id": 10186,
+        "type1": 5,
+        "type2": 0,
+        "baseSpeed": 85
+    },
+    "morpekohangry": {
+        "id": 10187,
+        "type1": 4,
+        "type2": 8,
+        "baseSpeed": 97
+    },
+    "zaciancrowned": {
+        "id": 10188,
+        "type1": 9,
+        "type2": 17,
+        "baseSpeed": 148
+    },
+    "zamazentacrowned": {
+        "id": 10189,
+        "type1": 10,
+        "type2": 17,
+        "baseSpeed": 128
+    },
+    "eternatuseternamax": {
+        "id": 10190,
+        "type1": 12,
+        "type2": 7,
+        "baseSpeed": 130
+    },
+    "urshifurapidstrike": {
+        "id": 10191,
+        "type1": 10,
+        "type2": 2,
+        "baseSpeed": 97
+    },
+    "zarudedada": {
+        "id": 10192,
+        "type1": 8,
+        "type2": 3,
+        "baseSpeed": 105
+    },
+    "calyrexice": {
+        "id": 10193,
+        "type1": 5,
+        "type2": 6,
+        "baseSpeed": 50
+    },
+    "calyrexshadow": {
+        "id": 10194,
+        "type1": 5,
+        "type2": 16,
+        "baseSpeed": 150
+    },
+    "venusaurgmax": {
+        "id": 10195,
+        "type1": 3,
+        "type2": 12,
+        "baseSpeed": 80
+    },
+    "charizardgmax": {
+        "id": 10196,
+        "type1": 1,
+        "type2": 11,
+        "baseSpeed": 100
+    },
+    "blastoisegmax": {
+        "id": 10197,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 78
+    },
+    "butterfreegmax": {
+        "id": 10198,
+        "type1": 15,
+        "type2": 11,
+        "baseSpeed": 70
+    },
+    "pikachugmax": {
+        "id": 10199,
+        "type1": 4,
+        "type2": 4,
+        "baseSpeed": 90
+    },
+    "meowthgmax": {
+        "id": 10200,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 90
+    },
+    "machampgmax": {
+        "id": 10201,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 55
+    },
+    "gengargmax": {
+        "id": 10202,
+        "type1": 16,
+        "type2": 12,
+        "baseSpeed": 110
+    },
+    "kinglergmax": {
+        "id": 10203,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 75
+    },
+    "laprasgmax": {
+        "id": 10204,
+        "type1": 2,
+        "type2": 6,
+        "baseSpeed": 60
+    },
+    "eeveegmax": {
+        "id": 10205,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 55
+    },
+    "snorlaxgmax": {
+        "id": 10206,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 30
+    },
+    "garbodorgmax": {
+        "id": 10207,
+        "type1": 12,
+        "type2": 12,
+        "baseSpeed": 75
+    },
+    "melmetalgmax": {
+        "id": 10208,
+        "type1": 17,
+        "type2": 17,
+        "baseSpeed": 34
+    },
+    "rillaboomgmax": {
+        "id": 10209,
+        "type1": 3,
+        "type2": 3,
+        "baseSpeed": 85
+    },
+    "cinderacegmax": {
+        "id": 10210,
+        "type1": 1,
+        "type2": 1,
+        "baseSpeed": 119
+    },
+    "inteleongmax": {
+        "id": 10211,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 120
+    },
+    "corviknightgmax": {
+        "id": 10212,
+        "type1": 11,
+        "type2": 17,
+        "baseSpeed": 67
+    },
+    "orbeetlegmax": {
+        "id": 10213,
+        "type1": 15,
+        "type2": 5,
+        "baseSpeed": 90
+    },
+    "drednawgmax": {
+        "id": 10214,
+        "type1": 2,
+        "type2": 14,
+        "baseSpeed": 74
+    },
+    "coalossalgmax": {
+        "id": 10215,
+        "type1": 14,
+        "type2": 1,
+        "baseSpeed": 30
+    },
+    "flapplegmax": {
+        "id": 10216,
+        "type1": 3,
+        "type2": 7,
+        "baseSpeed": 70
+    },
+    "appletungmax": {
+        "id": 10217,
+        "type1": 3,
+        "type2": 7,
+        "baseSpeed": 30
+    },
+    "sandacondagmax": {
+        "id": 10218,
+        "type1": 13,
+        "type2": 13,
+        "baseSpeed": 71
+    },
+    "toxtricityampedgmax": {
+        "id": 10219,
+        "type1": 4,
+        "type2": 12,
+        "baseSpeed": 75
+    },
+    "centiskorchgmax": {
+        "id": 10220,
+        "type1": 1,
+        "type2": 15,
+        "baseSpeed": 65
+    },
+    "hatterenegmax": {
+        "id": 10221,
+        "type1": 5,
+        "type2": 9,
+        "baseSpeed": 29
+    },
+    "grimmsnarlgmax": {
+        "id": 10222,
+        "type1": 8,
+        "type2": 9,
+        "baseSpeed": 60
+    },
+    "alcremiegmax": {
+        "id": 10223,
+        "type1": 9,
+        "type2": 9,
+        "baseSpeed": 64
+    },
+    "copperajahgmax": {
+        "id": 10224,
+        "type1": 17,
+        "type2": 17,
+        "baseSpeed": 30
+    },
+    "duraludongmax": {
+        "id": 10225,
+        "type1": 17,
+        "type2": 7,
+        "baseSpeed": 85
+    },
+    "urshifusinglestrikegmax": {
+        "id": 10226,
+        "type1": 10,
+        "type2": 8,
+        "baseSpeed": 97
+    },
+    "urshifurapidstrikegmax": {
+        "id": 10227,
+        "type1": 10,
+        "type2": 2,
+        "baseSpeed": 97
+    },
+    "toxtricitylowkeygmax": {
+        "id": 10228,
+        "type1": 4,
+        "type2": 12,
+        "baseSpeed": 75
+    },
+    "growlithehisui": {
+        "id": 10229,
+        "type1": 1,
+        "type2": 14,
+        "baseSpeed": 55
+    },
+    "arcaninehisui": {
+        "id": 10230,
+        "type1": 1,
+        "type2": 14,
+        "baseSpeed": 90
+    },
+    "voltorbhisui": {
+        "id": 10231,
+        "type1": 4,
+        "type2": 3,
+        "baseSpeed": 100
+    },
+    "electrodehisui": {
+        "id": 10232,
+        "type1": 4,
+        "type2": 3,
+        "baseSpeed": 150
+    },
+    "typhlosionhisui": {
+        "id": 10233,
+        "type1": 1,
+        "type2": 16,
+        "baseSpeed": 95
+    },
+    "qwilfishhisui": {
+        "id": 10234,
+        "type1": 8,
+        "type2": 12,
+        "baseSpeed": 85
+    },
+    "sneaselhisui": {
+        "id": 10235,
+        "type1": 10,
+        "type2": 12,
+        "baseSpeed": 115
+    },
+    "samurotthisui": {
+        "id": 10236,
+        "type1": 2,
+        "type2": 8,
+        "baseSpeed": 85
+    },
+    "lilliganthisui": {
+        "id": 10237,
+        "type1": 3,
+        "type2": 10,
+        "baseSpeed": 105
+    },
+    "zoruahisui": {
+        "id": 10238,
+        "type1": 0,
+        "type2": 16,
+        "baseSpeed": 70
+    },
+    "zoroarkhisui": {
+        "id": 10239,
+        "type1": 0,
+        "type2": 16,
+        "baseSpeed": 110
+    },
+    "braviaryhisui": {
+        "id": 10240,
+        "type1": 5,
+        "type2": 11,
+        "baseSpeed": 65
+    },
+    "sliggoohisui": {
+        "id": 10241,
+        "type1": 17,
+        "type2": 7,
+        "baseSpeed": 40
+    },
+    "goodrahisui": {
+        "id": 10242,
+        "type1": 17,
+        "type2": 7,
+        "baseSpeed": 60
+    },
+    "avalugghisui": {
+        "id": 10243,
+        "type1": 6,
+        "type2": 14,
+        "baseSpeed": 38
+    },
+    "decidueyehisui": {
+        "id": 10244,
+        "type1": 3,
+        "type2": 10,
+        "baseSpeed": 60
+    },
+    "dialgaorigin": {
+        "id": 10245,
+        "type1": 17,
+        "type2": 7,
+        "baseSpeed": 90
+    },
+    "palkiaorigin": {
+        "id": 10246,
+        "type1": 2,
+        "type2": 7,
+        "baseSpeed": 120
+    },
+    "basculinwhitestriped": {
+        "id": 10247,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 98
+    },
+    "basculegionfemale": {
+        "id": 10248,
+        "type1": 2,
+        "type2": 16,
+        "baseSpeed": 78
+    },
+    "enamorustherian": {
+        "id": 10249,
+        "type1": 9,
+        "type2": 11,
+        "baseSpeed": 46
+    },
+    "taurospaldeacombatbreed": {
+        "id": 10250,
+        "type1": 10,
+        "type2": 10,
+        "baseSpeed": 100
+    },
+    "taurospaldeablazebreed": {
+        "id": 10251,
+        "type1": 10,
+        "type2": 1,
+        "baseSpeed": 100
+    },
+    "taurospaldeaaquabreed": {
+        "id": 10252,
+        "type1": 10,
+        "type2": 2,
+        "baseSpeed": 100
+    },
+    "wooperpaldea": {
+        "id": 10253,
+        "type1": 12,
+        "type2": 13,
+        "baseSpeed": 15
+    },
+    "oinkolognefemale": {
+        "id": 10254,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 65
+    },
+    "dudunsparcethreesegment": {
+        "id": 10255,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 55
+    },
+    "palafinhero": {
+        "id": 10256,
+        "type1": 2,
+        "type2": 2,
+        "baseSpeed": 100
+    },
+    "mausholdfamilyofthree": {
+        "id": 10257,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 111
+    },
+    "tatsugiridroopy": {
+        "id": 10258,
+        "type1": 7,
+        "type2": 2,
+        "baseSpeed": 82
+    },
+    "tatsugiristretchy": {
+        "id": 10259,
+        "type1": 7,
+        "type2": 2,
+        "baseSpeed": 82
+    },
+    "squawkabillyblueplumage": {
+        "id": 10260,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 92
+    },
+    "squawkabillyyellowplumage": {
+        "id": 10261,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 92
+    },
+    "squawkabillywhiteplumage": {
+        "id": 10262,
+        "type1": 0,
+        "type2": 11,
+        "baseSpeed": 92
+    },
+    "gimmighoulroaming": {
+        "id": 10263,
+        "type1": 16,
+        "type2": 16,
+        "baseSpeed": 80
+    },
+    "ursalunabloodmoon": {
+        "id": 10272,
+        "type1": 13,
+        "type2": 0,
+        "baseSpeed": 52
+    },
+    "ogerponwellspringmask": {
+        "id": 10273,
+        "type1": 3,
+        "type2": 2,
+        "baseSpeed": 110
+    },
+    "ogerponhearthflamemask": {
+        "id": 10274,
+        "type1": 3,
+        "type2": 1,
+        "baseSpeed": 110
+    },
+    "ogerponcornerstonemask": {
+        "id": 10275,
+        "type1": 3,
+        "type2": 14,
+        "baseSpeed": 110
+    },
+    "terapagosterastal": {
+        "id": 10276,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 85
+    },
+    "terapagosstellar": {
+        "id": 10277,
+        "type1": 0,
+        "type2": 0,
+        "baseSpeed": 85
+    }
+}
