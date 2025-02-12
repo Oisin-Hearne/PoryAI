@@ -33,7 +33,8 @@
         "par": 3,
         "slp": 4,
         "poi": 5,
-        "tox": 6
+        "tox": 6,
+        "fnt": 7
     },
     "weather": {
         "none": 0,
