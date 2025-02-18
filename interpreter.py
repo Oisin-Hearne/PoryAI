@@ -83,6 +83,11 @@ class Interpreter:
                 for stat in pokeStats.keys():
                     self.state["playerSide"]["reserves"][poke-1]["stats"][stat] = pokeStats[stat]
 
+    def updateStateNoActive(self, newState):
+        pass
+
+    def updateStateTeamPreview(self, newState):
+        pass
 
     def countTurn(self, turnData):
         pass

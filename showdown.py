@@ -2,6 +2,7 @@ import websockets
 import requests
 import json
 import random
+import interpreter
 
 class Showdown:
     async def __init__(self, uri, user, password, websocket):
@@ -9,6 +10,7 @@ class Showdown:
         self.user = user
         self.password = password
         self.socket = await websockets.connect(websocket)
+        self.inter = interpreter.Interpreter()
 
     async def connectToShowdown(self):
             # challstr and chall id represent the current user token.
@@ -81,16 +83,14 @@ class Showdown:
             if 'request' in msgs[1] and len(msgs) > 2:
                 requestOutput = json.loads(msgs[2])
                 if 'active' in requestOutput:
-                    pass
-                elif 'wait' in requestOutput:
-                    pass
-                elif 'forceSwitch' in requestOutput:
-                    pass
+                    self.inter.updateStateActive(requestOutput)
+                elif 'wait' in requestOutput or 'forceSwitch' in requestOutput:
+                    self.inter.updateStateNoActive(requestOutput)
                 elif 'teampreview' in requestOutput:
-                    pass
+                    self.inter.updateStateTeamPreview(requestOutput)
 
                 # Make decision down here
-                
+
 
             if 'turn' in msgs[1]:
                 # Send turn content to interpreter here, then reset it.
