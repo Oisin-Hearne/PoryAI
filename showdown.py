@@ -60,5 +60,46 @@ class Showdown:
     # Communicates with the Interpreter for state,
     # and the agent for actions.
     async def manageBattle(self, battleTag):
-        # TODO
-        return
+        battle_started = False
+        turnContent = []
+
+        while True:
+            recv = await self.socket.recv()
+            msgs = recv.split("|")
+
+            if 'start' in msgs[1]:
+                battle_started = True
+
+            # Identify the side of the player, for use in the interpreter.
+            if 'player' in msgs[1] and self.user in msgs[3]:
+                if 'p1' in msgs[2]:
+                    self.player = 1
+                else:
+                    self.player = 2
+
+            # Requests for the user to do something. These should be sent to the interpreter.
+            if 'request' in msgs[1] and len(msgs) > 2:
+                requestOutput = json.loads(msgs[2])
+                if 'active' in requestOutput:
+                    pass
+                elif 'wait' in requestOutput:
+                    pass
+                elif 'forceSwitch' in requestOutput:
+                    pass
+                elif 'teampreview' in requestOutput:
+                    pass
+
+                # Make decision down here
+                
+
+            if 'turn' in msgs[1]:
+                # Send turn content to interpreter here, then reset it.
+                print(f"TURN {msgs[2]}")
+                print(turnContent)
+                turnContent = []
+
+            if battle_started:
+                turnContent.append(recv)
+
+            if 'win' in msgs[1]: # Battle is over.
+                return
