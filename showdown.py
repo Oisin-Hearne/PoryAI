@@ -3,6 +3,7 @@ import requests
 import json
 import random
 import interpreter
+import agent
 
 class Showdown:
     async def __init__(self, uri, user, password, websocket):
@@ -11,6 +12,7 @@ class Showdown:
         self.password = password
         self.socket = await websockets.connect(websocket)
         self.inter = interpreter.Interpreter()
+        self.agent = agent.Agent()
 
     async def connectToShowdown(self):
             # challstr and chall id represent the current user token.
@@ -90,6 +92,9 @@ class Showdown:
                     self.inter.updateStateTeamPreview(requestOutput)
 
                 # Make decision down here
+                action = self.agent.getAction(requestOutput, battleTag)
+                await self.sendMessage(action)
+
 
 
             if 'turn' in msgs[1]:
