@@ -26,6 +26,7 @@ class Interpreter:
         # Extract information from newState
         porySide = newState["side"]["pokemon"]
         activeMoves = newState["active"][0]["moves"]
+        self.state["request"] = self.miscData["requests"][newState.keys()[0]] #Set request state
         
         for poke in range(len(porySide)):
             pokeName = porySide[poke]["details"].split(",")[0].replace("-", "").replace(" ", "").lower()
@@ -84,7 +85,45 @@ class Interpreter:
                     self.state["playerSide"]["reserves"][poke-1]["stats"][stat] = pokeStats[stat]
 
     def updateStateNoActive(self, newState):
-        pass
+
+        # Extract information from newState
+        porySide = newState["side"]["pokemon"]
+        self.state["request"] = self.miscData["requests"][newState.keys()[0]] #Set request state
+
+        
+        for poke in range(len(porySide)):
+            pokeName = porySide[poke]["details"].split(",")[0].replace("-", "").replace(" ", "").lower()
+            pokeHp = eval(porySide[poke]["condition"].split(" ")[0])
+            pokeStatus = porySide[poke]["condition"].split(" ")[1] if len(porySide[poke]["condition"].split(" ")) > 1 else "none"
+            pokeAbility = porySide[poke]["ability"]
+            pokeMoves = porySide[poke]["moves"]
+            pokeStats = porySide[poke]["stats"]
+            pokeItem = porySide[poke]["item"]
+            pokeTeraType = porySide[poke]["teraType"].lower()
+
+            
+            # Pokemon type, id, stats fetched from pokedata
+            self.state["playerSide"]["reserves"][poke-1]["id"] = self.pokeData[pokeName]["id"]
+            self.state["playerSide"]["reserves"][poke-1]["stats"]["baseSpeed"] = self.pokeData[pokeName]["baseSpeed"]
+            self.state["playerSide"]["reserves"][poke-1]["type1"] = self.pokeData[pokeName]["type1"]
+            self.state["playerSide"]["reserves"][poke-1]["type2"] = self.pokeData[pokeName]["type2"]
+
+            # Condition and TeraType from showdown.
+            self.state["playerSide"]["reserves"][poke-1]["condition"]["hp"] = pokeHp
+            self.state["playerSide"]["reserves"][poke-1]["condition"]["status"] = self.miscData["conditions"][pokeStatus]
+            self.state["playerSide"]["reserves"][poke-1]["teraType"] = self.miscData["types"][pokeTeraType]
+            self.state["playerSide"]["reserves"][poke-1]["terrastillized"] = 0 if not porySide[poke]["terastallized"] else 1
+
+
+            # Ability and item fetched from abilityData and itemData
+            self.state["playerSide"]["reserves"][poke-1]["ability"] = self.abilityData[pokeAbility]
+            self.state["playerSide"]["reserves"][poke-1]["item"] = self.itemData[pokeItem]
+
+            for move in range(len(pokeMoves)): # Moves fetched from moveData
+                self.state["playerSide"]["reserves"][poke-1]["moves"][move] = self.moveData[pokeMoves[move]]
+            for stat in pokeStats.keys():
+                self.state["playerSide"]["reserves"][poke-1]["stats"][stat] = pokeStats[stat]
+
 
     def updateStateTeamPreview(self, newState):
         pass

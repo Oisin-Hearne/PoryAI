@@ -49,5 +49,11 @@
         "grassy":2,
         "misty":3,
         "psychic":4
+    },
+    "request": {
+        "wait": 0,
+        "forceSwitch": 1,
+        "teamPreview": 2,
+        "active": 3
     }
 }
