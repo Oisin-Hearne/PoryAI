@@ -6,15 +6,16 @@ import interpreter
 import agent
 
 class Showdown:
-    async def __init__(self, uri, user, password, websocket):
+    def __init__(self, uri, user, password, websocket):
         self.uri = uri
         self.user = user
         self.password = password
-        self.socket = await websockets.connect(websocket)
+        self.websocket = websocket
         self.inter = interpreter.Interpreter()
         self.agent = agent.Agent()
 
     async def connectToShowdown(self):
+        self.socket = await websockets.connect(self.websocket)
             # challstr and chall id represent the current user token.
             # we need to retrieve it from the showdown server. When not logged in,
             # the server will send the user their challstr and challid whcih we receive below.
@@ -107,4 +108,10 @@ class Showdown:
                 turnContent.append(recv)
 
             if 'win' in msgs[1]: # Battle is over.
+                await self.manageBattle(battleTag)
                 return
+
+    async def run(self):
+        await self.connectToShowdown()
+        battleTag = await self.joinQueue('gen8randombattle')
+        await self.manageBattle(battleTag)
