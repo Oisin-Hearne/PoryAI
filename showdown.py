@@ -6,13 +6,14 @@ import interpreter
 import agent
 
 class Showdown:
-    def __init__(self, uri, user, password, websocket):
+    def __init__(self, uri, user, password, websocket, format):
         self.uri = uri
         self.user = user
         self.password = password
         self.websocket = websocket
         self.inter = interpreter.Interpreter()
         self.agent = agent.Agent()
+        self.format = format
 
     async def connectToShowdown(self):
         self.socket = await websockets.connect(self.websocket)
@@ -21,6 +22,7 @@ class Showdown:
             # the server will send the user their challstr and challid whcih we receive below.
         challid = 0
         challstr = ""
+        received = ""
 
         while(challstr == ""):
             received = await self.socket.recv()
@@ -28,8 +30,7 @@ class Showdown:
             if(msgs[1] == "challstr"):
                 challid = msgs[2]
                 challstr = msgs[3]
-
-            challstr = "|".join([challid, challstr]) # Join these together to form the token to be sent to the server
+                challstr = "|".join([challid, challstr]) # Join these together to form the token to be sent to the server
 
         # HTTP Request 
         loggedIn = requests.post(
@@ -53,12 +54,16 @@ class Showdown:
     
     # Join the queue for the specified format, returning the battle tag.
     async def joinQueue(self, format):
-        recv = await self.sendMessage(f"|/join {format}|")
+        recv = await self.sendMessage(f"|/search {format}|")
 
         while True:
+            print(recv)
             recv = recv.split("|")
             if 'battle' in recv[0]:
                 return recv[0][1:].strip()
+            elif len(recv) > 4:
+                if 'challenge' in recv[4]:
+                    await self.sendMessage(f"|/accept {recv[2]}|")
             recv = await self.socket.recv()
 
     # Runs the logic for the given battle tag
@@ -84,6 +89,7 @@ class Showdown:
 
             # Requests for the user to do something. These should be sent to the interpreter.
             if 'request' in msgs[1] and len(msgs) > 2:
+                print(msgs)
                 requestOutput = json.loads(msgs[2])
                 if 'active' in requestOutput:
                     self.inter.updateStateActive(requestOutput)
@@ -113,5 +119,5 @@ class Showdown:
 
     async def run(self):
         await self.connectToShowdown()
-        battleTag = await self.joinQueue('gen8randombattle')
+        battleTag = await self.joinQueue(self.format)
         await self.manageBattle(battleTag)

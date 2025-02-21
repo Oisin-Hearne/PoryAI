@@ -26,7 +26,7 @@ class Interpreter:
         # Extract information from newState
         porySide = newState["side"]["pokemon"]
         activeMoves = newState["active"][0]["moves"]
-        self.state["request"] = self.miscData["requests"][newState.keys()[0]] #Set request state
+        self.state["request"] = self.miscData["request"][list(newState.keys())[0]] #Set request state
         
         for poke in range(len(porySide)):
             pokeName = porySide[poke]["details"].split(",")[0].replace("-", "").replace(" ", "").lower()
@@ -88,7 +88,7 @@ class Interpreter:
 
         # Extract information from newState
         porySide = newState["side"]["pokemon"]
-        self.state["request"] = self.miscData["requests"][newState.keys()[0]] #Set request state
+        self.state["request"] = self.miscData["request"][list(newState.keys())[0]] #Set request state
 
         
         for poke in range(len(porySide)):
