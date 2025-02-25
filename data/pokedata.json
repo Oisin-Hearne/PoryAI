@@ -3839,13 +3839,13 @@
         "type2": 10,
         "baseSpeed": 108
     },
-    "tornadusincarnate": {
+    "tornadus": {
         "id": 641,
         "type1": 11,
         "type2": 11,
         "baseSpeed": 111
     },
-    "thundurusincarnate": {
+    "thundurus": {
         "id": 642,
         "type1": 4,
         "type2": 11,
@@ -3863,7 +3863,7 @@
         "type2": 4,
         "baseSpeed": 90
     },
-    "landorusincarnate": {
+    "landorus": {
         "id": 645,
         "type1": 13,
         "type2": 11,
@@ -4661,7 +4661,7 @@
         "type2": 17,
         "baseSpeed": 96
     },
-    "mimikyudisguised": {
+    "mimikyu": {
         "id": 778,
         "type1": 16,
         "type2": 9,
@@ -5087,7 +5087,7 @@
         "type2": 12,
         "baseSpeed": 40
     },
-    "toxtricityamped": {
+    "toxtricity": {
         "id": 849,
         "type1": 4,
         "type2": 12,
@@ -5242,6 +5242,12 @@
         "type1": 14,
         "type2": 14,
         "baseSpeed": 70
+    },
+    "eiscue": {
+        "id": 875,
+        "type1": 6,
+        "type2": 6,
+        "baseSpeed": 50
     },
     "eiscueice": {
         "id": 875,
@@ -5489,7 +5495,7 @@
         "type2": 0,
         "baseSpeed": 35
     },
-    "oinkolognemale": {
+    "oinkologne": {
         "id": 916,
         "type1": 0,
         "type2": 0,
@@ -7067,13 +7073,13 @@
         "type2": 17,
         "baseSpeed": 96
     },
-    "necrozmadusk": {
+    "necrozmaduskmane": {
         "id": 10155,
         "type1": 5,
         "type2": 17,
         "baseSpeed": 77
     },
-    "necrozmadawn": {
+    "necrozmadawnwings": {
         "id": 10156,
         "type1": 5,
         "type2": 16,
