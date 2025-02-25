@@ -4,6 +4,8 @@ import json
 import random
 import interpreter
 import agent
+import concurrent.futures
+import timeit
 
 class Showdown:
     def __init__(self, uri, user, password, websocket, format):
@@ -47,6 +49,10 @@ class Showdown:
         jsonOut = json.loads(loggedIn.text[1:])
         await self.sendMessage(f"|/trn {self.user},0,{jsonOut['assertion']}|")
 
+    async def connectNoSecurity(self):
+        self.socket = await websockets.connect(self.websocket)
+        await self.sendMessage(f"|/trn {self.user}")
+
 
     async def sendMessage(self, message):
         await self.socket.send([message])
@@ -57,7 +63,7 @@ class Showdown:
         recv = await self.sendMessage(f"|/search {format}|")
 
         while True:
-            print(recv)
+            #print(recv)
             recv = recv.split("|")
             if 'battle' in recv[0]:
                 return recv[0][1:].strip()
@@ -88,8 +94,8 @@ class Showdown:
                     self.player = 2
 
             # Requests for the user to do something. These should be sent to the interpreter.
-            if 'request' in msgs[1] and len(msgs) > 2:
-                print(msgs)
+            if 'request' in msgs[1] and len(msgs[2]) > 2:
+                #print(msgs)
                 requestOutput = json.loads(msgs[2])
                 if 'active' in requestOutput:
                     self.inter.updateStateActive(requestOutput)
@@ -99,15 +105,17 @@ class Showdown:
                     self.inter.updateStateTeamPreview(requestOutput)
 
                 # Make decision down here
-                action = self.agent.getAction(requestOutput, battleTag)
-                await self.sendMessage(action)
+                if not "wait" in requestOutput:
+                    action = self.agent.getAction(requestOutput, battleTag)
+                    #print(action+" "+self.user)
+                    await self.sendMessage(action)
 
 
 
             if 'turn' in msgs[1]:
                 # Send turn content to interpreter here, then reset it.
-                print(f"TURN {msgs[2]}")
-                print(turnContent)
+                #print(f"TURN {msgs[2]}")
+                #print(turnContent)
                 turnContent = []
 
             if battle_started:
@@ -118,6 +126,7 @@ class Showdown:
                 return
 
     async def run(self):
-        await self.connectToShowdown()
-        battleTag = await self.joinQueue(self.format)
-        await self.manageBattle(battleTag)
+        await self.connectNoSecurity()
+        while True:
+            battleTag = await self.joinQueue(self.format)
+            await self.manageBattle(battleTag)
