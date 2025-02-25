@@ -122,11 +122,12 @@ class Showdown:
                 turnContent.append(recv)
 
             if 'win' in msgs[1]: # Battle is over.
-                await self.manageBattle(battleTag)
-                return
+                print("battle over")
+                break
 
     async def run(self):
         await self.connectNoSecurity()
         while True:
+            print("looking for battle "+self.user)
             battleTag = await self.joinQueue(self.format)
             await self.manageBattle(battleTag)
