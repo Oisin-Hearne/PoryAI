@@ -13,7 +13,10 @@ class Agent:
             # Pokémon can be locked into moves, so we need to check that the chosen move hasn't been disabled.
             while invalidMove:
                 randomMove = random.choice(state["active"][0]["moves"])
-                if not randomMove["disabled"]:
+                if("disabled" not in randomMove.keys()):
+                    invalidMove = False
+                    return tag+'|/choose move '+randomMove["id"]+"|"+str(state["rqid"])
+                elif (not randomMove["disabled"]):
                     invalidMove = False
                     return tag+'|/choose move '+randomMove["id"]+"|"+str(state["rqid"])
             
@@ -25,4 +28,5 @@ class Agent:
                 # Don't send in a fainted mon or try to send in the current one.
                 if(state["side"]["pokemon"][randomMon]["condition"] != "0 fnt") and (state["side"]["pokemon"][randomMon]["active"] == False):
                     invalidMon = False
+                    #print(tag+'|/choose switch '+str(randomMon+1)+"|"+str(state["rqid"]))
                     return tag+'|/choose switch '+str(randomMon+1)+"|"+str(state["rqid"])
