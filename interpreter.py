@@ -1,4 +1,5 @@
 import json
+from difflib import get_close_matches
 
 class Interpreter:
 
@@ -30,6 +31,7 @@ class Interpreter:
         
         for poke in range(len(porySide)):
             pokeName = porySide[poke]["details"].split(",")[0].replace("-", "").replace(" ", "").lower()
+            pokeName = get_close_matches(pokeName, self.pokeData.keys(), n=1, cutoff=0.5)[0]
             pokeHp = eval(porySide[poke]["condition"].split(" ")[0])
             pokeStatus = porySide[poke]["condition"].split(" ")[1] if len(porySide[poke]["condition"].split(" ")) > 1 else "none"
             pokeAbility = porySide[poke]["ability"]
@@ -49,16 +51,27 @@ class Interpreter:
                 self.state["playerSide"]["activeMon"]["condition"]["hp"] = pokeHp
                 self.state["playerSide"]["activeMon"]["condition"]["status"] = self.miscData["conditions"][pokeStatus]
                 self.state["playerSide"]["activeMon"]["teraType"] = self.miscData["types"][pokeTeraType]
-                self.state["playerSide"]["activeMon"]["terrastillized"] = 0 if not newState["active"][0]["canTerastallize"] else 1
+
+                if("canTerastallize" in newState["active"][0]):
+                    self.state["playerSide"]["activeMon"]["terrastillized"] = 0 if (not newState["active"][0]["canTerastallize"]) else 1
 
                 # Ability and item fetched from abilityData and itemData
                 self.state["playerSide"]["activeMon"]["ability"] = self.abilityData[pokeAbility]
                 self.state["playerSide"]["activeMon"]["item"] = self.itemData[pokeItem]
 
-                for move in range(len(pokeMoves)): # Moves fetched from moveData
-                    self.state["playerSide"]["activeMon"]["moves"][move] = self.moveData[pokeMoves[move]]
-                    self.state["playerSide"]["activeMon"]["moves"][move]["pp"] = activeMoves[move]["pp"]
-                    self.state["playerSide"]["activeMon"]["moves"][move]["disabled"] = 0 if not activeMoves[move]["disabled"] else 1
+                if((len(pokeMoves) > 1)):
+                    for move in range(len(activeMoves)): # Moves fetched from moveData
+                        self.state["playerSide"]["activeMon"]["moves"][move] = self.moveData[pokeMoves[move]]
+
+                        if("pp" in activeMoves[move].keys()):
+                            self.state["playerSide"]["activeMon"]["moves"][move]["pp"] = activeMoves[move]["pp"]
+                            self.state["playerSide"]["activeMon"]["moves"][move]["disabled"] = 0 if not activeMoves[move]["disabled"] else 1
+                        self.state["playerSide"]["activeMon"]["moves"][move]["locked"] = 0
+                        self.state["playerSide"]["activeMon"]["condition"]["struggling"] = 0
+                elif(pokeMoves[0] != "Struggle"):
+                    self.state["playerSide"]["activeMon"]["moves"][pokeMoves[0]]["locked"] = 1
+                else:
+                    self.state["playerSide"]["activeMon"]["condition"]["struggling"] = 1
                 for stat in pokeStats.keys():
                     self.state["playerSide"]["activeMon"]["stats"][stat] = pokeStats[stat]
             else:
@@ -93,6 +106,7 @@ class Interpreter:
         
         for poke in range(len(porySide)):
             pokeName = porySide[poke]["details"].split(",")[0].replace("-", "").replace(" ", "").lower()
+            pokeName = get_close_matches(pokeName, self.pokeData.keys(), n=1, cutoff=0.5)[0]
             pokeHp = eval(porySide[poke]["condition"].split(" ")[0])
             pokeStatus = porySide[poke]["condition"].split(" ")[1] if len(porySide[poke]["condition"].split(" ")) > 1 else "none"
             pokeAbility = porySide[poke]["ability"]
