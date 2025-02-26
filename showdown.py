@@ -72,6 +72,16 @@ class Showdown:
                     await self.sendMessage(f"|/accept {recv[2]}|")
             recv = await self.socket.recv()
 
+    async def challengeFoulPlay(self, format):
+        foulPlayUser = self.user.replace("PoryAI", "FoulPlay")
+        recv = await self.sendMessage(f"|/challenge {foulPlayUser}, {format}|")
+        while True:
+            recv = recv.split("|")
+            if 'battle' in recv[0]:
+                return recv[0][1:].strip()
+            
+            recv = await self.socket.recv()
+
     # Runs the logic for the given battle tag
     # Communicates with the Interpreter for state,
     # and the agent for actions.
@@ -85,7 +95,7 @@ class Showdown:
 
             if 'start' in msgs[1]:
                 battle_started = True
-
+            
             # Identify the side of the player, for use in the interpreter.
             if 'player' in msgs[1] and self.user in msgs[3]:
                 if 'p1' in msgs[2]:
@@ -120,8 +130,9 @@ class Showdown:
 
             if battle_started:
                 turnContent.append(recv)
+            
 
-            if 'win' in msgs[1]: # Battle is over.
+            if 'for winning' in msgs[2]: # Battle is over.
                 print("battle over")
                 break
 
@@ -129,5 +140,5 @@ class Showdown:
         await self.connectNoSecurity()
         while True:
             print("looking for battle "+self.user)
-            battleTag = await self.joinQueue(self.format)
+            battleTag = await self.challengeFoulPlay(self.format)
             await self.manageBattle(battleTag)
