@@ -6,6 +6,7 @@ import interpreter
 import agent
 import concurrent.futures
 import timeit
+import time
 
 class Showdown:
     def __init__(self, uri, user, password, websocket, format):
@@ -77,7 +78,8 @@ class Showdown:
         recv = await self.sendMessage(f"|/challenge {foulPlayUser}, {format}|")
         while True:
             recv = recv.split("|")
-            if 'battle' in recv[0]:
+            print(f"{self.user} , {recv}")
+            if 'battle' in recv[0] and 'init' in recv[1]:
                 return recv[0][1:].strip()
             
             recv = await self.socket.recv()
@@ -92,7 +94,7 @@ class Showdown:
         while True:
             recv = await self.socket.recv()
             msgs = recv.split("|")
-
+            
             if 'start' in msgs[1]:
                 battle_started = True
             
@@ -102,6 +104,7 @@ class Showdown:
                     self.player = 1
                 else:
                     self.player = 2
+                print(self.player)
 
             # Requests for the user to do something. These should be sent to the interpreter.
             if 'request' in msgs[1] and len(msgs[2]) > 2:
@@ -116,25 +119,24 @@ class Showdown:
 
                 # Make decision down here
                 if not "wait" in requestOutput:
-                    action = self.agent.getAction(requestOutput, battleTag)
-                    #print(action+" "+self.user)
-                    await self.sendMessage(action)
+                    await self.socket.send([self.agent.getAction(requestOutput, battleTag)])
 
-
-
-            if 'turn' in msgs[1]:
+            if 't:' in msgs[2] and "Time left" not in msgs[2]:
                 # Send turn content to interpreter here, then reset it.
-                #print(f"TURN {msgs[2]}")
-                #print(turnContent)
+                turnContent = recv.split("\n")[3:]
+                print(f"TURN {turnContent[-1:]}"+self.user)
+                print(turnContent)
                 turnContent = []
 
-            if battle_started:
+            if battle_started and (msgs[1] in ["switch", "move", "faint"] or msgs[1][1] == "-"):
                 turnContent.append(recv)
             
 
-            if 'for winning' in msgs[2]: # Battle is over.
-                print("battle over")
+            if '|win|' in recv: # Battle is over.
+                print("battle over"+self.user)
+                time.sleep(3)
                 break
+
 
     async def run(self):
         await self.connectNoSecurity()

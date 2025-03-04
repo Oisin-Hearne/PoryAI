@@ -60,6 +60,7 @@ class Interpreter:
                 self.state["playerSide"]["activeMon"]["item"] = self.itemData[pokeItem]
 
                 if((len(pokeMoves) > 1)):
+                    print(activeMoves)
                     for move in range(len(activeMoves)): # Moves fetched from moveData
                         self.state["playerSide"]["activeMon"]["moves"][move] = self.moveData[pokeMoves[move]]
 
