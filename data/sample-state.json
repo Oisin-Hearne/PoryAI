@@ -66,7 +66,8 @@
                 "spe" : 0,
                 "speMod" : 0,
                 "baseSpeed" : 0,
-                "accMod" : 0
+                "accMod" : 0,
+                "evaMod" : 0
             }
         },
         "reserves" : [
@@ -420,7 +421,8 @@
                 "spdMod" : 0,
                 "speMod" : 0,
                 "baseSpeed" : 0,
-                "accMod" : 0
+                "accMod" : 0,
+                "evaMod": 0
             }
         },
         "reserves" : [
