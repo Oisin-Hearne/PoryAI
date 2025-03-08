@@ -78,7 +78,6 @@ class Showdown:
         recv = await self.sendMessage(f"|/challenge {foulPlayUser}, {format}|")
         while True:
             recv = recv.split("|")
-            print(f"{self.user} , {recv}")
             if 'battle' in recv[0] and 'init' in recv[1]:
                 return recv[0][1:].strip()
             
@@ -104,11 +103,9 @@ class Showdown:
                     self.player = 1
                 else:
                     self.player = 2
-                print(self.player)
 
             # Requests for the user to do something. These should be sent to the interpreter.
             if 'request' in msgs[1] and len(msgs[2]) > 2:
-                #print(msgs)
                 requestOutput = json.loads(msgs[2])
                 if 'active' in requestOutput:
                     self.inter.updateStateActive(requestOutput)
@@ -125,7 +122,7 @@ class Showdown:
                 # Send turn content to interpreter here, then reset it.
                 turnContent = recv.split("\n")[3:]
                 print(f"TURN {turnContent[-1:]}"+self.user)
-                print(turnContent)
+                self.inter.updateTurnState(turnContent)
                 turnContent = []
 
             if battle_started and (msgs[1] in ["switch", "move", "faint"] or msgs[1][1] == "-"):

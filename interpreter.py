@@ -60,7 +60,6 @@ class Interpreter:
                 self.state["playerSide"]["activeMon"]["item"] = self.itemData[pokeItem]
 
                 if((len(pokeMoves) > 1)):
-                    print(activeMoves)
                     for move in range(len(activeMoves)): # Moves fetched from moveData
                         self.state["playerSide"]["activeMon"]["moves"][move] = self.moveData[pokeMoves[move]]
 
@@ -140,8 +139,42 @@ class Interpreter:
                 self.state["playerSide"]["reserves"][poke-1]["stats"][stat] = pokeStats[stat]
 
 
-    def updateStateTeamPreview(self, newState):
-        pass
+    def updateTurnState(self, turnData):
+        # Extract information from Turn Data.
+        for line in turnData:
+            splitData = line.split("|")
+
+            # Check for a new pokemon
+            if "move" in splitData[1]:
+                # If the opponnet has used a move, and their pokémon hasn't been recorded yet, mark it as the active pokemon.
+                if "p2a:" in splitData[2]:
+                    if self.state["opposingSide"]["activeMon"]["id"] == 0:
+                        opponentMon = splitData[2].split(":")[1].replace(" ", "").replace("-", "").lower()
+                        opponentMon = get_close_matches(opponentMon, self.pokeData.keys(), n=1, cutoff=0.5)[0]
+
+                        self.state["opposingSide"]["activeMon"]["id"] = self.pokeData[opponentMon]["id"]
+                        self.state["opposingSide"]["activeMon"]["type1"] = self.pokeData[opponentMon]["type1"]
+                        self.state["opposingSide"]["activeMon"]["type2"] = self.pokeData[opponentMon]["type2"]
+                        self.state["opposingSide"]["activeMon"]["stats"]["baseSpeed"] = self.pokeData[opponentMon]["baseSpeed"]
+                    # Check if opponent is struggling
+                    if "Struggle" in splitData[2]:
+                        self.state["opposingSide"]["activeMon"]["condition"]["struggling"] = 1
+                    else:
+                        self.state["opposingSide"]["activeMon"]["condition"]["struggling"] = 0
+                    
+                    # Record move used by opponent, if it hasn't been recorded before.
+                    moveUsed = splitData[3].replace(" ", "").replace("-", "").lower()
+                    for move in range(len(self.state["opposingSide"]["activeMon"]["moves"])):
+                        if self.state["opposingSide"]["activeMon"]["moves"][move]["id"] == self.moveData[moveUsed]["id"]:
+                            break # Exit early if it's been recorded already.
+                        if self.state["opposingSide"]["activeMon"]["moves"][move]["id"] == 0: # Look for empty move slot
+                            self.state["opposingSide"]["activeMon"]["moves"][move]["id"] = self.moveData[moveUsed]["id"]
+                            self.state["opposingSide"]["activeMon"]["moves"][move]["type"] = self.moveData[moveUsed]["type"]
+                            self.state["opposingSide"]["activeMon"]["moves"][move]["category"] = self.moveData[moveUsed]["category"]
+                            self.state["opposingSide"]["activeMon"]["moves"][move]["power"] = self.moveData[moveUsed]["power"]
+                            break
+
+        print(self.state)
 
     def countTurn(self, turnData):
         pass
