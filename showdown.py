@@ -89,23 +89,27 @@ class Showdown:
     async def manageBattle(self, battleTag):
         battle_started = False
         turnContent = []
+        turnCount = 0
 
         while True:
             recv = await self.socket.recv()
             msgs = recv.split("|")
             
-            if 'start' in msgs[1]:
+            if 'start\n' in recv and not battle_started: # Start of battle
                 battle_started = True
+                _, _, firstTurn = recv.partition("start\n")
+                self.inter.updateTurnState(firstTurn.split("\n"), turnCount)
+                turnCount += 1
             
             # Identify the side of the player, for use in the interpreter.
-            if 'player' in msgs[1] and self.user in msgs[3]:
+            elif 'player' in msgs[1] and self.user in msgs[3]:
                 if 'p1' in msgs[2]:
                     self.player = 1
                 else:
                     self.player = 2
 
             # Requests for the user to do something. These should be sent to the interpreter.
-            if 'request' in msgs[1] and len(msgs[2]) > 2:
+            elif 'request' in msgs[1] and len(msgs[2]) > 2:
                 requestOutput = json.loads(msgs[2])
                 if 'active' in requestOutput:
                     self.inter.updateStateActive(requestOutput)
@@ -118,14 +122,16 @@ class Showdown:
                 if not "wait" in requestOutput:
                     await self.socket.send([self.agent.getAction(requestOutput, battleTag)])
 
-            if 't:' in msgs[2] and "Time left" not in msgs[2]:
+            elif 't:' in msgs[2] and "Time left" not in msgs[2]:
                 # Send turn content to interpreter here, then reset it.
                 turnContent = recv.split("\n")[3:]
                 print(f"TURN {turnContent[-1:]}"+self.user)
-                self.inter.updateTurnState(turnContent)
+                print(turnContent)
+                self.inter.updateTurnState(turnContent, turnCount)
+                turnCount += 1
                 turnContent = []
 
-            if battle_started and (msgs[1] in ["switch", "move", "faint"] or msgs[1][1] == "-"):
+            elif turnCount > 0 and (msgs[1] in ["switch", "move", "faint"] or msgs[1][1] == "-"):
                 turnContent.append(recv)
             
 

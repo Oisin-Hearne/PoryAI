@@ -1,10 +1,12 @@
 import json
+import copy
 from difflib import get_close_matches
 
 class Interpreter:
 
     def __init__(self):
         self.loadData()
+        self.knownOpponents = []
 
     # Load in previously fetched data for use in state.
     def loadData(self):
@@ -139,7 +141,7 @@ class Interpreter:
                 self.state["playerSide"]["reserves"][poke-1]["stats"][stat] = pokeStats[stat]
 
 
-    def updateTurnState(self, turnData):
+    def updateTurnState(self, turnData, turnCount):
         # Extract information from Turn Data.
         for line in turnData:
             splitData = line.split("|")
@@ -148,14 +150,8 @@ class Interpreter:
             if "move" in splitData[1]:
                 # If the opponnet has used a move, and their pokémon hasn't been recorded yet, mark it as the active pokemon.
                 if "p2a:" in splitData[2]:
-                    if self.state["opposingSide"]["activeMon"]["id"] == 0:
-                        opponentMon = splitData[2].split(":")[1].replace(" ", "").replace("-", "").lower()
-                        opponentMon = get_close_matches(opponentMon, self.pokeData.keys(), n=1, cutoff=0.5)[0]
-
-                        self.state["opposingSide"]["activeMon"]["id"] = self.pokeData[opponentMon]["id"]
-                        self.state["opposingSide"]["activeMon"]["type1"] = self.pokeData[opponentMon]["type1"]
-                        self.state["opposingSide"]["activeMon"]["type2"] = self.pokeData[opponentMon]["type2"]
-                        self.state["opposingSide"]["activeMon"]["stats"]["baseSpeed"] = self.pokeData[opponentMon]["baseSpeed"]
+                    if self.state["opposingSide"]["activeMon"]["id"] == 0: # Likely start of battle
+                        self.recordActiveMon(splitData[2])
                     # Check if opponent is struggling
                     if "Struggle" in splitData[2]:
                         self.state["opposingSide"]["activeMon"]["condition"]["struggling"] = 1
@@ -174,8 +170,72 @@ class Interpreter:
                             self.state["opposingSide"]["activeMon"]["moves"][move]["power"] = self.moveData[moveUsed]["power"]
                             break
 
-        print(self.state)
+            # When a switch occurs, add the current active mon to reserves and record the new one.
+            if 'switch' in splitData[1] and "p2" in splitData[2] and turnCount > 0:
+                self.addReserves(self.state["opposingSide"]["activeMon"])
+                self.recordActiveMon(splitData[2])
+                
+            if 'switch' in splitData[1] and "p2" in splitData[2] and turnCount is 0: # No need for reserves on first turn.
+                self.recordActiveMon(splitData[2])
+                
+            # Record any changes in HP or status.
+            if '-damage' in splitData[1] or '-heal' in splitData[1]:
+                status = splitData[3].split(" ")
+
+                if "p1" in splitData[2]:
+                    self.state["playerSide"]["activeMon"]["condition"]["hp"] = eval(status[0])
+
+                    if len(status) > 1:
+                        print("status check", status[1])
+                        self.state["playerSide"]["activeMon"]["condition"]["status"] = self.miscData["conditions"][status[1]]
+
+                elif "p2" in splitData[2]:
+                    self.state["opposingSide"]["activeMon"]["condition"]["hp"] = eval(status[0])
+
+                    if len(status) > 1:
+                        print("status check", status[1])
+                        self.state["opposingSide"]["activeMon"]["condition"]["status"] = self.miscData["conditions"][status[1]]
+        
+            
+        print("Turn State: ", self.state)
+
+    def recordActiveMon(self, opponentMon):
+        opponentMon = opponentMon.split(":")[1].replace(" ", "").replace("-", "").lower()
+        opponentMon = get_close_matches(opponentMon, self.pokeData.keys(), n=1, cutoff=0.5)[0]
+
+        self.state["opposingSide"]["activeMon"]["id"] = self.pokeData[opponentMon]["id"]
+        self.state["opposingSide"]["activeMon"]["type1"] = self.pokeData[opponentMon]["type1"]
+        self.state["opposingSide"]["activeMon"]["type2"] = self.pokeData[opponentMon]["type2"]
+        self.state["opposingSide"]["activeMon"]["stats"]["baseSpeed"] = self.pokeData[opponentMon]["baseSpeed"]
+        print("New Opponent Mon: ", self.state["opposingSide"]["activeMon"])
+
+    # Add a new reserve to the opposingside's reserves list. If the mon is already in the reserves, do nothing. 
+    def addReserves(self, newReserve):
+        
+        # A painful way to learn about python's pass by reference.
+        opponentMon = copy.deepcopy(newReserve)
+            
+        for mon in range(len(self.state["opposingSide"]["reserves"])):
+            if self.state["opposingSide"]["reserves"][mon]["id"] == opponentMon["id"]:
+                return
+            
+            # Can overwrite a mon that's currently active as well.
+            if self.state["opposingSide"]["reserves"][mon]["id"] == 0 or self.state["opposingSide"]["activeMon"]["id"] == self.state["opposingSide"]["reserves"][mon]["id"]:
+                for stat in opponentMon["stats"]:
+                    if stat != "baseSpeed":
+                        opponentMon["stats"][stat] = 0
+                for condition in opponentMon["condition"]:
+                    if condition not in ["hp", "status"]:
+                        opponentMon["condition"][condition] = 0
+                        
+                self.state["opposingSide"]["reserves"][mon] = opponentMon
+
+                return
+        
 
     def countTurn(self, turnData):
         pass
+
+    def reset(self):
+        self.knownOpponents = []
 
