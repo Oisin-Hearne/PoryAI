@@ -88,7 +88,6 @@ class Interpreter:
                 self.state["playerSide"]["reserves"][poke-1]["condition"]["hp"] = pokeHp
                 self.state["playerSide"]["reserves"][poke-1]["condition"]["status"] = self.miscData["conditions"][pokeStatus]
                 self.state["playerSide"]["reserves"][poke-1]["teraType"] = self.miscData["types"][pokeTeraType]
-                self.state["playerSide"]["reserves"][poke-1]["terrastillized"] = 0 if not porySide[poke]["terastallized"] else 1
 
 
                 # Ability and item fetched from abilityData and itemData
@@ -129,7 +128,6 @@ class Interpreter:
             self.state["playerSide"]["reserves"][poke-1]["condition"]["hp"] = pokeHp
             self.state["playerSide"]["reserves"][poke-1]["condition"]["status"] = self.miscData["conditions"][pokeStatus]
             self.state["playerSide"]["reserves"][poke-1]["teraType"] = self.miscData["types"][pokeTeraType]
-            self.state["playerSide"]["reserves"][poke-1]["terrastillized"] = 0 if not porySide[poke]["terastallized"] else 1
 
 
             # Ability and item fetched from abilityData and itemData
@@ -182,6 +180,7 @@ class Interpreter:
             if '-damage' in splitData[1] or '-heal' in splitData[1]:
                 status = splitData[3].split(" ")
                 side = "playerSide" if "p1" in splitData[2] else "opposingSide"
+                print(f"Changing HP of {side} by {status[0]}. Current hp is {self.state[side]['activeMon']['condition']['hp']}")
                 self.state[side]["activeMon"]["condition"]["hp"] = eval(status[0])
 
                 if len(status) > 1:
@@ -189,6 +188,11 @@ class Interpreter:
             if "-curestatus" in splitData[1]:
                 side = "playerSide" if "p1" in splitData[2] else "opposingSide"
                 self.state[side]["activeMon"]["condition"]["status"] = 0
+                
+            if "faint" in splitData[1]:
+                side = "playerSide" if "p1" in splitData[2] else "opposingSide"
+                self.state[side]["activeMon"]["condition"]["hp"] = 0
+                self.state[side]["activeMon"]["condition"]["status"] = 7
                         
             if '-boost' in splitData[1] or '-unboost' in splitData[1]:
                 boost = splitData[4] if '-boost' in splitData[1] else "-" + splitData[4] # Positive or negative boost
@@ -228,6 +232,11 @@ class Interpreter:
                     item = splitData[4].split(" ")[2:]
                     item = ''.join(item).replace(" ", "").replace("-", "").lower()
                     self.state["opposingSide"]["activeMon"]["item"] = self.itemData[item]
+            if len(splitData) > 5:
+                if "p2a:" in splitData[5] and "[from] item" in splitData[4]:
+                    item = splitData[4].split(" ")[2:]
+                    item = ''.join(item).replace(" ", "").replace("-", "").lower()
+                    self.state["opposingSide"]["activeMon"]["item"] = self.itemData[item]
                 
             if "-item" in splitData[1] and "p2" in splitData[2]:
                 item = splitData[3].replace(" ", "").replace("-", "").lower()
@@ -256,7 +265,7 @@ class Interpreter:
                 
                 # Showdown sends side effects weirdly, occasionally having move: sideffect, so we need to parse it.
                 sideEffect = splitData[3].split(" ")
-                if len(sideEffect > 1):
+                if len(sideEffect) > 1:
                     sideEffect = "".join(sideEffect[2:])
                 sideEffect = sideEffect.replace(" ", "").replace("-", "").lower()
                 
@@ -294,10 +303,10 @@ class Interpreter:
 
     # Add a new reserve to the opposingside's reserves list. If the mon is already in the reserves, do nothing. 
     def addReserves(self, newReserve):
-        
+    
         # A painful way to learn about python's pass by reference.
         opponentMon = copy.deepcopy(newReserve)
-            
+        print(f"Adding Reserve: {opponentMon}")        
         for mon in range(len(self.state["opposingSide"]["reserves"])):
             if self.state["opposingSide"]["reserves"][mon]["id"] == opponentMon["id"]:
                 return
