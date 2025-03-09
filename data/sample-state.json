@@ -66,8 +66,8 @@
                 "spe" : 0,
                 "speMod" : 0,
                 "baseSpeed" : 0,
-                "accMod" : 0,
-                "evaMod" : 0
+                "accuracyMod" : 0,
+                "evasionMod" : 0
             }
         },
         "reserves" : [
@@ -372,7 +372,6 @@
             "moves" : [
                 {
                     "id" : 0,
-                    "pp" : 0,
                     "disabled" : 0,
                     "type" :0,
                     "category" : 0,
@@ -380,7 +379,6 @@
                 },
                 {
                     "id" : 0,
-                    "pp" : 0,
                     "disabled" : 0,
                     "type" :0,
                     "category" : 0,
@@ -388,7 +386,6 @@
                 },
                 {
                     "id" : 0,
-                    "pp" : 0,
                     "disabled" : 0,
                     "type" :0,
                     "category" : 0,
@@ -396,7 +393,6 @@
                 },
                 {
                     "id" : 0,
-                    "pp" : 0,
                     "disabled" : 0,
                     "type" :0,
                     "category" : 0,
@@ -421,8 +417,8 @@
                 "spdMod" : 0,
                 "speMod" : 0,
                 "baseSpeed" : 0,
-                "accMod" : 0,
-                "evaMod": 0
+                "accuracyMod" : 0,
+                "evasionMod": 0
             }
         },
         "reserves" : [
@@ -437,7 +433,6 @@
                 "moves" : [
                     {
                         "id" : 0,
-                        "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
                         "category" : 0,
@@ -445,7 +440,6 @@
                     },
                     {
                         "id" : 0,
-                        "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
                         "category" : 0,
@@ -453,7 +447,6 @@
                     },
                     {
                         "id" : 0,
-                        "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
                         "category" : 0,
@@ -461,7 +454,6 @@
                     },
                     {
                         "id" : 0,
-                        "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
                         "category" : 0,
@@ -487,7 +479,6 @@
                 "moves" : [
                     {
                         "id" : 0,
-                        "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
                         "category" : 0,
@@ -495,7 +486,6 @@
                     },
                     {
                         "id" : 0,
-                        "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
                         "category" : 0,
@@ -503,7 +493,6 @@
                     },
                     {
                         "id" : 0,
-                        "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
                         "category" : 0,
@@ -511,7 +500,6 @@
                     },
                     {
                         "id" : 0,
-                        "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
                         "category" : 0,
@@ -537,7 +525,6 @@
                 "moves" : [
                     {
                         "id" : 0,
-                        "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
                         "category" : 0,
@@ -545,7 +532,6 @@
                     },
                     {
                         "id" : 0,
-                        "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
                         "category" : 0,
@@ -553,7 +539,6 @@
                     },
                     {
                         "id" : 0,
-                        "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
                         "category" : 0,
@@ -561,7 +546,6 @@
                     },
                     {
                         "id" : 0,
-                        "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
                         "category" : 0,
@@ -587,7 +571,6 @@
                 "moves" : [
                     {
                         "id" : 0,
-                        "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
                         "category" : 0,
@@ -595,7 +578,6 @@
                     },
                     {
                         "id" : 0,
-                        "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
                         "category" : 0,
@@ -603,7 +585,6 @@
                     },
                     {
                         "id" : 0,
-                        "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
                         "category" : 0,
@@ -611,7 +592,6 @@
                     },
                     {
                         "id" : 0,
-                        "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
                         "category" : 0,
@@ -637,7 +617,6 @@
                 "moves" : [
                     {
                         "id" : 0,
-                        "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
                         "category" : 0,
@@ -645,7 +624,6 @@
                     },
                     {
                         "id" : 0,
-                        "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
                         "category" : 0,
@@ -653,7 +631,6 @@
                     },
                     {
                         "id" : 0,
-                        "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
                         "category" : 0,
@@ -661,7 +638,6 @@
                     },
                     {
                         "id" : 0,
-                        "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
                         "category" : 0,
@@ -691,7 +667,10 @@
     },
     "universal": {
         "weather" : 0,
-        "field" : 0,
-        "trickroom" : 0
+        "grassyterrain": 0,
+        "mistyterrain": 0,
+        "psychicterrain": 0,
+        "electricterrain": 0,
+        "trickroom": 0
     }
 }

@@ -38,10 +38,10 @@
     },
     "weather": {
         "none": 0,
-        "rain": 1,
-        "sun": 2,
-        "sand": 3,
-        "snow": 4
+        "raindance": 1,
+        "sunnyday": 2,
+        "sandstorm": 3,
+        "snowscape": 4
     },
     "field": {
         "none":0,
