@@ -87,6 +87,7 @@ class Showdown:
     # Communicates with the Interpreter for state,
     # and the agent for actions.
     async def manageBattle(self, battleTag):
+        self.inter.resetState()
         battle_started = False
         turnContent = []
         turnCount = 0

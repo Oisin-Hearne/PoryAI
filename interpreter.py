@@ -6,12 +6,9 @@ class Interpreter:
 
     def __init__(self):
         self.loadData()
-        self.knownOpponents = []
 
     # Load in previously fetched data for use in state.
     def loadData(self):
-        with open('data/sample-state.json') as f:
-            self.state = json.load(f)
         with open('data/abilitydata.json') as f:
             self.abilityData = json.load(f)
         with open('data/movedata.json') as f:
@@ -22,6 +19,10 @@ class Interpreter:
             self.miscData = json.load(f)
         with open('data/itemdata.json') as f:
             self.itemData = json.load(f)
+            
+    def resetState(self):
+        with open('data/sample-state.json') as f:
+            self.state = json.load(f)
 
 
     # Update state w/ Active Request
@@ -140,7 +141,6 @@ class Interpreter:
             for stat in pokeStats.keys():
                 self.state["playerSide"]["reserves"][poke-1]["stats"][stat] = pokeStats[stat]
 
-
     def updateTurnState(self, turnData, turnCount):
         # Extract information from Turn Data.
         for line in turnData:
@@ -175,30 +175,114 @@ class Interpreter:
                 self.addReserves(self.state["opposingSide"]["activeMon"])
                 self.recordActiveMon(splitData[2])
                 
-            if 'switch' in splitData[1] and "p2" in splitData[2] and turnCount is 0: # No need for reserves on first turn.
+            if 'switch' in splitData[1] and "p2" in splitData[2] and turnCount == 0: # No need for reserves on first turn.
                 self.recordActiveMon(splitData[2])
                 
             # Record any changes in HP or status.
             if '-damage' in splitData[1] or '-heal' in splitData[1]:
                 status = splitData[3].split(" ")
+                side = "playerSide" if "p1" in splitData[2] else "opposingSide"
+                self.state[side]["activeMon"]["condition"]["hp"] = eval(status[0])
 
-                if "p1" in splitData[2]:
-                    self.state["playerSide"]["activeMon"]["condition"]["hp"] = eval(status[0])
+                if len(status) > 1:
+                    self.state[side]["activeMon"]["condition"]["status"] = self.miscData["conditions"][status[1]]
+            if "-curestatus" in splitData[1]:
+                side = "playerSide" if "p1" in splitData[2] else "opposingSide"
+                self.state[side]["activeMon"]["condition"]["status"] = 0
+                        
+            if '-boost' in splitData[1] or '-unboost' in splitData[1]:
+                boost = splitData[4] if '-boost' in splitData[1] else "-" + splitData[4] # Positive or negative boost
+                stat = splitData[3]+"Mod"
+                side = "playerSide" if "p1" in splitData[2] else "opposingSide"
+                
+                print(f"Boosting {stat} by {boost}. Current stat is {self.state[side]['activeMon']['stats'][stat]}, new stat will be {eval(str(self.state[side]['activeMon']['stats'][stat])+'+'+boost)}")
 
-                    if len(status) > 1:
-                        print("status check", status[1])
-                        self.state["playerSide"]["activeMon"]["condition"]["status"] = self.miscData["conditions"][status[1]]
-
-                elif "p2" in splitData[2]:
-                    self.state["opposingSide"]["activeMon"]["condition"]["hp"] = eval(status[0])
-
-                    if len(status) > 1:
-                        print("status check", status[1])
-                        self.state["opposingSide"]["activeMon"]["condition"]["status"] = self.miscData["conditions"][status[1]]
+                self.state[side]["activeMon"]["stats"][stat] = eval(str(self.state[side]["activeMon"]["stats"][stat])+"+"+boost)
+            
+            # Clear all boosts below zero.
+            if "-clearnegativeboost" in splitData[1]:
+                side = "playerSide" if "p1" in splitData[2] else "opposingSide"
+                for stat in self.state[side]["activeMon"]["stats"]:
+                    if self.state[side]["activeMon"]["stats"][stat] < 0:
+                        self.state[side]["activeMon"]["stats"][stat] = 0
+                        
+            if "switch" in splitData[1] or "clearboost" in splitData[1]:
+                side = "playerSide" if "p1" in splitData[2] else "opposingSide"
+                for stat in self.state[side]["activeMon"]["stats"]:
+                    if "Mod" in stat:
+                        self.state[side]["activeMon"]["stats"][stat] = 0
+            
+            if "-clearallboost" in splitData[1]:
+                for stat in self.state["playerSide"]["activeMon"]["stats"]:
+                    if "Mod" in stat:
+                        self.state["playerSide"]["activeMon"]["stats"][stat] = 0
+                        self.state["opposingSide"]["activeMon"]["stats"][stat] = 0
+                        
+            # Record opponent abilities as they're activated.
+            if "-ability" in splitData[1] and "p2" in splitData[2]:
+                ability = splitData[3].replace(" ", "").replace("-", "").lower()
+                self.state["opposingSide"]["activeMon"]["ability"] = self.abilityData[ability]
+            
+            if len(splitData) > 4:
+                if "p2a:" in splitData[2] and "[from] item" in splitData[4]:
+                    item = splitData[4].split(" ")[2:]
+                    item = ''.join(item).replace(" ", "").replace("-", "").lower()
+                    self.state["opposingSide"]["activeMon"]["item"] = self.itemData[item]
+                
+            if "-item" in splitData[1] and "p2" in splitData[2]:
+                item = splitData[3].replace(" ", "").replace("-", "").lower()
+                self.state["opposingSide"]["activeMon"]["item"] = self.itemData[item]
+                
+            if "-start" in splitData[1] or "-end" in splitData[1]:
+                side = "playerSide" if "p1" in splitData[2] else "opposingSide"
+                newStatus = 0 if "-end" in splitData[1] else 1
+                condition = splitData[3]
+                if "Encore" in condition:
+                    self.state[side]["activeMon"]["condition"]["encored"] = newStatus
+                elif "Leech Seed" in condition:
+                    self.state[side]["activeMon"]["condition"]["leechSeed"] = newStatus
+                elif "Perish Song" in condition:
+                    self.state[side]["activeMon"]["condition"]["perishSong"] = newStatus
+                elif "Taunt" in condition:
+                    self.state[side]["activeMon"]["condition"]["taunted"] = newStatus
+                elif "confusion" in condition:
+                    self.state[side]["activeMon"]["condition"]["confusion"] = newStatus
+                elif "Substitute" in condition:
+                    self.state[side]["activeMon"]["condition"]["substitute"] = newStatus
+                    
+            if "-sidestart" in splitData[1] or "-sideend" in splitData[1]:
+                side = "playerSide" if "p1" in splitData[2] else "opposingSide"
+                newStatus = 0 if "-sideend" in splitData[1] else 1
+                
+                # Showdown sends side effects weirdly, occasionally having move: sideffect, so we need to parse it.
+                sideEffect = splitData[3].split(" ")
+                if len(sideEffect > 1):
+                    sideEffect = "".join(sideEffect[2:])
+                sideEffect = sideEffect.replace(" ", "").replace("-", "").lower()
+                
+                self.state[side]["effects"][sideEffect] = newStatus
+                
+            if "-weather" in splitData[1]:
+                weather = splitData[2].lower()
+                self.state["universal"]["weather"] = self.miscData["weather"][weather]
+                
+            if "-fieldstart" in splitData[1] or "-fieldend" in splitData[1]:
+                newStatus = 0 if "-fieldend" in splitData[1] else 1
+                fieldEffect = splitData[2].split(" ")[1].replace(" ", "").replace("-", "").lower()
+                self.state["universal"][fieldEffect] = newStatus
+            
+            if "-terastallize" in splitData[1]:
+                side = "playerSide" if "p1" in splitData[2] else "opposingSide"
+                self.state[side]["activeMon"]["terrastillized"] = 1
+                self.state[side]["activeMon"]["teraType"] = self.miscData["types"][splitData[3].lower()]
+                    
+                
+            
         
             
         print("Turn State: ", self.state)
 
+    # Set the active mon state to the new opponent.
     def recordActiveMon(self, opponentMon):
         opponentMon = opponentMon.split(":")[1].replace(" ", "").replace("-", "").lower()
         opponentMon = get_close_matches(opponentMon, self.pokeData.keys(), n=1, cutoff=0.5)[0]
@@ -207,7 +291,6 @@ class Interpreter:
         self.state["opposingSide"]["activeMon"]["type1"] = self.pokeData[opponentMon]["type1"]
         self.state["opposingSide"]["activeMon"]["type2"] = self.pokeData[opponentMon]["type2"]
         self.state["opposingSide"]["activeMon"]["stats"]["baseSpeed"] = self.pokeData[opponentMon]["baseSpeed"]
-        print("New Opponent Mon: ", self.state["opposingSide"]["activeMon"])
 
     # Add a new reserve to the opposingside's reserves list. If the mon is already in the reserves, do nothing. 
     def addReserves(self, newReserve):
@@ -235,7 +318,4 @@ class Interpreter:
 
     def countTurn(self, turnData):
         pass
-
-    def reset(self):
-        self.knownOpponents = []
 
