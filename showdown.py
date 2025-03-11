@@ -128,7 +128,10 @@ class Showdown:
                 turnContent = recv.split("\n")[3:]
                 print(f"TURN {turnContent[-1:]}"+self.user)
                 print(turnContent)
+                
+                print(self.inter.countTurn(turnContent))
                 self.inter.updateTurnState(turnContent, turnCount)
+                
                 turnCount += 1
                 turnContent = []
 

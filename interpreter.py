@@ -21,6 +21,9 @@ class Interpreter:
             self.itemData = json.load(f)
             
     def resetState(self):
+        self.prevSelfHp = 1
+        self.prevOppHp = 1
+        
         with open('data/sample-state.json') as f:
             self.state = json.load(f)
 
@@ -140,6 +143,10 @@ class Interpreter:
                 self.state["playerSide"]["reserves"][poke-1]["stats"][stat] = pokeStats[stat]
 
     def updateTurnState(self, turnData, turnCount):
+        self.prevSelfHp = self.state["playerSide"]["activeMon"]["condition"]["hp"]
+        self.prevOppHp = self.state["opposingSide"]["activeMon"]["condition"]["hp"]
+        
+        
         # Extract information from Turn Data.
         for line in turnData:
             splitData = line.split("|")
@@ -339,5 +346,121 @@ class Interpreter:
         
 
     def countTurn(self, turnData):
-        pass
+        turnPoints = 0
+        damageThreshold = 0.25
+        healThreshold = 0.25
+        damageBase = 1
+        healBase = 1
+        healBonus = 2
+        koBase = 10
+        statusBase = 1
+        toxBonus = 2
+        sleepBonus = 1
+        boostBase = 2
+        fieldBase = 2
+        hazardBase = 2
+        hazardClear = 3
+        effectiveBase = 2
+        weatherBase = 1
+        failBase = 5
+    
+        
+        for line in turnData:
+            splitData = line.split("|")
+            
+            # Action - Dealing/Taking Damage
+            if "damage" in splitData[1]:
+                side = "playerSide" if "p1" in line else "opposingSide"
+                newHp = self.state[side]["activeMon"]["condition"]["hp"]
+                damage = self.prevSelfHp - newHp if side == "playerSide" else self.prevOppHp - newHp
+                damage = round(damage, 2)
+                print(f"Damage Dealt: {damage}, Side: {side}")
+                print(f"Previous HP: {self.prevSelfHp}, New HP: {newHp}")
+                # Dealing damage above a certain amount is rewarded, but punished if too little damage is done.
+                # Receiving very little damage is rewarded, receiving too much is punished.
+                turnPoints += damageBase if (damage > damageThreshold and side == "opposingSide") or (damage < damageThreshold and side == "playerSide") else -damageBase
+                
+                self.prevSelfHp = newHp if side == "playerSide" else self.prevSelfHp
+                self.prevOppHp = newHp if side == "opposingSide" else self.prevOppHp
+                
+            # Action - Healing
+            if "heal" in splitData[1]:
+                side = "playerSide" if "p1" in line else "opposingSide"
+                newHp = self.state[side]["activeMon"]["condition"]["hp"]
+                heal = newHp - self.prevSelfHp if side == "playerSide" else newHp - self.prevOppHp
+                
+                # Healing is rewarded for the player and punished for the opponent.
+                turnPoints += healBase if side == "playerSide" else -healBase
+                # Additional points for above a certain threshold
+                turnPoints += healBonus if side == "playerSide" and heal > healThreshold else -healBonus if heal > healThreshold else 0
+               
+                self.prevSelfHp = newHp if side == "playerSide" else self.prevSelfHp
+                self.prevOppHp = newHp if side == "opposingSide" else self.prevOppHp
+                                
+            # Action - Knockout
+            if "faint" in splitData[1]:
+                side = "playerSide" if "p1" in line else "opposingSide"
+                turnPoints += koBase if side == "opposingSide" else -koBase
+                
+            # Action - Status Change
+            if "-status" in splitData[1]:
+                side = "playerSide" if "p1" in line else "opposingSide"
+                status = splitData[3]
+                turnPoints += statusBase if side == "opposingSide" else -statusBase
+                turnPoints += toxBonus if "tox" in status else -toxBonus
+                turnPoints += sleepBonus if "slp" in status else -sleepBonus
+                
+            if "-curestatus" in splitData[1]:
+                side = "playerSide" if "p1" in line else "opposingSide"
+                turnPoints += statusBase if side == "playerSide" else -statusBase
+                
+            # Action - Boosts/Unboosts
+            if "-boost" in splitData[1] or "-unboost" in splitData[1]:
+                side = "playerSide" if "p1" in line else "opposingSide"
+                modifier = 1 if "-boost" in splitData[1] else -1
+                boostAmnt = int(splitData[4])
+                turnPoints += (modifier*boostBase*boostAmnt) if side == "playerSide" else -(modifier*boostBase*boostAmnt)
+                        
+            # Action - Supereffective & Resisted Hits
+            if "supereffective" in splitData[1]:
+                side = "playerSide" if "p1" in line else "opposingSide"
+                turnPoints += effectiveBase if side == "opposingSide" else -effectiveBase
+            if "resisted" in splitData[1]:
+                side = "playerSide" if "p1" in line else "opposingSide"
+                turnPoints += -effectiveBase if side == "opposingSide" else effectiveBase
+                
+            # Action - Field Effects
+            if "sidestart" in splitData[1]:
+                side = "playerSide" if "p1" in line else "opposingSide"
+                positives = ["Reflect", "Light Screen", "Aurora Veil", "Tailwind"]
+                negatives = ["|Spikes", "Toxic Spikes", "Stealth Rock", "Sticky Web"]
+                
+                if any(x in line for x in positives):
+                    turnPoints += fieldBase if side == "playerSide" else -fieldBase
+                elif any(x in line for x in negatives):
+                    turnPoints += hazardBase if side == "opposingSide" else -hazardBase
+                    
+            if "sideend" in splitData[1]:
+                side = "playerSide" if "p1" in splitData[2] else "opposingSide"
+                
+                # Positive and negative field effects listed.
+                positives = ["Reflect", "Light Screen", "Aurora Veil", "Tailwind"]
+                negatives = ["|Spikes", "Toxic Spikes", "Stealth Rock", "Sticky Web"]
+                                
+                # If upkeep is in the line, the effect ended naturally and should not be counted.
+                if any(x in line for x in positives) and splitData > 4:
+                    turnPoints += -fieldBase if side == "playerSide" else fieldBase
+                elif any(x in line for x in negatives):
+                    turnPoints += -hazardClear if side == "opposingSide" else hazardClear
+            
+            # Action - Setting Weather
+            if "weather" in splitData[1]:
+                side = "playerSide" if "p1a" in line else "opposingSide" if "p2a" in line else "universal"
+                turnPoints += weatherBase if side == "playerSide" else -weatherBase if side == "opposingSide" else 0
+            
+            # Action - Failed Move
+            if "-fail" in splitData[1] and "p1a" in line:
+                turnPoints -= failBase
+                
+        return turnPoints
 
