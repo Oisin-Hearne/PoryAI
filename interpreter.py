@@ -56,7 +56,7 @@ class Interpreter:
                 self.state["playerSide"]["activeMon"]["teraType"] = self.miscData["types"][pokeTeraType]
 
                 if("canTerastallize" in newState["active"][0]):
-                    self.state["playerSide"]["activeMon"]["terrastillized"] = 0 if (not newState["active"][0]["canTerastallize"]) else 1
+                    self.state["playerSide"]["activeMon"]["terrastillized"] = 0
 
                 # Ability and item fetched from abilityData and itemData
                 self.state["playerSide"]["activeMon"]["ability"] = self.abilityData[pokeAbility]
@@ -148,8 +148,8 @@ class Interpreter:
             if "move" in splitData[1]:
                 # If the opponnet has used a move, and their pokémon hasn't been recorded yet, mark it as the active pokemon.
                 if "p2a:" in splitData[2]:
-                    if self.state["opposingSide"]["activeMon"]["id"] == 0: # Likely start of battle
-                        self.recordActiveMon(splitData[2])
+                    #if self.state["opposingSide"]["activeMon"]["id"] == 0: # Likely start of battle
+                    #    self.recordActiveMon(splitData[3:])
                     # Check if opponent is struggling
                     if "Struggle" in splitData[2]:
                         self.state["opposingSide"]["activeMon"]["condition"]["struggling"] = 1
@@ -171,28 +171,24 @@ class Interpreter:
             # When a switch occurs, add the current active mon to reserves and record the new one.
             if 'switch' in splitData[1] and "p2" in splitData[2] and turnCount > 0:
                 self.addReserves(self.state["opposingSide"]["activeMon"])
-                self.recordActiveMon(splitData[2])
+                self.recordActiveMon(splitData[3:])
                 
             if 'switch' in splitData[1] and "p2" in splitData[2] and turnCount == 0: # No need for reserves on first turn.
-                self.recordActiveMon(splitData[2])
+                self.recordActiveMon(splitData[3:])
                 
             # Record any changes in HP or status.
             if '-damage' in splitData[1] or '-heal' in splitData[1]:
                 status = splitData[3].split(" ")
                 side = "playerSide" if "p1" in splitData[2] else "opposingSide"
                 print(f"Changing HP of {side} by {status[0]}. Current hp is {self.state[side]['activeMon']['condition']['hp']}")
-                self.state[side]["activeMon"]["condition"]["hp"] = eval(status[0])
+                self.state[side]["activeMon"]["condition"]["hp"] = round(eval(status[0]), 2)
 
                 if len(status) > 1:
+                    print(f"Changing status of {side} to {status[1]}. Current status is {self.state[side]['activeMon']['condition']['status']}")
                     self.state[side]["activeMon"]["condition"]["status"] = self.miscData["conditions"][status[1]]
             if "-curestatus" in splitData[1]:
                 side = "playerSide" if "p1" in splitData[2] else "opposingSide"
                 self.state[side]["activeMon"]["condition"]["status"] = 0
-                
-            if "faint" in splitData[1]:
-                side = "playerSide" if "p1" in splitData[2] else "opposingSide"
-                self.state[side]["activeMon"]["condition"]["hp"] = 0
-                self.state[side]["activeMon"]["condition"]["status"] = 7
                         
             if '-boost' in splitData[1] or '-unboost' in splitData[1]:
                 boost = splitData[4] if '-boost' in splitData[1] else "-" + splitData[4] # Positive or negative boost
@@ -221,6 +217,13 @@ class Interpreter:
                     if "Mod" in stat:
                         self.state["playerSide"]["activeMon"]["stats"][stat] = 0
                         self.state["opposingSide"]["activeMon"]["stats"][stat] = 0
+                        
+            # Clear volatile conditions
+            if 'switch' in splitData[1] or 'faint' in splitData[1]:
+                side = "playerSide" if "p1" in splitData[2] else "opposingSide"
+                for condition in self.state[side]["activeMon"]["condition"]:
+                    if condition not in ["hp", "status"]:
+                        self.state[side]["activeMon"]["condition"][condition] = 0
                         
             # Record opponent abilities as they're activated.
             if "-ability" in splitData[1] and "p2" in splitData[2]:
@@ -266,7 +269,10 @@ class Interpreter:
                 # Showdown sends side effects weirdly, occasionally having move: sideffect, so we need to parse it.
                 sideEffect = splitData[3].split(" ")
                 if len(sideEffect) > 1:
-                    sideEffect = "".join(sideEffect[2:])
+                    sideEffect = "".join(sideEffect[1:])
+                else:
+                    sideEffect = sideEffect[0]
+                
                 sideEffect = sideEffect.replace(" ", "").replace("-", "").lower()
                 
                 self.state[side]["effects"][sideEffect] = newStatus
@@ -276,30 +282,37 @@ class Interpreter:
                 self.state["universal"]["weather"] = self.miscData["weather"][weather]
                 
             if "-fieldstart" in splitData[1] or "-fieldend" in splitData[1]:
-                newStatus = 0 if "-fieldend" in splitData[1] else 1
-                fieldEffect = splitData[2].split(" ")[1].replace(" ", "").replace("-", "").lower()
-                self.state["universal"][fieldEffect] = newStatus
+                newStatus = -1 if "-fieldend" in splitData[1] else 1
+                
+                if "Terrain" in splitData[2]:
+                    fieldEffect = splitData[2].split(" ")[1:]
+                    fieldEffect = "".join(fieldEffect).replace(" ", "").replace("-", "").lower()
+                else:
+                    fieldEffect = splitData[3].split(" ")[1:]
+                    fieldEffect = "".join(fieldEffect).replace(" ", "").replace("-", "").lower()
+                
+                self.state["universal"][fieldEffect] = self.state["universal"][fieldEffect] + newStatus
             
             if "-terastallize" in splitData[1]:
                 side = "playerSide" if "p1" in splitData[2] else "opposingSide"
                 self.state[side]["activeMon"]["terrastillized"] = 1
                 self.state[side]["activeMon"]["teraType"] = self.miscData["types"][splitData[3].lower()]
-                    
-                
-            
-        
             
         print("Turn State: ", self.state)
 
     # Set the active mon state to the new opponent.
     def recordActiveMon(self, opponentMon):
-        opponentMon = opponentMon.split(":")[1].replace(" ", "").replace("-", "").lower()
-        opponentMon = get_close_matches(opponentMon, self.pokeData.keys(), n=1, cutoff=0.5)[0]
-
-        self.state["opposingSide"]["activeMon"]["id"] = self.pokeData[opponentMon]["id"]
-        self.state["opposingSide"]["activeMon"]["type1"] = self.pokeData[opponentMon]["type1"]
-        self.state["opposingSide"]["activeMon"]["type2"] = self.pokeData[opponentMon]["type2"]
-        self.state["opposingSide"]["activeMon"]["stats"]["baseSpeed"] = self.pokeData[opponentMon]["baseSpeed"]
+        opponentName = opponentMon[0].split(",")[0].replace(" ", "").replace("-", "").lower()
+        opponentName = get_close_matches(opponentName, self.pokeData.keys(), n=1, cutoff=0.5)[0]
+        opponentCondition = opponentMon[1].split(" ")
+        print(f"Recording Active Mon: {opponentName}, with condition: {opponentCondition}")
+        
+        self.state["opposingSide"]["activeMon"]["id"] = self.pokeData[opponentName]["id"]
+        self.state["opposingSide"]["activeMon"]["type1"] = self.pokeData[opponentName]["type1"]
+        self.state["opposingSide"]["activeMon"]["type2"] = self.pokeData[opponentName]["type2"]
+        self.state["opposingSide"]["activeMon"]["stats"]["baseSpeed"] = self.pokeData[opponentName]["baseSpeed"]
+        self.state["opposingSide"]["activeMon"]["condition"]["status"] = self.miscData["conditions"][opponentCondition[1]] if len(opponentCondition) > 1 else 0
+        self.state["opposingSide"]["activeMon"]["condition"]["hp"] = eval(opponentCondition[0])
 
     # Add a new reserve to the opposingside's reserves list. If the mon is already in the reserves, do nothing. 
     def addReserves(self, newReserve):
