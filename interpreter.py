@@ -48,7 +48,7 @@ class Interpreter:
 
             if poke == 0: # The first mon in the array is always the active one.
                             # Pokemon type, id, stats fetched from pokedata
-                self.state["playerSide"]["activeMon"]["id"] = self.pokeData[pokeName]["id"]
+                self.state["playerSide"]["activeMon"]["pokeid"] = self.pokeData[pokeName]["pokeid"]
                 self.state["playerSide"]["activeMon"]["stats"]["baseSpeed"] = self.pokeData[pokeName]["baseSpeed"]
                 self.state["playerSide"]["activeMon"]["type1"] = self.pokeData[pokeName]["type1"]
                 self.state["playerSide"]["activeMon"]["type2"] = self.pokeData[pokeName]["type2"]
@@ -82,7 +82,7 @@ class Interpreter:
                     self.state["playerSide"]["activeMon"]["stats"][stat] = pokeStats[stat]
             else:
                 # Pokemon type, id, stats fetched from pokedata
-                self.state["playerSide"]["reserves"][poke-1]["id"] = self.pokeData[pokeName]["id"]
+                self.state["playerSide"]["reserves"][poke-1]["pokeid"] = self.pokeData[pokeName]["pokeid"]
                 self.state["playerSide"]["reserves"][poke-1]["stats"]["baseSpeed"] = self.pokeData[pokeName]["baseSpeed"]
                 self.state["playerSide"]["reserves"][poke-1]["type1"] = self.pokeData[pokeName]["type1"]
                 self.state["playerSide"]["reserves"][poke-1]["type2"] = self.pokeData[pokeName]["type2"]
@@ -122,7 +122,7 @@ class Interpreter:
 
             
             # Pokemon type, id, stats fetched from pokedata
-            self.state["playerSide"]["reserves"][poke-1]["id"] = self.pokeData[pokeName]["id"]
+            self.state["playerSide"]["reserves"][poke-1]["pokeid"] = self.pokeData[pokeName]["pokeid"]
             self.state["playerSide"]["reserves"][poke-1]["stats"]["baseSpeed"] = self.pokeData[pokeName]["baseSpeed"]
             self.state["playerSide"]["reserves"][poke-1]["type1"] = self.pokeData[pokeName]["type1"]
             self.state["playerSide"]["reserves"][poke-1]["type2"] = self.pokeData[pokeName]["type2"]
@@ -166,10 +166,10 @@ class Interpreter:
                     # Record move used by opponent, if it hasn't been recorded before.
                     moveUsed = splitData[3].replace(" ", "").replace("-", "").lower()
                     for move in range(len(self.state["opposingSide"]["activeMon"]["moves"])):
-                        if self.state["opposingSide"]["activeMon"]["moves"][move]["id"] == self.moveData[moveUsed]["id"]:
+                        if self.state["opposingSide"]["activeMon"]["moves"][move]["moveid"] == self.moveData[moveUsed]["moveid"]:
                             break # Exit early if it's been recorded already.
-                        if self.state["opposingSide"]["activeMon"]["moves"][move]["id"] == 0: # Look for empty move slot
-                            self.state["opposingSide"]["activeMon"]["moves"][move]["id"] = self.moveData[moveUsed]["id"]
+                        if self.state["opposingSide"]["activeMon"]["moves"][move]["moveid"] == 0: # Look for empty move slot
+                            self.state["opposingSide"]["activeMon"]["moves"][move]["moveid"] = self.moveData[moveUsed]["moveid"]
                             self.state["opposingSide"]["activeMon"]["moves"][move]["type"] = self.moveData[moveUsed]["type"]
                             self.state["opposingSide"]["activeMon"]["moves"][move]["category"] = self.moveData[moveUsed]["category"]
                             self.state["opposingSide"]["activeMon"]["moves"][move]["power"] = self.moveData[moveUsed]["power"]
@@ -306,6 +306,7 @@ class Interpreter:
                 self.state[side]["activeMon"]["teraType"] = self.miscData["types"][splitData[3].lower()]
             
         print("Turn State: ", self.state)
+        return self.state
 
     # Set the active mon state to the new opponent.
     def recordActiveMon(self, opponentMon):
@@ -314,7 +315,7 @@ class Interpreter:
         opponentCondition = opponentMon[1].split(" ")
         print(f"Recording Active Mon: {opponentName}, with condition: {opponentCondition}")
         
-        self.state["opposingSide"]["activeMon"]["id"] = self.pokeData[opponentName]["id"]
+        self.state["opposingSide"]["activeMon"]["pokeid"] = self.pokeData[opponentName]["pokeid"]
         self.state["opposingSide"]["activeMon"]["type1"] = self.pokeData[opponentName]["type1"]
         self.state["opposingSide"]["activeMon"]["type2"] = self.pokeData[opponentName]["type2"]
         self.state["opposingSide"]["activeMon"]["stats"]["baseSpeed"] = self.pokeData[opponentName]["baseSpeed"]
@@ -328,11 +329,11 @@ class Interpreter:
         opponentMon = copy.deepcopy(newReserve)
         print(f"Adding Reserve: {opponentMon}")        
         for mon in range(len(self.state["opposingSide"]["reserves"])):
-            if self.state["opposingSide"]["reserves"][mon]["id"] == opponentMon["id"]:
+            if self.state["opposingSide"]["reserves"][mon]["pokeid"] == opponentMon["pokeid"]:
                 return
             
             # Can overwrite a mon that's currently active as well.
-            if self.state["opposingSide"]["reserves"][mon]["id"] == 0 or self.state["opposingSide"]["activeMon"]["id"] == self.state["opposingSide"]["reserves"][mon]["id"]:
+            if self.state["opposingSide"]["reserves"][mon]["pokeid"] == 0 or self.state["opposingSide"]["activeMon"]["pokeid"] == self.state["opposingSide"]["reserves"][mon]["pokeid"]:
                 for stat in opponentMon["stats"]:
                     if stat != "baseSpeed":
                         opponentMon["stats"][stat] = 0
@@ -464,3 +465,8 @@ class Interpreter:
                 
         return turnPoints
 
+
+
+                    
+                    
+                

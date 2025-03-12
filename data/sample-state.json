@@ -2,7 +2,7 @@
     "request": 0,
     "playerSide": {
         "activeMon" : {
-            "id": 0,
+            "pokeid": 0,
             "type1" :0,
             "type2" : 0,
             "ability" : 0,
@@ -11,7 +11,7 @@
             "terrastillized" : 0,
             "moves" : [
                 {
-                    "id" : 0,
+                    "moveid" : 0,
                     "pp" : 0,
                     "disabled" : 0,
                     "type" :0,
@@ -19,7 +19,7 @@
                     "power" : 0
                 },
                 {
-                    "id" : 0,
+                    "moveid" : 0,
                     "pp" : 0,
                     "disabled" : 0,
                     "type" :0,
@@ -27,7 +27,7 @@
                     "power" : 0
                 },
                 {
-                    "id" : 0,
+                    "moveid" : 0,
                     "pp" : 0,
                     "disabled" : 0,
                     "type" :0,
@@ -35,7 +35,7 @@
                     "power" : 0
                 },
                 {
-                    "id" : 0,
+                    "moveid" : 0,
                     "pp" : 0,
                     "disabled" : 0,
                     "type" :0,
@@ -72,7 +72,7 @@
         },
         "reserves" : [
             {
-                "id": 0,
+                "pokeid": 0,
                 "type1" :0,
                 "type2" : 0,
                 "ability" : 0,
@@ -81,7 +81,7 @@
                 "terrastillized" : 0,
                 "moves" : [
                     {
-                        "id" : 0,
+                        "moveid" : 0,
                         "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
@@ -89,7 +89,7 @@
                         "power" : 0
                     },
                     {
-                        "id" : 0,
+                        "moveid" : 0,
                         "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
@@ -97,7 +97,7 @@
                         "power" : 0
                     },
                     {
-                        "id" : 0,
+                        "moveid" : 0,
                         "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
@@ -105,7 +105,7 @@
                         "power" : 0
                     },
                     {
-                        "id" : 0,
+                        "moveid" : 0,
                         "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
@@ -127,7 +127,7 @@
                 }
             },
             {
-                "id": 0,
+                "pokeid": 0,
                 "type1" :0,
                 "type2" : 0,
                 "ability" : 0,
@@ -136,7 +136,7 @@
                 "terrastillized" : 0,
                 "moves" : [
                     {
-                        "id" : 0,
+                        "moveid" : 0,
                         "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
@@ -144,7 +144,7 @@
                         "power" : 0
                     },
                     {
-                        "id" : 0,
+                        "moveid" : 0,
                         "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
@@ -152,7 +152,7 @@
                         "power" : 0
                     },
                     {
-                        "id" : 0,
+                        "moveid" : 0,
                         "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
@@ -160,7 +160,7 @@
                         "power" : 0
                     },
                     {
-                        "id" : 0,
+                        "moveid" : 0,
                         "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
@@ -182,7 +182,7 @@
                 }
             },
             {
-                "id": 0,
+                "pokeid": 0,
                 "type1" :0,
                 "type2" : 0,
                 "ability" : 0,
@@ -191,7 +191,7 @@
                 "terrastillized" : 0,
                 "moves" : [
                     {
-                        "id" : 0,
+                        "moveid" : 0,
                         "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
@@ -199,7 +199,7 @@
                         "power" : 0
                     },
                     {
-                        "id" : 0,
+                        "moveid" : 0,
                         "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
@@ -207,7 +207,7 @@
                         "power" : 0
                     },
                     {
-                        "id" : 0,
+                        "moveid" : 0,
                         "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
@@ -215,7 +215,7 @@
                         "power" : 0
                     },
                     {
-                        "id" : 0,
+                        "moveid" : 0,
                         "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
@@ -237,7 +237,7 @@
                 }
             },
             {
-                "id": 0,
+                "pokeid": 0,
                 "type1" :0,
                 "type2" : 0,
                 "ability" : 0,
@@ -246,7 +246,7 @@
                 "terrastillized" : 0,
                 "moves" : [
                     {
-                        "id" : 0,
+                        "moveid" : 0,
                         "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
@@ -254,7 +254,7 @@
                         "power" : 0
                     },
                     {
-                        "id" : 0,
+                        "moveid" : 0,
                         "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
@@ -262,7 +262,7 @@
                         "power" : 0
                     },
                     {
-                        "id" : 0,
+                        "moveid" : 0,
                         "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
@@ -270,7 +270,7 @@
                         "power" : 0
                     },
                     {
-                        "id" : 0,
+                        "moveid" : 0,
                         "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
@@ -292,7 +292,7 @@
                 }
             },
             {
-                "id": 0,
+                "pokeid": 0,
                 "type1" :0,
                 "type2" : 0,
                 "ability" : 0,
@@ -301,7 +301,7 @@
                 "terrastillized" : 0,
                 "moves" : [
                     {
-                        "id" : 0,
+                        "moveid" : 0,
                         "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
@@ -309,7 +309,7 @@
                         "power" : 0
                     },
                     {
-                        "id" : 0,
+                        "moveid" : 0,
                         "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
@@ -317,7 +317,7 @@
                         "power" : 0
                     },
                     {
-                        "id" : 0,
+                        "moveid" : 0,
                         "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
@@ -325,7 +325,7 @@
                         "power" : 0
                     },
                     {
-                        "id" : 0,
+                        "moveid" : 0,
                         "pp" : 0,
                         "disabled" : 0,
                         "type" :0,
@@ -362,8 +362,8 @@
     }, 
     "opposingSide": {
         "activeMon" : {
-            "id": 0,
-            "type1" :0,
+            "pokeid": 0,
+            "type1" : 0,
             "type2" : 0,
             "ability" : 0,
             "item" : 0,
@@ -371,28 +371,28 @@
             "terrastillized" : 0,
             "moves" : [
                 {
-                    "id" : 0,
+                    "moveid" : 0,
                     "disabled" : 0,
                     "type" :0,
                     "category" : 0,
                     "power" : 0
                 },
                 {
-                    "id" : 0,
+                    "moveid" : 0,
                     "disabled" : 0,
                     "type" :0,
                     "category" : 0,
                     "power" : 0
                 },
                 {
-                    "id" : 0,
+                    "moveid" : 0,
                     "disabled" : 0,
                     "type" :0,
                     "category" : 0,
                     "power" : 0
                 },
                 {
-                    "id" : 0,
+                    "moveid" : 0,
                     "disabled" : 0,
                     "type" :0,
                     "category" : 0,
@@ -423,7 +423,7 @@
         },
         "reserves" : [
             {
-                "id": 0,
+                "pokeid": 0,
                 "type1" :0,
                 "type2" : 0,
                 "ability" : 0,
@@ -432,32 +432,32 @@
                 "terrastillized" : 0,
                 "moves" : [
                     {
-                        "id" : 0,
-                        "disabled" : 0,
-                        "type" :0,
-                        "category" : 0,
-                        "power" : 0
+                     "moveid" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
                     },
                     {
-                        "id" : 0,
-                        "disabled" : 0,
-                        "type" :0,
-                        "category" : 0,
-                        "power" : 0
+                     "moveid" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
                     },
                     {
-                        "id" : 0,
-                        "disabled" : 0,
-                        "type" :0,
-                        "category" : 0,
-                        "power" : 0
+                     "moveid" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
                     },
                     {
-                        "id" : 0,
-                        "disabled" : 0,
-                        "type" :0,
-                        "category" : 0,
-                        "power" : 0
+                     "moveid" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
                     }
                 ],
                 "condition": {
@@ -469,7 +469,7 @@
                 }
             },
             {
-                "id": 0,
+                "pokeid": 0,
                 "type1" :0,
                 "type2" : 0,
                 "ability" : 0,
@@ -478,32 +478,32 @@
                 "terrastillized" : 0,
                 "moves" : [
                     {
-                        "id" : 0,
-                        "disabled" : 0,
-                        "type" :0,
-                        "category" : 0,
-                        "power" : 0
+                     "moveid" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
                     },
                     {
-                        "id" : 0,
-                        "disabled" : 0,
-                        "type" :0,
-                        "category" : 0,
-                        "power" : 0
+                     "moveid" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
                     },
                     {
-                        "id" : 0,
-                        "disabled" : 0,
-                        "type" :0,
-                        "category" : 0,
-                        "power" : 0
+                     "moveid" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
                     },
                     {
-                        "id" : 0,
-                        "disabled" : 0,
-                        "type" :0,
-                        "category" : 0,
-                        "power" : 0
+                     "moveid" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
                     }
                 ],
                 "condition": {
@@ -515,7 +515,7 @@
                 }
             },
             {
-                "id": 0,
+                "pokeid": 0,
                 "type1" :0,
                 "type2" : 0,
                 "ability" : 0,
@@ -524,32 +524,32 @@
                 "terrastillized" : 0,
                 "moves" : [
                     {
-                        "id" : 0,
-                        "disabled" : 0,
-                        "type" :0,
-                        "category" : 0,
-                        "power" : 0
+                     "moveid" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
                     },
                     {
-                        "id" : 0,
-                        "disabled" : 0,
-                        "type" :0,
-                        "category" : 0,
-                        "power" : 0
+                     "moveid" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
                     },
                     {
-                        "id" : 0,
-                        "disabled" : 0,
-                        "type" :0,
-                        "category" : 0,
-                        "power" : 0
+                     "moveid" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
                     },
                     {
-                        "id" : 0,
-                        "disabled" : 0,
-                        "type" :0,
-                        "category" : 0,
-                        "power" : 0
+                     "moveid" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
                     }
                 ],
                 "condition": {
@@ -561,7 +561,7 @@
                 }
             },
             {
-                "id": 0,
+                "pokeid": 0,
                 "type1" :0,
                 "type2" : 0,
                 "ability" : 0,
@@ -570,32 +570,32 @@
                 "terrastillized" : 0,
                 "moves" : [
                     {
-                        "id" : 0,
-                        "disabled" : 0,
-                        "type" :0,
-                        "category" : 0,
-                        "power" : 0
+                     "moveid" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
                     },
                     {
-                        "id" : 0,
-                        "disabled" : 0,
-                        "type" :0,
-                        "category" : 0,
-                        "power" : 0
+                     "moveid" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
                     },
                     {
-                        "id" : 0,
-                        "disabled" : 0,
-                        "type" :0,
-                        "category" : 0,
-                        "power" : 0
+                     "moveid" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
                     },
                     {
-                        "id" : 0,
-                        "disabled" : 0,
-                        "type" :0,
-                        "category" : 0,
-                        "power" : 0
+                     "moveid" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
                     }
                 ],
                 "condition": {
@@ -607,7 +607,7 @@
                 }
             },
             {
-                "id": 0,
+                "pokeid": 0,
                 "type1" :0,
                 "type2" : 0,
                 "ability" : 0,
@@ -616,32 +616,32 @@
                 "terrastillized" : 0,
                 "moves" : [
                     {
-                        "id" : 0,
-                        "disabled" : 0,
-                        "type" :0,
-                        "category" : 0,
-                        "power" : 0
+                     "moveid" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
                     },
                     {
-                        "id" : 0,
-                        "disabled" : 0,
-                        "type" :0,
-                        "category" : 0,
-                        "power" : 0
+                     "moveid" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
                     },
                     {
-                        "id" : 0,
-                        "disabled" : 0,
-                        "type" :0,
-                        "category" : 0,
-                        "power" : 0
+                     "moveid" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
                     },
                     {
-                        "id" : 0,
-                        "disabled" : 0,
-                        "type" :0,
-                        "category" : 0,
-                        "power" : 0
+                     "moveid" : 0,
+                    "disabled" : 0,
+                    "type" :0,
+                    "category" : 0,
+                    "power" : 0
                     }
                 ],
                 "condition": {

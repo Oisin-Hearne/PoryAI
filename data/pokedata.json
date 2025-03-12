@@ -1,7764 +1,7764 @@
 {
     "bulbasaur": {
-      "id": 1,
+      "pokeid": 1,
       "type1": 3,
       "type2": 12,
       "baseSpeed": 45
     },
     "ivysaur": {
-      "id": 2,
+      "pokeid": 2,
       "type1": 3,
       "type2": 12,
       "baseSpeed": 60
     },
     "venusaur": {
-      "id": 3,
+      "pokeid": 3,
       "type1": 3,
       "type2": 12,
       "baseSpeed": 80
     },
     "charmander": {
-      "id": 4,
+      "pokeid": 4,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 65
     },
     "charmeleon": {
-      "id": 5,
+      "pokeid": 5,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 80
     },
     "charizard": {
-      "id": 6,
+      "pokeid": 6,
       "type1": 1,
       "type2": 11,
       "baseSpeed": 100
     },
     "squirtle": {
-      "id": 7,
+      "pokeid": 7,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 43
     },
     "wartortle": {
-      "id": 8,
+      "pokeid": 8,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 58
     },
     "blastoise": {
-      "id": 9,
+      "pokeid": 9,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 78
     },
     "caterpie": {
-      "id": 10,
+      "pokeid": 10,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 45
     },
     "metapod": {
-      "id": 11,
+      "pokeid": 11,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 30
     },
     "butterfree": {
-      "id": 12,
+      "pokeid": 12,
       "type1": 15,
       "type2": 11,
       "baseSpeed": 70
     },
     "weedle": {
-      "id": 13,
+      "pokeid": 13,
       "type1": 15,
       "type2": 12,
       "baseSpeed": 50
     },
     "kakuna": {
-      "id": 14,
+      "pokeid": 14,
       "type1": 15,
       "type2": 12,
       "baseSpeed": 35
     },
     "beedrill": {
-      "id": 15,
+      "pokeid": 15,
       "type1": 15,
       "type2": 12,
       "baseSpeed": 75
     },
     "pidgey": {
-      "id": 16,
+      "pokeid": 16,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 56
     },
     "pidgeotto": {
-      "id": 17,
+      "pokeid": 17,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 71
     },
     "pidgeot": {
-      "id": 18,
+      "pokeid": 18,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 101
     },
     "rattata": {
-      "id": 19,
+      "pokeid": 19,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 72
     },
     "raticate": {
-      "id": 20,
+      "pokeid": 20,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 97
     },
     "spearow": {
-      "id": 21,
+      "pokeid": 21,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 70
     },
     "fearow": {
-      "id": 22,
+      "pokeid": 22,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 100
     },
     "ekans": {
-      "id": 23,
+      "pokeid": 23,
       "type1": 12,
       "type2": 12,
       "baseSpeed": 55
     },
     "arbok": {
-      "id": 24,
+      "pokeid": 24,
       "type1": 12,
       "type2": 12,
       "baseSpeed": 80
     },
     "pikachu": {
-      "id": 25,
+      "pokeid": 25,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 90
     },
     "raichu": {
-      "id": 26,
+      "pokeid": 26,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 110
     },
     "sandshrew": {
-      "id": 27,
+      "pokeid": 27,
       "type1": 13,
       "type2": 13,
       "baseSpeed": 40
     },
     "sandslash": {
-      "id": 28,
+      "pokeid": 28,
       "type1": 13,
       "type2": 13,
       "baseSpeed": 65
     },
     "nidoranf": {
-      "id": 29,
+      "pokeid": 29,
       "type1": 12,
       "type2": 12,
       "baseSpeed": 41
     },
     "nidorina": {
-      "id": 30,
+      "pokeid": 30,
       "type1": 12,
       "type2": 12,
       "baseSpeed": 56
     },
     "nidoqueen": {
-      "id": 31,
+      "pokeid": 31,
       "type1": 12,
       "type2": 13,
       "baseSpeed": 76
     },
     "nidoranm": {
-      "id": 32,
+      "pokeid": 32,
       "type1": 12,
       "type2": 12,
       "baseSpeed": 50
     },
     "nidorino": {
-      "id": 33,
+      "pokeid": 33,
       "type1": 12,
       "type2": 12,
       "baseSpeed": 65
     },
     "nidoking": {
-      "id": 34,
+      "pokeid": 34,
       "type1": 12,
       "type2": 13,
       "baseSpeed": 85
     },
     "clefairy": {
-      "id": 35,
+      "pokeid": 35,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 35
     },
     "clefable": {
-      "id": 36,
+      "pokeid": 36,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 60
     },
     "vulpix": {
-      "id": 37,
+      "pokeid": 37,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 65
     },
     "ninetales": {
-      "id": 38,
+      "pokeid": 38,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 100
     },
     "jigglypuff": {
-      "id": 39,
+      "pokeid": 39,
       "type1": 0,
       "type2": 9,
       "baseSpeed": 20
     },
     "wigglytuff": {
-      "id": 40,
+      "pokeid": 40,
       "type1": 0,
       "type2": 9,
       "baseSpeed": 45
     },
     "zubat": {
-      "id": 41,
+      "pokeid": 41,
       "type1": 12,
       "type2": 11,
       "baseSpeed": 55
     },
     "golbat": {
-      "id": 42,
+      "pokeid": 42,
       "type1": 12,
       "type2": 11,
       "baseSpeed": 90
     },
     "oddish": {
-      "id": 43,
+      "pokeid": 43,
       "type1": 3,
       "type2": 12,
       "baseSpeed": 30
     },
     "gloom": {
-      "id": 44,
+      "pokeid": 44,
       "type1": 3,
       "type2": 12,
       "baseSpeed": 40
     },
     "vileplume": {
-      "id": 45,
+      "pokeid": 45,
       "type1": 3,
       "type2": 12,
       "baseSpeed": 50
     },
     "paras": {
-      "id": 46,
+      "pokeid": 46,
       "type1": 15,
       "type2": 3,
       "baseSpeed": 25
     },
     "parasect": {
-      "id": 47,
+      "pokeid": 47,
       "type1": 15,
       "type2": 3,
       "baseSpeed": 30
     },
     "venonat": {
-      "id": 48,
+      "pokeid": 48,
       "type1": 15,
       "type2": 12,
       "baseSpeed": 45
     },
     "venomoth": {
-      "id": 49,
+      "pokeid": 49,
       "type1": 15,
       "type2": 12,
       "baseSpeed": 90
     },
     "diglett": {
-      "id": 50,
+      "pokeid": 50,
       "type1": 13,
       "type2": 13,
       "baseSpeed": 95
     },
     "dugtrio": {
-      "id": 51,
+      "pokeid": 51,
       "type1": 13,
       "type2": 13,
       "baseSpeed": 120
     },
     "meowth": {
-      "id": 52,
+      "pokeid": 52,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 90
     },
     "persian": {
-      "id": 53,
+      "pokeid": 53,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 115
     },
     "psyduck": {
-      "id": 54,
+      "pokeid": 54,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 55
     },
     "golduck": {
-      "id": 55,
+      "pokeid": 55,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 85
     },
     "mankey": {
-      "id": 56,
+      "pokeid": 56,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 70
     },
     "primeape": {
-      "id": 57,
+      "pokeid": 57,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 95
     },
     "growlithe": {
-      "id": 58,
+      "pokeid": 58,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 60
     },
     "arcanine": {
-      "id": 59,
+      "pokeid": 59,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 95
     },
     "poliwag": {
-      "id": 60,
+      "pokeid": 60,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 90
     },
     "poliwhirl": {
-      "id": 61,
+      "pokeid": 61,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 90
     },
     "poliwrath": {
-      "id": 62,
+      "pokeid": 62,
       "type1": 2,
       "type2": 10,
       "baseSpeed": 70
     },
     "abra": {
-      "id": 63,
+      "pokeid": 63,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 90
     },
     "kadabra": {
-      "id": 64,
+      "pokeid": 64,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 105
     },
     "alakazam": {
-      "id": 65,
+      "pokeid": 65,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 120
     },
     "machop": {
-      "id": 66,
+      "pokeid": 66,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 35
     },
     "machoke": {
-      "id": 67,
+      "pokeid": 67,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 45
     },
     "machamp": {
-      "id": 68,
+      "pokeid": 68,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 55
     },
     "bellsprout": {
-      "id": 69,
+      "pokeid": 69,
       "type1": 3,
       "type2": 12,
       "baseSpeed": 40
     },
     "weepinbell": {
-      "id": 70,
+      "pokeid": 70,
       "type1": 3,
       "type2": 12,
       "baseSpeed": 55
     },
     "victreebel": {
-      "id": 71,
+      "pokeid": 71,
       "type1": 3,
       "type2": 12,
       "baseSpeed": 70
     },
     "tentacool": {
-      "id": 72,
+      "pokeid": 72,
       "type1": 2,
       "type2": 12,
       "baseSpeed": 70
     },
     "tentacruel": {
-      "id": 73,
+      "pokeid": 73,
       "type1": 2,
       "type2": 12,
       "baseSpeed": 100
     },
     "geodude": {
-      "id": 74,
+      "pokeid": 74,
       "type1": 14,
       "type2": 13,
       "baseSpeed": 20
     },
     "graveler": {
-      "id": 75,
+      "pokeid": 75,
       "type1": 14,
       "type2": 13,
       "baseSpeed": 35
     },
     "golem": {
-      "id": 76,
+      "pokeid": 76,
       "type1": 14,
       "type2": 13,
       "baseSpeed": 45
     },
     "ponyta": {
-      "id": 77,
+      "pokeid": 77,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 90
     },
     "rapidash": {
-      "id": 78,
+      "pokeid": 78,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 105
     },
     "slowpoke": {
-      "id": 79,
+      "pokeid": 79,
       "type1": 2,
       "type2": 5,
       "baseSpeed": 15
     },
     "slowbro": {
-      "id": 80,
+      "pokeid": 80,
       "type1": 2,
       "type2": 5,
       "baseSpeed": 30
     },
     "magnemite": {
-      "id": 81,
+      "pokeid": 81,
       "type1": 4,
       "type2": 17,
       "baseSpeed": 45
     },
     "magneton": {
-      "id": 82,
+      "pokeid": 82,
       "type1": 4,
       "type2": 17,
       "baseSpeed": 70
     },
     "farfetchd": {
-      "id": 83,
+      "pokeid": 83,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 60
     },
     "doduo": {
-      "id": 84,
+      "pokeid": 84,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 75
     },
     "dodrio": {
-      "id": 85,
+      "pokeid": 85,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 110
     },
     "seel": {
-      "id": 86,
+      "pokeid": 86,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 45
     },
     "dewgong": {
-      "id": 87,
+      "pokeid": 87,
       "type1": 2,
       "type2": 6,
       "baseSpeed": 70
     },
     "grimer": {
-      "id": 88,
+      "pokeid": 88,
       "type1": 12,
       "type2": 12,
       "baseSpeed": 25
     },
     "muk": {
-      "id": 89,
+      "pokeid": 89,
       "type1": 12,
       "type2": 12,
       "baseSpeed": 50
     },
     "shellder": {
-      "id": 90,
+      "pokeid": 90,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 40
     },
     "cloyster": {
-      "id": 91,
+      "pokeid": 91,
       "type1": 2,
       "type2": 6,
       "baseSpeed": 70
     },
     "gastly": {
-      "id": 92,
+      "pokeid": 92,
       "type1": 16,
       "type2": 12,
       "baseSpeed": 80
     },
     "haunter": {
-      "id": 93,
+      "pokeid": 93,
       "type1": 16,
       "type2": 12,
       "baseSpeed": 95
     },
     "gengar": {
-      "id": 94,
+      "pokeid": 94,
       "type1": 16,
       "type2": 12,
       "baseSpeed": 110
     },
     "onix": {
-      "id": 95,
+      "pokeid": 95,
       "type1": 14,
       "type2": 13,
       "baseSpeed": 70
     },
     "drowzee": {
-      "id": 96,
+      "pokeid": 96,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 42
     },
     "hypno": {
-      "id": 97,
+      "pokeid": 97,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 67
     },
     "krabby": {
-      "id": 98,
+      "pokeid": 98,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 50
     },
     "kingler": {
-      "id": 99,
+      "pokeid": 99,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 75
     },
     "voltorb": {
-      "id": 100,
+      "pokeid": 100,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 100
     },
     "electrode": {
-      "id": 101,
+      "pokeid": 101,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 150
     },
     "exeggcute": {
-      "id": 102,
+      "pokeid": 102,
       "type1": 3,
       "type2": 5,
       "baseSpeed": 40
     },
     "exeggutor": {
-      "id": 103,
+      "pokeid": 103,
       "type1": 3,
       "type2": 5,
       "baseSpeed": 55
     },
     "cubone": {
-      "id": 104,
+      "pokeid": 104,
       "type1": 13,
       "type2": 13,
       "baseSpeed": 35
     },
     "marowak": {
-      "id": 105,
+      "pokeid": 105,
       "type1": 13,
       "type2": 13,
       "baseSpeed": 45
     },
     "hitmonlee": {
-      "id": 106,
+      "pokeid": 106,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 87
     },
     "hitmonchan": {
-      "id": 107,
+      "pokeid": 107,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 76
     },
     "lickitung": {
-      "id": 108,
+      "pokeid": 108,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 30
     },
     "koffing": {
-      "id": 109,
+      "pokeid": 109,
       "type1": 12,
       "type2": 12,
       "baseSpeed": 35
     },
     "weezing": {
-      "id": 110,
+      "pokeid": 110,
       "type1": 12,
       "type2": 12,
       "baseSpeed": 60
     },
     "rhyhorn": {
-      "id": 111,
+      "pokeid": 111,
       "type1": 13,
       "type2": 14,
       "baseSpeed": 25
     },
     "rhydon": {
-      "id": 112,
+      "pokeid": 112,
       "type1": 13,
       "type2": 14,
       "baseSpeed": 40
     },
     "chansey": {
-      "id": 113,
+      "pokeid": 113,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 50
     },
     "tangela": {
-      "id": 114,
+      "pokeid": 114,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 60
     },
     "kangaskhan": {
-      "id": 115,
+      "pokeid": 115,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 90
     },
     "horsea": {
-      "id": 116,
+      "pokeid": 116,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 60
     },
     "seadra": {
-      "id": 117,
+      "pokeid": 117,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 85
     },
     "goldeen": {
-      "id": 118,
+      "pokeid": 118,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 63
     },
     "seaking": {
-      "id": 119,
+      "pokeid": 119,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 68
     },
     "staryu": {
-      "id": 120,
+      "pokeid": 120,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 85
     },
     "starmie": {
-      "id": 121,
+      "pokeid": 121,
       "type1": 2,
       "type2": 5,
       "baseSpeed": 115
     },
     "mrmime": {
-      "id": 122,
+      "pokeid": 122,
       "type1": 5,
       "type2": 9,
       "baseSpeed": 90
     },
     "scyther": {
-      "id": 123,
+      "pokeid": 123,
       "type1": 15,
       "type2": 11,
       "baseSpeed": 105
     },
     "jynx": {
-      "id": 124,
+      "pokeid": 124,
       "type1": 6,
       "type2": 5,
       "baseSpeed": 95
     },
     "electabuzz": {
-      "id": 125,
+      "pokeid": 125,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 105
     },
     "magmar": {
-      "id": 126,
+      "pokeid": 126,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 93
     },
     "pinsir": {
-      "id": 127,
+      "pokeid": 127,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 85
     },
     "tauros": {
-      "id": 128,
+      "pokeid": 128,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 110
     },
     "magikarp": {
-      "id": 129,
+      "pokeid": 129,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 80
     },
     "gyarados": {
-      "id": 130,
+      "pokeid": 130,
       "type1": 2,
       "type2": 11,
       "baseSpeed": 81
     },
     "lapras": {
-      "id": 131,
+      "pokeid": 131,
       "type1": 2,
       "type2": 6,
       "baseSpeed": 60
     },
     "ditto": {
-      "id": 132,
+      "pokeid": 132,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 48
     },
     "eevee": {
-      "id": 133,
+      "pokeid": 133,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 55
     },
     "vaporeon": {
-      "id": 134,
+      "pokeid": 134,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 65
     },
     "jolteon": {
-      "id": 135,
+      "pokeid": 135,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 130
     },
     "flareon": {
-      "id": 136,
+      "pokeid": 136,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 65
     },
     "porygon": {
-      "id": 137,
+      "pokeid": 137,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 40
     },
     "omanyte": {
-      "id": 138,
+      "pokeid": 138,
       "type1": 14,
       "type2": 2,
       "baseSpeed": 35
     },
     "omastar": {
-      "id": 139,
+      "pokeid": 139,
       "type1": 14,
       "type2": 2,
       "baseSpeed": 55
     },
     "kabuto": {
-      "id": 140,
+      "pokeid": 140,
       "type1": 14,
       "type2": 2,
       "baseSpeed": 55
     },
     "kabutops": {
-      "id": 141,
+      "pokeid": 141,
       "type1": 14,
       "type2": 2,
       "baseSpeed": 80
     },
     "aerodactyl": {
-      "id": 142,
+      "pokeid": 142,
       "type1": 14,
       "type2": 11,
       "baseSpeed": 130
     },
     "snorlax": {
-      "id": 143,
+      "pokeid": 143,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 30
     },
     "articuno": {
-      "id": 144,
+      "pokeid": 144,
       "type1": 6,
       "type2": 11,
       "baseSpeed": 85
     },
     "zapdos": {
-      "id": 145,
+      "pokeid": 145,
       "type1": 4,
       "type2": 11,
       "baseSpeed": 100
     },
     "moltres": {
-      "id": 146,
+      "pokeid": 146,
       "type1": 1,
       "type2": 11,
       "baseSpeed": 90
     },
     "dratini": {
-      "id": 147,
+      "pokeid": 147,
       "type1": 7,
       "type2": 7,
       "baseSpeed": 50
     },
     "dragonair": {
-      "id": 148,
+      "pokeid": 148,
       "type1": 7,
       "type2": 7,
       "baseSpeed": 70
     },
     "dragonite": {
-      "id": 149,
+      "pokeid": 149,
       "type1": 7,
       "type2": 11,
       "baseSpeed": 80
     },
     "mewtwo": {
-      "id": 150,
+      "pokeid": 150,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 130
     },
     "mew": {
-      "id": 151,
+      "pokeid": 151,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 100
     },
     "chikorita": {
-      "id": 152,
+      "pokeid": 152,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 45
     },
     "bayleef": {
-      "id": 153,
+      "pokeid": 153,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 60
     },
     "meganium": {
-      "id": 154,
+      "pokeid": 154,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 80
     },
     "cyndaquil": {
-      "id": 155,
+      "pokeid": 155,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 65
     },
     "quilava": {
-      "id": 156,
+      "pokeid": 156,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 80
     },
     "typhlosion": {
-      "id": 157,
+      "pokeid": 157,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 100
     },
     "totodile": {
-      "id": 158,
+      "pokeid": 158,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 43
     },
     "croconaw": {
-      "id": 159,
+      "pokeid": 159,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 58
     },
     "feraligatr": {
-      "id": 160,
+      "pokeid": 160,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 78
     },
     "sentret": {
-      "id": 161,
+      "pokeid": 161,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 20
     },
     "furret": {
-      "id": 162,
+      "pokeid": 162,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 90
     },
     "hoothoot": {
-      "id": 163,
+      "pokeid": 163,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 50
     },
     "noctowl": {
-      "id": 164,
+      "pokeid": 164,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 70
     },
     "ledyba": {
-      "id": 165,
+      "pokeid": 165,
       "type1": 15,
       "type2": 11,
       "baseSpeed": 55
     },
     "ledian": {
-      "id": 166,
+      "pokeid": 166,
       "type1": 15,
       "type2": 11,
       "baseSpeed": 85
     },
     "spinarak": {
-      "id": 167,
+      "pokeid": 167,
       "type1": 15,
       "type2": 12,
       "baseSpeed": 30
     },
     "ariados": {
-      "id": 168,
+      "pokeid": 168,
       "type1": 15,
       "type2": 12,
       "baseSpeed": 40
     },
     "crobat": {
-      "id": 169,
+      "pokeid": 169,
       "type1": 12,
       "type2": 11,
       "baseSpeed": 130
     },
     "chinchou": {
-      "id": 170,
+      "pokeid": 170,
       "type1": 2,
       "type2": 4,
       "baseSpeed": 67
     },
     "lanturn": {
-      "id": 171,
+      "pokeid": 171,
       "type1": 2,
       "type2": 4,
       "baseSpeed": 67
     },
     "pichu": {
-      "id": 172,
+      "pokeid": 172,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 60
     },
     "cleffa": {
-      "id": 173,
+      "pokeid": 173,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 15
     },
     "igglybuff": {
-      "id": 174,
+      "pokeid": 174,
       "type1": 0,
       "type2": 9,
       "baseSpeed": 15
     },
     "togepi": {
-      "id": 175,
+      "pokeid": 175,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 20
     },
     "togetic": {
-      "id": 176,
+      "pokeid": 176,
       "type1": 9,
       "type2": 11,
       "baseSpeed": 40
     },
     "natu": {
-      "id": 177,
+      "pokeid": 177,
       "type1": 5,
       "type2": 11,
       "baseSpeed": 70
     },
     "xatu": {
-      "id": 178,
+      "pokeid": 178,
       "type1": 5,
       "type2": 11,
       "baseSpeed": 95
     },
     "mareep": {
-      "id": 179,
+      "pokeid": 179,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 35
     },
     "flaaffy": {
-      "id": 180,
+      "pokeid": 180,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 45
     },
     "ampharos": {
-      "id": 181,
+      "pokeid": 181,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 55
     },
     "bellossom": {
-      "id": 182,
+      "pokeid": 182,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 50
     },
     "marill": {
-      "id": 183,
+      "pokeid": 183,
       "type1": 2,
       "type2": 9,
       "baseSpeed": 40
     },
     "azumarill": {
-      "id": 184,
+      "pokeid": 184,
       "type1": 2,
       "type2": 9,
       "baseSpeed": 50
     },
     "sudowoodo": {
-      "id": 185,
+      "pokeid": 185,
       "type1": 14,
       "type2": 14,
       "baseSpeed": 30
     },
     "politoed": {
-      "id": 186,
+      "pokeid": 186,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 70
     },
     "hoppip": {
-      "id": 187,
+      "pokeid": 187,
       "type1": 3,
       "type2": 11,
       "baseSpeed": 50
     },
     "skiploom": {
-      "id": 188,
+      "pokeid": 188,
       "type1": 3,
       "type2": 11,
       "baseSpeed": 80
     },
     "jumpluff": {
-      "id": 189,
+      "pokeid": 189,
       "type1": 3,
       "type2": 11,
       "baseSpeed": 110
     },
     "aipom": {
-      "id": 190,
+      "pokeid": 190,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 85
     },
     "sunkern": {
-      "id": 191,
+      "pokeid": 191,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 30
     },
     "sunflora": {
-      "id": 192,
+      "pokeid": 192,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 30
     },
     "yanma": {
-      "id": 193,
+      "pokeid": 193,
       "type1": 15,
       "type2": 11,
       "baseSpeed": 95
     },
     "wooper": {
-      "id": 194,
+      "pokeid": 194,
       "type1": 2,
       "type2": 13,
       "baseSpeed": 15
     },
     "quagsire": {
-      "id": 195,
+      "pokeid": 195,
       "type1": 2,
       "type2": 13,
       "baseSpeed": 35
     },
     "espeon": {
-      "id": 196,
+      "pokeid": 196,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 110
     },
     "umbreon": {
-      "id": 197,
+      "pokeid": 197,
       "type1": 8,
       "type2": 8,
       "baseSpeed": 65
     },
     "murkrow": {
-      "id": 198,
+      "pokeid": 198,
       "type1": 8,
       "type2": 11,
       "baseSpeed": 91
     },
     "slowking": {
-      "id": 199,
+      "pokeid": 199,
       "type1": 2,
       "type2": 5,
       "baseSpeed": 30
     },
     "misdreavus": {
-      "id": 200,
+      "pokeid": 200,
       "type1": 16,
       "type2": 16,
       "baseSpeed": 85
     },
     "unown": {
-      "id": 201,
+      "pokeid": 201,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 48
     },
     "wobbuffet": {
-      "id": 202,
+      "pokeid": 202,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 33
     },
     "girafarig": {
-      "id": 203,
+      "pokeid": 203,
       "type1": 0,
       "type2": 5,
       "baseSpeed": 85
     },
     "pineco": {
-      "id": 204,
+      "pokeid": 204,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 15
     },
     "forretress": {
-      "id": 205,
+      "pokeid": 205,
       "type1": 15,
       "type2": 17,
       "baseSpeed": 40
     },
     "dunsparce": {
-      "id": 206,
+      "pokeid": 206,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 45
     },
     "gligar": {
-      "id": 207,
+      "pokeid": 207,
       "type1": 13,
       "type2": 11,
       "baseSpeed": 85
     },
     "steelix": {
-      "id": 208,
+      "pokeid": 208,
       "type1": 17,
       "type2": 13,
       "baseSpeed": 30
     },
     "snubbull": {
-      "id": 209,
+      "pokeid": 209,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 30
     },
     "granbull": {
-      "id": 210,
+      "pokeid": 210,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 45
     },
     "qwilfish": {
-      "id": 211,
+      "pokeid": 211,
       "type1": 2,
       "type2": 12,
       "baseSpeed": 85
     },
     "scizor": {
-      "id": 212,
+      "pokeid": 212,
       "type1": 15,
       "type2": 17,
       "baseSpeed": 65
     },
     "shuckle": {
-      "id": 213,
+      "pokeid": 213,
       "type1": 15,
       "type2": 14,
       "baseSpeed": 5
     },
     "heracross": {
-      "id": 214,
+      "pokeid": 214,
       "type1": 15,
       "type2": 10,
       "baseSpeed": 85
     },
     "sneasel": {
-      "id": 215,
+      "pokeid": 215,
       "type1": 8,
       "type2": 6,
       "baseSpeed": 115
     },
     "teddiursa": {
-      "id": 216,
+      "pokeid": 216,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 40
     },
     "ursaring": {
-      "id": 217,
+      "pokeid": 217,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 55
     },
     "slugma": {
-      "id": 218,
+      "pokeid": 218,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 20
     },
     "magcargo": {
-      "id": 219,
+      "pokeid": 219,
       "type1": 1,
       "type2": 14,
       "baseSpeed": 30
     },
     "swinub": {
-      "id": 220,
+      "pokeid": 220,
       "type1": 6,
       "type2": 13,
       "baseSpeed": 50
     },
     "piloswine": {
-      "id": 221,
+      "pokeid": 221,
       "type1": 6,
       "type2": 13,
       "baseSpeed": 50
     },
     "corsola": {
-      "id": 222,
+      "pokeid": 222,
       "type1": 2,
       "type2": 14,
       "baseSpeed": 35
     },
     "remoraid": {
-      "id": 223,
+      "pokeid": 223,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 65
     },
     "octillery": {
-      "id": 224,
+      "pokeid": 224,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 45
     },
     "delibird": {
-      "id": 225,
+      "pokeid": 225,
       "type1": 6,
       "type2": 11,
       "baseSpeed": 75
     },
     "mantine": {
-      "id": 226,
+      "pokeid": 226,
       "type1": 2,
       "type2": 11,
       "baseSpeed": 70
     },
     "skarmory": {
-      "id": 227,
+      "pokeid": 227,
       "type1": 17,
       "type2": 11,
       "baseSpeed": 70
     },
     "houndour": {
-      "id": 228,
+      "pokeid": 228,
       "type1": 8,
       "type2": 1,
       "baseSpeed": 65
     },
     "houndoom": {
-      "id": 229,
+      "pokeid": 229,
       "type1": 8,
       "type2": 1,
       "baseSpeed": 95
     },
     "kingdra": {
-      "id": 230,
+      "pokeid": 230,
       "type1": 2,
       "type2": 7,
       "baseSpeed": 85
     },
     "phanpy": {
-      "id": 231,
+      "pokeid": 231,
       "type1": 13,
       "type2": 13,
       "baseSpeed": 40
     },
     "donphan": {
-      "id": 232,
+      "pokeid": 232,
       "type1": 13,
       "type2": 13,
       "baseSpeed": 50
     },
     "porygon2": {
-      "id": 233,
+      "pokeid": 233,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 60
     },
     "stantler": {
-      "id": 234,
+      "pokeid": 234,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 85
     },
     "smeargle": {
-      "id": 235,
+      "pokeid": 235,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 75
     },
     "tyrogue": {
-      "id": 236,
+      "pokeid": 236,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 35
     },
     "hitmontop": {
-      "id": 237,
+      "pokeid": 237,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 70
     },
     "smoochum": {
-      "id": 238,
+      "pokeid": 238,
       "type1": 6,
       "type2": 5,
       "baseSpeed": 65
     },
     "elekid": {
-      "id": 239,
+      "pokeid": 239,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 95
     },
     "magby": {
-      "id": 240,
+      "pokeid": 240,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 83
     },
     "miltank": {
-      "id": 241,
+      "pokeid": 241,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 100
     },
     "blissey": {
-      "id": 242,
+      "pokeid": 242,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 55
     },
     "raikou": {
-      "id": 243,
+      "pokeid": 243,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 115
     },
     "entei": {
-      "id": 244,
+      "pokeid": 244,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 100
     },
     "suicune": {
-      "id": 245,
+      "pokeid": 245,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 85
     },
     "larvitar": {
-      "id": 246,
+      "pokeid": 246,
       "type1": 14,
       "type2": 13,
       "baseSpeed": 41
     },
     "pupitar": {
-      "id": 247,
+      "pokeid": 247,
       "type1": 14,
       "type2": 13,
       "baseSpeed": 51
     },
     "tyranitar": {
-      "id": 248,
+      "pokeid": 248,
       "type1": 14,
       "type2": 8,
       "baseSpeed": 61
     },
     "lugia": {
-      "id": 249,
+      "pokeid": 249,
       "type1": 5,
       "type2": 11,
       "baseSpeed": 110
     },
     "hooh": {
-      "id": 250,
+      "pokeid": 250,
       "type1": 1,
       "type2": 11,
       "baseSpeed": 90
     },
     "celebi": {
-      "id": 251,
+      "pokeid": 251,
       "type1": 5,
       "type2": 3,
       "baseSpeed": 100
     },
     "treecko": {
-      "id": 252,
+      "pokeid": 252,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 70
     },
     "grovyle": {
-      "id": 253,
+      "pokeid": 253,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 95
     },
     "sceptile": {
-      "id": 254,
+      "pokeid": 254,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 120
     },
     "torchic": {
-      "id": 255,
+      "pokeid": 255,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 45
     },
     "combusken": {
-      "id": 256,
+      "pokeid": 256,
       "type1": 1,
       "type2": 10,
       "baseSpeed": 55
     },
     "blaziken": {
-      "id": 257,
+      "pokeid": 257,
       "type1": 1,
       "type2": 10,
       "baseSpeed": 80
     },
     "mudkip": {
-      "id": 258,
+      "pokeid": 258,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 40
     },
     "marshtomp": {
-      "id": 259,
+      "pokeid": 259,
       "type1": 2,
       "type2": 13,
       "baseSpeed": 50
     },
     "swampert": {
-      "id": 260,
+      "pokeid": 260,
       "type1": 2,
       "type2": 13,
       "baseSpeed": 60
     },
     "poochyena": {
-      "id": 261,
+      "pokeid": 261,
       "type1": 8,
       "type2": 8,
       "baseSpeed": 35
     },
     "mightyena": {
-      "id": 262,
+      "pokeid": 262,
       "type1": 8,
       "type2": 8,
       "baseSpeed": 70
     },
     "zigzagoon": {
-      "id": 263,
+      "pokeid": 263,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 60
     },
     "linoone": {
-      "id": 264,
+      "pokeid": 264,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 100
     },
     "wurmple": {
-      "id": 265,
+      "pokeid": 265,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 20
     },
     "silcoon": {
-      "id": 266,
+      "pokeid": 266,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 15
     },
     "beautifly": {
-      "id": 267,
+      "pokeid": 267,
       "type1": 15,
       "type2": 11,
       "baseSpeed": 65
     },
     "cascoon": {
-      "id": 268,
+      "pokeid": 268,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 15
     },
     "dustox": {
-      "id": 269,
+      "pokeid": 269,
       "type1": 15,
       "type2": 12,
       "baseSpeed": 65
     },
     "lotad": {
-      "id": 270,
+      "pokeid": 270,
       "type1": 2,
       "type2": 3,
       "baseSpeed": 30
     },
     "lombre": {
-      "id": 271,
+      "pokeid": 271,
       "type1": 2,
       "type2": 3,
       "baseSpeed": 50
     },
     "ludicolo": {
-      "id": 272,
+      "pokeid": 272,
       "type1": 2,
       "type2": 3,
       "baseSpeed": 70
     },
     "seedot": {
-      "id": 273,
+      "pokeid": 273,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 30
     },
     "nuzleaf": {
-      "id": 274,
+      "pokeid": 274,
       "type1": 3,
       "type2": 8,
       "baseSpeed": 60
     },
     "shiftry": {
-      "id": 275,
+      "pokeid": 275,
       "type1": 3,
       "type2": 8,
       "baseSpeed": 80
     },
     "taillow": {
-      "id": 276,
+      "pokeid": 276,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 85
     },
     "swellow": {
-      "id": 277,
+      "pokeid": 277,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 125
     },
     "wingull": {
-      "id": 278,
+      "pokeid": 278,
       "type1": 2,
       "type2": 11,
       "baseSpeed": 85
     },
     "pelipper": {
-      "id": 279,
+      "pokeid": 279,
       "type1": 2,
       "type2": 11,
       "baseSpeed": 65
     },
     "ralts": {
-      "id": 280,
+      "pokeid": 280,
       "type1": 5,
       "type2": 9,
       "baseSpeed": 40
     },
     "kirlia": {
-      "id": 281,
+      "pokeid": 281,
       "type1": 5,
       "type2": 9,
       "baseSpeed": 50
     },
     "gardevoir": {
-      "id": 282,
+      "pokeid": 282,
       "type1": 5,
       "type2": 9,
       "baseSpeed": 80
     },
     "surskit": {
-      "id": 283,
+      "pokeid": 283,
       "type1": 15,
       "type2": 2,
       "baseSpeed": 65
     },
     "masquerain": {
-      "id": 284,
+      "pokeid": 284,
       "type1": 15,
       "type2": 11,
       "baseSpeed": 80
     },
     "shroomish": {
-      "id": 285,
+      "pokeid": 285,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 35
     },
     "breloom": {
-      "id": 286,
+      "pokeid": 286,
       "type1": 3,
       "type2": 10,
       "baseSpeed": 70
     },
     "slakoth": {
-      "id": 287,
+      "pokeid": 287,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 30
     },
     "vigoroth": {
-      "id": 288,
+      "pokeid": 288,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 90
     },
     "slaking": {
-      "id": 289,
+      "pokeid": 289,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 100
     },
     "nincada": {
-      "id": 290,
+      "pokeid": 290,
       "type1": 15,
       "type2": 13,
       "baseSpeed": 40
     },
     "ninjask": {
-      "id": 291,
+      "pokeid": 291,
       "type1": 15,
       "type2": 11,
       "baseSpeed": 160
     },
     "shedinja": {
-      "id": 292,
+      "pokeid": 292,
       "type1": 15,
       "type2": 16,
       "baseSpeed": 40
     },
     "whismur": {
-      "id": 293,
+      "pokeid": 293,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 28
     },
     "loudred": {
-      "id": 294,
+      "pokeid": 294,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 48
     },
     "exploud": {
-      "id": 295,
+      "pokeid": 295,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 68
     },
     "makuhita": {
-      "id": 296,
+      "pokeid": 296,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 25
     },
     "hariyama": {
-      "id": 297,
+      "pokeid": 297,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 50
     },
     "azurill": {
-      "id": 298,
+      "pokeid": 298,
       "type1": 0,
       "type2": 9,
       "baseSpeed": 20
     },
     "nosepass": {
-      "id": 299,
+      "pokeid": 299,
       "type1": 14,
       "type2": 14,
       "baseSpeed": 30
     },
     "skitty": {
-      "id": 300,
+      "pokeid": 300,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 50
     },
     "delcatty": {
-      "id": 301,
+      "pokeid": 301,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 90
     },
     "sableye": {
-      "id": 302,
+      "pokeid": 302,
       "type1": 8,
       "type2": 16,
       "baseSpeed": 50
     },
     "mawile": {
-      "id": 303,
+      "pokeid": 303,
       "type1": 17,
       "type2": 9,
       "baseSpeed": 50
     },
     "aron": {
-      "id": 304,
+      "pokeid": 304,
       "type1": 17,
       "type2": 14,
       "baseSpeed": 30
     },
     "lairon": {
-      "id": 305,
+      "pokeid": 305,
       "type1": 17,
       "type2": 14,
       "baseSpeed": 40
     },
     "aggron": {
-      "id": 306,
+      "pokeid": 306,
       "type1": 17,
       "type2": 14,
       "baseSpeed": 50
     },
     "meditite": {
-      "id": 307,
+      "pokeid": 307,
       "type1": 10,
       "type2": 5,
       "baseSpeed": 60
     },
     "medicham": {
-      "id": 308,
+      "pokeid": 308,
       "type1": 10,
       "type2": 5,
       "baseSpeed": 80
     },
     "electrike": {
-      "id": 309,
+      "pokeid": 309,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 65
     },
     "manectric": {
-      "id": 310,
+      "pokeid": 310,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 105
     },
     "plusle": {
-      "id": 311,
+      "pokeid": 311,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 95
     },
     "minun": {
-      "id": 312,
+      "pokeid": 312,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 95
     },
     "volbeat": {
-      "id": 313,
+      "pokeid": 313,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 85
     },
     "illumise": {
-      "id": 314,
+      "pokeid": 314,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 85
     },
     "roselia": {
-      "id": 315,
+      "pokeid": 315,
       "type1": 3,
       "type2": 12,
       "baseSpeed": 65
     },
     "gulpin": {
-      "id": 316,
+      "pokeid": 316,
       "type1": 12,
       "type2": 12,
       "baseSpeed": 40
     },
     "swalot": {
-      "id": 317,
+      "pokeid": 317,
       "type1": 12,
       "type2": 12,
       "baseSpeed": 55
     },
     "carvanha": {
-      "id": 318,
+      "pokeid": 318,
       "type1": 2,
       "type2": 8,
       "baseSpeed": 65
     },
     "sharpedo": {
-      "id": 319,
+      "pokeid": 319,
       "type1": 2,
       "type2": 8,
       "baseSpeed": 95
     },
     "wailmer": {
-      "id": 320,
+      "pokeid": 320,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 60
     },
     "wailord": {
-      "id": 321,
+      "pokeid": 321,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 60
     },
     "numel": {
-      "id": 322,
+      "pokeid": 322,
       "type1": 1,
       "type2": 13,
       "baseSpeed": 35
     },
     "camerupt": {
-      "id": 323,
+      "pokeid": 323,
       "type1": 1,
       "type2": 13,
       "baseSpeed": 40
     },
     "torkoal": {
-      "id": 324,
+      "pokeid": 324,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 20
     },
     "spoink": {
-      "id": 325,
+      "pokeid": 325,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 60
     },
     "grumpig": {
-      "id": 326,
+      "pokeid": 326,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 80
     },
     "spinda": {
-      "id": 327,
+      "pokeid": 327,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 60
     },
     "trapinch": {
-      "id": 328,
+      "pokeid": 328,
       "type1": 13,
       "type2": 13,
       "baseSpeed": 10
     },
     "vibrava": {
-      "id": 329,
+      "pokeid": 329,
       "type1": 13,
       "type2": 7,
       "baseSpeed": 70
     },
     "flygon": {
-      "id": 330,
+      "pokeid": 330,
       "type1": 13,
       "type2": 7,
       "baseSpeed": 100
     },
     "cacnea": {
-      "id": 331,
+      "pokeid": 331,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 35
     },
     "cacturne": {
-      "id": 332,
+      "pokeid": 332,
       "type1": 3,
       "type2": 8,
       "baseSpeed": 55
     },
     "swablu": {
-      "id": 333,
+      "pokeid": 333,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 50
     },
     "altaria": {
-      "id": 334,
+      "pokeid": 334,
       "type1": 7,
       "type2": 11,
       "baseSpeed": 80
     },
     "zangoose": {
-      "id": 335,
+      "pokeid": 335,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 90
     },
     "seviper": {
-      "id": 336,
+      "pokeid": 336,
       "type1": 12,
       "type2": 12,
       "baseSpeed": 65
     },
     "lunatone": {
-      "id": 337,
+      "pokeid": 337,
       "type1": 14,
       "type2": 5,
       "baseSpeed": 70
     },
     "solrock": {
-      "id": 338,
+      "pokeid": 338,
       "type1": 14,
       "type2": 5,
       "baseSpeed": 70
     },
     "barboach": {
-      "id": 339,
+      "pokeid": 339,
       "type1": 2,
       "type2": 13,
       "baseSpeed": 60
     },
     "whiscash": {
-      "id": 340,
+      "pokeid": 340,
       "type1": 2,
       "type2": 13,
       "baseSpeed": 60
     },
     "corphish": {
-      "id": 341,
+      "pokeid": 341,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 35
     },
     "crawdaunt": {
-      "id": 342,
+      "pokeid": 342,
       "type1": 2,
       "type2": 8,
       "baseSpeed": 55
     },
     "baltoy": {
-      "id": 343,
+      "pokeid": 343,
       "type1": 13,
       "type2": 5,
       "baseSpeed": 55
     },
     "claydol": {
-      "id": 344,
+      "pokeid": 344,
       "type1": 13,
       "type2": 5,
       "baseSpeed": 75
     },
     "lileep": {
-      "id": 345,
+      "pokeid": 345,
       "type1": 14,
       "type2": 3,
       "baseSpeed": 23
     },
     "cradily": {
-      "id": 346,
+      "pokeid": 346,
       "type1": 14,
       "type2": 3,
       "baseSpeed": 43
     },
     "anorith": {
-      "id": 347,
+      "pokeid": 347,
       "type1": 14,
       "type2": 15,
       "baseSpeed": 75
     },
     "armaldo": {
-      "id": 348,
+      "pokeid": 348,
       "type1": 14,
       "type2": 15,
       "baseSpeed": 45
     },
     "feebas": {
-      "id": 349,
+      "pokeid": 349,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 80
     },
     "milotic": {
-      "id": 350,
+      "pokeid": 350,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 81
     },
     "castform": {
-      "id": 351,
+      "pokeid": 351,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 70
     },
     "kecleon": {
-      "id": 352,
+      "pokeid": 352,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 40
     },
     "shuppet": {
-      "id": 353,
+      "pokeid": 353,
       "type1": 16,
       "type2": 16,
       "baseSpeed": 45
     },
     "banette": {
-      "id": 354,
+      "pokeid": 354,
       "type1": 16,
       "type2": 16,
       "baseSpeed": 65
     },
     "duskull": {
-      "id": 355,
+      "pokeid": 355,
       "type1": 16,
       "type2": 16,
       "baseSpeed": 25
     },
     "dusclops": {
-      "id": 356,
+      "pokeid": 356,
       "type1": 16,
       "type2": 16,
       "baseSpeed": 25
     },
     "tropius": {
-      "id": 357,
+      "pokeid": 357,
       "type1": 3,
       "type2": 11,
       "baseSpeed": 51
     },
     "chimecho": {
-      "id": 358,
+      "pokeid": 358,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 65
     },
     "absol": {
-      "id": 359,
+      "pokeid": 359,
       "type1": 8,
       "type2": 8,
       "baseSpeed": 75
     },
     "wynaut": {
-      "id": 360,
+      "pokeid": 360,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 23
     },
     "snorunt": {
-      "id": 361,
+      "pokeid": 361,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 50
     },
     "glalie": {
-      "id": 362,
+      "pokeid": 362,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 80
     },
     "spheal": {
-      "id": 363,
+      "pokeid": 363,
       "type1": 6,
       "type2": 2,
       "baseSpeed": 25
     },
     "sealeo": {
-      "id": 364,
+      "pokeid": 364,
       "type1": 6,
       "type2": 2,
       "baseSpeed": 45
     },
     "walrein": {
-      "id": 365,
+      "pokeid": 365,
       "type1": 6,
       "type2": 2,
       "baseSpeed": 65
     },
     "clamperl": {
-      "id": 366,
+      "pokeid": 366,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 32
     },
     "huntail": {
-      "id": 367,
+      "pokeid": 367,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 52
     },
     "gorebyss": {
-      "id": 368,
+      "pokeid": 368,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 52
     },
     "relicanth": {
-      "id": 369,
+      "pokeid": 369,
       "type1": 2,
       "type2": 14,
       "baseSpeed": 55
     },
     "luvdisc": {
-      "id": 370,
+      "pokeid": 370,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 97
     },
     "bagon": {
-      "id": 371,
+      "pokeid": 371,
       "type1": 7,
       "type2": 7,
       "baseSpeed": 50
     },
     "shelgon": {
-      "id": 372,
+      "pokeid": 372,
       "type1": 7,
       "type2": 7,
       "baseSpeed": 50
     },
     "salamence": {
-      "id": 373,
+      "pokeid": 373,
       "type1": 7,
       "type2": 11,
       "baseSpeed": 100
     },
     "beldum": {
-      "id": 374,
+      "pokeid": 374,
       "type1": 17,
       "type2": 5,
       "baseSpeed": 30
     },
     "metang": {
-      "id": 375,
+      "pokeid": 375,
       "type1": 17,
       "type2": 5,
       "baseSpeed": 50
     },
     "metagross": {
-      "id": 376,
+      "pokeid": 376,
       "type1": 17,
       "type2": 5,
       "baseSpeed": 70
     },
     "regirock": {
-      "id": 377,
+      "pokeid": 377,
       "type1": 14,
       "type2": 14,
       "baseSpeed": 50
     },
     "regice": {
-      "id": 378,
+      "pokeid": 378,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 50
     },
     "registeel": {
-      "id": 379,
+      "pokeid": 379,
       "type1": 17,
       "type2": 17,
       "baseSpeed": 50
     },
     "latias": {
-      "id": 380,
+      "pokeid": 380,
       "type1": 7,
       "type2": 5,
       "baseSpeed": 110
     },
     "latios": {
-      "id": 381,
+      "pokeid": 381,
       "type1": 7,
       "type2": 5,
       "baseSpeed": 110
     },
     "kyogre": {
-      "id": 382,
+      "pokeid": 382,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 90
     },
     "groudon": {
-      "id": 383,
+      "pokeid": 383,
       "type1": 13,
       "type2": 13,
       "baseSpeed": 90
     },
     "rayquaza": {
-      "id": 384,
+      "pokeid": 384,
       "type1": 7,
       "type2": 11,
       "baseSpeed": 95
     },
     "jirachi": {
-      "id": 385,
+      "pokeid": 385,
       "type1": 17,
       "type2": 5,
       "baseSpeed": 100
     },
     "deoxysnormal": {
-      "id": 386,
+      "pokeid": 386,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 150
     },
     "turtwig": {
-      "id": 387,
+      "pokeid": 387,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 31
     },
     "grotle": {
-      "id": 388,
+      "pokeid": 388,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 36
     },
     "torterra": {
-      "id": 389,
+      "pokeid": 389,
       "type1": 3,
       "type2": 13,
       "baseSpeed": 56
     },
     "chimchar": {
-      "id": 390,
+      "pokeid": 390,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 61
     },
     "monferno": {
-      "id": 391,
+      "pokeid": 391,
       "type1": 1,
       "type2": 10,
       "baseSpeed": 81
     },
     "infernape": {
-      "id": 392,
+      "pokeid": 392,
       "type1": 1,
       "type2": 10,
       "baseSpeed": 108
     },
     "piplup": {
-      "id": 393,
+      "pokeid": 393,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 40
     },
     "prinplup": {
-      "id": 394,
+      "pokeid": 394,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 50
     },
     "empoleon": {
-      "id": 395,
+      "pokeid": 395,
       "type1": 2,
       "type2": 17,
       "baseSpeed": 60
     },
     "starly": {
-      "id": 396,
+      "pokeid": 396,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 60
     },
     "staravia": {
-      "id": 397,
+      "pokeid": 397,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 80
     },
     "staraptor": {
-      "id": 398,
+      "pokeid": 398,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 100
     },
     "bidoof": {
-      "id": 399,
+      "pokeid": 399,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 31
     },
     "bibarel": {
-      "id": 400,
+      "pokeid": 400,
       "type1": 0,
       "type2": 2,
       "baseSpeed": 71
     },
     "kricketot": {
-      "id": 401,
+      "pokeid": 401,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 25
     },
     "kricketune": {
-      "id": 402,
+      "pokeid": 402,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 65
     },
     "shinx": {
-      "id": 403,
+      "pokeid": 403,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 45
     },
     "luxio": {
-      "id": 404,
+      "pokeid": 404,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 60
     },
     "luxray": {
-      "id": 405,
+      "pokeid": 405,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 70
     },
     "budew": {
-      "id": 406,
+      "pokeid": 406,
       "type1": 3,
       "type2": 12,
       "baseSpeed": 55
     },
     "roserade": {
-      "id": 407,
+      "pokeid": 407,
       "type1": 3,
       "type2": 12,
       "baseSpeed": 90
     },
     "cranidos": {
-      "id": 408,
+      "pokeid": 408,
       "type1": 14,
       "type2": 14,
       "baseSpeed": 58
     },
     "rampardos": {
-      "id": 409,
+      "pokeid": 409,
       "type1": 14,
       "type2": 14,
       "baseSpeed": 58
     },
     "shieldon": {
-      "id": 410,
+      "pokeid": 410,
       "type1": 14,
       "type2": 17,
       "baseSpeed": 30
     },
     "bastiodon": {
-      "id": 411,
+      "pokeid": 411,
       "type1": 14,
       "type2": 17,
       "baseSpeed": 30
     },
     "burmy": {
-      "id": 412,
+      "pokeid": 412,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 36
     },
     "wormadamplant": {
-      "id": 413,
+      "pokeid": 413,
       "type1": 15,
       "type2": 3,
       "baseSpeed": 36
     },
     "mothim": {
-      "id": 414,
+      "pokeid": 414,
       "type1": 15,
       "type2": 11,
       "baseSpeed": 66
     },
     "combee": {
-      "id": 415,
+      "pokeid": 415,
       "type1": 15,
       "type2": 11,
       "baseSpeed": 70
     },
     "vespiquen": {
-      "id": 416,
+      "pokeid": 416,
       "type1": 15,
       "type2": 11,
       "baseSpeed": 40
     },
     "pachirisu": {
-      "id": 417,
+      "pokeid": 417,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 95
     },
     "buizel": {
-      "id": 418,
+      "pokeid": 418,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 85
     },
     "floatzel": {
-      "id": 419,
+      "pokeid": 419,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 115
     },
     "cherubi": {
-      "id": 420,
+      "pokeid": 420,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 35
     },
     "cherrim": {
-      "id": 421,
+      "pokeid": 421,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 85
     },
     "shellos": {
-      "id": 422,
+      "pokeid": 422,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 34
     },
     "gastrodon": {
-      "id": 423,
+      "pokeid": 423,
       "type1": 2,
       "type2": 13,
       "baseSpeed": 39
     },
     "ambipom": {
-      "id": 424,
+      "pokeid": 424,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 115
     },
     "drifloon": {
-      "id": 425,
+      "pokeid": 425,
       "type1": 16,
       "type2": 11,
       "baseSpeed": 70
     },
     "drifblim": {
-      "id": 426,
+      "pokeid": 426,
       "type1": 16,
       "type2": 11,
       "baseSpeed": 80
     },
     "buneary": {
-      "id": 427,
+      "pokeid": 427,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 85
     },
     "lopunny": {
-      "id": 428,
+      "pokeid": 428,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 105
     },
     "mismagius": {
-      "id": 429,
+      "pokeid": 429,
       "type1": 16,
       "type2": 16,
       "baseSpeed": 105
     },
     "honchkrow": {
-      "id": 430,
+      "pokeid": 430,
       "type1": 8,
       "type2": 11,
       "baseSpeed": 71
     },
     "glameow": {
-      "id": 431,
+      "pokeid": 431,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 85
     },
     "purugly": {
-      "id": 432,
+      "pokeid": 432,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 112
     },
     "chingling": {
-      "id": 433,
+      "pokeid": 433,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 45
     },
     "stunky": {
-      "id": 434,
+      "pokeid": 434,
       "type1": 12,
       "type2": 8,
       "baseSpeed": 74
     },
     "skuntank": {
-      "id": 435,
+      "pokeid": 435,
       "type1": 12,
       "type2": 8,
       "baseSpeed": 84
     },
     "bronzor": {
-      "id": 436,
+      "pokeid": 436,
       "type1": 17,
       "type2": 5,
       "baseSpeed": 23
     },
     "bronzong": {
-      "id": 437,
+      "pokeid": 437,
       "type1": 17,
       "type2": 5,
       "baseSpeed": 33
     },
     "bonsly": {
-      "id": 438,
+      "pokeid": 438,
       "type1": 14,
       "type2": 14,
       "baseSpeed": 10
     },
     "mimejr": {
-      "id": 439,
+      "pokeid": 439,
       "type1": 5,
       "type2": 9,
       "baseSpeed": 60
     },
     "happiny": {
-      "id": 440,
+      "pokeid": 440,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 30
     },
     "chatot": {
-      "id": 441,
+      "pokeid": 441,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 91
     },
     "spiritomb": {
-      "id": 442,
+      "pokeid": 442,
       "type1": 16,
       "type2": 8,
       "baseSpeed": 35
     },
     "gible": {
-      "id": 443,
+      "pokeid": 443,
       "type1": 7,
       "type2": 13,
       "baseSpeed": 42
     },
     "gabite": {
-      "id": 444,
+      "pokeid": 444,
       "type1": 7,
       "type2": 13,
       "baseSpeed": 82
     },
     "garchomp": {
-      "id": 445,
+      "pokeid": 445,
       "type1": 7,
       "type2": 13,
       "baseSpeed": 102
     },
     "munchlax": {
-      "id": 446,
+      "pokeid": 446,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 5
     },
     "riolu": {
-      "id": 447,
+      "pokeid": 447,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 60
     },
     "lucario": {
-      "id": 448,
+      "pokeid": 448,
       "type1": 10,
       "type2": 17,
       "baseSpeed": 90
     },
     "hippopotas": {
-      "id": 449,
+      "pokeid": 449,
       "type1": 13,
       "type2": 13,
       "baseSpeed": 32
     },
     "hippowdon": {
-      "id": 450,
+      "pokeid": 450,
       "type1": 13,
       "type2": 13,
       "baseSpeed": 47
     },
     "skorupi": {
-      "id": 451,
+      "pokeid": 451,
       "type1": 12,
       "type2": 15,
       "baseSpeed": 65
     },
     "drapion": {
-      "id": 452,
+      "pokeid": 452,
       "type1": 12,
       "type2": 8,
       "baseSpeed": 95
     },
     "croagunk": {
-      "id": 453,
+      "pokeid": 453,
       "type1": 12,
       "type2": 10,
       "baseSpeed": 50
     },
     "toxicroak": {
-      "id": 454,
+      "pokeid": 454,
       "type1": 12,
       "type2": 10,
       "baseSpeed": 85
     },
     "carnivine": {
-      "id": 455,
+      "pokeid": 455,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 46
     },
     "finneon": {
-      "id": 456,
+      "pokeid": 456,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 66
     },
     "lumineon": {
-      "id": 457,
+      "pokeid": 457,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 91
     },
     "mantyke": {
-      "id": 458,
+      "pokeid": 458,
       "type1": 2,
       "type2": 11,
       "baseSpeed": 50
     },
     "snover": {
-      "id": 459,
+      "pokeid": 459,
       "type1": 3,
       "type2": 6,
       "baseSpeed": 40
     },
     "abomasnow": {
-      "id": 460,
+      "pokeid": 460,
       "type1": 3,
       "type2": 6,
       "baseSpeed": 60
     },
     "weavile": {
-      "id": 461,
+      "pokeid": 461,
       "type1": 8,
       "type2": 6,
       "baseSpeed": 125
     },
     "magnezone": {
-      "id": 462,
+      "pokeid": 462,
       "type1": 4,
       "type2": 17,
       "baseSpeed": 60
     },
     "lickilicky": {
-      "id": 463,
+      "pokeid": 463,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 50
     },
     "rhyperior": {
-      "id": 464,
+      "pokeid": 464,
       "type1": 13,
       "type2": 14,
       "baseSpeed": 40
     },
     "tangrowth": {
-      "id": 465,
+      "pokeid": 465,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 50
     },
     "electivire": {
-      "id": 466,
+      "pokeid": 466,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 95
     },
     "magmortar": {
-      "id": 467,
+      "pokeid": 467,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 83
     },
     "togekiss": {
-      "id": 468,
+      "pokeid": 468,
       "type1": 9,
       "type2": 11,
       "baseSpeed": 80
     },
     "yanmega": {
-      "id": 469,
+      "pokeid": 469,
       "type1": 15,
       "type2": 11,
       "baseSpeed": 95
     },
     "leafeon": {
-      "id": 470,
+      "pokeid": 470,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 95
     },
     "glaceon": {
-      "id": 471,
+      "pokeid": 471,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 65
     },
     "gliscor": {
-      "id": 472,
+      "pokeid": 472,
       "type1": 13,
       "type2": 11,
       "baseSpeed": 95
     },
     "mamoswine": {
-      "id": 473,
+      "pokeid": 473,
       "type1": 6,
       "type2": 13,
       "baseSpeed": 80
     },
     "porygonz": {
-      "id": 474,
+      "pokeid": 474,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 90
     },
     "gallade": {
-      "id": 475,
+      "pokeid": 475,
       "type1": 5,
       "type2": 10,
       "baseSpeed": 80
     },
     "probopass": {
-      "id": 476,
+      "pokeid": 476,
       "type1": 14,
       "type2": 17,
       "baseSpeed": 40
     },
     "dusknoir": {
-      "id": 477,
+      "pokeid": 477,
       "type1": 16,
       "type2": 16,
       "baseSpeed": 45
     },
     "froslass": {
-      "id": 478,
+      "pokeid": 478,
       "type1": 6,
       "type2": 16,
       "baseSpeed": 110
     },
     "rotom": {
-      "id": 479,
+      "pokeid": 479,
       "type1": 4,
       "type2": 16,
       "baseSpeed": 91
     },
     "uxie": {
-      "id": 480,
+      "pokeid": 480,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 95
     },
     "mesprit": {
-      "id": 481,
+      "pokeid": 481,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 80
     },
     "azelf": {
-      "id": 482,
+      "pokeid": 482,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 115
     },
     "dialga": {
-      "id": 483,
+      "pokeid": 483,
       "type1": 17,
       "type2": 7,
       "baseSpeed": 90
     },
     "palkia": {
-      "id": 484,
+      "pokeid": 484,
       "type1": 2,
       "type2": 7,
       "baseSpeed": 100
     },
     "heatran": {
-      "id": 485,
+      "pokeid": 485,
       "type1": 1,
       "type2": 17,
       "baseSpeed": 77
     },
     "regigigas": {
-      "id": 486,
+      "pokeid": 486,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 100
     },
     "giratinaaltered": {
-      "id": 487,
+      "pokeid": 487,
       "type1": 16,
       "type2": 7,
       "baseSpeed": 90
     },
     "cresselia": {
-      "id": 488,
+      "pokeid": 488,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 85
     },
     "phione": {
-      "id": 489,
+      "pokeid": 489,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 80
     },
     "manaphy": {
-      "id": 490,
+      "pokeid": 490,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 100
     },
     "darkrai": {
-      "id": 491,
+      "pokeid": 491,
       "type1": 8,
       "type2": 8,
       "baseSpeed": 125
     },
     "shayminland": {
-      "id": 492,
+      "pokeid": 492,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 100
     },
     "arceus": {
-      "id": 493,
+      "pokeid": 493,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 120
     },
     "victini": {
-      "id": 494,
+      "pokeid": 494,
       "type1": 5,
       "type2": 1,
       "baseSpeed": 100
     },
     "snivy": {
-      "id": 495,
+      "pokeid": 495,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 63
     },
     "servine": {
-      "id": 496,
+      "pokeid": 496,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 83
     },
     "serperior": {
-      "id": 497,
+      "pokeid": 497,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 113
     },
     "tepig": {
-      "id": 498,
+      "pokeid": 498,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 45
     },
     "pignite": {
-      "id": 499,
+      "pokeid": 499,
       "type1": 1,
       "type2": 10,
       "baseSpeed": 55
     },
     "emboar": {
-      "id": 500,
+      "pokeid": 500,
       "type1": 1,
       "type2": 10,
       "baseSpeed": 65
     },
     "oshawott": {
-      "id": 501,
+      "pokeid": 501,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 45
     },
     "dewott": {
-      "id": 502,
+      "pokeid": 502,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 60
     },
     "samurott": {
-      "id": 503,
+      "pokeid": 503,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 70
     },
     "patrat": {
-      "id": 504,
+      "pokeid": 504,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 42
     },
     "watchog": {
-      "id": 505,
+      "pokeid": 505,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 77
     },
     "lillipup": {
-      "id": 506,
+      "pokeid": 506,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 55
     },
     "herdier": {
-      "id": 507,
+      "pokeid": 507,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 60
     },
     "stoutland": {
-      "id": 508,
+      "pokeid": 508,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 80
     },
     "purrloin": {
-      "id": 509,
+      "pokeid": 509,
       "type1": 8,
       "type2": 8,
       "baseSpeed": 66
     },
     "liepard": {
-      "id": 510,
+      "pokeid": 510,
       "type1": 8,
       "type2": 8,
       "baseSpeed": 106
     },
     "pansage": {
-      "id": 511,
+      "pokeid": 511,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 64
     },
     "simisage": {
-      "id": 512,
+      "pokeid": 512,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 101
     },
     "pansear": {
-      "id": 513,
+      "pokeid": 513,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 64
     },
     "simisear": {
-      "id": 514,
+      "pokeid": 514,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 101
     },
     "panpour": {
-      "id": 515,
+      "pokeid": 515,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 64
     },
     "simipour": {
-      "id": 516,
+      "pokeid": 516,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 101
     },
     "munna": {
-      "id": 517,
+      "pokeid": 517,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 24
     },
     "musharna": {
-      "id": 518,
+      "pokeid": 518,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 29
     },
     "pidove": {
-      "id": 519,
+      "pokeid": 519,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 43
     },
     "tranquill": {
-      "id": 520,
+      "pokeid": 520,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 65
     },
     "unfezant": {
-      "id": 521,
+      "pokeid": 521,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 93
     },
     "blitzle": {
-      "id": 522,
+      "pokeid": 522,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 76
     },
     "zebstrika": {
-      "id": 523,
+      "pokeid": 523,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 116
     },
     "roggenrola": {
-      "id": 524,
+      "pokeid": 524,
       "type1": 14,
       "type2": 14,
       "baseSpeed": 15
     },
     "boldore": {
-      "id": 525,
+      "pokeid": 525,
       "type1": 14,
       "type2": 14,
       "baseSpeed": 20
     },
     "gigalith": {
-      "id": 526,
+      "pokeid": 526,
       "type1": 14,
       "type2": 14,
       "baseSpeed": 25
     },
     "woobat": {
-      "id": 527,
+      "pokeid": 527,
       "type1": 5,
       "type2": 11,
       "baseSpeed": 72
     },
     "swoobat": {
-      "id": 528,
+      "pokeid": 528,
       "type1": 5,
       "type2": 11,
       "baseSpeed": 114
     },
     "drilbur": {
-      "id": 529,
+      "pokeid": 529,
       "type1": 13,
       "type2": 13,
       "baseSpeed": 68
     },
     "excadrill": {
-      "id": 530,
+      "pokeid": 530,
       "type1": 13,
       "type2": 17,
       "baseSpeed": 88
     },
     "audino": {
-      "id": 531,
+      "pokeid": 531,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 50
     },
     "timburr": {
-      "id": 532,
+      "pokeid": 532,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 35
     },
     "gurdurr": {
-      "id": 533,
+      "pokeid": 533,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 40
     },
     "conkeldurr": {
-      "id": 534,
+      "pokeid": 534,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 45
     },
     "tympole": {
-      "id": 535,
+      "pokeid": 535,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 64
     },
     "palpitoad": {
-      "id": 536,
+      "pokeid": 536,
       "type1": 2,
       "type2": 13,
       "baseSpeed": 69
     },
     "seismitoad": {
-      "id": 537,
+      "pokeid": 537,
       "type1": 2,
       "type2": 13,
       "baseSpeed": 74
     },
     "throh": {
-      "id": 538,
+      "pokeid": 538,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 45
     },
     "sawk": {
-      "id": 539,
+      "pokeid": 539,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 85
     },
     "sewaddle": {
-      "id": 540,
+      "pokeid": 540,
       "type1": 15,
       "type2": 3,
       "baseSpeed": 42
     },
     "swadloon": {
-      "id": 541,
+      "pokeid": 541,
       "type1": 15,
       "type2": 3,
       "baseSpeed": 42
     },
     "leavanny": {
-      "id": 542,
+      "pokeid": 542,
       "type1": 15,
       "type2": 3,
       "baseSpeed": 92
     },
     "venipede": {
-      "id": 543,
+      "pokeid": 543,
       "type1": 15,
       "type2": 12,
       "baseSpeed": 57
     },
     "whirlipede": {
-      "id": 544,
+      "pokeid": 544,
       "type1": 15,
       "type2": 12,
       "baseSpeed": 47
     },
     "scolipede": {
-      "id": 545,
+      "pokeid": 545,
       "type1": 15,
       "type2": 12,
       "baseSpeed": 112
     },
     "cottonee": {
-      "id": 546,
+      "pokeid": 546,
       "type1": 3,
       "type2": 9,
       "baseSpeed": 66
     },
     "whimsicott": {
-      "id": 547,
+      "pokeid": 547,
       "type1": 3,
       "type2": 9,
       "baseSpeed": 116
     },
     "petilil": {
-      "id": 548,
+      "pokeid": 548,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 30
     },
     "lilligant": {
-      "id": 549,
+      "pokeid": 549,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 90
     },
     "basculin": {
-      "id": 550,
+      "pokeid": 550,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 98
     },
     "sandile": {
-      "id": 551,
+      "pokeid": 551,
       "type1": 13,
       "type2": 8,
       "baseSpeed": 65
     },
     "krokorok": {
-      "id": 552,
+      "pokeid": 552,
       "type1": 13,
       "type2": 8,
       "baseSpeed": 74
     },
     "krookodile": {
-      "id": 553,
+      "pokeid": 553,
       "type1": 13,
       "type2": 8,
       "baseSpeed": 92
     },
     "darumaka": {
-      "id": 554,
+      "pokeid": 554,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 50
     },
     "darmanitanstandard": {
-      "id": 555,
+      "pokeid": 555,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 95
     },
     "maractus": {
-      "id": 556,
+      "pokeid": 556,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 60
     },
     "dwebble": {
-      "id": 557,
+      "pokeid": 557,
       "type1": 15,
       "type2": 14,
       "baseSpeed": 55
     },
     "crustle": {
-      "id": 558,
+      "pokeid": 558,
       "type1": 15,
       "type2": 14,
       "baseSpeed": 45
     },
     "scraggy": {
-      "id": 559,
+      "pokeid": 559,
       "type1": 8,
       "type2": 10,
       "baseSpeed": 48
     },
     "scrafty": {
-      "id": 560,
+      "pokeid": 560,
       "type1": 8,
       "type2": 10,
       "baseSpeed": 58
     },
     "sigilyph": {
-      "id": 561,
+      "pokeid": 561,
       "type1": 5,
       "type2": 11,
       "baseSpeed": 97
     },
     "yamask": {
-      "id": 562,
+      "pokeid": 562,
       "type1": 16,
       "type2": 16,
       "baseSpeed": 30
     },
     "cofagrigus": {
-      "id": 563,
+      "pokeid": 563,
       "type1": 16,
       "type2": 16,
       "baseSpeed": 30
     },
     "tirtouga": {
-      "id": 564,
+      "pokeid": 564,
       "type1": 2,
       "type2": 14,
       "baseSpeed": 22
     },
     "carracosta": {
-      "id": 565,
+      "pokeid": 565,
       "type1": 2,
       "type2": 14,
       "baseSpeed": 32
     },
     "archen": {
-      "id": 566,
+      "pokeid": 566,
       "type1": 14,
       "type2": 11,
       "baseSpeed": 70
     },
     "archeops": {
-      "id": 567,
+      "pokeid": 567,
       "type1": 14,
       "type2": 11,
       "baseSpeed": 110
     },
     "trubbish": {
-      "id": 568,
+      "pokeid": 568,
       "type1": 12,
       "type2": 12,
       "baseSpeed": 65
     },
     "garbodor": {
-      "id": 569,
+      "pokeid": 569,
       "type1": 12,
       "type2": 12,
       "baseSpeed": 75
     },
     "zorua": {
-      "id": 570,
+      "pokeid": 570,
       "type1": 8,
       "type2": 8,
       "baseSpeed": 65
     },
     "zoroark": {
-      "id": 571,
+      "pokeid": 571,
       "type1": 8,
       "type2": 8,
       "baseSpeed": 105
     },
     "minccino": {
-      "id": 572,
+      "pokeid": 572,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 75
     },
     "cinccino": {
-      "id": 573,
+      "pokeid": 573,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 115
     },
     "gothita": {
-      "id": 574,
+      "pokeid": 574,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 45
     },
     "gothorita": {
-      "id": 575,
+      "pokeid": 575,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 55
     },
     "gothitelle": {
-      "id": 576,
+      "pokeid": 576,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 65
     },
     "solosis": {
-      "id": 577,
+      "pokeid": 577,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 20
     },
     "duosion": {
-      "id": 578,
+      "pokeid": 578,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 30
     },
     "reuniclus": {
-      "id": 579,
+      "pokeid": 579,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 30
     },
     "ducklett": {
-      "id": 580,
+      "pokeid": 580,
       "type1": 2,
       "type2": 11,
       "baseSpeed": 55
     },
     "swanna": {
-      "id": 581,
+      "pokeid": 581,
       "type1": 2,
       "type2": 11,
       "baseSpeed": 98
     },
     "vanillite": {
-      "id": 582,
+      "pokeid": 582,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 44
     },
     "vanillish": {
-      "id": 583,
+      "pokeid": 583,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 59
     },
     "vanilluxe": {
-      "id": 584,
+      "pokeid": 584,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 79
     },
     "deerling": {
-      "id": 585,
+      "pokeid": 585,
       "type1": 0,
       "type2": 3,
       "baseSpeed": 75
     },
     "sawsbuck": {
-      "id": 586,
+      "pokeid": 586,
       "type1": 0,
       "type2": 3,
       "baseSpeed": 95
     },
     "emolga": {
-      "id": 587,
+      "pokeid": 587,
       "type1": 4,
       "type2": 11,
       "baseSpeed": 103
     },
     "karrablast": {
-      "id": 588,
+      "pokeid": 588,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 60
     },
     "escavalier": {
-      "id": 589,
+      "pokeid": 589,
       "type1": 15,
       "type2": 17,
       "baseSpeed": 20
     },
     "foongus": {
-      "id": 590,
+      "pokeid": 590,
       "type1": 3,
       "type2": 12,
       "baseSpeed": 15
     },
     "amoonguss": {
-      "id": 591,
+      "pokeid": 591,
       "type1": 3,
       "type2": 12,
       "baseSpeed": 30
     },
     "frillish": {
-      "id": 592,
+      "pokeid": 592,
       "type1": 2,
       "type2": 16,
       "baseSpeed": 40
     },
     "jellicent": {
-      "id": 593,
+      "pokeid": 593,
       "type1": 2,
       "type2": 16,
       "baseSpeed": 60
     },
     "alomomola": {
-      "id": 594,
+      "pokeid": 594,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 65
     },
     "joltik": {
-      "id": 595,
+      "pokeid": 595,
       "type1": 15,
       "type2": 4,
       "baseSpeed": 65
     },
     "galvantula": {
-      "id": 596,
+      "pokeid": 596,
       "type1": 15,
       "type2": 4,
       "baseSpeed": 108
     },
     "ferroseed": {
-      "id": 597,
+      "pokeid": 597,
       "type1": 3,
       "type2": 17,
       "baseSpeed": 10
     },
     "ferrothorn": {
-      "id": 598,
+      "pokeid": 598,
       "type1": 3,
       "type2": 17,
       "baseSpeed": 20
     },
     "klink": {
-      "id": 599,
+      "pokeid": 599,
       "type1": 17,
       "type2": 17,
       "baseSpeed": 30
     },
     "klang": {
-      "id": 600,
+      "pokeid": 600,
       "type1": 17,
       "type2": 17,
       "baseSpeed": 50
     },
     "klinklang": {
-      "id": 601,
+      "pokeid": 601,
       "type1": 17,
       "type2": 17,
       "baseSpeed": 90
     },
     "tynamo": {
-      "id": 602,
+      "pokeid": 602,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 60
     },
     "eelektrik": {
-      "id": 603,
+      "pokeid": 603,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 40
     },
     "eelektross": {
-      "id": 604,
+      "pokeid": 604,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 50
     },
     "elgyem": {
-      "id": 605,
+      "pokeid": 605,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 30
     },
     "beheeyem": {
-      "id": 606,
+      "pokeid": 606,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 40
     },
     "litwick": {
-      "id": 607,
+      "pokeid": 607,
       "type1": 16,
       "type2": 1,
       "baseSpeed": 20
     },
     "lampent": {
-      "id": 608,
+      "pokeid": 608,
       "type1": 16,
       "type2": 1,
       "baseSpeed": 55
     },
     "chandelure": {
-      "id": 609,
+      "pokeid": 609,
       "type1": 16,
       "type2": 1,
       "baseSpeed": 80
     },
     "axew": {
-      "id": 610,
+      "pokeid": 610,
       "type1": 7,
       "type2": 7,
       "baseSpeed": 57
     },
     "fraxure": {
-      "id": 611,
+      "pokeid": 611,
       "type1": 7,
       "type2": 7,
       "baseSpeed": 67
     },
     "haxorus": {
-      "id": 612,
+      "pokeid": 612,
       "type1": 7,
       "type2": 7,
       "baseSpeed": 97
     },
     "cubchoo": {
-      "id": 613,
+      "pokeid": 613,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 40
     },
     "beartic": {
-      "id": 614,
+      "pokeid": 614,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 50
     },
     "cryogonal": {
-      "id": 615,
+      "pokeid": 615,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 105
     },
     "shelmet": {
-      "id": 616,
+      "pokeid": 616,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 25
     },
     "accelgor": {
-      "id": 617,
+      "pokeid": 617,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 145
     },
     "stunfisk": {
-      "id": 618,
+      "pokeid": 618,
       "type1": 13,
       "type2": 4,
       "baseSpeed": 32
     },
     "mienfoo": {
-      "id": 619,
+      "pokeid": 619,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 65
     },
     "mienshao": {
-      "id": 620,
+      "pokeid": 620,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 105
     },
     "druddigon": {
-      "id": 621,
+      "pokeid": 621,
       "type1": 7,
       "type2": 7,
       "baseSpeed": 48
     },
     "golett": {
-      "id": 622,
+      "pokeid": 622,
       "type1": 13,
       "type2": 16,
       "baseSpeed": 35
     },
     "golurk": {
-      "id": 623,
+      "pokeid": 623,
       "type1": 13,
       "type2": 16,
       "baseSpeed": 55
     },
     "pawniard": {
-      "id": 624,
+      "pokeid": 624,
       "type1": 8,
       "type2": 17,
       "baseSpeed": 60
     },
     "bisharp": {
-      "id": 625,
+      "pokeid": 625,
       "type1": 8,
       "type2": 17,
       "baseSpeed": 70
     },
     "bouffalant": {
-      "id": 626,
+      "pokeid": 626,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 55
     },
     "rufflet": {
-      "id": 627,
+      "pokeid": 627,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 60
     },
     "braviary": {
-      "id": 628,
+      "pokeid": 628,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 80
     },
     "vullaby": {
-      "id": 629,
+      "pokeid": 629,
       "type1": 8,
       "type2": 11,
       "baseSpeed": 60
     },
     "mandibuzz": {
-      "id": 630,
+      "pokeid": 630,
       "type1": 8,
       "type2": 11,
       "baseSpeed": 80
     },
     "heatmor": {
-      "id": 631,
+      "pokeid": 631,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 65
     },
     "durant": {
-      "id": 632,
+      "pokeid": 632,
       "type1": 15,
       "type2": 17,
       "baseSpeed": 109
     },
     "deino": {
-      "id": 633,
+      "pokeid": 633,
       "type1": 8,
       "type2": 7,
       "baseSpeed": 38
     },
     "zweilous": {
-      "id": 634,
+      "pokeid": 634,
       "type1": 8,
       "type2": 7,
       "baseSpeed": 58
     },
     "hydreigon": {
-      "id": 635,
+      "pokeid": 635,
       "type1": 8,
       "type2": 7,
       "baseSpeed": 98
     },
     "larvesta": {
-      "id": 636,
+      "pokeid": 636,
       "type1": 15,
       "type2": 1,
       "baseSpeed": 60
     },
     "volcarona": {
-      "id": 637,
+      "pokeid": 637,
       "type1": 15,
       "type2": 1,
       "baseSpeed": 100
     },
     "cobalion": {
-      "id": 638,
+      "pokeid": 638,
       "type1": 17,
       "type2": 10,
       "baseSpeed": 108
     },
     "terrakion": {
-      "id": 639,
+      "pokeid": 639,
       "type1": 14,
       "type2": 10,
       "baseSpeed": 108
     },
     "virizion": {
-      "id": 640,
+      "pokeid": 640,
       "type1": 3,
       "type2": 10,
       "baseSpeed": 108
     },
     "tornadus": {
-      "id": 641,
+      "pokeid": 641,
       "type1": 11,
       "type2": 11,
       "baseSpeed": 111
     },
     "thundurus": {
-      "id": 642,
+      "pokeid": 642,
       "type1": 4,
       "type2": 11,
       "baseSpeed": 111
     },
     "reshiram": {
-      "id": 643,
+      "pokeid": 643,
       "type1": 7,
       "type2": 1,
       "baseSpeed": 90
     },
     "zekrom": {
-      "id": 644,
+      "pokeid": 644,
       "type1": 7,
       "type2": 4,
       "baseSpeed": 90
     },
     "landorus": {
-      "id": 645,
+      "pokeid": 645,
       "type1": 13,
       "type2": 11,
       "baseSpeed": 101
     },
     "kyurem": {
-      "id": 646,
+      "pokeid": 646,
       "type1": 7,
       "type2": 6,
       "baseSpeed": 95
     },
     "keldeoordinary": {
-      "id": 647,
+      "pokeid": 647,
       "type1": 2,
       "type2": 10,
       "baseSpeed": 108
     },
     "meloettaaria": {
-      "id": 648,
+      "pokeid": 648,
       "type1": 0,
       "type2": 5,
       "baseSpeed": 90
     },
     "genesect": {
-      "id": 649,
+      "pokeid": 649,
       "type1": 15,
       "type2": 17,
       "baseSpeed": 99
     },
     "chespin": {
-      "id": 650,
+      "pokeid": 650,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 38
     },
     "quilladin": {
-      "id": 651,
+      "pokeid": 651,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 57
     },
     "chesnaught": {
-      "id": 652,
+      "pokeid": 652,
       "type1": 3,
       "type2": 10,
       "baseSpeed": 64
     },
     "fennekin": {
-      "id": 653,
+      "pokeid": 653,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 60
     },
     "braixen": {
-      "id": 654,
+      "pokeid": 654,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 73
     },
     "delphox": {
-      "id": 655,
+      "pokeid": 655,
       "type1": 1,
       "type2": 5,
       "baseSpeed": 104
     },
     "froakie": {
-      "id": 656,
+      "pokeid": 656,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 71
     },
     "frogadier": {
-      "id": 657,
+      "pokeid": 657,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 97
     },
     "greninja": {
-      "id": 658,
+      "pokeid": 658,
       "type1": 2,
       "type2": 8,
       "baseSpeed": 122
     },
     "bunnelby": {
-      "id": 659,
+      "pokeid": 659,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 57
     },
     "diggersby": {
-      "id": 660,
+      "pokeid": 660,
       "type1": 0,
       "type2": 13,
       "baseSpeed": 78
     },
     "fletchling": {
-      "id": 661,
+      "pokeid": 661,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 62
     },
     "fletchinder": {
-      "id": 662,
+      "pokeid": 662,
       "type1": 1,
       "type2": 11,
       "baseSpeed": 84
     },
     "talonflame": {
-      "id": 663,
+      "pokeid": 663,
       "type1": 1,
       "type2": 11,
       "baseSpeed": 126
     },
     "scatterbug": {
-      "id": 664,
+      "pokeid": 664,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 35
     },
     "spewpa": {
-      "id": 665,
+      "pokeid": 665,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 29
     },
     "vivillon": {
-      "id": 666,
+      "pokeid": 666,
       "type1": 15,
       "type2": 11,
       "baseSpeed": 89
     },
     "litleo": {
-      "id": 667,
+      "pokeid": 667,
       "type1": 1,
       "type2": 0,
       "baseSpeed": 72
     },
     "pyroar": {
-      "id": 668,
+      "pokeid": 668,
       "type1": 1,
       "type2": 0,
       "baseSpeed": 106
     },
     "flabebe": {
-      "id": 669,
+      "pokeid": 669,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 42
     },
     "floette": {
-      "id": 670,
+      "pokeid": 670,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 52
     },
     "florges": {
-      "id": 671,
+      "pokeid": 671,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 75
     },
     "skiddo": {
-      "id": 672,
+      "pokeid": 672,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 52
     },
     "gogoat": {
-      "id": 673,
+      "pokeid": 673,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 68
     },
     "pancham": {
-      "id": 674,
+      "pokeid": 674,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 43
     },
     "pangoro": {
-      "id": 675,
+      "pokeid": 675,
       "type1": 10,
       "type2": 8,
       "baseSpeed": 58
     },
     "furfrou": {
-      "id": 676,
+      "pokeid": 676,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 102
     },
     "espurr": {
-      "id": 677,
+      "pokeid": 677,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 68
     },
     "meowsticmale": {
-      "id": 678,
+      "pokeid": 678,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 104
     },
     "honedge": {
-      "id": 679,
+      "pokeid": 679,
       "type1": 17,
       "type2": 16,
       "baseSpeed": 28
     },
     "doublade": {
-      "id": 680,
+      "pokeid": 680,
       "type1": 17,
       "type2": 16,
       "baseSpeed": 35
     },
     "aegislashshield": {
-      "id": 681,
+      "pokeid": 681,
       "type1": 17,
       "type2": 16,
       "baseSpeed": 60
     },
     "spritzee": {
-      "id": 682,
+      "pokeid": 682,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 23
     },
     "aromatisse": {
-      "id": 683,
+      "pokeid": 683,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 29
     },
     "swirlix": {
-      "id": 684,
+      "pokeid": 684,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 49
     },
     "slurpuff": {
-      "id": 685,
+      "pokeid": 685,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 72
     },
     "inkay": {
-      "id": 686,
+      "pokeid": 686,
       "type1": 8,
       "type2": 5,
       "baseSpeed": 45
     },
     "malamar": {
-      "id": 687,
+      "pokeid": 687,
       "type1": 8,
       "type2": 5,
       "baseSpeed": 73
     },
     "binacle": {
-      "id": 688,
+      "pokeid": 688,
       "type1": 14,
       "type2": 2,
       "baseSpeed": 50
     },
     "barbaracle": {
-      "id": 689,
+      "pokeid": 689,
       "type1": 14,
       "type2": 2,
       "baseSpeed": 68
     },
     "skrelp": {
-      "id": 690,
+      "pokeid": 690,
       "type1": 12,
       "type2": 2,
       "baseSpeed": 30
     },
     "dragalge": {
-      "id": 691,
+      "pokeid": 691,
       "type1": 12,
       "type2": 7,
       "baseSpeed": 44
     },
     "clauncher": {
-      "id": 692,
+      "pokeid": 692,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 44
     },
     "clawitzer": {
-      "id": 693,
+      "pokeid": 693,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 59
     },
     "helioptile": {
-      "id": 694,
+      "pokeid": 694,
       "type1": 4,
       "type2": 0,
       "baseSpeed": 70
     },
     "heliolisk": {
-      "id": 695,
+      "pokeid": 695,
       "type1": 4,
       "type2": 0,
       "baseSpeed": 109
     },
     "tyrunt": {
-      "id": 696,
+      "pokeid": 696,
       "type1": 14,
       "type2": 7,
       "baseSpeed": 48
     },
     "tyrantrum": {
-      "id": 697,
+      "pokeid": 697,
       "type1": 14,
       "type2": 7,
       "baseSpeed": 71
     },
     "amaura": {
-      "id": 698,
+      "pokeid": 698,
       "type1": 14,
       "type2": 6,
       "baseSpeed": 46
     },
     "aurorus": {
-      "id": 699,
+      "pokeid": 699,
       "type1": 14,
       "type2": 6,
       "baseSpeed": 58
     },
     "sylveon": {
-      "id": 700,
+      "pokeid": 700,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 60
     },
     "hawlucha": {
-      "id": 701,
+      "pokeid": 701,
       "type1": 10,
       "type2": 11,
       "baseSpeed": 118
     },
     "dedenne": {
-      "id": 702,
+      "pokeid": 702,
       "type1": 4,
       "type2": 9,
       "baseSpeed": 101
     },
     "carbink": {
-      "id": 703,
+      "pokeid": 703,
       "type1": 14,
       "type2": 9,
       "baseSpeed": 50
     },
     "goomy": {
-      "id": 704,
+      "pokeid": 704,
       "type1": 7,
       "type2": 7,
       "baseSpeed": 40
     },
     "sliggoo": {
-      "id": 705,
+      "pokeid": 705,
       "type1": 7,
       "type2": 7,
       "baseSpeed": 60
     },
     "goodra": {
-      "id": 706,
+      "pokeid": 706,
       "type1": 7,
       "type2": 7,
       "baseSpeed": 80
     },
     "klefki": {
-      "id": 707,
+      "pokeid": 707,
       "type1": 17,
       "type2": 9,
       "baseSpeed": 75
     },
     "phantump": {
-      "id": 708,
+      "pokeid": 708,
       "type1": 16,
       "type2": 3,
       "baseSpeed": 38
     },
     "trevenant": {
-      "id": 709,
+      "pokeid": 709,
       "type1": 16,
       "type2": 3,
       "baseSpeed": 56
     },
     "pumpkabooaverage": {
-      "id": 710,
+      "pokeid": 710,
       "type1": 16,
       "type2": 3,
       "baseSpeed": 51
     },
     "gourgeistaverage": {
-      "id": 711,
+      "pokeid": 711,
       "type1": 16,
       "type2": 3,
       "baseSpeed": 84
     },
     "bergmite": {
-      "id": 712,
+      "pokeid": 712,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 28
     },
     "avalugg": {
-      "id": 713,
+      "pokeid": 713,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 28
     },
     "noibat": {
-      "id": 714,
+      "pokeid": 714,
       "type1": 11,
       "type2": 7,
       "baseSpeed": 55
     },
     "noivern": {
-      "id": 715,
+      "pokeid": 715,
       "type1": 11,
       "type2": 7,
       "baseSpeed": 123
     },
     "xerneas": {
-      "id": 716,
+      "pokeid": 716,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 99
     },
     "yveltal": {
-      "id": 717,
+      "pokeid": 717,
       "type1": 8,
       "type2": 11,
       "baseSpeed": 99
     },
     "zygarde50": {
-      "id": 718,
+      "pokeid": 718,
       "type1": 7,
       "type2": 13,
       "baseSpeed": 95
     },
     "diancie": {
-      "id": 719,
+      "pokeid": 719,
       "type1": 14,
       "type2": 9,
       "baseSpeed": 50
     },
     "hoopa": {
-      "id": 720,
+      "pokeid": 720,
       "type1": 5,
       "type2": 16,
       "baseSpeed": 70
     },
     "volcanion": {
-      "id": 721,
+      "pokeid": 721,
       "type1": 1,
       "type2": 2,
       "baseSpeed": 70
     },
     "rowlet": {
-      "id": 722,
+      "pokeid": 722,
       "type1": 3,
       "type2": 11,
       "baseSpeed": 42
     },
     "dartrix": {
-      "id": 723,
+      "pokeid": 723,
       "type1": 3,
       "type2": 11,
       "baseSpeed": 52
     },
     "decidueye": {
-      "id": 724,
+      "pokeid": 724,
       "type1": 3,
       "type2": 16,
       "baseSpeed": 70
     },
     "litten": {
-      "id": 725,
+      "pokeid": 725,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 70
     },
     "torracat": {
-      "id": 726,
+      "pokeid": 726,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 90
     },
     "incineroar": {
-      "id": 727,
+      "pokeid": 727,
       "type1": 1,
       "type2": 8,
       "baseSpeed": 60
     },
     "popplio": {
-      "id": 728,
+      "pokeid": 728,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 40
     },
     "brionne": {
-      "id": 729,
+      "pokeid": 729,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 50
     },
     "primarina": {
-      "id": 730,
+      "pokeid": 730,
       "type1": 2,
       "type2": 9,
       "baseSpeed": 60
     },
     "pikipek": {
-      "id": 731,
+      "pokeid": 731,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 65
     },
     "trumbeak": {
-      "id": 732,
+      "pokeid": 732,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 75
     },
     "toucannon": {
-      "id": 733,
+      "pokeid": 733,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 60
     },
     "yungoos": {
-      "id": 734,
+      "pokeid": 734,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 45
     },
     "gumshoos": {
-      "id": 735,
+      "pokeid": 735,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 45
     },
     "grubbin": {
-      "id": 736,
+      "pokeid": 736,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 46
     },
     "charjabug": {
-      "id": 737,
+      "pokeid": 737,
       "type1": 15,
       "type2": 4,
       "baseSpeed": 36
     },
     "vikavolt": {
-      "id": 738,
+      "pokeid": 738,
       "type1": 15,
       "type2": 4,
       "baseSpeed": 43
     },
     "crabrawler": {
-      "id": 739,
+      "pokeid": 739,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 63
     },
     "crabominable": {
-      "id": 740,
+      "pokeid": 740,
       "type1": 10,
       "type2": 6,
       "baseSpeed": 43
     },
     "oricoriobaile": {
-      "id": 741,
+      "pokeid": 741,
       "type1": 1,
       "type2": 11,
       "baseSpeed": 93
     },
     "cutiefly": {
-      "id": 742,
+      "pokeid": 742,
       "type1": 15,
       "type2": 9,
       "baseSpeed": 84
     },
     "ribombee": {
-      "id": 743,
+      "pokeid": 743,
       "type1": 15,
       "type2": 9,
       "baseSpeed": 124
     },
     "rockruff": {
-      "id": 744,
+      "pokeid": 744,
       "type1": 14,
       "type2": 14,
       "baseSpeed": 60
     },
     "lycanrocmidday": {
-      "id": 745,
+      "pokeid": 745,
       "type1": 14,
       "type2": 14,
       "baseSpeed": 112
     },
     "wishiwashisolo": {
-      "id": 746,
+      "pokeid": 746,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 40
     },
     "mareanie": {
-      "id": 747,
+      "pokeid": 747,
       "type1": 12,
       "type2": 2,
       "baseSpeed": 45
     },
     "toxapex": {
-      "id": 748,
+      "pokeid": 748,
       "type1": 12,
       "type2": 2,
       "baseSpeed": 35
     },
     "mudbray": {
-      "id": 749,
+      "pokeid": 749,
       "type1": 13,
       "type2": 13,
       "baseSpeed": 45
     },
     "mudsdale": {
-      "id": 750,
+      "pokeid": 750,
       "type1": 13,
       "type2": 13,
       "baseSpeed": 35
     },
     "dewpider": {
-      "id": 751,
+      "pokeid": 751,
       "type1": 2,
       "type2": 15,
       "baseSpeed": 27
     },
     "araquanid": {
-      "id": 752,
+      "pokeid": 752,
       "type1": 2,
       "type2": 15,
       "baseSpeed": 42
     },
     "fomantis": {
-      "id": 753,
+      "pokeid": 753,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 35
     },
     "lurantis": {
-      "id": 754,
+      "pokeid": 754,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 45
     },
     "morelull": {
-      "id": 755,
+      "pokeid": 755,
       "type1": 3,
       "type2": 9,
       "baseSpeed": 15
     },
     "shiinotic": {
-      "id": 756,
+      "pokeid": 756,
       "type1": 3,
       "type2": 9,
       "baseSpeed": 30
     },
     "salandit": {
-      "id": 757,
+      "pokeid": 757,
       "type1": 12,
       "type2": 1,
       "baseSpeed": 77
     },
     "salazzle": {
-      "id": 758,
+      "pokeid": 758,
       "type1": 12,
       "type2": 1,
       "baseSpeed": 117
     },
     "stufful": {
-      "id": 759,
+      "pokeid": 759,
       "type1": 0,
       "type2": 10,
       "baseSpeed": 50
     },
     "bewear": {
-      "id": 760,
+      "pokeid": 760,
       "type1": 0,
       "type2": 10,
       "baseSpeed": 60
     },
     "bounsweet": {
-      "id": 761,
+      "pokeid": 761,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 32
     },
     "steenee": {
-      "id": 762,
+      "pokeid": 762,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 62
     },
     "tsareena": {
-      "id": 763,
+      "pokeid": 763,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 72
     },
     "comfey": {
-      "id": 764,
+      "pokeid": 764,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 100
     },
     "oranguru": {
-      "id": 765,
+      "pokeid": 765,
       "type1": 0,
       "type2": 5,
       "baseSpeed": 60
     },
     "passimian": {
-      "id": 766,
+      "pokeid": 766,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 80
     },
     "wimpod": {
-      "id": 767,
+      "pokeid": 767,
       "type1": 15,
       "type2": 2,
       "baseSpeed": 80
     },
     "golisopod": {
-      "id": 768,
+      "pokeid": 768,
       "type1": 15,
       "type2": 2,
       "baseSpeed": 40
     },
     "sandygast": {
-      "id": 769,
+      "pokeid": 769,
       "type1": 16,
       "type2": 13,
       "baseSpeed": 15
     },
     "palossand": {
-      "id": 770,
+      "pokeid": 770,
       "type1": 16,
       "type2": 13,
       "baseSpeed": 35
     },
     "pyukumuku": {
-      "id": 771,
+      "pokeid": 771,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 5
     },
     "typenull": {
-      "id": 772,
+      "pokeid": 772,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 59
     },
     "silvally": {
-      "id": 773,
+      "pokeid": 773,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 95
     },
     "miniorredmeteor": {
-      "id": 774,
+      "pokeid": 774,
       "type1": 14,
       "type2": 11,
       "baseSpeed": 60
     },
     "komala": {
-      "id": 775,
+      "pokeid": 775,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 65
     },
     "turtonator": {
-      "id": 776,
+      "pokeid": 776,
       "type1": 1,
       "type2": 7,
       "baseSpeed": 36
     },
     "togedemaru": {
-      "id": 777,
+      "pokeid": 777,
       "type1": 4,
       "type2": 17,
       "baseSpeed": 96
     },
     "mimikyu": {
-      "id": 778,
+      "pokeid": 778,
       "type1": 16,
       "type2": 9,
       "baseSpeed": 96
     },
     "bruxish": {
-      "id": 779,
+      "pokeid": 779,
       "type1": 2,
       "type2": 5,
       "baseSpeed": 92
     },
     "drampa": {
-      "id": 780,
+      "pokeid": 780,
       "type1": 0,
       "type2": 7,
       "baseSpeed": 36
     },
     "dhelmise": {
-      "id": 781,
+      "pokeid": 781,
       "type1": 16,
       "type2": 3,
       "baseSpeed": 40
     },
     "jangmoo": {
-      "id": 782,
+      "pokeid": 782,
       "type1": 7,
       "type2": 7,
       "baseSpeed": 45
     },
     "hakamoo": {
-      "id": 783,
+      "pokeid": 783,
       "type1": 7,
       "type2": 10,
       "baseSpeed": 65
     },
     "kommoo": {
-      "id": 784,
+      "pokeid": 784,
       "type1": 7,
       "type2": 10,
       "baseSpeed": 85
     },
     "tapukoko": {
-      "id": 785,
+      "pokeid": 785,
       "type1": 4,
       "type2": 9,
       "baseSpeed": 130
     },
     "tapulele": {
-      "id": 786,
+      "pokeid": 786,
       "type1": 5,
       "type2": 9,
       "baseSpeed": 95
     },
     "tapubulu": {
-      "id": 787,
+      "pokeid": 787,
       "type1": 3,
       "type2": 9,
       "baseSpeed": 75
     },
     "tapufini": {
-      "id": 788,
+      "pokeid": 788,
       "type1": 2,
       "type2": 9,
       "baseSpeed": 85
     },
     "cosmog": {
-      "id": 789,
+      "pokeid": 789,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 37
     },
     "cosmoem": {
-      "id": 790,
+      "pokeid": 790,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 37
     },
     "solgaleo": {
-      "id": 791,
+      "pokeid": 791,
       "type1": 5,
       "type2": 17,
       "baseSpeed": 97
     },
     "lunala": {
-      "id": 792,
+      "pokeid": 792,
       "type1": 5,
       "type2": 16,
       "baseSpeed": 97
     },
     "nihilego": {
-      "id": 793,
+      "pokeid": 793,
       "type1": 14,
       "type2": 12,
       "baseSpeed": 103
     },
     "buzzwole": {
-      "id": 794,
+      "pokeid": 794,
       "type1": 15,
       "type2": 10,
       "baseSpeed": 79
     },
     "pheromosa": {
-      "id": 795,
+      "pokeid": 795,
       "type1": 15,
       "type2": 10,
       "baseSpeed": 151
     },
     "xurkitree": {
-      "id": 796,
+      "pokeid": 796,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 83
     },
     "celesteela": {
-      "id": 797,
+      "pokeid": 797,
       "type1": 17,
       "type2": 11,
       "baseSpeed": 61
     },
     "kartana": {
-      "id": 798,
+      "pokeid": 798,
       "type1": 3,
       "type2": 17,
       "baseSpeed": 109
     },
     "guzzlord": {
-      "id": 799,
+      "pokeid": 799,
       "type1": 8,
       "type2": 7,
       "baseSpeed": 43
     },
     "necrozma": {
-      "id": 800,
+      "pokeid": 800,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 79
     },
     "magearna": {
-      "id": 801,
+      "pokeid": 801,
       "type1": 17,
       "type2": 9,
       "baseSpeed": 65
     },
     "marshadow": {
-      "id": 802,
+      "pokeid": 802,
       "type1": 10,
       "type2": 16,
       "baseSpeed": 125
     },
     "poipole": {
-      "id": 803,
+      "pokeid": 803,
       "type1": 12,
       "type2": 12,
       "baseSpeed": 73
     },
     "naganadel": {
-      "id": 804,
+      "pokeid": 804,
       "type1": 12,
       "type2": 7,
       "baseSpeed": 121
     },
     "stakataka": {
-      "id": 805,
+      "pokeid": 805,
       "type1": 14,
       "type2": 17,
       "baseSpeed": 13
     },
     "blacephalon": {
-      "id": 806,
+      "pokeid": 806,
       "type1": 1,
       "type2": 16,
       "baseSpeed": 107
     },
     "zeraora": {
-      "id": 807,
+      "pokeid": 807,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 143
     },
     "meltan": {
-      "id": 808,
+      "pokeid": 808,
       "type1": 17,
       "type2": 17,
       "baseSpeed": 34
     },
     "melmetal": {
-      "id": 809,
+      "pokeid": 809,
       "type1": 17,
       "type2": 17,
       "baseSpeed": 34
     },
     "grookey": {
-      "id": 810,
+      "pokeid": 810,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 65
     },
     "thwackey": {
-      "id": 811,
+      "pokeid": 811,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 80
     },
     "rillaboom": {
-      "id": 812,
+      "pokeid": 812,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 85
     },
     "scorbunny": {
-      "id": 813,
+      "pokeid": 813,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 69
     },
     "raboot": {
-      "id": 814,
+      "pokeid": 814,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 94
     },
     "cinderace": {
-      "id": 815,
+      "pokeid": 815,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 119
     },
     "sobble": {
-      "id": 816,
+      "pokeid": 816,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 70
     },
     "drizzile": {
-      "id": 817,
+      "pokeid": 817,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 90
     },
     "inteleon": {
-      "id": 818,
+      "pokeid": 818,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 120
     },
     "skwovet": {
-      "id": 819,
+      "pokeid": 819,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 25
     },
     "greedent": {
-      "id": 820,
+      "pokeid": 820,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 20
     },
     "rookidee": {
-      "id": 821,
+      "pokeid": 821,
       "type1": 11,
       "type2": 11,
       "baseSpeed": 57
     },
     "corvisquire": {
-      "id": 822,
+      "pokeid": 822,
       "type1": 11,
       "type2": 11,
       "baseSpeed": 77
     },
     "corviknight": {
-      "id": 823,
+      "pokeid": 823,
       "type1": 11,
       "type2": 17,
       "baseSpeed": 67
     },
     "blipbug": {
-      "id": 824,
+      "pokeid": 824,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 45
     },
     "dottler": {
-      "id": 825,
+      "pokeid": 825,
       "type1": 15,
       "type2": 5,
       "baseSpeed": 30
     },
     "orbeetle": {
-      "id": 826,
+      "pokeid": 826,
       "type1": 15,
       "type2": 5,
       "baseSpeed": 90
     },
     "nickit": {
-      "id": 827,
+      "pokeid": 827,
       "type1": 8,
       "type2": 8,
       "baseSpeed": 50
     },
     "thievul": {
-      "id": 828,
+      "pokeid": 828,
       "type1": 8,
       "type2": 8,
       "baseSpeed": 90
     },
     "gossifleur": {
-      "id": 829,
+      "pokeid": 829,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 10
     },
     "eldegoss": {
-      "id": 830,
+      "pokeid": 830,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 60
     },
     "wooloo": {
-      "id": 831,
+      "pokeid": 831,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 48
     },
     "dubwool": {
-      "id": 832,
+      "pokeid": 832,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 88
     },
     "chewtle": {
-      "id": 833,
+      "pokeid": 833,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 44
     },
     "drednaw": {
-      "id": 834,
+      "pokeid": 834,
       "type1": 2,
       "type2": 14,
       "baseSpeed": 74
     },
     "yamper": {
-      "id": 835,
+      "pokeid": 835,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 26
     },
     "boltund": {
-      "id": 836,
+      "pokeid": 836,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 121
     },
     "rolycoly": {
-      "id": 837,
+      "pokeid": 837,
       "type1": 14,
       "type2": 14,
       "baseSpeed": 30
     },
     "carkol": {
-      "id": 838,
+      "pokeid": 838,
       "type1": 14,
       "type2": 1,
       "baseSpeed": 50
     },
     "coalossal": {
-      "id": 839,
+      "pokeid": 839,
       "type1": 14,
       "type2": 1,
       "baseSpeed": 30
     },
     "applin": {
-      "id": 840,
+      "pokeid": 840,
       "type1": 3,
       "type2": 7,
       "baseSpeed": 20
     },
     "flapple": {
-      "id": 841,
+      "pokeid": 841,
       "type1": 3,
       "type2": 7,
       "baseSpeed": 70
     },
     "appletun": {
-      "id": 842,
+      "pokeid": 842,
       "type1": 3,
       "type2": 7,
       "baseSpeed": 30
     },
     "silicobra": {
-      "id": 843,
+      "pokeid": 843,
       "type1": 13,
       "type2": 13,
       "baseSpeed": 46
     },
     "sandaconda": {
-      "id": 844,
+      "pokeid": 844,
       "type1": 13,
       "type2": 13,
       "baseSpeed": 71
     },
     "cramorant": {
-      "id": 845,
+      "pokeid": 845,
       "type1": 11,
       "type2": 2,
       "baseSpeed": 85
     },
     "arrokuda": {
-      "id": 846,
+      "pokeid": 846,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 66
     },
     "barraskewda": {
-      "id": 847,
+      "pokeid": 847,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 136
     },
     "toxel": {
-      "id": 848,
+      "pokeid": 848,
       "type1": 4,
       "type2": 12,
       "baseSpeed": 40
     },
     "toxtricity": {
-      "id": 849,
+      "pokeid": 849,
       "type1": 4,
       "type2": 12,
       "baseSpeed": 75
     },
     "sizzlipede": {
-      "id": 850,
+      "pokeid": 850,
       "type1": 1,
       "type2": 15,
       "baseSpeed": 45
     },
     "centiskorch": {
-      "id": 851,
+      "pokeid": 851,
       "type1": 1,
       "type2": 15,
       "baseSpeed": 65
     },
     "clobbopus": {
-      "id": 852,
+      "pokeid": 852,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 32
     },
     "grapploct": {
-      "id": 853,
+      "pokeid": 853,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 42
     },
     "sinistea": {
-      "id": 854,
+      "pokeid": 854,
       "type1": 16,
       "type2": 16,
       "baseSpeed": 50
     },
     "polteageist": {
-      "id": 855,
+      "pokeid": 855,
       "type1": 16,
       "type2": 16,
       "baseSpeed": 70
     },
     "hatenna": {
-      "id": 856,
+      "pokeid": 856,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 39
     },
     "hattrem": {
-      "id": 857,
+      "pokeid": 857,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 49
     },
     "hatterene": {
-      "id": 858,
+      "pokeid": 858,
       "type1": 5,
       "type2": 9,
       "baseSpeed": 29
     },
     "impidimp": {
-      "id": 859,
+      "pokeid": 859,
       "type1": 8,
       "type2": 9,
       "baseSpeed": 50
     },
     "morgrem": {
-      "id": 860,
+      "pokeid": 860,
       "type1": 8,
       "type2": 9,
       "baseSpeed": 70
     },
     "grimmsnarl": {
-      "id": 861,
+      "pokeid": 861,
       "type1": 8,
       "type2": 9,
       "baseSpeed": 60
     },
     "obstagoon": {
-      "id": 862,
+      "pokeid": 862,
       "type1": 8,
       "type2": 0,
       "baseSpeed": 95
     },
     "perrserker": {
-      "id": 863,
+      "pokeid": 863,
       "type1": 17,
       "type2": 17,
       "baseSpeed": 50
     },
     "cursola": {
-      "id": 864,
+      "pokeid": 864,
       "type1": 16,
       "type2": 16,
       "baseSpeed": 30
     },
     "sirfetchd": {
-      "id": 865,
+      "pokeid": 865,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 65
     },
     "mrrime": {
-      "id": 866,
+      "pokeid": 866,
       "type1": 6,
       "type2": 5,
       "baseSpeed": 70
     },
     "runerigus": {
-      "id": 867,
+      "pokeid": 867,
       "type1": 13,
       "type2": 16,
       "baseSpeed": 30
     },
     "milcery": {
-      "id": 868,
+      "pokeid": 868,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 34
     },
     "alcremie": {
-      "id": 869,
+      "pokeid": 869,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 64
     },
     "falinks": {
-      "id": 870,
+      "pokeid": 870,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 75
     },
     "pincurchin": {
-      "id": 871,
+      "pokeid": 871,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 15
     },
     "snom": {
-      "id": 872,
+      "pokeid": 872,
       "type1": 6,
       "type2": 15,
       "baseSpeed": 20
     },
     "frosmoth": {
-      "id": 873,
+      "pokeid": 873,
       "type1": 6,
       "type2": 15,
       "baseSpeed": 65
     },
     "stonjourner": {
-      "id": 874,
+      "pokeid": 874,
       "type1": 14,
       "type2": 14,
       "baseSpeed": 70
     },
     "eiscue": {
-      "id": 875,
+      "pokeid": 875,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 50
     },
     "eiscueice": {
-      "id": 875,
+      "pokeid": 875,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 50
     },
     "indeedeemale": {
-      "id": 876,
+      "pokeid": 876,
       "type1": 5,
       "type2": 0,
       "baseSpeed": 95
     },
     "morpekofullbelly": {
-      "id": 877,
+      "pokeid": 877,
       "type1": 4,
       "type2": 8,
       "baseSpeed": 97
     },
     "cufant": {
-      "id": 878,
+      "pokeid": 878,
       "type1": 17,
       "type2": 17,
       "baseSpeed": 40
     },
     "copperajah": {
-      "id": 879,
+      "pokeid": 879,
       "type1": 17,
       "type2": 17,
       "baseSpeed": 30
     },
     "dracozolt": {
-      "id": 880,
+      "pokeid": 880,
       "type1": 4,
       "type2": 7,
       "baseSpeed": 75
     },
     "arctozolt": {
-      "id": 881,
+      "pokeid": 881,
       "type1": 4,
       "type2": 6,
       "baseSpeed": 55
     },
     "dracovish": {
-      "id": 882,
+      "pokeid": 882,
       "type1": 2,
       "type2": 7,
       "baseSpeed": 75
     },
     "arctovish": {
-      "id": 883,
+      "pokeid": 883,
       "type1": 2,
       "type2": 6,
       "baseSpeed": 55
     },
     "duraludon": {
-      "id": 884,
+      "pokeid": 884,
       "type1": 17,
       "type2": 7,
       "baseSpeed": 85
     },
     "dreepy": {
-      "id": 885,
+      "pokeid": 885,
       "type1": 7,
       "type2": 16,
       "baseSpeed": 82
     },
     "drakloak": {
-      "id": 886,
+      "pokeid": 886,
       "type1": 7,
       "type2": 16,
       "baseSpeed": 102
     },
     "dragapult": {
-      "id": 887,
+      "pokeid": 887,
       "type1": 7,
       "type2": 16,
       "baseSpeed": 142
     },
     "zacian": {
-      "id": 888,
+      "pokeid": 888,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 138
     },
     "zamazenta": {
-      "id": 889,
+      "pokeid": 889,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 138
     },
     "eternatus": {
-      "id": 890,
+      "pokeid": 890,
       "type1": 12,
       "type2": 7,
       "baseSpeed": 130
     },
     "kubfu": {
-      "id": 891,
+      "pokeid": 891,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 72
     },
     "urshifusinglestrike": {
-      "id": 892,
+      "pokeid": 892,
       "type1": 10,
       "type2": 8,
       "baseSpeed": 97
     },
     "zarude": {
-      "id": 893,
+      "pokeid": 893,
       "type1": 8,
       "type2": 3,
       "baseSpeed": 105
     },
     "regieleki": {
-      "id": 894,
+      "pokeid": 894,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 200
     },
     "regidrago": {
-      "id": 895,
+      "pokeid": 895,
       "type1": 7,
       "type2": 7,
       "baseSpeed": 80
     },
     "glastrier": {
-      "id": 896,
+      "pokeid": 896,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 30
     },
     "spectrier": {
-      "id": 897,
+      "pokeid": 897,
       "type1": 16,
       "type2": 16,
       "baseSpeed": 130
     },
     "calyrex": {
-      "id": 898,
+      "pokeid": 898,
       "type1": 5,
       "type2": 3,
       "baseSpeed": 80
     },
     "wyrdeer": {
-      "id": 899,
+      "pokeid": 899,
       "type1": 0,
       "type2": 5,
       "baseSpeed": 65
     },
     "kleavor": {
-      "id": 900,
+      "pokeid": 900,
       "type1": 15,
       "type2": 14,
       "baseSpeed": 85
     },
     "ursaluna": {
-      "id": 901,
+      "pokeid": 901,
       "type1": 13,
       "type2": 0,
       "baseSpeed": 50
     },
     "basculegionmale": {
-      "id": 902,
+      "pokeid": 902,
       "type1": 2,
       "type2": 16,
       "baseSpeed": 78
     },
     "sneasler": {
-      "id": 903,
+      "pokeid": 903,
       "type1": 10,
       "type2": 12,
       "baseSpeed": 120
     },
     "overqwil": {
-      "id": 904,
+      "pokeid": 904,
       "type1": 8,
       "type2": 12,
       "baseSpeed": 85
     },
     "enamorusincarnate": {
-      "id": 905,
+      "pokeid": 905,
       "type1": 9,
       "type2": 11,
       "baseSpeed": 106
     },
     "sprigatito": {
-      "id": 906,
+      "pokeid": 906,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 65
     },
     "floragato": {
-      "id": 907,
+      "pokeid": 907,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 83
     },
     "meowscarada": {
-      "id": 908,
+      "pokeid": 908,
       "type1": 3,
       "type2": 8,
       "baseSpeed": 123
     },
     "fuecoco": {
-      "id": 909,
+      "pokeid": 909,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 36
     },
     "crocalor": {
-      "id": 910,
+      "pokeid": 910,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 49
     },
     "skeledirge": {
-      "id": 911,
+      "pokeid": 911,
       "type1": 1,
       "type2": 16,
       "baseSpeed": 66
     },
     "quaxly": {
-      "id": 912,
+      "pokeid": 912,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 50
     },
     "quaxwell": {
-      "id": 913,
+      "pokeid": 913,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 65
     },
     "quaquaval": {
-      "id": 914,
+      "pokeid": 914,
       "type1": 2,
       "type2": 10,
       "baseSpeed": 85
     },
     "lechonk": {
-      "id": 915,
+      "pokeid": 915,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 35
     },
     "oinkologne": {
-      "id": 916,
+      "pokeid": 916,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 65
     },
     "tarountula": {
-      "id": 917,
+      "pokeid": 917,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 20
     },
     "spidops": {
-      "id": 918,
+      "pokeid": 918,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 35
     },
     "nymble": {
-      "id": 919,
+      "pokeid": 919,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 45
     },
     "lokix": {
-      "id": 920,
+      "pokeid": 920,
       "type1": 15,
       "type2": 8,
       "baseSpeed": 92
     },
     "pawmi": {
-      "id": 921,
+      "pokeid": 921,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 60
     },
     "pawmo": {
-      "id": 922,
+      "pokeid": 922,
       "type1": 4,
       "type2": 10,
       "baseSpeed": 85
     },
     "pawmot": {
-      "id": 923,
+      "pokeid": 923,
       "type1": 4,
       "type2": 10,
       "baseSpeed": 105
     },
     "tandemaus": {
-      "id": 924,
+      "pokeid": 924,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 75
     },
     "mausholdfamilyoffour": {
-      "id": 925,
+      "pokeid": 925,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 111
     },
     "fidough": {
-      "id": 926,
+      "pokeid": 926,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 65
     },
     "dachsbun": {
-      "id": 927,
+      "pokeid": 927,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 95
     },
     "smoliv": {
-      "id": 928,
+      "pokeid": 928,
       "type1": 3,
       "type2": 0,
       "baseSpeed": 30
     },
     "dolliv": {
-      "id": 929,
+      "pokeid": 929,
       "type1": 3,
       "type2": 0,
       "baseSpeed": 33
     },
     "arboliva": {
-      "id": 930,
+      "pokeid": 930,
       "type1": 3,
       "type2": 0,
       "baseSpeed": 39
     },
     "squawkabillygreenplumage": {
-      "id": 931,
+      "pokeid": 931,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 92
     },
     "nacli": {
-      "id": 932,
+      "pokeid": 932,
       "type1": 14,
       "type2": 14,
       "baseSpeed": 25
     },
     "naclstack": {
-      "id": 933,
+      "pokeid": 933,
       "type1": 14,
       "type2": 14,
       "baseSpeed": 35
     },
     "garganacl": {
-      "id": 934,
+      "pokeid": 934,
       "type1": 14,
       "type2": 14,
       "baseSpeed": 35
     },
     "charcadet": {
-      "id": 935,
+      "pokeid": 935,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 35
     },
     "armarouge": {
-      "id": 936,
+      "pokeid": 936,
       "type1": 1,
       "type2": 5,
       "baseSpeed": 75
     },
     "ceruledge": {
-      "id": 937,
+      "pokeid": 937,
       "type1": 1,
       "type2": 16,
       "baseSpeed": 85
     },
     "tadbulb": {
-      "id": 938,
+      "pokeid": 938,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 45
     },
     "bellibolt": {
-      "id": 939,
+      "pokeid": 939,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 45
     },
     "wattrel": {
-      "id": 940,
+      "pokeid": 940,
       "type1": 4,
       "type2": 11,
       "baseSpeed": 70
     },
     "kilowattrel": {
-      "id": 941,
+      "pokeid": 941,
       "type1": 4,
       "type2": 11,
       "baseSpeed": 125
     },
     "maschiff": {
-      "id": 942,
+      "pokeid": 942,
       "type1": 8,
       "type2": 8,
       "baseSpeed": 51
     },
     "mabosstiff": {
-      "id": 943,
+      "pokeid": 943,
       "type1": 8,
       "type2": 8,
       "baseSpeed": 85
     },
     "shroodle": {
-      "id": 944,
+      "pokeid": 944,
       "type1": 12,
       "type2": 0,
       "baseSpeed": 75
     },
     "grafaiai": {
-      "id": 945,
+      "pokeid": 945,
       "type1": 12,
       "type2": 0,
       "baseSpeed": 110
     },
     "bramblin": {
-      "id": 946,
+      "pokeid": 946,
       "type1": 3,
       "type2": 16,
       "baseSpeed": 60
     },
     "brambleghast": {
-      "id": 947,
+      "pokeid": 947,
       "type1": 3,
       "type2": 16,
       "baseSpeed": 90
     },
     "toedscool": {
-      "id": 948,
+      "pokeid": 948,
       "type1": 13,
       "type2": 3,
       "baseSpeed": 70
     },
     "toedscruel": {
-      "id": 949,
+      "pokeid": 949,
       "type1": 13,
       "type2": 3,
       "baseSpeed": 100
     },
     "klawf": {
-      "id": 950,
+      "pokeid": 950,
       "type1": 14,
       "type2": 14,
       "baseSpeed": 75
     },
     "capsakid": {
-      "id": 951,
+      "pokeid": 951,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 50
     },
     "scovillain": {
-      "id": 952,
+      "pokeid": 952,
       "type1": 3,
       "type2": 1,
       "baseSpeed": 75
     },
     "rellor": {
-      "id": 953,
+      "pokeid": 953,
       "type1": 15,
       "type2": 15,
       "baseSpeed": 30
     },
     "rabsca": {
-      "id": 954,
+      "pokeid": 954,
       "type1": 15,
       "type2": 5,
       "baseSpeed": 45
     },
     "flittle": {
-      "id": 955,
+      "pokeid": 955,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 75
     },
     "espathra": {
-      "id": 956,
+      "pokeid": 956,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 105
     },
     "tinkatink": {
-      "id": 957,
+      "pokeid": 957,
       "type1": 9,
       "type2": 17,
       "baseSpeed": 58
     },
     "tinkatuff": {
-      "id": 958,
+      "pokeid": 958,
       "type1": 9,
       "type2": 17,
       "baseSpeed": 78
     },
     "tinkaton": {
-      "id": 959,
+      "pokeid": 959,
       "type1": 9,
       "type2": 17,
       "baseSpeed": 94
     },
     "wiglett": {
-      "id": 960,
+      "pokeid": 960,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 95
     },
     "wugtrio": {
-      "id": 961,
+      "pokeid": 961,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 120
     },
     "bombirdier": {
-      "id": 962,
+      "pokeid": 962,
       "type1": 11,
       "type2": 8,
       "baseSpeed": 82
     },
     "finizen": {
-      "id": 963,
+      "pokeid": 963,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 75
     },
     "palafinzero": {
-      "id": 964,
+      "pokeid": 964,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 100
     },
     "varoom": {
-      "id": 965,
+      "pokeid": 965,
       "type1": 17,
       "type2": 12,
       "baseSpeed": 47
     },
     "revavroom": {
-      "id": 966,
+      "pokeid": 966,
       "type1": 17,
       "type2": 12,
       "baseSpeed": 90
     },
     "cyclizar": {
-      "id": 967,
+      "pokeid": 967,
       "type1": 7,
       "type2": 0,
       "baseSpeed": 121
     },
     "orthworm": {
-      "id": 968,
+      "pokeid": 968,
       "type1": 17,
       "type2": 17,
       "baseSpeed": 65
     },
     "glimmet": {
-      "id": 969,
+      "pokeid": 969,
       "type1": 14,
       "type2": 12,
       "baseSpeed": 60
     },
     "glimmora": {
-      "id": 970,
+      "pokeid": 970,
       "type1": 14,
       "type2": 12,
       "baseSpeed": 86
     },
     "greavard": {
-      "id": 971,
+      "pokeid": 971,
       "type1": 16,
       "type2": 16,
       "baseSpeed": 34
     },
     "houndstone": {
-      "id": 972,
+      "pokeid": 972,
       "type1": 16,
       "type2": 16,
       "baseSpeed": 68
     },
     "flamigo": {
-      "id": 973,
+      "pokeid": 973,
       "type1": 11,
       "type2": 10,
       "baseSpeed": 90
     },
     "cetoddle": {
-      "id": 974,
+      "pokeid": 974,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 43
     },
     "cetitan": {
-      "id": 975,
+      "pokeid": 975,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 73
     },
     "veluza": {
-      "id": 976,
+      "pokeid": 976,
       "type1": 2,
       "type2": 5,
       "baseSpeed": 70
     },
     "dondozo": {
-      "id": 977,
+      "pokeid": 977,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 35
     },
     "tatsugiricurly": {
-      "id": 978,
+      "pokeid": 978,
       "type1": 7,
       "type2": 2,
       "baseSpeed": 82
     },
     "annihilape": {
-      "id": 979,
+      "pokeid": 979,
       "type1": 10,
       "type2": 16,
       "baseSpeed": 90
     },
     "clodsire": {
-      "id": 980,
+      "pokeid": 980,
       "type1": 12,
       "type2": 13,
       "baseSpeed": 20
     },
     "farigiraf": {
-      "id": 981,
+      "pokeid": 981,
       "type1": 0,
       "type2": 5,
       "baseSpeed": 60
     },
     "dudunsparcetwosegment": {
-      "id": 982,
+      "pokeid": 982,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 55
     },
     "kingambit": {
-      "id": 983,
+      "pokeid": 983,
       "type1": 8,
       "type2": 17,
       "baseSpeed": 50
     },
     "greattusk": {
-      "id": 984,
+      "pokeid": 984,
       "type1": 13,
       "type2": 10,
       "baseSpeed": 87
     },
     "screamtail": {
-      "id": 985,
+      "pokeid": 985,
       "type1": 9,
       "type2": 5,
       "baseSpeed": 111
     },
     "brutebonnet": {
-      "id": 986,
+      "pokeid": 986,
       "type1": 3,
       "type2": 8,
       "baseSpeed": 55
     },
     "fluttermane": {
-      "id": 987,
+      "pokeid": 987,
       "type1": 16,
       "type2": 9,
       "baseSpeed": 135
     },
     "slitherwing": {
-      "id": 988,
+      "pokeid": 988,
       "type1": 15,
       "type2": 10,
       "baseSpeed": 81
     },
     "sandyshocks": {
-      "id": 989,
+      "pokeid": 989,
       "type1": 4,
       "type2": 13,
       "baseSpeed": 101
     },
     "irontreads": {
-      "id": 990,
+      "pokeid": 990,
       "type1": 13,
       "type2": 17,
       "baseSpeed": 106
     },
     "ironbundle": {
-      "id": 991,
+      "pokeid": 991,
       "type1": 6,
       "type2": 2,
       "baseSpeed": 136
     },
     "ironhands": {
-      "id": 992,
+      "pokeid": 992,
       "type1": 10,
       "type2": 4,
       "baseSpeed": 50
     },
     "ironjugulis": {
-      "id": 993,
+      "pokeid": 993,
       "type1": 8,
       "type2": 11,
       "baseSpeed": 108
     },
     "ironmoth": {
-      "id": 994,
+      "pokeid": 994,
       "type1": 1,
       "type2": 12,
       "baseSpeed": 110
     },
     "ironthorns": {
-      "id": 995,
+      "pokeid": 995,
       "type1": 14,
       "type2": 4,
       "baseSpeed": 72
     },
     "frigibax": {
-      "id": 996,
+      "pokeid": 996,
       "type1": 7,
       "type2": 6,
       "baseSpeed": 55
     },
     "arctibax": {
-      "id": 997,
+      "pokeid": 997,
       "type1": 7,
       "type2": 6,
       "baseSpeed": 62
     },
     "baxcalibur": {
-      "id": 998,
+      "pokeid": 998,
       "type1": 7,
       "type2": 6,
       "baseSpeed": 87
     },
     "gimmighoul": {
-      "id": 999,
+      "pokeid": 999,
       "type1": 16,
       "type2": 16,
       "baseSpeed": 10
     },
     "gholdengo": {
-      "id": 1000,
+      "pokeid": 1000,
       "type1": 17,
       "type2": 16,
       "baseSpeed": 84
     },
     "wochien": {
-      "id": 1001,
+      "pokeid": 1001,
       "type1": 8,
       "type2": 3,
       "baseSpeed": 70
     },
     "chienpao": {
-      "id": 1002,
+      "pokeid": 1002,
       "type1": 8,
       "type2": 6,
       "baseSpeed": 135
     },
     "tinglu": {
-      "id": 1003,
+      "pokeid": 1003,
       "type1": 8,
       "type2": 13,
       "baseSpeed": 45
     },
     "chiyu": {
-      "id": 1004,
+      "pokeid": 1004,
       "type1": 8,
       "type2": 1,
       "baseSpeed": 100
     },
     "roaringmoon": {
-      "id": 1005,
+      "pokeid": 1005,
       "type1": 7,
       "type2": 8,
       "baseSpeed": 119
     },
     "ironvaliant": {
-      "id": 1006,
+      "pokeid": 1006,
       "type1": 9,
       "type2": 10,
       "baseSpeed": 116
     },
     "koraidon": {
-      "id": 1007,
+      "pokeid": 1007,
       "type1": 10,
       "type2": 7,
       "baseSpeed": 135
     },
     "miraidon": {
-      "id": 1008,
+      "pokeid": 1008,
       "type1": 4,
       "type2": 7,
       "baseSpeed": 135
     },
     "walkingwake": {
-      "id": 1009,
+      "pokeid": 1009,
       "type1": 2,
       "type2": 7,
       "baseSpeed": 109
     },
     "ironleaves": {
-      "id": 1010,
+      "pokeid": 1010,
       "type1": 3,
       "type2": 5,
       "baseSpeed": 104
     },
     "dipplin": {
-      "id": 1011,
+      "pokeid": 1011,
       "type1": 3,
       "type2": 7,
       "baseSpeed": 40
     },
     "poltchageist": {
-      "id": 1012,
+      "pokeid": 1012,
       "type1": 3,
       "type2": 16,
       "baseSpeed": 50
     },
     "sinistcha": {
-      "id": 1013,
+      "pokeid": 1013,
       "type1": 3,
       "type2": 16,
       "baseSpeed": 70
     },
     "okidogi": {
-      "id": 1014,
+      "pokeid": 1014,
       "type1": 12,
       "type2": 10,
       "baseSpeed": 80
     },
     "munkidori": {
-      "id": 1015,
+      "pokeid": 1015,
       "type1": 12,
       "type2": 5,
       "baseSpeed": 106
     },
     "fezandipiti": {
-      "id": 1016,
+      "pokeid": 1016,
       "type1": 12,
       "type2": 9,
       "baseSpeed": 99
     },
     "ogerpon": {
-      "id": 1017,
+      "pokeid": 1017,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 110
     },
     "archaludon": {
-      "id": 1018,
+      "pokeid": 1018,
       "type1": 17,
       "type2": 7,
       "baseSpeed": 85
     },
     "hydrapple": {
-      "id": 1019,
+      "pokeid": 1019,
       "type1": 3,
       "type2": 7,
       "baseSpeed": 44
     },
     "gougingfire": {
-      "id": 1020,
+      "pokeid": 1020,
       "type1": 1,
       "type2": 7,
       "baseSpeed": 91
     },
     "ragingbolt": {
-      "id": 1021,
+      "pokeid": 1021,
       "type1": 4,
       "type2": 7,
       "baseSpeed": 75
     },
     "ironboulder": {
-      "id": 1022,
+      "pokeid": 1022,
       "type1": 14,
       "type2": 5,
       "baseSpeed": 124
     },
     "ironcrown": {
-      "id": 1023,
+      "pokeid": 1023,
       "type1": 17,
       "type2": 5,
       "baseSpeed": 98
     },
     "terapagos": {
-      "id": 1024,
+      "pokeid": 1024,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 60
     },
     "pecharunt": {
-      "id": 1025,
+      "pokeid": 1025,
       "type1": 12,
       "type2": 16,
       "baseSpeed": 88
     },
     "deoxysdefense": {
-      "id": 1026,
+      "pokeid": 1026,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 90
     },
     "deoxysspeed": {
-      "id": 1027,
+      "pokeid": 1027,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 180
     },
     "wormadamsandy": {
-      "id": 1028,
+      "pokeid": 1028,
       "type1": 15,
       "type2": 13,
       "baseSpeed": 36
     },
     "wormadamtrash": {
-      "id": 1029,
+      "pokeid": 1029,
       "type1": 15,
       "type2": 17,
       "baseSpeed": 36
     },
     "shayminsky": {
-      "id": 1030,
+      "pokeid": 1030,
       "type1": 3,
       "type2": 11,
       "baseSpeed": 127
     },
     "giratinaorigin": {
-      "id": 1031,
+      "pokeid": 1031,
       "type1": 16,
       "type2": 7,
       "baseSpeed": 90
     },
     "rotomheat": {
-      "id": 1032,
+      "pokeid": 1032,
       "type1": 4,
       "type2": 1,
       "baseSpeed": 86
     },
     "rotomwash": {
-      "id": 1033,
+      "pokeid": 1033,
       "type1": 4,
       "type2": 2,
       "baseSpeed": 86
     },
     "rotomfrost": {
-      "id": 1034,
+      "pokeid": 1034,
       "type1": 4,
       "type2": 6,
       "baseSpeed": 86
     },
     "rotomfan": {
-      "id": 1035,
+      "pokeid": 1035,
       "type1": 4,
       "type2": 11,
       "baseSpeed": 86
     },
     "rotommow": {
-      "id": 1036,
+      "pokeid": 1036,
       "type1": 4,
       "type2": 3,
       "baseSpeed": 86
     },
     "castformsunny": {
-      "id": 1037,
+      "pokeid": 1037,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 70
     },
     "castformrainy": {
-      "id": 1038,
+      "pokeid": 1038,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 70
     },
     "castformsnowy": {
-      "id": 1039,
+      "pokeid": 1039,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 70
     },
     "basculinbluestriped": {
-      "id": 1040,
+      "pokeid": 1040,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 98
     },
     "darmanitanzen": {
-      "id": 1041,
+      "pokeid": 1041,
       "type1": 1,
       "type2": 5,
       "baseSpeed": 55
     },
     "meloettapirouette": {
-      "id": 1042,
+      "pokeid": 1042,
       "type1": 0,
       "type2": 10,
       "baseSpeed": 128
     },
     "tornadustherian": {
-      "id": 1043,
+      "pokeid": 1043,
       "type1": 11,
       "type2": 11,
       "baseSpeed": 121
     },
     "thundurustherian": {
-      "id": 1044,
+      "pokeid": 1044,
       "type1": 4,
       "type2": 11,
       "baseSpeed": 101
     },
     "landorustherian": {
-      "id": 1045,
+      "pokeid": 1045,
       "type1": 13,
       "type2": 11,
       "baseSpeed": 91
     },
     "kyuremblack": {
-      "id": 1046,
+      "pokeid": 1046,
       "type1": 7,
       "type2": 6,
       "baseSpeed": 95
     },
     "kyuremwhite": {
-      "id": 1047,
+      "pokeid": 1047,
       "type1": 7,
       "type2": 6,
       "baseSpeed": 95
     },
     "keldeoresolute": {
-      "id": 1048,
+      "pokeid": 1048,
       "type1": 2,
       "type2": 10,
       "baseSpeed": 108
     },
     "meowsticfemale": {
-      "id": 1049,
+      "pokeid": 1049,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 104
     },
     "aegislashblade": {
-      "id": 1050,
+      "pokeid": 1050,
       "type1": 17,
       "type2": 16,
       "baseSpeed": 60
     },
     "pumpkaboosmall": {
-      "id": 1051,
+      "pokeid": 1051,
       "type1": 16,
       "type2": 3,
       "baseSpeed": 56
     },
     "pumpkaboolarge": {
-      "id": 1052,
+      "pokeid": 1052,
       "type1": 16,
       "type2": 3,
       "baseSpeed": 46
     },
     "pumpkaboosuper": {
-      "id": 1053,
+      "pokeid": 1053,
       "type1": 16,
       "type2": 3,
       "baseSpeed": 41
     },
     "gourgeistsmall": {
-      "id": 1054,
+      "pokeid": 1054,
       "type1": 16,
       "type2": 3,
       "baseSpeed": 99
     },
     "gourgeistlarge": {
-      "id": 1055,
+      "pokeid": 1055,
       "type1": 16,
       "type2": 3,
       "baseSpeed": 69
     },
     "gourgeistsuper": {
-      "id": 1056,
+      "pokeid": 1056,
       "type1": 16,
       "type2": 3,
       "baseSpeed": 54
     },
     "venusaurmega": {
-      "id": 1057,
+      "pokeid": 1057,
       "type1": 3,
       "type2": 12,
       "baseSpeed": 80
     },
     "charizardmegax": {
-      "id": 1058,
+      "pokeid": 1058,
       "type1": 1,
       "type2": 7,
       "baseSpeed": 100
     },
     "charizardmegay": {
-      "id": 1059,
+      "pokeid": 1059,
       "type1": 1,
       "type2": 11,
       "baseSpeed": 100
     },
     "blastoisemega": {
-      "id": 1060,
+      "pokeid": 1060,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 78
     },
     "alakazammega": {
-      "id": 1061,
+      "pokeid": 1061,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 150
     },
     "gengarmega": {
-      "id": 1062,
+      "pokeid": 1062,
       "type1": 16,
       "type2": 12,
       "baseSpeed": 130
     },
     "kangaskhanmega": {
-      "id": 1063,
+      "pokeid": 1063,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 100
     },
     "pinsirmega": {
-      "id": 1064,
+      "pokeid": 1064,
       "type1": 15,
       "type2": 11,
       "baseSpeed": 105
     },
     "gyaradosmega": {
-      "id": 1065,
+      "pokeid": 1065,
       "type1": 2,
       "type2": 8,
       "baseSpeed": 81
     },
     "aerodactylmega": {
-      "id": 1066,
+      "pokeid": 1066,
       "type1": 14,
       "type2": 11,
       "baseSpeed": 150
     },
     "mewtwomegax": {
-      "id": 1067,
+      "pokeid": 1067,
       "type1": 5,
       "type2": 10,
       "baseSpeed": 130
     },
     "mewtwomegay": {
-      "id": 1068,
+      "pokeid": 1068,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 140
     },
     "ampharosmega": {
-      "id": 1069,
+      "pokeid": 1069,
       "type1": 4,
       "type2": 7,
       "baseSpeed": 45
     },
     "scizormega": {
-      "id": 1070,
+      "pokeid": 1070,
       "type1": 15,
       "type2": 17,
       "baseSpeed": 75
     },
     "heracrossmega": {
-      "id": 1071,
+      "pokeid": 1071,
       "type1": 15,
       "type2": 10,
       "baseSpeed": 75
     },
     "houndoommega": {
-      "id": 1072,
+      "pokeid": 1072,
       "type1": 8,
       "type2": 1,
       "baseSpeed": 115
     },
     "tyranitarmega": {
-      "id": 1073,
+      "pokeid": 1073,
       "type1": 14,
       "type2": 8,
       "baseSpeed": 71
     },
     "blazikenmega": {
-      "id": 1074,
+      "pokeid": 1074,
       "type1": 1,
       "type2": 10,
       "baseSpeed": 100
     },
     "gardevoirmega": {
-      "id": 1075,
+      "pokeid": 1075,
       "type1": 5,
       "type2": 9,
       "baseSpeed": 100
     },
     "mawilemega": {
-      "id": 1076,
+      "pokeid": 1076,
       "type1": 17,
       "type2": 9,
       "baseSpeed": 50
     },
     "aggronmega": {
-      "id": 1077,
+      "pokeid": 1077,
       "type1": 17,
       "type2": 17,
       "baseSpeed": 50
     },
     "medichammega": {
-      "id": 1078,
+      "pokeid": 1078,
       "type1": 10,
       "type2": 5,
       "baseSpeed": 100
     },
     "manectricmega": {
-      "id": 1079,
+      "pokeid": 1079,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 135
     },
     "banettemega": {
-      "id": 1080,
+      "pokeid": 1080,
       "type1": 16,
       "type2": 16,
       "baseSpeed": 75
     },
     "absolmega": {
-      "id": 1081,
+      "pokeid": 1081,
       "type1": 8,
       "type2": 8,
       "baseSpeed": 115
     },
     "garchompmega": {
-      "id": 1082,
+      "pokeid": 1082,
       "type1": 7,
       "type2": 13,
       "baseSpeed": 92
     },
     "lucariomega": {
-      "id": 1083,
+      "pokeid": 1083,
       "type1": 10,
       "type2": 17,
       "baseSpeed": 112
     },
     "abomasnowmega": {
-      "id": 1084,
+      "pokeid": 1084,
       "type1": 3,
       "type2": 6,
       "baseSpeed": 30
     },
     "floetteeternal": {
-      "id": 1085,
+      "pokeid": 1085,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 92
     },
     "latiasmega": {
-      "id": 1086,
+      "pokeid": 1086,
       "type1": 7,
       "type2": 5,
       "baseSpeed": 110
     },
     "latiosmega": {
-      "id": 1087,
+      "pokeid": 1087,
       "type1": 7,
       "type2": 5,
       "baseSpeed": 110
     },
     "swampertmega": {
-      "id": 1088,
+      "pokeid": 1088,
       "type1": 2,
       "type2": 13,
       "baseSpeed": 70
     },
     "sceptilemega": {
-      "id": 1089,
+      "pokeid": 1089,
       "type1": 3,
       "type2": 7,
       "baseSpeed": 145
     },
     "sableyemega": {
-      "id": 1090,
+      "pokeid": 1090,
       "type1": 8,
       "type2": 16,
       "baseSpeed": 20
     },
     "altariamega": {
-      "id": 1091,
+      "pokeid": 1091,
       "type1": 7,
       "type2": 9,
       "baseSpeed": 80
     },
     "gallademega": {
-      "id": 1092,
+      "pokeid": 1092,
       "type1": 5,
       "type2": 10,
       "baseSpeed": 110
     },
     "audinomega": {
-      "id": 1093,
+      "pokeid": 1093,
       "type1": 0,
       "type2": 9,
       "baseSpeed": 50
     },
     "sharpedomega": {
-      "id": 1094,
+      "pokeid": 1094,
       "type1": 2,
       "type2": 8,
       "baseSpeed": 105
     },
     "slowbromega": {
-      "id": 1095,
+      "pokeid": 1095,
       "type1": 2,
       "type2": 5,
       "baseSpeed": 30
     },
     "steelixmega": {
-      "id": 1096,
+      "pokeid": 1096,
       "type1": 17,
       "type2": 13,
       "baseSpeed": 30
     },
     "pidgeotmega": {
-      "id": 1097,
+      "pokeid": 1097,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 121
     },
     "glaliemega": {
-      "id": 1098,
+      "pokeid": 1098,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 100
     },
     "dianciemega": {
-      "id": 1099,
+      "pokeid": 1099,
       "type1": 14,
       "type2": 9,
       "baseSpeed": 110
     },
     "metagrossmega": {
-      "id": 1100,
+      "pokeid": 1100,
       "type1": 17,
       "type2": 5,
       "baseSpeed": 110
     },
     "kyogreprimal": {
-      "id": 1101,
+      "pokeid": 1101,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 90
     },
     "groudonprimal": {
-      "id": 1102,
+      "pokeid": 1102,
       "type1": 13,
       "type2": 1,
       "baseSpeed": 90
     },
     "rayquazamega": {
-      "id": 1103,
+      "pokeid": 1103,
       "type1": 7,
       "type2": 11,
       "baseSpeed": 115
     },
     "pikachurockstar": {
-      "id": 1104,
+      "pokeid": 1104,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 90
     },
     "pikachubelle": {
-      "id": 1105,
+      "pokeid": 1105,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 90
     },
     "pikachupopstar": {
-      "id": 1106,
+      "pokeid": 1106,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 90
     },
     "pikachuphd": {
-      "id": 1107,
+      "pokeid": 1107,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 90
     },
     "pikachulibre": {
-      "id": 1108,
+      "pokeid": 1108,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 90
     },
     "pikachucosplay": {
-      "id": 1109,
+      "pokeid": 1109,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 90
     },
     "hoopaunbound": {
-      "id": 1110,
+      "pokeid": 1110,
       "type1": 5,
       "type2": 8,
       "baseSpeed": 80
     },
     "cameruptmega": {
-      "id": 1111,
+      "pokeid": 1111,
       "type1": 1,
       "type2": 13,
       "baseSpeed": 20
     },
     "lopunnymega": {
-      "id": 1112,
+      "pokeid": 1112,
       "type1": 0,
       "type2": 10,
       "baseSpeed": 135
     },
     "salamencemega": {
-      "id": 1113,
+      "pokeid": 1113,
       "type1": 7,
       "type2": 11,
       "baseSpeed": 120
     },
     "beedrillmega": {
-      "id": 1114,
+      "pokeid": 1114,
       "type1": 15,
       "type2": 12,
       "baseSpeed": 145
     },
     "rattataalola": {
-      "id": 1115,
+      "pokeid": 1115,
       "type1": 8,
       "type2": 0,
       "baseSpeed": 72
     },
     "raticatealola": {
-      "id": 1116,
+      "pokeid": 1116,
       "type1": 8,
       "type2": 0,
       "baseSpeed": 77
     },
     "raticatetotemalola": {
-      "id": 1117,
+      "pokeid": 1117,
       "type1": 8,
       "type2": 0,
       "baseSpeed": 77
     },
     "pikachuoriginalcap": {
-      "id": 1118,
+      "pokeid": 1118,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 90
     },
     "pikachuhoenncap": {
-      "id": 1119,
+      "pokeid": 1119,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 90
     },
     "pikachusinnohcap": {
-      "id": 1120,
+      "pokeid": 1120,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 90
     },
     "pikachuunovacap": {
-      "id": 1121,
+      "pokeid": 1121,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 90
     },
     "pikachukaloscap": {
-      "id": 1122,
+      "pokeid": 1122,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 90
     },
     "pikachualolacap": {
-      "id": 1123,
+      "pokeid": 1123,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 90
     },
     "raichualola": {
-      "id": 1124,
+      "pokeid": 1124,
       "type1": 4,
       "type2": 5,
       "baseSpeed": 110
     },
     "sandshrewalola": {
-      "id": 1125,
+      "pokeid": 1125,
       "type1": 6,
       "type2": 17,
       "baseSpeed": 40
     },
     "sandslashalola": {
-      "id": 1126,
+      "pokeid": 1126,
       "type1": 6,
       "type2": 17,
       "baseSpeed": 65
     },
     "vulpixalola": {
-      "id": 1127,
+      "pokeid": 1127,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 65
     },
     "ninetalesalola": {
-      "id": 1128,
+      "pokeid": 1128,
       "type1": 6,
       "type2": 9,
       "baseSpeed": 109
     },
     "diglettalola": {
-      "id": 1129,
+      "pokeid": 1129,
       "type1": 13,
       "type2": 17,
       "baseSpeed": 90
     },
     "dugtrioalola": {
-      "id": 1130,
+      "pokeid": 1130,
       "type1": 13,
       "type2": 17,
       "baseSpeed": 110
     },
     "meowthalola": {
-      "id": 1131,
+      "pokeid": 1131,
       "type1": 8,
       "type2": 8,
       "baseSpeed": 90
     },
     "persianalola": {
-      "id": 1132,
+      "pokeid": 1132,
       "type1": 8,
       "type2": 8,
       "baseSpeed": 115
     },
     "geodudealola": {
-      "id": 1133,
+      "pokeid": 1133,
       "type1": 14,
       "type2": 4,
       "baseSpeed": 20
     },
     "graveleralola": {
-      "id": 1134,
+      "pokeid": 1134,
       "type1": 14,
       "type2": 4,
       "baseSpeed": 35
     },
     "golemalola": {
-      "id": 1135,
+      "pokeid": 1135,
       "type1": 14,
       "type2": 4,
       "baseSpeed": 45
     },
     "grimeralola": {
-      "id": 1136,
+      "pokeid": 1136,
       "type1": 12,
       "type2": 8,
       "baseSpeed": 25
     },
     "mukalola": {
-      "id": 1137,
+      "pokeid": 1137,
       "type1": 12,
       "type2": 8,
       "baseSpeed": 50
     },
     "exeggutoralola": {
-      "id": 1138,
+      "pokeid": 1138,
       "type1": 3,
       "type2": 7,
       "baseSpeed": 45
     },
     "marowakalola": {
-      "id": 1139,
+      "pokeid": 1139,
       "type1": 1,
       "type2": 16,
       "baseSpeed": 45
     },
     "greninjabattlebond": {
-      "id": 1140,
+      "pokeid": 1140,
       "type1": 2,
       "type2": 8,
       "baseSpeed": 122
     },
     "greninjaash": {
-      "id": 1141,
+      "pokeid": 1141,
       "type1": 2,
       "type2": 8,
       "baseSpeed": 132
     },
     "zygarde10powerconstruct": {
-      "id": 1142,
+      "pokeid": 1142,
       "type1": 7,
       "type2": 13,
       "baseSpeed": 115
     },
     "zygarde50powerconstruct": {
-      "id": 1143,
+      "pokeid": 1143,
       "type1": 7,
       "type2": 13,
       "baseSpeed": 95
     },
     "zygardecomplete": {
-      "id": 1144,
+      "pokeid": 1144,
       "type1": 7,
       "type2": 13,
       "baseSpeed": 85
     },
     "gumshoostotem": {
-      "id": 1145,
+      "pokeid": 1145,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 45
     },
     "vikavolttotem": {
-      "id": 1146,
+      "pokeid": 1146,
       "type1": 15,
       "type2": 4,
       "baseSpeed": 43
     },
     "oricoriopompom": {
-      "id": 1147,
+      "pokeid": 1147,
       "type1": 4,
       "type2": 11,
       "baseSpeed": 93
     },
     "oricoriopau": {
-      "id": 1148,
+      "pokeid": 1148,
       "type1": 5,
       "type2": 11,
       "baseSpeed": 93
     },
     "oricoriosensu": {
-      "id": 1149,
+      "pokeid": 1149,
       "type1": 16,
       "type2": 11,
       "baseSpeed": 93
     },
     "lycanrocmidnight": {
-      "id": 1150,
+      "pokeid": 1150,
       "type1": 14,
       "type2": 14,
       "baseSpeed": 82
     },
     "wishiwashischool": {
-      "id": 1151,
+      "pokeid": 1151,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 30
     },
     "lurantistotem": {
-      "id": 1152,
+      "pokeid": 1152,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 45
     },
     "salazzletotem": {
-      "id": 1153,
+      "pokeid": 1153,
       "type1": 12,
       "type2": 1,
       "baseSpeed": 117
     },
     "miniororangemeteor": {
-      "id": 1154,
+      "pokeid": 1154,
       "type1": 14,
       "type2": 11,
       "baseSpeed": 60
     },
     "minioryellowmeteor": {
-      "id": 1155,
+      "pokeid": 1155,
       "type1": 14,
       "type2": 11,
       "baseSpeed": 60
     },
     "miniorgreenmeteor": {
-      "id": 1156,
+      "pokeid": 1156,
       "type1": 14,
       "type2": 11,
       "baseSpeed": 60
     },
     "miniorbluemeteor": {
-      "id": 1157,
+      "pokeid": 1157,
       "type1": 14,
       "type2": 11,
       "baseSpeed": 60
     },
     "miniorindigometeor": {
-      "id": 1158,
+      "pokeid": 1158,
       "type1": 14,
       "type2": 11,
       "baseSpeed": 60
     },
     "miniorvioletmeteor": {
-      "id": 1159,
+      "pokeid": 1159,
       "type1": 14,
       "type2": 11,
       "baseSpeed": 60
     },
     "miniorred": {
-      "id": 1160,
+      "pokeid": 1160,
       "type1": 14,
       "type2": 11,
       "baseSpeed": 120
     },
     "miniororange": {
-      "id": 1161,
+      "pokeid": 1161,
       "type1": 14,
       "type2": 11,
       "baseSpeed": 120
     },
     "minioryellow": {
-      "id": 1162,
+      "pokeid": 1162,
       "type1": 14,
       "type2": 11,
       "baseSpeed": 120
     },
     "miniorgreen": {
-      "id": 1163,
+      "pokeid": 1163,
       "type1": 14,
       "type2": 11,
       "baseSpeed": 120
     },
     "miniorblue": {
-      "id": 1164,
+      "pokeid": 1164,
       "type1": 14,
       "type2": 11,
       "baseSpeed": 120
     },
     "miniorindigo": {
-      "id": 1165,
+      "pokeid": 1165,
       "type1": 14,
       "type2": 11,
       "baseSpeed": 120
     },
     "miniorviolet": {
-      "id": 1166,
+      "pokeid": 1166,
       "type1": 14,
       "type2": 11,
       "baseSpeed": 120
     },
     "mimikyubusted": {
-      "id": 1167,
+      "pokeid": 1167,
       "type1": 16,
       "type2": 9,
       "baseSpeed": 96
     },
     "mimikyutotemdisguised": {
-      "id": 1168,
+      "pokeid": 1168,
       "type1": 16,
       "type2": 9,
       "baseSpeed": 96
     },
     "mimikyutotembusted": {
-      "id": 1169,
+      "pokeid": 1169,
       "type1": 16,
       "type2": 9,
       "baseSpeed": 96
     },
     "kommoototem": {
-      "id": 1170,
+      "pokeid": 1170,
       "type1": 7,
       "type2": 10,
       "baseSpeed": 85
     },
     "magearnaoriginal": {
-      "id": 1171,
+      "pokeid": 1171,
       "type1": 17,
       "type2": 9,
       "baseSpeed": 65
     },
     "pikachupartnercap": {
-      "id": 1172,
+      "pokeid": 1172,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 90
     },
     "marowaktotem": {
-      "id": 1173,
+      "pokeid": 1173,
       "type1": 1,
       "type2": 16,
       "baseSpeed": 45
     },
     "ribombeetotem": {
-      "id": 1174,
+      "pokeid": 1174,
       "type1": 15,
       "type2": 9,
       "baseSpeed": 124
     },
     "rockruffowntempo": {
-      "id": 1175,
+      "pokeid": 1175,
       "type1": 14,
       "type2": 14,
       "baseSpeed": 60
     },
     "lycanrocdusk": {
-      "id": 1176,
+      "pokeid": 1176,
       "type1": 14,
       "type2": 14,
       "baseSpeed": 110
     },
     "araquanidtotem": {
-      "id": 1177,
+      "pokeid": 1177,
       "type1": 2,
       "type2": 15,
       "baseSpeed": 42
     },
     "togedemarutotem": {
-      "id": 1178,
+      "pokeid": 1178,
       "type1": 4,
       "type2": 17,
       "baseSpeed": 96
     },
     "necrozmaduskmane": {
-      "id": 1179,
+      "pokeid": 1179,
       "type1": 5,
       "type2": 17,
       "baseSpeed": 77
     },
     "necrozmadawnwings": {
-      "id": 1180,
+      "pokeid": 1180,
       "type1": 5,
       "type2": 16,
       "baseSpeed": 77
     },
     "necrozmaultra": {
-      "id": 1181,
+      "pokeid": 1181,
       "type1": 5,
       "type2": 7,
       "baseSpeed": 129
     },
     "pikachustarter": {
-      "id": 1182,
+      "pokeid": 1182,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 120
     },
     "eeveestarter": {
-      "id": 1183,
+      "pokeid": 1183,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 75
     },
     "pikachuworldcap": {
-      "id": 1184,
+      "pokeid": 1184,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 90
     },
     "meowthgalar": {
-      "id": 1185,
+      "pokeid": 1185,
       "type1": 17,
       "type2": 17,
       "baseSpeed": 40
     },
     "ponytagalar": {
-      "id": 1186,
+      "pokeid": 1186,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 90
     },
     "rapidashgalar": {
-      "id": 1187,
+      "pokeid": 1187,
       "type1": 5,
       "type2": 9,
       "baseSpeed": 105
     },
     "slowpokegalar": {
-      "id": 1188,
+      "pokeid": 1188,
       "type1": 5,
       "type2": 5,
       "baseSpeed": 15
     },
     "slowbrogalar": {
-      "id": 1189,
+      "pokeid": 1189,
       "type1": 12,
       "type2": 5,
       "baseSpeed": 30
     },
     "farfetchdgalar": {
-      "id": 1190,
+      "pokeid": 1190,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 55
     },
     "weezinggalar": {
-      "id": 1191,
+      "pokeid": 1191,
       "type1": 12,
       "type2": 9,
       "baseSpeed": 60
     },
     "mrmimegalar": {
-      "id": 1192,
+      "pokeid": 1192,
       "type1": 6,
       "type2": 5,
       "baseSpeed": 100
     },
     "articunogalar": {
-      "id": 1193,
+      "pokeid": 1193,
       "type1": 5,
       "type2": 11,
       "baseSpeed": 95
     },
     "zapdosgalar": {
-      "id": 1194,
+      "pokeid": 1194,
       "type1": 10,
       "type2": 11,
       "baseSpeed": 100
     },
     "moltresgalar": {
-      "id": 1195,
+      "pokeid": 1195,
       "type1": 8,
       "type2": 11,
       "baseSpeed": 90
     },
     "slowkinggalar": {
-      "id": 1196,
+      "pokeid": 1196,
       "type1": 12,
       "type2": 5,
       "baseSpeed": 30
     },
     "corsolagalar": {
-      "id": 1197,
+      "pokeid": 1197,
       "type1": 16,
       "type2": 16,
       "baseSpeed": 30
     },
     "zigzagoongalar": {
-      "id": 1198,
+      "pokeid": 1198,
       "type1": 8,
       "type2": 0,
       "baseSpeed": 60
     },
     "linoonegalar": {
-      "id": 1199,
+      "pokeid": 1199,
       "type1": 8,
       "type2": 0,
       "baseSpeed": 100
     },
     "darumakagalar": {
-      "id": 1200,
+      "pokeid": 1200,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 50
     },
     "darmanitangalarstandard": {
-      "id": 1201,
+      "pokeid": 1201,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 95
     },
     "darmanitangalarzen": {
-      "id": 1202,
+      "pokeid": 1202,
       "type1": 6,
       "type2": 1,
       "baseSpeed": 135
     },
     "yamaskgalar": {
-      "id": 1203,
+      "pokeid": 1203,
       "type1": 13,
       "type2": 16,
       "baseSpeed": 30
     },
     "stunfiskgalar": {
-      "id": 1204,
+      "pokeid": 1204,
       "type1": 13,
       "type2": 17,
       "baseSpeed": 32
     },
     "zygarde10": {
-      "id": 1205,
+      "pokeid": 1205,
       "type1": 7,
       "type2": 13,
       "baseSpeed": 115
     },
     "cramorantgulping": {
-      "id": 1206,
+      "pokeid": 1206,
       "type1": 11,
       "type2": 2,
       "baseSpeed": 85
     },
     "cramorantgorging": {
-      "id": 1207,
+      "pokeid": 1207,
       "type1": 11,
       "type2": 2,
       "baseSpeed": 85
     },
     "toxtricitylowkey": {
-      "id": 1208,
+      "pokeid": 1208,
       "type1": 4,
       "type2": 12,
       "baseSpeed": 75
     },
     "eiscuenoice": {
-      "id": 1209,
+      "pokeid": 1209,
       "type1": 6,
       "type2": 6,
       "baseSpeed": 130
     },
     "indeedeefemale": {
-      "id": 1210,
+      "pokeid": 1210,
       "type1": 5,
       "type2": 0,
       "baseSpeed": 85
     },
     "morpekohangry": {
-      "id": 1211,
+      "pokeid": 1211,
       "type1": 4,
       "type2": 8,
       "baseSpeed": 97
     },
     "zaciancrowned": {
-      "id": 1212,
+      "pokeid": 1212,
       "type1": 9,
       "type2": 17,
       "baseSpeed": 148
     },
     "zamazentacrowned": {
-      "id": 1213,
+      "pokeid": 1213,
       "type1": 10,
       "type2": 17,
       "baseSpeed": 128
     },
     "eternatuseternamax": {
-      "id": 1214,
+      "pokeid": 1214,
       "type1": 12,
       "type2": 7,
       "baseSpeed": 130
     },
     "urshifurapidstrike": {
-      "id": 1215,
+      "pokeid": 1215,
       "type1": 10,
       "type2": 2,
       "baseSpeed": 97
     },
     "zarudedada": {
-      "id": 1216,
+      "pokeid": 1216,
       "type1": 8,
       "type2": 3,
       "baseSpeed": 105
     },
     "calyrexice": {
-      "id": 1217,
+      "pokeid": 1217,
       "type1": 5,
       "type2": 6,
       "baseSpeed": 50
     },
     "calyrexshadow": {
-      "id": 1218,
+      "pokeid": 1218,
       "type1": 5,
       "type2": 16,
       "baseSpeed": 150
     },
     "venusaurgmax": {
-      "id": 1219,
+      "pokeid": 1219,
       "type1": 3,
       "type2": 12,
       "baseSpeed": 80
     },
     "charizardgmax": {
-      "id": 1220,
+      "pokeid": 1220,
       "type1": 1,
       "type2": 11,
       "baseSpeed": 100
     },
     "blastoisegmax": {
-      "id": 1221,
+      "pokeid": 1221,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 78
     },
     "butterfreegmax": {
-      "id": 1222,
+      "pokeid": 1222,
       "type1": 15,
       "type2": 11,
       "baseSpeed": 70
     },
     "pikachugmax": {
-      "id": 1223,
+      "pokeid": 1223,
       "type1": 4,
       "type2": 4,
       "baseSpeed": 90
     },
     "meowthgmax": {
-      "id": 1224,
+      "pokeid": 1224,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 90
     },
     "machampgmax": {
-      "id": 1225,
+      "pokeid": 1225,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 55
     },
     "gengargmax": {
-      "id": 1226,
+      "pokeid": 1226,
       "type1": 16,
       "type2": 12,
       "baseSpeed": 110
     },
     "kinglergmax": {
-      "id": 1227,
+      "pokeid": 1227,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 75
     },
     "laprasgmax": {
-      "id": 1228,
+      "pokeid": 1228,
       "type1": 2,
       "type2": 6,
       "baseSpeed": 60
     },
     "eeveegmax": {
-      "id": 1229,
+      "pokeid": 1229,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 55
     },
     "snorlaxgmax": {
-      "id": 1230,
+      "pokeid": 1230,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 30
     },
     "garbodorgmax": {
-      "id": 1231,
+      "pokeid": 1231,
       "type1": 12,
       "type2": 12,
       "baseSpeed": 75
     },
     "melmetalgmax": {
-      "id": 1232,
+      "pokeid": 1232,
       "type1": 17,
       "type2": 17,
       "baseSpeed": 34
     },
     "rillaboomgmax": {
-      "id": 1233,
+      "pokeid": 1233,
       "type1": 3,
       "type2": 3,
       "baseSpeed": 85
     },
     "cinderacegmax": {
-      "id": 1234,
+      "pokeid": 1234,
       "type1": 1,
       "type2": 1,
       "baseSpeed": 119
     },
     "inteleongmax": {
-      "id": 1235,
+      "pokeid": 1235,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 120
     },
     "corviknightgmax": {
-      "id": 1236,
+      "pokeid": 1236,
       "type1": 11,
       "type2": 17,
       "baseSpeed": 67
     },
     "orbeetlegmax": {
-      "id": 1237,
+      "pokeid": 1237,
       "type1": 15,
       "type2": 5,
       "baseSpeed": 90
     },
     "drednawgmax": {
-      "id": 1238,
+      "pokeid": 1238,
       "type1": 2,
       "type2": 14,
       "baseSpeed": 74
     },
     "coalossalgmax": {
-      "id": 1239,
+      "pokeid": 1239,
       "type1": 14,
       "type2": 1,
       "baseSpeed": 30
     },
     "flapplegmax": {
-      "id": 1240,
+      "pokeid": 1240,
       "type1": 3,
       "type2": 7,
       "baseSpeed": 70
     },
     "appletungmax": {
-      "id": 1241,
+      "pokeid": 1241,
       "type1": 3,
       "type2": 7,
       "baseSpeed": 30
     },
     "sandacondagmax": {
-      "id": 1242,
+      "pokeid": 1242,
       "type1": 13,
       "type2": 13,
       "baseSpeed": 71
     },
     "toxtricityampedgmax": {
-      "id": 1243,
+      "pokeid": 1243,
       "type1": 4,
       "type2": 12,
       "baseSpeed": 75
     },
     "centiskorchgmax": {
-      "id": 1244,
+      "pokeid": 1244,
       "type1": 1,
       "type2": 15,
       "baseSpeed": 65
     },
     "hatterenegmax": {
-      "id": 1245,
+      "pokeid": 1245,
       "type1": 5,
       "type2": 9,
       "baseSpeed": 29
     },
     "grimmsnarlgmax": {
-      "id": 1246,
+      "pokeid": 1246,
       "type1": 8,
       "type2": 9,
       "baseSpeed": 60
     },
     "alcremiegmax": {
-      "id": 1247,
+      "pokeid": 1247,
       "type1": 9,
       "type2": 9,
       "baseSpeed": 64
     },
     "copperajahgmax": {
-      "id": 1248,
+      "pokeid": 1248,
       "type1": 17,
       "type2": 17,
       "baseSpeed": 30
     },
     "duraludongmax": {
-      "id": 1249,
+      "pokeid": 1249,
       "type1": 17,
       "type2": 7,
       "baseSpeed": 85
     },
     "urshifusinglestrikegmax": {
-      "id": 1250,
+      "pokeid": 1250,
       "type1": 10,
       "type2": 8,
       "baseSpeed": 97
     },
     "urshifurapidstrikegmax": {
-      "id": 1251,
+      "pokeid": 1251,
       "type1": 10,
       "type2": 2,
       "baseSpeed": 97
     },
     "toxtricitylowkeygmax": {
-      "id": 1252,
+      "pokeid": 1252,
       "type1": 4,
       "type2": 12,
       "baseSpeed": 75
     },
     "growlithehisui": {
-      "id": 1253,
+      "pokeid": 1253,
       "type1": 1,
       "type2": 14,
       "baseSpeed": 55
     },
     "arcaninehisui": {
-      "id": 1254,
+      "pokeid": 1254,
       "type1": 1,
       "type2": 14,
       "baseSpeed": 90
     },
     "voltorbhisui": {
-      "id": 1255,
+      "pokeid": 1255,
       "type1": 4,
       "type2": 3,
       "baseSpeed": 100
     },
     "electrodehisui": {
-      "id": 1256,
+      "pokeid": 1256,
       "type1": 4,
       "type2": 3,
       "baseSpeed": 150
     },
     "typhlosionhisui": {
-      "id": 1257,
+      "pokeid": 1257,
       "type1": 1,
       "type2": 16,
       "baseSpeed": 95
     },
     "qwilfishhisui": {
-      "id": 1258,
+      "pokeid": 1258,
       "type1": 8,
       "type2": 12,
       "baseSpeed": 85
     },
     "sneaselhisui": {
-      "id": 1259,
+      "pokeid": 1259,
       "type1": 10,
       "type2": 12,
       "baseSpeed": 115
     },
     "samurotthisui": {
-      "id": 1260,
+      "pokeid": 1260,
       "type1": 2,
       "type2": 8,
       "baseSpeed": 85
     },
     "lilliganthisui": {
-      "id": 1261,
+      "pokeid": 1261,
       "type1": 3,
       "type2": 10,
       "baseSpeed": 105
     },
     "zoruahisui": {
-      "id": 1262,
+      "pokeid": 1262,
       "type1": 0,
       "type2": 16,
       "baseSpeed": 70
     },
     "zoroarkhisui": {
-      "id": 1263,
+      "pokeid": 1263,
       "type1": 0,
       "type2": 16,
       "baseSpeed": 110
     },
     "braviaryhisui": {
-      "id": 1264,
+      "pokeid": 1264,
       "type1": 5,
       "type2": 11,
       "baseSpeed": 65
     },
     "sliggoohisui": {
-      "id": 1265,
+      "pokeid": 1265,
       "type1": 17,
       "type2": 7,
       "baseSpeed": 40
     },
     "goodrahisui": {
-      "id": 1266,
+      "pokeid": 1266,
       "type1": 17,
       "type2": 7,
       "baseSpeed": 60
     },
     "avalugghisui": {
-      "id": 1267,
+      "pokeid": 1267,
       "type1": 6,
       "type2": 14,
       "baseSpeed": 38
     },
     "decidueyehisui": {
-      "id": 1268,
+      "pokeid": 1268,
       "type1": 3,
       "type2": 10,
       "baseSpeed": 60
     },
     "dialgaorigin": {
-      "id": 1269,
+      "pokeid": 1269,
       "type1": 17,
       "type2": 7,
       "baseSpeed": 90
     },
     "palkiaorigin": {
-      "id": 1270,
+      "pokeid": 1270,
       "type1": 2,
       "type2": 7,
       "baseSpeed": 120
     },
     "basculinwhitestriped": {
-      "id": 1271,
+      "pokeid": 1271,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 98
     },
     "basculegionfemale": {
-      "id": 1272,
+      "pokeid": 1272,
       "type1": 2,
       "type2": 16,
       "baseSpeed": 78
     },
     "enamorustherian": {
-      "id": 1273,
+      "pokeid": 1273,
       "type1": 9,
       "type2": 11,
       "baseSpeed": 46
     },
     "taurospaldeacombatbreed": {
-      "id": 1274,
+      "pokeid": 1274,
       "type1": 10,
       "type2": 10,
       "baseSpeed": 100
     },
     "taurospaldeablazebreed": {
-      "id": 1275,
+      "pokeid": 1275,
       "type1": 10,
       "type2": 1,
       "baseSpeed": 100
     },
     "taurospaldeaaquabreed": {
-      "id": 1276,
+      "pokeid": 1276,
       "type1": 10,
       "type2": 2,
       "baseSpeed": 100
     },
     "wooperpaldea": {
-      "id": 1277,
+      "pokeid": 1277,
       "type1": 12,
       "type2": 13,
       "baseSpeed": 15
     },
     "oinkolognefemale": {
-      "id": 1278,
+      "pokeid": 1278,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 65
     },
     "dudunsparcethreesegment": {
-      "id": 1279,
+      "pokeid": 1279,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 55
     },
     "palafinhero": {
-      "id": 1280,
+      "pokeid": 1280,
       "type1": 2,
       "type2": 2,
       "baseSpeed": 100
     },
     "mausholdfamilyofthree": {
-      "id": 1281,
+      "pokeid": 1281,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 111
     },
     "tatsugiridroopy": {
-      "id": 1282,
+      "pokeid": 1282,
       "type1": 7,
       "type2": 2,
       "baseSpeed": 82
     },
     "tatsugiristretchy": {
-      "id": 1283,
+      "pokeid": 1283,
       "type1": 7,
       "type2": 2,
       "baseSpeed": 82
     },
     "squawkabillyblueplumage": {
-      "id": 1284,
+      "pokeid": 1284,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 92
     },
     "squawkabillyyellowplumage": {
-      "id": 1285,
+      "pokeid": 1285,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 92
     },
     "squawkabillywhiteplumage": {
-      "id": 1286,
+      "pokeid": 1286,
       "type1": 0,
       "type2": 11,
       "baseSpeed": 92
     },
     "gimmighoulroaming": {
-      "id": 1287,
+      "pokeid": 1287,
       "type1": 16,
       "type2": 16,
       "baseSpeed": 80
     },
     "ursalunabloodmoon": {
-      "id": 1288,
+      "pokeid": 1288,
       "type1": 13,
       "type2": 0,
       "baseSpeed": 52
     },
     "ogerponwellspringmask": {
-      "id": 1289,
+      "pokeid": 1289,
       "type1": 3,
       "type2": 2,
       "baseSpeed": 110
     },
     "ogerponhearthflamemask": {
-      "id": 1290,
+      "pokeid": 1290,
       "type1": 3,
       "type2": 1,
       "baseSpeed": 110
     },
     "ogerponcornerstonemask": {
-      "id": 1291,
+      "pokeid": 1291,
       "type1": 3,
       "type2": 14,
       "baseSpeed": 110
     },
     "terapagosterastal": {
-      "id": 1292,
+      "pokeid": 1292,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 85
     },
     "terapagosstellar": {
-      "id": 1293,
+      "pokeid": 1293,
       "type1": 0,
       "type2": 0,
       "baseSpeed": 85
