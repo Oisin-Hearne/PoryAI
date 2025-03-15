@@ -97,10 +97,64 @@ class Agent:
         
         
         _flatten(state)
-        print(f"State: {state}")
-        print(f"State length {len(flattened)}")
 
         return torch.FloatTensor(flattened).to(self.device) # tensor of the flattened state. This is something the agent can interpret.
+    
+    def getStatesBatch(self, states):
+        flattenedBatch = []
+        
+        def _flatten(d, prefix=""):
+            
+            for key in sorted(d.keys()):
+                value = d[key]
+                
+                if isinstance(value, dict):
+                    _flatten(value, prefix+key+"_")
+                elif isinstance(value, list):
+                    for i in range(len(value)):
+                        _flatten(value[i], prefix+key+str(i)+"_")
+                else:
+                    # Normalisation. Max values are found from the data. Improve this by making it actually pull those maxes.
+                    if "request" in key:
+                        value = value/3
+                    elif "pokeid" in key:
+                        value = value/1293
+                    elif "type" in key or "teraType" in key:
+                        value = value/19
+                    elif "ability" in key:
+                        value = value/307
+                    elif "item" in key:
+                        value = value/276
+                    elif "moveid" in key:
+                        value = value/919
+                    elif "pp" in key:
+                        value = value/64
+                    elif "category" in key:
+                        value = value/2
+                    elif "power" in key:
+                        value = value/300
+                    elif "Mod" in key:
+                        value = 0.5+(value/12) # 0 means the stat is at it's minimum. 1 means it's at it's max, while 0.5 is neutral.
+                    elif key in ["atk", "def", "spa", "spd", "spe"]:
+                        value = value/2192 # Theoretical max stat.
+                    elif "status" in key:
+                        value = value/7
+                    elif "baseSpeed" in key:
+                        value = value/300
+                    elif "toxicspikes" in key:
+                        value = value/2
+                    elif "spikes" in key:
+                        value = value/3
+                    elif "weather" in key:
+                        value = value/4
+
+                    flattened.append(float(value))
+        
+        
+        for state in states:
+            flattened = _flatten(state)
+            flattenedBatch.append(flattened)
+        return torch.FloatTensor(flattenedBatch).to(self.device)
     
     # Make an action from a list of valid ones and the state. 
     def act(self, state, valid_actions):
@@ -138,11 +192,13 @@ class Agent:
         
         # Take a random sample of the memory to learn from.
         batch = random.sample(self.memory, self.batch_size)
+        statesBatch = [state for state, _, _, _, _ in batch]
+        nextStatesBatch = [nextState for _, _, _, nextState, _ in batch]
         
         self.model.train()
         
-        states = torch.stack([self.get_state(state) for state, _, _, _, _ in batch])
-        next_states = torch.stack([self.get_state(next_state) for _, _, _, next_state, _ in batch])
+        states = self.getStatesBatch(statesBatch)
+        next_states = self.getStatesBatch(nextStatesBatch)
         actions = torch.tensor([index_of_action for _, index_of_action, _, _, _ in batch], dtype=torch.long).to(self.device)
         rewards = torch.tensor([reward for _, _, reward, _, _ in batch], dtype=torch.float).to(self.device)
         dones = torch.tensor([done for _, _, _, _, done in batch], dtype=torch.float).to(self.device)
