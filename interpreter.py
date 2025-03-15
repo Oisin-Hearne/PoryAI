@@ -41,6 +41,7 @@ class Interpreter:
             pokeHp = eval(porySide[poke]["condition"].split(" ")[0])
             pokeStatus = porySide[poke]["condition"].split(" ")[1] if len(porySide[poke]["condition"].split(" ")) > 1 else "none"
             pokeAbility = porySide[poke]["ability"]
+            pokeAbility = get_close_matches(pokeAbility, self.abilityData.keys(), n=1, cutoff=0.5)[0]
             pokeMoves = porySide[poke]["moves"]
             pokeStats = porySide[poke]["stats"]
             pokeItem = porySide[poke]["item"]
@@ -115,6 +116,7 @@ class Interpreter:
             pokeHp = eval(porySide[poke]["condition"].split(" ")[0])
             pokeStatus = porySide[poke]["condition"].split(" ")[1] if len(porySide[poke]["condition"].split(" ")) > 1 else "none"
             pokeAbility = porySide[poke]["ability"]
+            pokeAbility = get_close_matches(pokeAbility, self.abilityData.keys(), n=1, cutoff=0.5)[0]
             pokeMoves = porySide[poke]["moves"]
             pokeStats = porySide[poke]["stats"]
             pokeItem = porySide[poke]["item"]
@@ -235,6 +237,7 @@ class Interpreter:
             # Record opponent abilities as they're activated.
             if "-ability" in splitData[1] and "p2" in splitData[2]:
                 ability = splitData[3].replace(" ", "").replace("-", "").lower()
+                ability = get_close_matches(ability, self.abilityData.keys(), n=1, cutoff=0.5)[0]
                 self.state["opposingSide"]["activeMon"]["ability"] = self.abilityData[ability]
             
             if len(splitData) > 4:
@@ -352,7 +355,7 @@ class Interpreter:
         damageBase = 1
         healBase = 1
         healBonus = 2
-        koBase = 10
+        koBase = 5
         statusBase = 1
         toxBonus = 2
         sleepBonus = 1
@@ -362,7 +365,7 @@ class Interpreter:
         hazardClear = 3
         effectiveBase = 2
         weatherBase = 1
-        failBase = 5
+        failBase = 3
     
         
         for line in turnData:
@@ -425,7 +428,7 @@ class Interpreter:
             if "supereffective" in splitData[1]:
                 side = "playerSide" if "p1" in line else "opposingSide"
                 turnPoints += effectiveBase if side == "opposingSide" else -effectiveBase
-            if "resisted" in splitData[1]:
+            if "resisted" in splitData[1] or "immune" in splitData[1]:
                 side = "playerSide" if "p1" in line else "opposingSide"
                 turnPoints += -effectiveBase if side == "opposingSide" else effectiveBase
                 
@@ -463,9 +466,9 @@ class Interpreter:
                 turnPoints -= failBase
                 
             if "|win|" in line:
-                turnPoints += 20 if "PoryAI" in line else 20
+                turnPoints += 8 if "PoryAI" in line else -8
                 
-        return max(min(turnPoints / 20.0, 1.0), -1.0)
+        return max(min(turnPoints / 8.0, 1.0), -1.0)
 
 
 
