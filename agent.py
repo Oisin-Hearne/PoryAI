@@ -9,7 +9,7 @@ import random
 class PokeNet(nn.Module):
     def __init__(self, state_dim, action_dim):
         super(PokeNet, self).__init__()
-        self.network == nn.Sequential(
+        self.network = nn.Sequential(
             nn.Linear(state_dim, 256),
             nn.ReLU(),
             nn.Linear(256, 128),
@@ -23,7 +23,7 @@ class PokeNet(nn.Module):
 
 class Agent:
     
-    def __init__(self, state_dim, action_dim, possible_actions, lr=0.001, gamma=0.99, epsilon=1.0):
+    def __init__(self, state_dim, action_dim, device, possible_actions, lr=0.001, gamma=0.99, epsilon=1.0):
         self.state_dim = state_dim
         self.action_dim = action_dim
         self.gamma = gamma
@@ -32,13 +32,14 @@ class Agent:
         self.epsilon_decay = 0.995
         self.memory = []
         self.batch_size = 64
+        self.device = device
         
         # Receives a list of actions and creates a dictionary to map them to indices.
         self.possible_actions = possible_actions
         self.action_index = {action: i for i, action in enumerate(possible_actions)}
         self.index_action = {i: action for i, action in enumerate(possible_actions)}
         
-        self.model = PokeNet(state_dim, action_dim)
+        self.model = PokeNet(state_dim, action_dim).to(device)
         self.optimizer = optim.Adam(self.model.parameters(), lr=lr)
         self.criterion = nn.MSELoss()
     
@@ -94,30 +95,43 @@ class Agent:
 
                     flattened.append(float(value))
         
+        
         _flatten(state)
-        return torch.FloatTensor(flattened) # tensor of the flattened state. This is something the agent can interpret.
+        print(f"State: {state}")
+        print(f"State length {len(flattened)}")
+
+        return torch.FloatTensor(flattened).to(self.device) # tensor of the flattened state. This is something the agent can interpret.
     
     # Make an action from a list of valid ones and the state. 
     def act(self, state, valid_actions):
         state_tensor = self.get_state(state)
         
         # Select randomly from the list of valid actions.
-        valid_actions = [self.action_index[action] for action in valid_actions]
         
         if np.random.rand() <= self.epsilon:
-            return valid_actions[np.random.choice(len(valid_actions))]
+            action = np.random.choice(valid_actions)
+            return action
         
-        q_values = self.model(state_tensor)
+        valid_actions = [self.action_index[action] for action in valid_actions]
+        
+
+        self.model.eval()
+        with torch.no_grad():
+            q_values = self.model(state_tensor)
         valid_q = [q_values[i] for i in valid_actions]
-        return valid_actions(np.argmax(valid_q))
+        print(f"Decision: {valid_actions[np.argmax(valid_q)]}")
+        decision = valid_actions[np.argmax(valid_q)]
+        return self.index_action[decision]
 
     # Append what's just occured and the result of that action to memory.
     def remember(self, state, action, reward, next_state, done):
+        print("Remembering")
         index_of_action = self.action_index[action] # Action translated to index for storage
         self.memory.append((state, index_of_action, reward, next_state, done))
         
     # Replay part of memory to learn from it
     def replay(self):
+        print("Replaying")
         # If there's not enough memory, don't bother.
         if len(self.memory) < self.batch_size:
             return
@@ -125,91 +139,67 @@ class Agent:
         # Take a random sample of the memory to learn from.
         batch = random.sample(self.memory, self.batch_size)
         
-        # Iterate over everything in the batch, and learn from it.
-        # This is done by calculating the target value, and then updating the model based on the difference between the current Q value and the target.
-        # This is the Bellman equation. The target is the reward plus the discounted future reward.
-        for state, index_of_action, reward, next_state, done in batch:
-            state_tensor = self.get_state(state)
-            next_state_tensor = self.get_state(next_state)
+        self.model.train()
+        
+        states = torch.stack([self.get_state(state) for state, _, _, _, _ in batch])
+        next_states = torch.stack([self.get_state(next_state) for _, _, _, next_state, _ in batch])
+        actions = torch.tensor([index_of_action for _, index_of_action, _, _, _ in batch], dtype=torch.long).to(self.device)
+        rewards = torch.tensor([reward for _, _, reward, _, _ in batch], dtype=torch.float).to(self.device)
+        dones = torch.tensor([done for _, _, _, _, done in batch], dtype=torch.float).to(self.device)
+        
+        current_q_vals = self.model(states).gather(1, actions.unsqueeze(1)).squeeze(1)
+        with torch.no_grad():
+            next_q_vals = self.model(next_states).max(1)[0]
+            target_q_vals = rewards + (1- dones) * self.gamma * next_q_vals
             
-            target = reward
-            if not done:
-                target += self.gamma * torch.max(self.model(next_state_tensor))
-                
-            current_q = self.model(state_tensor)[index_of_action]
-            
-            loss = self.criterion(current_q, target)
-            self.optimizer.zero_grad()
-            loss.backward()
-            self.optimizer.step()
+        loss = self.criterion(current_q_vals, target_q_vals)
+        self.optimizer.zero_grad()
+        loss.backward()
+        self.optimizer.step()
         
         # This is the epsilon decay. It's a way to make the agent less random over time.
         if self.epsilon > self.epsilon_min:
             self.epsilon *= self.epsilon_decay
+            
+    
+    def saveModel(self, path):
+        torch.save({
+            'model_state_dict': self.model.state_dict(),
+            'optimizer_state_dict': self.optimizer.state_dict(),
+            'epsilon': self.epsilon
+        }, path)
         
+    def loadModel(self, path):
+        checkpoint = torch.load(path)
+        self.model.load_state_dict(checkpoint['model_state_dict'])
+        self.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+        self.epsilon = checkpoint['epsilon']
 
 
-    #Select randomly for now        
-    def getAction(self, state, tag):
+    # #Select randomly for now        
+    # def getAction(self, state, tag):
 
-        if 'active' in state:
-            invalidMove = True
+    #     if 'active' in state:
+    #         invalidMove = True
 
-            # Pokémon can be locked into moves, so we need to check that the chosen move hasn't been disabled.
-            while invalidMove:
-                randomMove = random.choice(state["active"][0]["moves"])
-                if("disabled" not in randomMove.keys()):
-                    invalidMove = False
-                    return tag+'|/choose move '+randomMove["id"]+"|"+str(state["rqid"])
-                elif (not randomMove["disabled"]):
-                    invalidMove = False
-                    return tag+'|/choose move '+randomMove["id"]+"|"+str(state["rqid"])
+    #         # Pokémon can be locked into moves, so we need to check that the chosen move hasn't been disabled.
+    #         while invalidMove:
+    #             randomMove = random.choice(state["active"][0]["moves"])
+    #             if("disabled" not in randomMove.keys()):
+    #                 invalidMove = False
+    #                 return tag+'|/choose move '+randomMove["id"]+"|"+str(state["rqid"])
+    #             elif (not randomMove["disabled"]):
+    #                 invalidMove = False
+    #                 return tag+'|/choose move '+randomMove["id"]+"|"+str(state["rqid"])
             
-        if 'forceSwitch' in state:
-            invalidMon = True
+    #     if 'forceSwitch' in state:
+    #         invalidMon = True
             
-            while invalidMon:
-                randomMon = random.randint(0,5)
-                # Don't send in a fainted mon or try to send in the current one.
-                if(state["side"]["pokemon"][randomMon]["condition"] != "0 fnt") and (state["side"]["pokemon"][randomMon]["active"] == False):
-                    invalidMon = False
-                    #print(tag+'|/choose switch '+str(randomMon+1)+"|"+str(state["rqid"]))
-                    return tag+'|/choose switch '+str(randomMon+1)+"|"+str(state["rqid"])
+    #         while invalidMon:
+    #             randomMon = random.randint(0,5)
+    #             # Don't send in a fainted mon or try to send in the current one.
+    #             if(state["side"]["pokemon"][randomMon]["condition"] != "0 fnt") and (state["side"]["pokemon"][randomMon]["active"] == False):
+    #                 invalidMon = False
+    #                 #print(tag+'|/choose switch '+str(randomMon+1)+"|"+str(state["rqid"]))
+    #                 return tag+'|/choose switch '+str(randomMon+1)+"|"+str(state["rqid"])
                 
-
-    def getValidActions(self, state, request):
-        valid_actions = []
-        
-        # Showdown requesting a move/switch.
-        if 'active' in request:
-            
-            # Check all the moves, and add the ones that can be used.
-            # If the agent can terastallize, let them.
-            for move in len(request['active'][0]['moves']):
-                if not request["active"][0]["moves"][move]["disabled"]:
-                    valid_actions.append(f"/choose move {move+1}")
-                    if request["active"][1]["canTerastallize"]:
-                        valid_actions.append(f"/choose move {move+1} tera")
-                        
-            # Player can't switch if they're trapped.
-            if not state["playerSide"]["activeMon"]["condition"]["trapped"]:
-                for mon in len(request['side']['pokemon']):
-                
-                # Big ugly chain so it's more readable.
-                    if request['side']['pokemon'][mon]['active'] == False: # If the mon isn't active...
-                        if request['side']['pokemon'][mon]['condition'] != "0 fnt": # And it's not fainted...
-                            valid_actions.append(f"/choose switch {mon+1}") # Add the switch.
-        
-        # Force switch - a mon has just fainted or something.
-        if "forceSwitch" in request:
-            for mon in len(request['side']['pokemon']):
-                if request['side']['pokemon'][mon]['active'] == False:
-                    if request['side']['pokemon'][mon]['condition'] != "0 fnt":
-                        valid_actions.append(f"/choose switch {mon+1}")
-                        
-        # If an action isn't found, something's gone wrong. 
-        if valid_actions == []:
-            print("No options found! Going with default...")
-            valid_actions.append("/choose default")
-            
-        return valid_actions
