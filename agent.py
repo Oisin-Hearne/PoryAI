@@ -98,62 +98,67 @@ class Agent:
         
         _flatten(state)
 
-        return torch.FloatTensor(flattened).to(self.device) # tensor of the flattened state. This is something the agent can interpret.
+        return torch.FloatTensor(flattened).unsqueeze(0).to(self.device) # tensor of the flattened state. This is something the agent can interpret.
     
     def getStatesBatch(self, states):
         flattenedBatch = []
         
-        def _flatten(d, prefix=""):
-            
-            for key in sorted(d.keys()):
-                value = d[key]
-                
-                if isinstance(value, dict):
-                    _flatten(value, prefix+key+"_")
-                elif isinstance(value, list):
-                    for i in range(len(value)):
-                        _flatten(value[i], prefix+key+str(i)+"_")
-                else:
-                    # Normalisation. Max values are found from the data. Improve this by making it actually pull those maxes.
-                    if "request" in key:
-                        value = value/3
-                    elif "pokeid" in key:
-                        value = value/1293
-                    elif "type" in key or "teraType" in key:
-                        value = value/19
-                    elif "ability" in key:
-                        value = value/307
-                    elif "item" in key:
-                        value = value/276
-                    elif "moveid" in key:
-                        value = value/919
-                    elif "pp" in key:
-                        value = value/64
-                    elif "category" in key:
-                        value = value/2
-                    elif "power" in key:
-                        value = value/300
-                    elif "Mod" in key:
-                        value = 0.5+(value/12) # 0 means the stat is at it's minimum. 1 means it's at it's max, while 0.5 is neutral.
-                    elif key in ["atk", "def", "spa", "spd", "spe"]:
-                        value = value/2192 # Theoretical max stat.
-                    elif "status" in key:
-                        value = value/7
-                    elif "baseSpeed" in key:
-                        value = value/300
-                    elif "toxicspikes" in key:
-                        value = value/2
-                    elif "spikes" in key:
-                        value = value/3
-                    elif "weather" in key:
-                        value = value/4
-
-                    flattened.append(float(value))
-        
-        
         for state in states:
-            flattened = _flatten(state)
+            flattened = []
+            
+            def _flatten(d, prefix=""):
+            
+                
+                for key in sorted(d.keys()):
+                    value = d[key]
+                    
+                    if isinstance(value, dict):
+                        _flatten(value, prefix+key+"_")
+                    elif isinstance(value, list):
+                        for i in range(len(value)):
+                            _flatten(value[i], prefix+key+str(i)+"_")
+                    else:
+                        # Normalisation. Max values are found from the data. Improve this by making it actually pull those maxes.
+                        if "request" in key:
+                            value = value/3
+                        elif "pokeid" in key:
+                            value = value/1293
+                        elif "type" in key or "teraType" in key:
+                            value = value/19
+                        elif "ability" in key:
+                            value = value/307
+                        elif "item" in key:
+                            value = value/276
+                        elif "moveid" in key:
+                            value = value/919
+                        elif "pp" in key:
+                            value = value/64
+                        elif "category" in key:
+                            value = value/2
+                        elif "power" in key:
+                            value = value/300
+                        elif "Mod" in key:
+                            value = 0.5+(value/12) # 0 means the stat is at it's minimum. 1 means it's at it's max, while 0.5 is neutral.
+                        elif key in ["atk", "def", "spa", "spd", "spe"]:
+                            value = value/2192 # Theoretical max stat.
+                        elif "status" in key:
+                            value = value/7
+                        elif "baseSpeed" in key:
+                            value = value/300
+                        elif "toxicspikes" in key:
+                            value = value/2
+                        elif "spikes" in key:
+                            value = value/3
+                        elif "weather" in key:
+                            value = value/4
+
+                        flattened.append(float(value))
+                        
+                return flattened
+            
+            _flatten(state)
             flattenedBatch.append(flattened)
+
         return torch.FloatTensor(flattenedBatch).to(self.device)
     
     # Make an action from a list of valid ones and the state. 
@@ -172,7 +177,7 @@ class Agent:
         self.model.eval()
         with torch.no_grad():
             q_values = self.model(state_tensor)
-        valid_q = [q_values[i] for i in valid_actions]
+        valid_q = [q_values[0, i].item() for i in valid_actions]
         print(f"Decision: {valid_actions[np.argmax(valid_q)]}")
         decision = valid_actions[np.argmax(valid_q)]
         return self.index_action[decision]
