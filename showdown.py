@@ -15,7 +15,6 @@ class Showdown:
         self.password = password
         self.websocket = websocket
         self.inter = interpreter.Interpreter()
-        self.agent = agent.Agent()
         self.format = format
 
     async def connectToShowdown(self):
@@ -86,42 +85,31 @@ class Showdown:
     # Runs the logic for the given battle tag
     # Communicates with the Interpreter for state,
     # and the agent for actions.
-    async def manageBattle(self, battleTag):
-        self.inter.resetState()
-        battle_started = False
-        turnContent = []
-        turnCount = 0
+    async def manageBattle(self):
+
 
         while True:
             recv = await self.socket.recv()
+            print(recv)
             msgs = recv.split("|")
+            battleStarted = False
             
-            if 'start\n' in recv and not battle_started: # Start of battle
-                battle_started = True
+            if 'start\n' in recv and not battleStarted:
+                battleStarted = True
                 _, _, firstTurn = recv.partition("start\n")
-                self.inter.updateTurnState(firstTurn.split("\n"), turnCount)
-                turnCount += 1
-            
-            # Identify the side of the player, for use in the interpreter.
-            elif 'player' in msgs[1] and self.user in msgs[3]:
-                if 'p1' in msgs[2]:
-                    self.player = 1
-                else:
-                    self.player = 2
+                self.inter.updateTurnState(firstTurn.split("\n"), True)
+                self.currentRewards = 0
+                print(f"Current Rewards: {self.currentRewards}")
 
+            
             # Requests for the user to do something. These should be sent to the interpreter.
             elif 'request' in msgs[1] and len(msgs[2]) > 2:
                 requestOutput = json.loads(msgs[2])
-                if 'active' in requestOutput:
-                    self.inter.updateStateActive(requestOutput)
-                elif 'wait' in requestOutput or 'forceSwitch' in requestOutput:
-                    self.inter.updateStateNoActive(requestOutput)
-                elif 'teampreview' in requestOutput:
-                    self.inter.updateStateTeamPreview(requestOutput)
-
-                # Make decision down here
+                
+                
                 if not "wait" in requestOutput:
-                    await self.socket.send([self.agent.getAction(requestOutput, battleTag)])
+                    self.latestRequest = requestOutput
+                    return False # Battle not done
 
             elif 't:' in msgs[2] and "Time left" not in msgs[2]:
                 # Send turn content to interpreter here, then reset it.
@@ -129,20 +117,20 @@ class Showdown:
                 print(f"TURN {turnContent[-1:]}"+self.user)
                 print(turnContent)
                 
-                print(self.inter.countTurn(turnContent))
-                self.inter.updateTurnState(turnContent, turnCount)
+                self.currentRewards = self.inter.countTurn(turnContent)
+                self.state = self.inter.updateTurnState(turnContent, self.turnCount)
                 
-                turnCount += 1
+                
+                self.turnCount += 1
                 turnContent = []
 
-            elif turnCount > 0 and (msgs[1] in ["switch", "move", "faint"] or msgs[1][1] == "-"):
+            elif self.turnCount > 0 and (msgs[1] in ["switch", "move", "faint"] or msgs[1][1] == "-"):
                 turnContent.append(recv)
             
 
             if '|win|' in recv: # Battle is over.
-                print("battle over"+self.user)
                 time.sleep(3)
-                break
+                return True
 
 
     async def run(self):
@@ -151,3 +139,69 @@ class Showdown:
             print("looking for battle "+self.user)
             battleTag = await self.challengeFoulPlay(self.format)
             await self.manageBattle(battleTag)
+    
+    async def restart(self):
+        self.inter.resetState()
+        self.turnCount = 0
+        print(f"{self.user} looking for a battle...")
+        battleTag = await self.challengeFoulPlay(self.format)
+        self.currentTag = battleTag
+        await self.manageBattle()
+    
+    def getState(self):
+        return self.inter.state
+        
+    async def executeAction(self, action):
+        print(f"{self.currentTag}|{action}|{self.latestRequest['rqid']}")
+        await self.socket.send([f"{self.currentTag}|{action}|{self.latestRequest['rqid']}"])
+        battleDone = await self.manageBattle()
+        newState = self.inter.state
+        rewards = self.currentRewards
+        
+        return newState, rewards, battleDone
+        
+
+    def getValidActions(self):
+        valid_actions = []
+        print(f"Latest request: {self.latestRequest}")
+        
+        # Showdown requesting a move/switch.
+        if 'active' in self.latestRequest:
+            
+            # Check all the moves, and add the ones that can be used.
+            
+            # If there's only one move in latestRequest, they can only use that move.
+            if len(self.latestRequest['active'][0]['moves']) == 1:
+                valid_actions.append("/choose move 1")
+                return valid_actions
+            
+            # If the agent can terastallize, let them.
+            for move in range(len(self.latestRequest['active'][0]['moves'])):
+                if not self.latestRequest["active"][0]["moves"][move]["disabled"]:
+                    valid_actions.append(f"/choose move {move+1}")
+                    #if self.latestRequest["active"][0]["canTerastallize"]:
+                        #valid_actions.append(f"/choose move {move+1} tera")
+                        
+            # Player can't switch if they're trapped.
+            if not self.inter.state["playerSide"]["activeMon"]["condition"]["trapped"] or not self.latestRequest["active"][0]["trapped"]:
+                for mon in range(len(self.latestRequest['side']['pokemon'])):
+                
+                # Big ugly chain so it's more readable.
+                    if self.latestRequest['side']['pokemon'][mon]['active'] == False: # If the mon isn't active...
+                        if self.latestRequest['side']['pokemon'][mon]['condition'] != "0 fnt": # And it's not fainted...
+                            valid_actions.append(f"/choose switch {mon+1}") # Add the switch.
+        
+        # Force switch - a mon has just fainted or something.
+        if "forceSwitch" in self.latestRequest:
+            for mon in range(len(self.latestRequest['side']['pokemon'])):
+                if self.latestRequest['side']['pokemon'][mon]['active'] == False:
+                    if self.latestRequest['side']['pokemon'][mon]['condition'] != "0 fnt":
+                        valid_actions.append(f"/choose switch {mon+1}")
+                        
+        # If an action isn't found, something's gone wrong. 
+        if valid_actions == []:
+            print("No options found! Going with default...")
+            valid_actions.append("/choose default")
+            
+        print(valid_actions)
+        return valid_actions
