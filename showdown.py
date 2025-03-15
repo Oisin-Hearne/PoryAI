@@ -100,7 +100,11 @@ class Showdown:
                 self.inter.updateTurnState(firstTurn.split("\n"), True)
                 self.currentRewards = 0
                 print(f"Current Rewards: {self.currentRewards}")
-
+                
+            elif "Can't switch: You have to pass to a fainted Pokémon" in recv: # man i hate rabsca
+                print("rabsca moment")
+                await self.sendMessage("/choose default")
+                return False
             
             # Requests for the user to do something. These should be sent to the interpreter.
             elif 'request' in msgs[1] and len(msgs[2]) > 2:
@@ -183,7 +187,7 @@ class Showdown:
                         #valid_actions.append(f"/choose move {move+1} tera")
                         
             # Player can't switch if they're trapped.
-            if not self.inter.state["playerSide"]["activeMon"]["condition"]["trapped"] or not self.latestRequest["active"][0]["trapped"]:
+            if not ("trapped" in self.latestRequest["active"][0] and self.latestRequest["active"][0]["trapped"] == "true"):
                 for mon in range(len(self.latestRequest['side']['pokemon'])):
                 
                 # Big ugly chain so it's more readable.
