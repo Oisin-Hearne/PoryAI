@@ -275,10 +275,10 @@ class Interpreter:
                 
                 # Showdown sends side effects weirdly, occasionally having move: sideffect, so we need to parse it.
                 sideEffect = splitData[3].split(" ")
-                if len(sideEffect) > 1:
+                if "move:" in sideEffect[0]:
                     sideEffect = "".join(sideEffect[1:])
                 else:
-                    sideEffect = sideEffect[0]
+                    sideEffect = "".join(sideEffect[0:])
                 
                 sideEffect = sideEffect.replace(" ", "").replace("-", "").lower()
                 
@@ -449,7 +449,7 @@ class Interpreter:
                 negatives = ["|Spikes", "Toxic Spikes", "Stealth Rock", "Sticky Web"]
                                 
                 # If upkeep is in the line, the effect ended naturally and should not be counted.
-                if any(x in line for x in positives) and splitData > 4:
+                if any(x in line for x in positives) and len(splitData) > 4:
                     turnPoints += -fieldBase if side == "playerSide" else fieldBase
                 elif any(x in line for x in negatives):
                     turnPoints += -hazardClear if side == "opposingSide" else hazardClear
@@ -462,6 +462,9 @@ class Interpreter:
             # Action - Failed Move
             if "-fail" in splitData[1] and "p1a" in line:
                 turnPoints -= failBase
+                
+            if "|win|" in line:
+                turnPoints += 20 if "PoryAI" in line else 20
                 
         return turnPoints
 
