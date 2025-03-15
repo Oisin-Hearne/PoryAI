@@ -142,7 +142,7 @@ class Interpreter:
             for stat in pokeStats.keys():
                 self.state["playerSide"]["reserves"][poke-1]["stats"][stat] = pokeStats[stat]
 
-    def updateTurnState(self, turnData, turnCount):
+    def updateTurnState(self, turnData, startOfBattle):
         self.prevSelfHp = self.state["playerSide"]["activeMon"]["condition"]["hp"]
         self.prevOppHp = self.state["opposingSide"]["activeMon"]["condition"]["hp"]
         
@@ -176,11 +176,11 @@ class Interpreter:
                             break
 
             # When a switch occurs, add the current active mon to reserves and record the new one.
-            if 'switch' in splitData[1] and "p2" in splitData[2] and turnCount > 0:
+            if 'switch' in splitData[1] and "p2" in splitData[2] and not startOfBattle:
                 self.addReserves(self.state["opposingSide"]["activeMon"])
                 self.recordActiveMon(splitData[3:])
                 
-            if 'switch' in splitData[1] and "p2" in splitData[2] and turnCount == 0: # No need for reserves on first turn.
+            if 'switch' in splitData[1] and "p2" in splitData[2] and startOfBattle: # No need for reserves on first turn.
                 self.recordActiveMon(splitData[3:])
                 
             # Record any changes in HP or status.
