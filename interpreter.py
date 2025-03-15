@@ -305,7 +305,6 @@ class Interpreter:
                 self.state[side]["activeMon"]["terrastillized"] = 1
                 self.state[side]["activeMon"]["teraType"] = self.miscData["types"][splitData[3].lower()]
             
-        print("Turn State: ", self.state)
         return self.state
 
     # Set the active mon state to the new opponent.
@@ -466,7 +465,7 @@ class Interpreter:
             if "|win|" in line:
                 turnPoints += 20 if "PoryAI" in line else 20
                 
-        return turnPoints
+        return max(min(turnPoints / 20.0, 1.0), -1.0)
 
 
 
