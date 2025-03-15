@@ -23,7 +23,7 @@ class PokeNet(nn.Module):
 
 class Agent:
     
-    def __init__(self, state_dim, action_dim, lr=0.001, gamma=0.99, epsilon=1.0):
+    def __init__(self, state_dim, action_dim, possible_actions, lr=0.001, gamma=0.99, epsilon=1.0):
         self.state_dim = state_dim
         self.action_dim = action_dim
         self.gamma = gamma
@@ -32,6 +32,11 @@ class Agent:
         self.epsilon_decay = 0.995
         self.memory = []
         self.batch_size = 64
+        
+        # Receives a list of actions and creates a dictionary to map them to indices.
+        self.possible_actions = possible_actions
+        self.action_index = {action: i for i, action in enumerate(possible_actions)}
+        self.index_action = {i: action for i, action in enumerate(possible_actions)}
         
         self.model = PokeNet(state_dim, action_dim)
         self.optimizer = optim.Adam(self.model.parameters(), lr=lr)
@@ -96,8 +101,11 @@ class Agent:
     def act(self, state, valid_actions):
         state_tensor = self.get_state(state)
         
+        # Select randomly from the list of valid actions.
+        valid_actions = [self.action_index[action] for action in valid_actions]
+        
         if np.random.rand() <= self.epsilon:
-            return random.choice(valid_actions)
+            return valid_actions[np.random.choice(len(valid_actions))]
         
         q_values = self.model(state_tensor)
         valid_q = [q_values[i] for i in valid_actions]
@@ -105,7 +113,8 @@ class Agent:
 
     # Append what's just occured and the result of that action to memory.
     def remember(self, state, action, reward, next_state, done):
-        self.memory.append((state, action, reward, next_state, done))
+        index_of_action = self.action_index[action] # Action translated to index for storage
+        self.memory.append((state, index_of_action, reward, next_state, done))
         
     # Replay part of memory to learn from it
     def replay(self):
@@ -119,7 +128,7 @@ class Agent:
         # Iterate over everything in the batch, and learn from it.
         # This is done by calculating the target value, and then updating the model based on the difference between the current Q value and the target.
         # This is the Bellman equation. The target is the reward plus the discounted future reward.
-        for state, action, reward, next_state, done in batch:
+        for state, index_of_action, reward, next_state, done in batch:
             state_tensor = self.get_state(state)
             next_state_tensor = self.get_state(next_state)
             
@@ -127,7 +136,7 @@ class Agent:
             if not done:
                 target += self.gamma * torch.max(self.model(next_state_tensor))
                 
-            current_q = self.model(state_tensor)[action]
+            current_q = self.model(state_tensor)[index_of_action]
             
             loss = self.criterion(current_q, target)
             self.optimizer.zero_grad()
@@ -166,3 +175,41 @@ class Agent:
                     invalidMon = False
                     #print(tag+'|/choose switch '+str(randomMon+1)+"|"+str(state["rqid"]))
                     return tag+'|/choose switch '+str(randomMon+1)+"|"+str(state["rqid"])
+                
+
+    def getValidActions(self, state, request):
+        valid_actions = []
+        
+        # Showdown requesting a move/switch.
+        if 'active' in request:
+            
+            # Check all the moves, and add the ones that can be used.
+            # If the agent can terastallize, let them.
+            for move in len(request['active'][0]['moves']):
+                if not request["active"][0]["moves"][move]["disabled"]:
+                    valid_actions.append(f"/choose move {move+1}")
+                    if request["active"][1]["canTerastallize"]:
+                        valid_actions.append(f"/choose move {move+1} tera")
+                        
+            # Player can't switch if they're trapped.
+            if not state["playerSide"]["activeMon"]["condition"]["trapped"]:
+                for mon in len(request['side']['pokemon']):
+                
+                # Big ugly chain so it's more readable.
+                    if request['side']['pokemon'][mon]['active'] == False: # If the mon isn't active...
+                        if request['side']['pokemon'][mon]['condition'] != "0 fnt": # And it's not fainted...
+                            valid_actions.append(f"/choose switch {mon+1}") # Add the switch.
+        
+        # Force switch - a mon has just fainted or something.
+        if "forceSwitch" in request:
+            for mon in len(request['side']['pokemon']):
+                if request['side']['pokemon'][mon]['active'] == False:
+                    if request['side']['pokemon'][mon]['condition'] != "0 fnt":
+                        valid_actions.append(f"/choose switch {mon+1}")
+                        
+        # If an action isn't found, something's gone wrong. 
+        if valid_actions == []:
+            print("No options found! Going with default...")
+            valid_actions.append("/choose default")
+            
+        return valid_actions
