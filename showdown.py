@@ -194,11 +194,11 @@ class Showdown:
             for move in range(len(self.latestRequest['active'][0]['moves'])):
                 if not self.latestRequest["active"][0]["moves"][move]["disabled"]:
                     valid_actions.append(f"/choose move {move+1}")
-                    if "canTerastallize" in self.latestRequest["active"][0] and self.latestRequest["active"][0]["canTerastallize"] == "true":
+                    if "canTerastallize" in self.latestRequest["active"][0] and self.latestRequest["active"][0]["canTerastallize"]:
                         valid_actions.append(f"/choose move {move+1} terastal")
                         
             # Player can't switch if they're trapped.
-            if not ("trapped" in self.latestRequest["active"][0] and self.latestRequest["active"][0]["trapped"] == "true"):
+            if not ("trapped" in self.latestRequest["active"][0] and self.latestRequest["active"][0]["trapped"]):
                 for mon in range(len(self.latestRequest['side']['pokemon'])):
                 
                 # Big ugly chain so it's more readable.
