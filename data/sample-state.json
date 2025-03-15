@@ -49,6 +49,7 @@
                 "taunted" : 0,
                 "encored" : 0,
                 "perishSong" : 0,
+                "struggling" : 0,
                 "substitute" : 0,
                 "confusion" : 0,
                 "leechSeed" : 0,
@@ -115,15 +116,30 @@
                 ],
                 "condition": {
                     "hp" : 0,
-                    "status" : 0
+                    "status" : 0,
+                    "taunted" : 0,
+                    "encored" : 0,
+                    "perishSong" : 0,
+                    "struggling" : 0,
+                    "substitute" : 0,
+                    "confusion" : 0,
+                    "leechSeed" : 0,
+                    "trapped" : 0
                 },
                 "stats" : {
                     "atk" : 0,
+                    "atkMod" : 0,
                     "def" : 0,
+                    "defMod" : 0,
                     "spa" : 0,
+                    "spaMod" : 0,
                     "spd" : 0,
+                    "spdMod" : 0,
                     "spe" : 0,
-                    "baseSpeed" : 0
+                    "speMod" : 0,
+                    "baseSpeed" : 0,
+                    "accuracyMod" : 0,
+                    "evasionMod" : 0
                 }
             },
             {
@@ -170,15 +186,30 @@
                 ],
                 "condition": {
                     "hp" : 0,
-                    "status" : 0
+                    "status" : 0,
+                    "taunted" : 0,
+                    "encored" : 0,
+                    "perishSong" : 0,
+                    "struggling" : 0,
+                    "substitute" : 0,
+                    "confusion" : 0,
+                    "leechSeed" : 0,
+                    "trapped" : 0
                 },
                 "stats" : {
                     "atk" : 0,
+                    "atkMod" : 0,
                     "def" : 0,
+                    "defMod" : 0,
                     "spa" : 0,
+                    "spaMod" : 0,
                     "spd" : 0,
+                    "spdMod" : 0,
                     "spe" : 0,
-                    "baseSpeed" : 0
+                    "speMod" : 0,
+                    "baseSpeed" : 0,
+                    "accuracyMod" : 0,
+                    "evasionMod" : 0
                 }
             },
             {
@@ -225,15 +256,30 @@
                 ],
                 "condition": {
                     "hp" : 0,
-                    "status" : 0
+                    "status" : 0,
+                    "taunted" : 0,
+                    "encored" : 0,
+                    "perishSong" : 0,
+                    "struggling" : 0,
+                    "substitute" : 0,
+                    "confusion" : 0,
+                    "leechSeed" : 0,
+                    "trapped" : 0
                 },
                 "stats" : {
                     "atk" : 0,
+                    "atkMod" : 0,
                     "def" : 0,
+                    "defMod" : 0,
                     "spa" : 0,
+                    "spaMod" : 0,
                     "spd" : 0,
+                    "spdMod" : 0,
                     "spe" : 0,
-                    "baseSpeed" : 0
+                    "speMod" : 0,
+                    "baseSpeed" : 0,
+                    "accuracyMod" : 0,
+                    "evasionMod" : 0
                 }
             },
             {
@@ -280,15 +326,30 @@
                 ],
                 "condition": {
                     "hp" : 0,
-                    "status" : 0
+                    "status" : 0,
+                    "taunted" : 0,
+                    "encored" : 0,
+                    "perishSong" : 0,
+                    "struggling" : 0,
+                    "substitute" : 0,
+                    "confusion" : 0,
+                    "leechSeed" : 0,
+                    "trapped" : 0
                 },
                 "stats" : {
                     "atk" : 0,
+                    "atkMod" : 0,
                     "def" : 0,
+                    "defMod" : 0,
                     "spa" : 0,
+                    "spaMod" : 0,
                     "spd" : 0,
+                    "spdMod" : 0,
                     "spe" : 0,
-                    "baseSpeed" : 0
+                    "speMod" : 0,
+                    "baseSpeed" : 0,
+                    "accuracyMod" : 0,
+                    "evasionMod" : 0
                 }
             },
             {
@@ -335,15 +396,30 @@
                 ],
                 "condition": {
                     "hp" : 0,
-                    "status" : 0
+                    "status" : 0,
+                    "taunted" : 0,
+                    "encored" : 0,
+                    "perishSong" : 0,
+                    "struggling" : 0,
+                    "substitute" : 0,
+                    "confusion" : 0,
+                    "leechSeed" : 0,
+                    "trapped" : 0
                 },
                 "stats" : {
                     "atk" : 0,
+                    "atkMod" : 0,
                     "def" : 0,
+                    "defMod" : 0,
                     "spa" : 0,
+                    "spaMod" : 0,
                     "spd" : 0,
+                    "spdMod" : 0,
                     "spe" : 0,
-                    "baseSpeed" : 0
+                    "speMod" : 0,
+                    "baseSpeed" : 0,
+                    "accuracyMod" : 0,
+                    "evasionMod" : 0
                 }
             }
 
@@ -405,20 +481,26 @@
                 "taunted" : 0,
                 "encored" : 0,
                 "perishSong" : 0,
+                "struggling" : 0,
                 "substitute" : 0,
                 "confusion" : 0,
                 "leechSeed" : 0,
                 "trapped" : 0
             },
             "stats" : {
+                "atk" : 0,
                 "atkMod" : 0,
+                "def" : 0,
                 "defMod" : 0,
+                "spa" : 0,
                 "spaMod" : 0,
+                "spd" : 0,
                 "spdMod" : 0,
+                "spe" : 0,
                 "speMod" : 0,
                 "baseSpeed" : 0,
                 "accuracyMod" : 0,
-                "evasionMod": 0
+                "evasionMod" : 0
             }
         },
         "reserves" : [
@@ -462,10 +544,30 @@
                 ],
                 "condition": {
                     "hp" : 0,
-                    "status" : 0
+                    "status" : 0,
+                    "taunted" : 0,
+                    "encored" : 0,
+                    "perishSong" : 0,
+                    "struggling" : 0,
+                    "substitute" : 0,
+                    "confusion" : 0,
+                    "leechSeed" : 0,
+                    "trapped" : 0
                 },
                 "stats" : {
-                    "baseSpeed" : 0
+                    "atk" : 0,
+                    "atkMod" : 0,
+                    "def" : 0,
+                    "defMod" : 0,
+                    "spa" : 0,
+                    "spaMod" : 0,
+                    "spd" : 0,
+                    "spdMod" : 0,
+                    "spe" : 0,
+                    "speMod" : 0,
+                    "baseSpeed" : 0,
+                    "accuracyMod" : 0,
+                    "evasionMod" : 0
                 }
             },
             {
@@ -508,10 +610,30 @@
                 ],
                 "condition": {
                     "hp" : 0,
-                    "status" : 0
+                    "status" : 0,
+                    "taunted" : 0,
+                    "encored" : 0,
+                    "perishSong" : 0,
+                    "struggling" : 0,
+                    "substitute" : 0,
+                    "confusion" : 0,
+                    "leechSeed" : 0,
+                    "trapped" : 0
                 },
                 "stats" : {
-                    "baseSpeed" : 0
+                    "atk" : 0,
+                    "atkMod" : 0,
+                    "def" : 0,
+                    "defMod" : 0,
+                    "spa" : 0,
+                    "spaMod" : 0,
+                    "spd" : 0,
+                    "spdMod" : 0,
+                    "spe" : 0,
+                    "speMod" : 0,
+                    "baseSpeed" : 0,
+                    "accuracyMod" : 0,
+                    "evasionMod" : 0
                 }
             },
             {
@@ -554,10 +676,30 @@
                 ],
                 "condition": {
                     "hp" : 0,
-                    "status" : 0
+                    "status" : 0,
+                    "taunted" : 0,
+                    "encored" : 0,
+                    "perishSong" : 0,
+                    "struggling" : 0,
+                    "substitute" : 0,
+                    "confusion" : 0,
+                    "leechSeed" : 0,
+                    "trapped" : 0
                 },
                 "stats" : {
-                    "baseSpeed" : 0
+                    "atk" : 0,
+                    "atkMod" : 0,
+                    "def" : 0,
+                    "defMod" : 0,
+                    "spa" : 0,
+                    "spaMod" : 0,
+                    "spd" : 0,
+                    "spdMod" : 0,
+                    "spe" : 0,
+                    "speMod" : 0,
+                    "baseSpeed" : 0,
+                    "accuracyMod" : 0,
+                    "evasionMod" : 0
                 }
             },
             {
@@ -600,10 +742,30 @@
                 ],
                 "condition": {
                     "hp" : 0,
-                    "status" : 0
+                    "status" : 0,
+                    "taunted" : 0,
+                    "encored" : 0,
+                    "perishSong" : 0,
+                    "struggling" : 0,
+                    "substitute" : 0,
+                    "confusion" : 0,
+                    "leechSeed" : 0,
+                    "trapped" : 0
                 },
                 "stats" : {
-                    "baseSpeed" : 0
+                    "atk" : 0,
+                    "atkMod" : 0,
+                    "def" : 0,
+                    "defMod" : 0,
+                    "spa" : 0,
+                    "spaMod" : 0,
+                    "spd" : 0,
+                    "spdMod" : 0,
+                    "spe" : 0,
+                    "speMod" : 0,
+                    "baseSpeed" : 0,
+                    "accuracyMod" : 0,
+                    "evasionMod" : 0
                 }
             },
             {
@@ -646,10 +808,30 @@
                 ],
                 "condition": {
                     "hp" : 0,
-                    "status" : 0
+                    "status" : 0,
+                    "taunted" : 0,
+                    "encored" : 0,
+                    "perishSong" : 0,
+                    "struggling" : 0,
+                    "substitute" : 0,
+                    "confusion" : 0,
+                    "leechSeed" : 0,
+                    "trapped" : 0
                 },
                 "stats" : {
-                    "baseSpeed" : 0
+                    "atk" : 0,
+                    "atkMod" : 0,
+                    "def" : 0,
+                    "defMod" : 0,
+                    "spa" : 0,
+                    "spaMod" : 0,
+                    "spd" : 0,
+                    "spdMod" : 0,
+                    "spe" : 0,
+                    "speMod" : 0,
+                    "baseSpeed" : 0,
+                    "accuracyMod" : 0,
+                    "evasionMod" : 0
                 }
             }
 
