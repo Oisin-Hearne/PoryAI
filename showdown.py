@@ -90,8 +90,8 @@ class Showdown:
 
         while True:
             recv = await self.socket.recv()
-            print(recv)
             msgs = recv.split("|")
+            print(recv)
             battleStarted = False
             
             if 'start\n' in recv and not battleStarted:
@@ -103,17 +103,24 @@ class Showdown:
                 
             elif "Can't switch: You have to pass to a fainted Pokémon" in recv: # man i hate rabsca
                 print("rabsca moment")
-                await self.sendMessage("/choose default")
-                return False
+                await self.socket.send([f"{self.currentTag}|/choose default|{self.latestRequest['rqid']}"])
+                return False, 0
             
             # Requests for the user to do something. These should be sent to the interpreter.
             elif 'request' in msgs[1] and len(msgs[2]) > 2:
                 requestOutput = json.loads(msgs[2])
                 
+                if "active" in requestOutput:
+                    self.inter.updateStateActive(requestOutput)
+                elif "forceSwitch" in requestOutput or "wait" in requestOutput:
+                    self.inter.updateStateNoActive(requestOutput)
                 
                 if not "wait" in requestOutput:
                     self.latestRequest = requestOutput
-                    return False # Battle not done
+                    return False, 0 # Battle not done
+            
+            elif msgs[1] == "c" or msgs[1] == "l":
+                print("Chat message: "+recv)
 
             elif 't:' in msgs[2] and "Time left" not in msgs[2]:
                 # Send turn content to interpreter here, then reset it.
@@ -123,6 +130,7 @@ class Showdown:
                 
                 self.currentRewards = self.inter.countTurn(turnContent)
                 self.state = self.inter.updateTurnState(turnContent, self.turnCount)
+                print(f"State: {self.state}")
                 
                 
                 self.turnCount += 1
@@ -133,8 +141,11 @@ class Showdown:
             
 
             if '|win|' in recv: # Battle is over.
-                time.sleep(3)
-                return True
+                time.sleep(2)
+                if 'PoryAI' in recv:
+                    return True, 1
+                else:
+                    return True, -1
 
 
     async def run(self):
@@ -158,11 +169,11 @@ class Showdown:
     async def executeAction(self, action):
         print(f"{self.currentTag}|{action}|{self.latestRequest['rqid']}")
         await self.socket.send([f"{self.currentTag}|{action}|{self.latestRequest['rqid']}"])
-        battleDone = await self.manageBattle()
+        battleDone, winner = await self.manageBattle()
         newState = self.inter.state
         rewards = self.currentRewards
         
-        return newState, rewards, battleDone
+        return newState, rewards, battleDone, winner
         
 
     def getValidActions(self):
@@ -183,8 +194,8 @@ class Showdown:
             for move in range(len(self.latestRequest['active'][0]['moves'])):
                 if not self.latestRequest["active"][0]["moves"][move]["disabled"]:
                     valid_actions.append(f"/choose move {move+1}")
-                    #if self.latestRequest["active"][0]["canTerastallize"]:
-                        #valid_actions.append(f"/choose move {move+1} tera")
+                    if "canTerastallize" in self.latestRequest["active"][0] and self.latestRequest["active"][0]["canTerastallize"] == "true":
+                        valid_actions.append(f"/choose move {move+1} terastal")
                         
             # Player can't switch if they're trapped.
             if not ("trapped" in self.latestRequest["active"][0] and self.latestRequest["active"][0]["trapped"] == "true"):
