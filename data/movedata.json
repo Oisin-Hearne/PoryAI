@@ -1,5513 +1,8273 @@
 {
     "pound": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 1,
         "category": 1,
         "power": 40,
         "type": 0
     },
     "karatechop": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 2,
         "category": 1,
         "power": 50,
         "type": 10
     },
     "doubleslap": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 3,
         "category": 1,
         "power": 15,
         "type": 0
     },
     "cometpunch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 4,
         "category": 1,
         "power": 18,
         "type": 0
     },
     "megapunch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 5,
         "category": 1,
         "power": 80,
         "type": 0
     },
     "payday": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 6,
         "category": 1,
         "power": 40,
         "type": 0
     },
     "firepunch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 7,
         "category": 1,
         "power": 75,
         "type": 1
     },
     "icepunch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 8,
         "category": 1,
         "power": 75,
         "type": 6
     },
     "thunderpunch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 9,
         "category": 1,
         "power": 75,
         "type": 4
     },
     "scratch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 10,
         "category": 1,
         "power": 40,
         "type": 0
     },
     "vicegrip": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 11,
         "category": 1,
         "power": 55,
         "type": 0
     },
     "guillotine": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 12,
         "category": 1,
         "power": 0,
         "type": 0
     },
     "razorwind": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 13,
         "category": 2,
         "power": 80,
         "type": 0
     },
     "swordsdance": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 14,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "cut": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 15,
         "category": 1,
         "power": 50,
         "type": 0
     },
     "gust": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 16,
         "category": 2,
         "power": 40,
         "type": 11
     },
     "wingattack": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 17,
         "category": 1,
         "power": 60,
         "type": 11
     },
     "whirlwind": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 18,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "fly": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 19,
         "category": 1,
         "power": 90,
         "type": 11
     },
     "bind": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 20,
         "category": 1,
         "power": 15,
         "type": 0
     },
     "slam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 21,
         "category": 1,
         "power": 80,
         "type": 0
     },
     "vinewhip": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 22,
         "category": 1,
         "power": 45,
         "type": 3
     },
     "stomp": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 23,
         "category": 1,
         "power": 65,
         "type": 0
     },
     "doublekick": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 24,
         "category": 1,
         "power": 30,
         "type": 10
     },
     "megakick": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 25,
         "category": 1,
         "power": 120,
         "type": 0
     },
     "jumpkick": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 26,
         "category": 1,
         "power": 100,
         "type": 10
     },
     "rollingkick": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 27,
         "category": 1,
         "power": 60,
         "type": 10
     },
     "sandattack": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 28,
         "category": 0,
         "power": 0,
         "type": 13
     },
     "headbutt": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 29,
         "category": 1,
         "power": 70,
         "type": 0
     },
     "hornattack": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 30,
         "category": 1,
         "power": 65,
         "type": 0
     },
     "furyattack": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 31,
         "category": 1,
         "power": 15,
         "type": 0
     },
     "horndrill": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 32,
         "category": 1,
         "power": 0,
         "type": 0
     },
     "tackle": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 33,
         "category": 1,
         "power": 40,
         "type": 0
     },
     "bodyslam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 34,
         "category": 1,
         "power": 85,
         "type": 0
     },
     "wrap": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 35,
         "category": 1,
         "power": 15,
         "type": 0
     },
     "takedown": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 36,
         "category": 1,
         "power": 90,
         "type": 0
     },
     "thrash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 37,
         "category": 1,
         "power": 120,
         "type": 0
     },
     "doubleedge": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 38,
         "category": 1,
         "power": 120,
         "type": 0
     },
     "tailwhip": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 39,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "poisonsting": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 40,
         "category": 1,
         "power": 15,
         "type": 12
     },
     "twineedle": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 41,
         "category": 1,
         "power": 25,
         "type": 15
     },
     "pinmissile": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 42,
         "category": 1,
         "power": 25,
         "type": 15
     },
     "leer": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 43,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "bite": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 44,
         "category": 1,
         "power": 60,
         "type": 8
     },
     "growl": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 45,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "roar": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 46,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "sing": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 47,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "supersonic": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 48,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "sonicboom": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 49,
         "category": 2,
         "power": 0,
         "type": 0
     },
     "disable": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 50,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "acid": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 51,
         "category": 2,
         "power": 40,
         "type": 12
     },
     "ember": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 52,
         "category": 2,
         "power": 40,
         "type": 1
     },
     "flamethrower": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 53,
         "category": 2,
         "power": 90,
         "type": 1
     },
     "mist": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 54,
         "category": 0,
         "power": 0,
         "type": 6
     },
     "watergun": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 55,
         "category": 2,
         "power": 40,
         "type": 2
     },
     "hydropump": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 56,
         "category": 2,
         "power": 110,
         "type": 2
     },
     "surf": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 57,
         "category": 2,
         "power": 90,
         "type": 2
     },
     "icebeam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 58,
         "category": 2,
         "power": 90,
         "type": 6
     },
     "blizzard": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 59,
         "category": 2,
         "power": 110,
         "type": 6
     },
     "psybeam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 60,
         "category": 2,
         "power": 65,
         "type": 5
     },
     "bubblebeam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 61,
         "category": 2,
         "power": 65,
         "type": 2
     },
     "aurorabeam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 62,
         "category": 2,
         "power": 65,
         "type": 6
     },
     "hyperbeam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 63,
         "category": 2,
         "power": 150,
         "type": 0
     },
     "peck": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 64,
         "category": 1,
         "power": 35,
         "type": 11
     },
     "drillpeck": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 65,
         "category": 1,
         "power": 80,
         "type": 11
     },
     "submission": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 66,
         "category": 1,
         "power": 80,
         "type": 10
     },
     "lowkick": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 67,
         "category": 1,
         "power": 0,
         "type": 10
     },
     "counter": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 68,
         "category": 1,
         "power": 0,
         "type": 10
     },
     "seismictoss": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 69,
         "category": 1,
         "power": 0,
         "type": 10
     },
     "strength": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 70,
         "category": 1,
         "power": 80,
         "type": 0
     },
     "absorb": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 71,
         "category": 2,
         "power": 20,
         "type": 3
     },
     "megadrain": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 72,
         "category": 2,
         "power": 40,
         "type": 3
     },
     "leechseed": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 73,
         "category": 0,
         "power": 0,
         "type": 3
     },
     "growth": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 74,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "razorleaf": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 75,
         "category": 1,
         "power": 55,
         "type": 3
     },
     "solarbeam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 76,
         "category": 2,
         "power": 120,
         "type": 3
     },
     "poisonpowder": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 77,
         "category": 0,
         "power": 0,
         "type": 12
     },
     "stunspore": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 78,
         "category": 0,
         "power": 0,
         "type": 3
     },
     "sleeppowder": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 79,
         "category": 0,
         "power": 0,
         "type": 3
     },
     "petaldance": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 80,
         "category": 2,
         "power": 120,
         "type": 3
     },
     "stringshot": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 81,
         "category": 0,
         "power": 0,
         "type": 15
     },
     "dragonrage": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 82,
         "category": 2,
         "power": 0,
         "type": 7
     },
     "firespin": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 83,
         "category": 2,
         "power": 35,
         "type": 1
     },
     "thundershock": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 84,
         "category": 2,
         "power": 40,
         "type": 4
     },
     "thunderbolt": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 85,
         "category": 2,
         "power": 90,
         "type": 4
     },
     "thunderwave": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 86,
         "category": 0,
         "power": 0,
         "type": 4
     },
     "thunder": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 87,
         "category": 2,
         "power": 110,
         "type": 4
     },
     "rockthrow": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 88,
         "category": 1,
         "power": 50,
         "type": 14
     },
     "earthquake": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 89,
         "category": 1,
         "power": 100,
         "type": 13
     },
     "fissure": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 90,
         "category": 1,
         "power": 0,
         "type": 13
     },
     "dig": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 91,
         "category": 1,
         "power": 80,
         "type": 13
     },
     "toxic": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 92,
         "category": 0,
         "power": 0,
         "type": 12
     },
     "confusion": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 93,
         "category": 2,
         "power": 50,
         "type": 5
     },
     "psychic": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 94,
         "category": 2,
         "power": 90,
         "type": 5
     },
     "hypnosis": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 95,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "meditate": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 96,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "agility": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 97,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "quickattack": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 98,
         "category": 1,
         "power": 40,
         "type": 0
     },
     "rage": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 99,
         "category": 1,
         "power": 20,
         "type": 0
     },
     "teleport": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 100,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "nightshade": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 101,
         "category": 2,
         "power": 0,
         "type": 16
     },
     "mimic": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 102,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "screech": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 103,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "doubleteam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 104,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "recover": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 105,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "harden": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 106,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "minimize": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 107,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "smokescreen": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 108,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "confuseray": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 109,
         "category": 0,
         "power": 0,
         "type": 16
     },
     "withdraw": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 110,
         "category": 0,
         "power": 0,
         "type": 2
     },
     "defensecurl": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 111,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "barrier": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 112,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "lightscreen": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 113,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "haze": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 114,
         "category": 0,
         "power": 0,
         "type": 6
     },
     "reflect": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 115,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "focusenergy": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 116,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "bide": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 117,
         "category": 1,
         "power": 0,
         "type": 0
     },
     "metronome": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 118,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "mirrormove": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 119,
         "category": 0,
         "power": 0,
         "type": 11
     },
     "selfdestruct": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 120,
         "category": 1,
         "power": 200,
         "type": 0
     },
     "eggbomb": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 121,
         "category": 1,
         "power": 100,
         "type": 0
     },
     "lick": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 122,
         "category": 1,
         "power": 30,
         "type": 16
     },
     "smog": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 123,
         "category": 2,
         "power": 30,
         "type": 12
     },
     "sludge": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 124,
         "category": 2,
         "power": 65,
         "type": 12
     },
     "boneclub": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 125,
         "category": 1,
         "power": 65,
         "type": 13
     },
     "fireblast": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 126,
         "category": 2,
         "power": 110,
         "type": 1
     },
     "waterfall": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 127,
         "category": 1,
         "power": 80,
         "type": 2
     },
     "clamp": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 128,
         "category": 1,
         "power": 35,
         "type": 2
     },
     "swift": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 129,
         "category": 2,
         "power": 60,
         "type": 0
     },
     "skullbash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 130,
         "category": 1,
         "power": 130,
         "type": 0
     },
     "spikecannon": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 131,
         "category": 1,
         "power": 20,
         "type": 0
     },
     "constrict": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 132,
         "category": 1,
         "power": 10,
         "type": 0
     },
     "amnesia": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 133,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "kinesis": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 134,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "softboiled": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 135,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "highjumpkick": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 136,
         "category": 1,
         "power": 130,
         "type": 10
     },
     "glare": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 137,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "dreameater": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 138,
         "category": 2,
         "power": 100,
         "type": 5
     },
     "poisongas": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 139,
         "category": 0,
         "power": 0,
         "type": 12
     },
     "barrage": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 140,
         "category": 1,
         "power": 15,
         "type": 0
     },
     "leechlife": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 141,
         "category": 1,
         "power": 80,
         "type": 15
     },
     "lovelykiss": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 142,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "skyattack": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 143,
         "category": 1,
         "power": 140,
         "type": 11
     },
     "transform": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 144,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "bubble": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 145,
         "category": 2,
         "power": 40,
         "type": 2
     },
     "dizzypunch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 146,
         "category": 1,
         "power": 70,
         "type": 0
     },
     "spore": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 147,
         "category": 0,
         "power": 0,
         "type": 3
     },
     "flash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 148,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "psywave": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 149,
         "category": 2,
         "power": 0,
         "type": 5
     },
     "splash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 150,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "acidarmor": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 151,
         "category": 0,
         "power": 0,
         "type": 12
     },
     "crabhammer": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 152,
         "category": 1,
         "power": 100,
         "type": 2
     },
     "explosion": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 153,
         "category": 1,
         "power": 250,
         "type": 0
     },
     "furyswipes": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 154,
         "category": 1,
         "power": 18,
         "type": 0
     },
     "bonemerang": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 155,
         "category": 1,
         "power": 50,
         "type": 13
     },
     "rest": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 156,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "rockslide": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 157,
         "category": 1,
         "power": 75,
         "type": 14
     },
     "hyperfang": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 158,
         "category": 1,
         "power": 80,
         "type": 0
     },
     "sharpen": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 159,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "conversion": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 160,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "triattack": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 161,
         "category": 2,
         "power": 80,
         "type": 0
     },
     "superfang": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 162,
         "category": 1,
         "power": 0,
         "type": 0
     },
     "slash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 163,
         "category": 1,
         "power": 70,
         "type": 0
     },
     "substitute": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 164,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "struggle": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 165,
         "category": 1,
         "power": 50,
         "type": 0
     },
     "sketch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 166,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "triplekick": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 167,
         "category": 1,
         "power": 10,
         "type": 10
     },
     "thief": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 168,
         "category": 1,
         "power": 60,
         "type": 8
     },
     "spiderweb": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 169,
         "category": 0,
         "power": 0,
         "type": 15
     },
     "mindreader": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 170,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "nightmare": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 171,
         "category": 0,
         "power": 0,
         "type": 16
     },
     "flamewheel": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 172,
         "category": 1,
         "power": 60,
         "type": 1
     },
     "snore": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 173,
         "category": 2,
         "power": 50,
         "type": 0
     },
     "curse": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 174,
         "category": 0,
         "power": 0,
         "type": 16
     },
     "flail": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 175,
         "category": 1,
         "power": 0,
         "type": 0
     },
     "conversion2": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 176,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "aeroblast": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 177,
         "category": 2,
         "power": 100,
         "type": 11
     },
     "cottonspore": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 178,
         "category": 0,
         "power": 0,
         "type": 3
     },
     "reversal": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 179,
         "category": 1,
         "power": 0,
         "type": 10
     },
     "spite": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 180,
         "category": 0,
         "power": 0,
         "type": 16
     },
     "powdersnow": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 181,
         "category": 2,
         "power": 40,
         "type": 6
     },
     "protect": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 182,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "machpunch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 183,
         "category": 1,
         "power": 40,
         "type": 10
     },
     "scaryface": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 184,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "feintattack": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 185,
         "category": 1,
         "power": 60,
         "type": 8
     },
     "sweetkiss": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 186,
         "category": 0,
         "power": 0,
         "type": 9
     },
     "bellydrum": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 187,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "sludgebomb": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 188,
         "category": 2,
         "power": 90,
         "type": 12
     },
     "mudslap": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 189,
         "category": 2,
         "power": 20,
         "type": 13
     },
     "octazooka": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 190,
         "category": 2,
         "power": 65,
         "type": 2
     },
     "spikes": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 191,
         "category": 0,
         "power": 0,
         "type": 13
     },
     "zapcannon": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 192,
         "category": 2,
         "power": 120,
         "type": 4
     },
     "foresight": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 193,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "destinybond": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 194,
         "category": 0,
         "power": 0,
         "type": 16
     },
     "perishsong": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 195,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "icywind": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 196,
         "category": 2,
         "power": 55,
         "type": 6
     },
     "detect": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 197,
         "category": 0,
         "power": 0,
         "type": 10
     },
     "bonerush": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 198,
         "category": 1,
         "power": 25,
         "type": 13
     },
     "lockon": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 199,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "outrage": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 200,
         "category": 1,
         "power": 120,
         "type": 7
     },
     "sandstorm": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 201,
         "category": 0,
         "power": 0,
         "type": 14
     },
     "gigadrain": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 202,
         "category": 2,
         "power": 75,
         "type": 3
     },
     "endure": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 203,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "charm": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 204,
         "category": 0,
         "power": 0,
         "type": 9
     },
     "rollout": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 205,
         "category": 1,
         "power": 30,
         "type": 14
     },
     "falseswipe": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 206,
         "category": 1,
         "power": 40,
         "type": 0
     },
     "swagger": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 207,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "milkdrink": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 208,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "spark": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 209,
         "category": 1,
         "power": 65,
         "type": 4
     },
     "furycutter": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 210,
         "category": 1,
         "power": 40,
         "type": 15
     },
     "steelwing": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 211,
         "category": 1,
         "power": 70,
         "type": 17
     },
     "meanlook": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 212,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "attract": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 213,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "sleeptalk": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 214,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "healbell": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 215,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "return": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 216,
         "category": 1,
         "power": 0,
         "type": 0
     },
     "present": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 217,
         "category": 1,
         "power": 0,
         "type": 0
     },
     "frustration": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 218,
         "category": 1,
         "power": 0,
         "type": 0
     },
     "safeguard": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 219,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "painsplit": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 220,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "sacredfire": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 221,
         "category": 1,
         "power": 100,
         "type": 1
     },
     "magnitude": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 222,
         "category": 1,
         "power": 0,
         "type": 13
     },
     "dynamicpunch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 223,
         "category": 1,
         "power": 100,
         "type": 10
     },
     "megahorn": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 224,
         "category": 1,
         "power": 120,
         "type": 15
     },
     "dragonbreath": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 225,
         "category": 2,
         "power": 60,
         "type": 7
     },
     "batonpass": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 226,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "encore": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 227,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "pursuit": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 228,
         "category": 1,
         "power": 40,
         "type": 8
     },
     "rapidspin": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 229,
         "category": 1,
         "power": 50,
         "type": 0
     },
     "sweetscent": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 230,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "irontail": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 231,
         "category": 1,
         "power": 100,
         "type": 17
     },
     "metalclaw": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 232,
         "category": 1,
         "power": 50,
         "type": 17
     },
     "vitalthrow": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 233,
         "category": 1,
         "power": 70,
         "type": 10
     },
     "morningsun": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 234,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "synthesis": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 235,
         "category": 0,
         "power": 0,
         "type": 3
     },
     "moonlight": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 236,
         "category": 0,
         "power": 0,
         "type": 9
     },
     "hiddenpower": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 237,
         "category": 2,
         "power": 60,
         "type": 0
     },
     "crosschop": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 238,
         "category": 1,
         "power": 100,
         "type": 10
     },
     "twister": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 239,
         "category": 2,
         "power": 40,
         "type": 7
     },
     "raindance": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 240,
         "category": 0,
         "power": 0,
         "type": 2
     },
     "sunnyday": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 241,
         "category": 0,
         "power": 0,
         "type": 1
     },
     "crunch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 242,
         "category": 1,
         "power": 80,
         "type": 8
     },
     "mirrorcoat": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 243,
         "category": 2,
         "power": 0,
         "type": 5
     },
     "psychup": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 244,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "extremespeed": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 245,
         "category": 1,
         "power": 80,
         "type": 0
     },
     "ancientpower": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 246,
         "category": 2,
         "power": 60,
         "type": 14
     },
     "shadowball": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 247,
         "category": 2,
         "power": 80,
         "type": 16
     },
     "futuresight": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 248,
         "category": 2,
         "power": 120,
         "type": 5
     },
     "rocksmash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 249,
         "category": 1,
         "power": 40,
         "type": 10
     },
     "whirlpool": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 250,
         "category": 2,
         "power": 35,
         "type": 2
     },
     "beatup": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 251,
         "category": 1,
         "power": 0,
         "type": 8
     },
     "fakeout": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 252,
         "category": 1,
         "power": 40,
         "type": 0
     },
     "uproar": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 253,
         "category": 2,
         "power": 90,
         "type": 0
     },
     "stockpile": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 254,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "spitup": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 255,
         "category": 2,
         "power": 0,
         "type": 0
     },
     "swallow": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 256,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "heatwave": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 257,
         "category": 2,
         "power": 95,
         "type": 1
     },
     "hail": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 258,
         "category": 0,
         "power": 0,
         "type": 6
     },
     "torment": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 259,
         "category": 0,
         "power": 0,
         "type": 8
     },
     "flatter": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 260,
         "category": 0,
         "power": 0,
         "type": 8
     },
     "willowisp": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 261,
         "category": 0,
         "power": 0,
         "type": 1
     },
     "memento": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 262,
         "category": 0,
         "power": 0,
         "type": 8
     },
     "facade": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 263,
         "category": 1,
         "power": 70,
         "type": 0
     },
     "focuspunch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 264,
         "category": 1,
         "power": 150,
         "type": 10
     },
     "smellingsalts": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 265,
         "category": 1,
         "power": 70,
         "type": 0
     },
     "followme": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 266,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "naturepower": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 267,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "charge": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 268,
         "category": 0,
         "power": 0,
         "type": 4
     },
     "taunt": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 269,
         "category": 0,
         "power": 0,
         "type": 8
     },
     "helpinghand": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 270,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "trick": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 271,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "roleplay": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 272,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "wish": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 273,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "assist": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 274,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "ingrain": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 275,
         "category": 0,
         "power": 0,
         "type": 3
     },
     "superpower": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 276,
         "category": 1,
         "power": 120,
         "type": 10
     },
     "magiccoat": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 277,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "recycle": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 278,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "revenge": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 279,
         "category": 1,
         "power": 60,
         "type": 10
     },
     "brickbreak": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 280,
         "category": 1,
         "power": 75,
         "type": 10
     },
     "yawn": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 281,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "knockoff": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 282,
         "category": 1,
         "power": 65,
         "type": 8
     },
     "endeavor": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 283,
         "category": 1,
         "power": 0,
         "type": 0
     },
     "eruption": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 284,
         "category": 2,
         "power": 150,
         "type": 1
     },
     "skillswap": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 285,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "imprison": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 286,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "refresh": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 287,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "grudge": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 288,
         "category": 0,
         "power": 0,
         "type": 16
     },
     "snatch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 289,
         "category": 0,
         "power": 0,
         "type": 8
     },
     "secretpower": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 290,
         "category": 1,
         "power": 70,
         "type": 0
     },
     "dive": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 291,
         "category": 1,
         "power": 80,
         "type": 2
     },
     "armthrust": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 292,
         "category": 1,
         "power": 15,
         "type": 10
     },
     "camouflage": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 293,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "tailglow": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 294,
         "category": 0,
         "power": 0,
         "type": 15
     },
     "lusterpurge": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 295,
         "category": 2,
         "power": 95,
         "type": 5
     },
     "mistball": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 296,
         "category": 2,
         "power": 95,
         "type": 5
     },
     "featherdance": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 297,
         "category": 0,
         "power": 0,
         "type": 11
     },
     "teeterdance": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 298,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "blazekick": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 299,
         "category": 1,
         "power": 85,
         "type": 1
     },
     "mudsport": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 300,
         "category": 0,
         "power": 0,
         "type": 13
     },
     "iceball": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 301,
         "category": 1,
         "power": 30,
         "type": 6
     },
     "needlearm": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 302,
         "category": 1,
         "power": 60,
         "type": 3
     },
     "slackoff": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 303,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "hypervoice": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 304,
         "category": 2,
         "power": 90,
         "type": 0
     },
     "poisonfang": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 305,
         "category": 1,
         "power": 50,
         "type": 12
     },
     "crushclaw": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 306,
         "category": 1,
         "power": 75,
         "type": 0
     },
     "blastburn": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 307,
         "category": 2,
         "power": 150,
         "type": 1
     },
     "hydrocannon": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 308,
         "category": 2,
         "power": 150,
         "type": 2
     },
     "meteormash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 309,
         "category": 1,
         "power": 90,
         "type": 17
     },
     "astonish": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 310,
         "category": 1,
         "power": 30,
         "type": 16
     },
     "weatherball": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 311,
         "category": 2,
         "power": 50,
         "type": 0
     },
     "aromatherapy": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 312,
         "category": 0,
         "power": 0,
         "type": 3
     },
     "faketears": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 313,
         "category": 0,
         "power": 0,
         "type": 8
     },
     "aircutter": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 314,
         "category": 2,
         "power": 60,
         "type": 11
     },
     "overheat": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 315,
         "category": 2,
         "power": 130,
         "type": 1
     },
     "odorsleuth": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 316,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "rocktomb": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 317,
         "category": 1,
         "power": 60,
         "type": 14
     },
     "silverwind": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 318,
         "category": 2,
         "power": 60,
         "type": 15
     },
     "metalsound": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 319,
         "category": 0,
         "power": 0,
         "type": 17
     },
     "grasswhistle": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 320,
         "category": 0,
         "power": 0,
         "type": 3
     },
     "tickle": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 321,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "cosmicpower": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 322,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "waterspout": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 323,
         "category": 2,
         "power": 150,
         "type": 2
     },
     "signalbeam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 324,
         "category": 2,
         "power": 75,
         "type": 15
     },
     "shadowpunch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 325,
         "category": 1,
         "power": 60,
         "type": 16
     },
     "extrasensory": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 326,
         "category": 2,
         "power": 80,
         "type": 5
     },
     "skyuppercut": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 327,
         "category": 1,
         "power": 85,
         "type": 10
     },
     "sandtomb": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 328,
         "category": 1,
         "power": 35,
         "type": 13
     },
     "sheercold": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 329,
         "category": 2,
         "power": 0,
         "type": 6
     },
     "muddywater": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 330,
         "category": 2,
         "power": 90,
         "type": 2
     },
     "bulletseed": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 331,
         "category": 1,
         "power": 25,
         "type": 3
     },
     "aerialace": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 332,
         "category": 1,
         "power": 60,
         "type": 11
     },
     "iciclespear": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 333,
         "category": 1,
         "power": 25,
         "type": 6
     },
     "irondefense": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 334,
         "category": 0,
         "power": 0,
         "type": 17
     },
     "block": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 335,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "howl": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 336,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "dragonclaw": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 337,
         "category": 1,
         "power": 80,
         "type": 7
     },
     "frenzyplant": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 338,
         "category": 2,
         "power": 150,
         "type": 3
     },
     "bulkup": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 339,
         "category": 0,
         "power": 0,
         "type": 10
     },
     "bounce": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 340,
         "category": 1,
         "power": 85,
         "type": 11
     },
     "mudshot": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 341,
         "category": 2,
         "power": 55,
         "type": 13
     },
     "poisontail": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 342,
         "category": 1,
         "power": 50,
         "type": 12
     },
     "covet": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 343,
         "category": 1,
         "power": 60,
         "type": 0
     },
     "volttackle": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 344,
         "category": 1,
         "power": 120,
         "type": 4
     },
     "magicalleaf": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 345,
         "category": 2,
         "power": 60,
         "type": 3
     },
     "watersport": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 346,
         "category": 0,
         "power": 0,
         "type": 2
     },
     "calmmind": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 347,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "leafblade": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 348,
         "category": 1,
         "power": 90,
         "type": 3
     },
     "dragondance": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 349,
         "category": 0,
         "power": 0,
         "type": 7
     },
     "rockblast": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 350,
         "category": 1,
         "power": 25,
         "type": 14
     },
     "shockwave": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 351,
         "category": 2,
         "power": 60,
         "type": 4
     },
     "waterpulse": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 352,
         "category": 2,
         "power": 60,
         "type": 2
     },
     "doomdesire": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 353,
         "category": 2,
         "power": 140,
         "type": 17
     },
     "psychoboost": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 354,
         "category": 2,
         "power": 140,
         "type": 5
     },
     "roost": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 355,
         "category": 0,
         "power": 0,
         "type": 11
     },
     "gravity": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 356,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "miracleeye": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 357,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "wakeupslap": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 358,
         "category": 1,
         "power": 70,
         "type": 10
     },
     "hammerarm": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 359,
         "category": 1,
         "power": 100,
         "type": 10
     },
     "gyroball": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 360,
         "category": 1,
         "power": 0,
         "type": 17
     },
     "healingwish": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 361,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "brine": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 362,
         "category": 2,
         "power": 65,
         "type": 2
     },
     "naturalgift": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 363,
         "category": 1,
         "power": 0,
         "type": 0
     },
     "feint": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 364,
         "category": 1,
         "power": 30,
         "type": 0
     },
     "pluck": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 365,
         "category": 1,
         "power": 60,
         "type": 11
     },
     "tailwind": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 366,
         "category": 0,
         "power": 0,
         "type": 11
     },
     "acupressure": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 367,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "metalburst": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 368,
         "category": 1,
         "power": 0,
         "type": 17
     },
     "uturn": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 369,
         "category": 1,
         "power": 70,
         "type": 15
     },
     "closecombat": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 370,
         "category": 1,
         "power": 120,
         "type": 10
     },
     "payback": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 371,
         "category": 1,
         "power": 50,
         "type": 8
     },
     "assurance": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 372,
         "category": 1,
         "power": 60,
         "type": 8
     },
     "embargo": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 373,
         "category": 0,
         "power": 0,
         "type": 8
     },
     "fling": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 374,
         "category": 1,
         "power": 0,
         "type": 8
     },
     "psychoshift": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 375,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "trumpcard": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 376,
         "category": 2,
         "power": 0,
         "type": 0
     },
     "healblock": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 377,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "wringout": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 378,
         "category": 2,
         "power": 0,
         "type": 0
     },
     "powertrick": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 379,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "gastroacid": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 380,
         "category": 0,
         "power": 0,
         "type": 12
     },
     "luckychant": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 381,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "mefirst": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 382,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "copycat": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 383,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "powerswap": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 384,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "guardswap": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 385,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "punishment": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 386,
         "category": 1,
         "power": 0,
         "type": 8
     },
     "lastresort": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 387,
         "category": 1,
         "power": 140,
         "type": 0
     },
     "worryseed": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 388,
         "category": 0,
         "power": 0,
         "type": 3
     },
     "suckerpunch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 389,
         "category": 1,
         "power": 70,
         "type": 8
     },
     "toxicspikes": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 390,
         "category": 0,
         "power": 0,
         "type": 12
     },
     "heartswap": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 391,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "aquaring": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 392,
         "category": 0,
         "power": 0,
         "type": 2
     },
     "magnetrise": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 393,
         "category": 0,
         "power": 0,
         "type": 4
     },
     "flareblitz": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 394,
         "category": 1,
         "power": 120,
         "type": 1
     },
     "forcepalm": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 395,
         "category": 1,
         "power": 60,
         "type": 10
     },
     "aurasphere": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 396,
         "category": 2,
         "power": 80,
         "type": 10
     },
     "rockpolish": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 397,
         "category": 0,
         "power": 0,
         "type": 14
     },
     "poisonjab": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 398,
         "category": 1,
         "power": 80,
         "type": 12
     },
     "darkpulse": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 399,
         "category": 2,
         "power": 80,
         "type": 8
     },
     "nightslash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 400,
         "category": 1,
         "power": 70,
         "type": 8
     },
     "aquatail": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 401,
         "category": 1,
         "power": 90,
         "type": 2
     },
     "seedbomb": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 402,
         "category": 1,
         "power": 80,
         "type": 3
     },
     "airslash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 403,
         "category": 2,
         "power": 75,
         "type": 11
     },
     "xscissor": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 404,
         "category": 1,
         "power": 80,
         "type": 15
     },
     "bugbuzz": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 405,
         "category": 2,
         "power": 90,
         "type": 15
     },
     "dragonpulse": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 406,
         "category": 2,
         "power": 85,
         "type": 7
     },
     "dragonrush": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 407,
         "category": 1,
         "power": 100,
         "type": 7
     },
     "powergem": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 408,
         "category": 2,
         "power": 80,
         "type": 14
     },
     "drainpunch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 409,
         "category": 1,
         "power": 75,
         "type": 10
     },
     "vacuumwave": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 410,
         "category": 2,
         "power": 40,
         "type": 10
     },
     "focusblast": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 411,
         "category": 2,
         "power": 120,
         "type": 10
     },
     "energyball": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 412,
         "category": 2,
         "power": 90,
         "type": 3
     },
     "bravebird": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 413,
         "category": 1,
         "power": 120,
         "type": 11
     },
     "earthpower": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 414,
         "category": 2,
         "power": 90,
         "type": 13
     },
     "switcheroo": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 415,
         "category": 0,
         "power": 0,
         "type": 8
     },
     "gigaimpact": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 416,
         "category": 1,
         "power": 150,
         "type": 0
     },
     "nastyplot": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 417,
         "category": 0,
         "power": 0,
         "type": 8
     },
     "bulletpunch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 418,
         "category": 1,
         "power": 40,
         "type": 17
     },
     "avalanche": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 419,
         "category": 1,
         "power": 60,
         "type": 6
     },
     "iceshard": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 420,
         "category": 1,
         "power": 40,
         "type": 6
     },
     "shadowclaw": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 421,
         "category": 1,
         "power": 70,
         "type": 16
     },
     "thunderfang": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 422,
         "category": 1,
         "power": 65,
         "type": 4
     },
     "icefang": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 423,
         "category": 1,
         "power": 65,
         "type": 6
     },
     "firefang": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 424,
         "category": 1,
         "power": 65,
         "type": 1
     },
     "shadowsneak": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 425,
         "category": 1,
         "power": 40,
         "type": 16
     },
     "mudbomb": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 426,
         "category": 2,
         "power": 65,
         "type": 13
     },
     "psychocut": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 427,
         "category": 1,
         "power": 70,
         "type": 5
     },
     "zenheadbutt": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 428,
         "category": 1,
         "power": 80,
         "type": 5
     },
     "mirrorshot": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 429,
         "category": 2,
         "power": 65,
         "type": 17
     },
     "flashcannon": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 430,
         "category": 2,
         "power": 80,
         "type": 17
     },
     "rockclimb": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 431,
         "category": 1,
         "power": 90,
         "type": 0
     },
     "defog": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 432,
         "category": 0,
         "power": 0,
         "type": 11
     },
     "trickroom": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 433,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "dracometeor": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 434,
         "category": 2,
         "power": 130,
         "type": 7
     },
     "discharge": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 435,
         "category": 2,
         "power": 80,
         "type": 4
     },
     "lavaplume": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 436,
         "category": 2,
         "power": 80,
         "type": 1
     },
     "leafstorm": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 437,
         "category": 2,
         "power": 130,
         "type": 3
     },
     "powerwhip": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 438,
         "category": 1,
         "power": 120,
         "type": 3
     },
     "rockwrecker": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 439,
         "category": 1,
         "power": 150,
         "type": 14
     },
     "crosspoison": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 440,
         "category": 1,
         "power": 70,
         "type": 12
     },
     "gunkshot": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 441,
         "category": 1,
         "power": 120,
         "type": 12
     },
     "ironhead": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 442,
         "category": 1,
         "power": 80,
         "type": 17
     },
     "magnetbomb": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 443,
         "category": 1,
         "power": 60,
         "type": 17
     },
     "stoneedge": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 444,
         "category": 1,
         "power": 100,
         "type": 14
     },
     "captivate": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 445,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "stealthrock": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 446,
         "category": 0,
         "power": 0,
         "type": 14
     },
     "grassknot": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 447,
         "category": 2,
         "power": 0,
         "type": 3
     },
     "chatter": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 448,
         "category": 2,
         "power": 65,
         "type": 11
     },
     "judgment": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 449,
         "category": 2,
         "power": 100,
         "type": 0
     },
     "bugbite": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 450,
         "category": 1,
         "power": 60,
         "type": 15
     },
     "chargebeam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 451,
         "category": 2,
         "power": 50,
         "type": 4
     },
     "woodhammer": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 452,
         "category": 1,
         "power": 120,
         "type": 3
     },
     "aquajet": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 453,
         "category": 1,
         "power": 40,
         "type": 2
     },
     "attackorder": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 454,
         "category": 1,
         "power": 90,
         "type": 15
     },
     "defendorder": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 455,
         "category": 0,
         "power": 0,
         "type": 15
     },
     "healorder": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 456,
         "category": 0,
         "power": 0,
         "type": 15
     },
     "headsmash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 457,
         "category": 1,
         "power": 150,
         "type": 14
     },
     "doublehit": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 458,
         "category": 1,
         "power": 35,
         "type": 0
     },
     "roaroftime": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 459,
         "category": 2,
         "power": 150,
         "type": 7
     },
     "spacialrend": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 460,
         "category": 2,
         "power": 100,
         "type": 7
     },
     "lunardance": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 461,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "crushgrip": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 462,
         "category": 1,
         "power": 0,
         "type": 0
     },
     "magmastorm": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 463,
         "category": 2,
         "power": 100,
         "type": 1
     },
     "darkvoid": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 464,
         "category": 0,
         "power": 0,
         "type": 8
     },
     "seedflare": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 465,
         "category": 2,
         "power": 120,
         "type": 3
     },
     "ominouswind": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 466,
         "category": 2,
         "power": 60,
         "type": 16
     },
     "shadowforce": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 467,
         "category": 1,
         "power": 120,
         "type": 16
     },
     "honeclaws": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 468,
         "category": 0,
         "power": 0,
         "type": 8
     },
     "wideguard": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 469,
         "category": 0,
         "power": 0,
         "type": 14
     },
     "guardsplit": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 470,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "powersplit": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 471,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "wonderroom": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 472,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "psyshock": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 473,
         "category": 2,
         "power": 80,
         "type": 5
     },
     "venoshock": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 474,
         "category": 2,
         "power": 65,
         "type": 12
     },
     "autotomize": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 475,
         "category": 0,
         "power": 0,
         "type": 17
     },
     "ragepowder": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 476,
         "category": 0,
         "power": 0,
         "type": 15
     },
     "telekinesis": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 477,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "magicroom": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 478,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "smackdown": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 479,
         "category": 1,
         "power": 50,
         "type": 14
     },
     "stormthrow": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 480,
         "category": 1,
         "power": 60,
         "type": 10
     },
     "flameburst": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 481,
         "category": 2,
         "power": 70,
         "type": 1
     },
     "sludgewave": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 482,
         "category": 2,
         "power": 95,
         "type": 12
     },
     "quiverdance": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 483,
         "category": 0,
         "power": 0,
         "type": 15
     },
     "heavyslam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 484,
         "category": 1,
         "power": 0,
         "type": 17
     },
     "synchronoise": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 485,
         "category": 2,
         "power": 120,
         "type": 5
     },
     "electroball": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 486,
         "category": 2,
         "power": 0,
         "type": 4
     },
     "soak": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 487,
         "category": 0,
         "power": 0,
         "type": 2
     },
     "flamecharge": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 488,
         "category": 1,
         "power": 50,
         "type": 1
     },
     "coil": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 489,
         "category": 0,
         "power": 0,
         "type": 12
     },
     "lowsweep": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 490,
         "category": 1,
         "power": 65,
         "type": 10
     },
     "acidspray": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 491,
         "category": 2,
         "power": 40,
         "type": 12
     },
     "foulplay": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 492,
         "category": 1,
         "power": 95,
         "type": 8
     },
     "simplebeam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 493,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "entrainment": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 494,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "afteryou": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 495,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "round": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 496,
         "category": 2,
         "power": 60,
         "type": 0
     },
     "echoedvoice": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 497,
         "category": 2,
         "power": 40,
         "type": 0
     },
     "chipaway": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 498,
         "category": 1,
         "power": 70,
         "type": 0
     },
     "clearsmog": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 499,
         "category": 2,
         "power": 50,
         "type": 12
     },
     "storedpower": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 500,
         "category": 2,
         "power": 20,
         "type": 5
     },
     "quickguard": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 501,
         "category": 0,
         "power": 0,
         "type": 10
     },
     "allyswitch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 502,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "scald": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 503,
         "category": 2,
         "power": 80,
         "type": 2
     },
     "shellsmash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 504,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "healpulse": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 505,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "hex": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 506,
         "category": 2,
         "power": 65,
         "type": 16
     },
     "skydrop": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 507,
         "category": 1,
         "power": 60,
         "type": 11
     },
     "shiftgear": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 508,
         "category": 0,
         "power": 0,
         "type": 17
     },
     "circlethrow": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 509,
         "category": 1,
         "power": 60,
         "type": 10
     },
     "incinerate": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 510,
         "category": 2,
         "power": 60,
         "type": 1
     },
     "quash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 511,
         "category": 0,
         "power": 0,
         "type": 8
     },
     "acrobatics": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 512,
         "category": 1,
         "power": 55,
         "type": 11
     },
     "reflecttype": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 513,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "retaliate": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 514,
         "category": 1,
         "power": 70,
         "type": 0
     },
     "finalgambit": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 515,
         "category": 2,
         "power": 0,
         "type": 10
     },
     "bestow": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 516,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "inferno": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 517,
         "category": 2,
         "power": 100,
         "type": 1
     },
     "waterpledge": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 518,
         "category": 2,
         "power": 80,
         "type": 2
     },
     "firepledge": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 519,
         "category": 2,
         "power": 80,
         "type": 1
     },
     "grasspledge": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 520,
         "category": 2,
         "power": 80,
         "type": 3
     },
     "voltswitch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 521,
         "category": 2,
         "power": 70,
         "type": 4
     },
     "strugglebug": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 522,
         "category": 2,
         "power": 50,
         "type": 15
     },
     "bulldoze": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 523,
         "category": 1,
         "power": 60,
         "type": 13
     },
     "frostbreath": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 524,
         "category": 2,
         "power": 60,
         "type": 6
     },
     "dragontail": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 525,
         "category": 1,
         "power": 60,
         "type": 7
     },
     "workup": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 526,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "electroweb": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 527,
         "category": 2,
         "power": 55,
         "type": 4
     },
     "wildcharge": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 528,
         "category": 1,
         "power": 90,
         "type": 4
     },
     "drillrun": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 529,
         "category": 1,
         "power": 80,
         "type": 13
     },
     "dualchop": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 530,
         "category": 1,
         "power": 40,
         "type": 7
     },
     "heartstamp": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 531,
         "category": 1,
         "power": 60,
         "type": 5
     },
     "hornleech": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 532,
         "category": 1,
         "power": 75,
         "type": 3
     },
     "sacredsword": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 533,
         "category": 1,
         "power": 90,
         "type": 10
     },
     "razorshell": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 534,
         "category": 1,
         "power": 75,
         "type": 2
     },
     "heatcrash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 535,
         "category": 1,
         "power": 0,
         "type": 1
     },
     "leaftornado": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 536,
         "category": 2,
         "power": 65,
         "type": 3
     },
     "steamroller": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 537,
         "category": 1,
         "power": 65,
         "type": 15
     },
     "cottonguard": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 538,
         "category": 0,
         "power": 0,
         "type": 3
     },
     "nightdaze": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 539,
         "category": 2,
         "power": 85,
         "type": 8
     },
     "psystrike": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 540,
         "category": 2,
         "power": 100,
         "type": 5
     },
     "tailslap": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 541,
         "category": 1,
         "power": 25,
         "type": 0
     },
     "hurricane": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 542,
         "category": 2,
         "power": 110,
         "type": 11
     },
     "headcharge": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 543,
         "category": 1,
         "power": 120,
         "type": 0
     },
     "geargrind": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 544,
         "category": 1,
         "power": 50,
         "type": 17
     },
     "searingshot": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 545,
         "category": 2,
         "power": 100,
         "type": 1
     },
     "technoblast": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 546,
         "category": 2,
         "power": 120,
         "type": 0
     },
     "relicsong": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 547,
         "category": 2,
         "power": 75,
         "type": 0
     },
     "secretsword": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 548,
         "category": 2,
         "power": 85,
         "type": 10
     },
     "glaciate": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 549,
         "category": 2,
         "power": 65,
         "type": 6
     },
     "boltstrike": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 550,
         "category": 1,
         "power": 130,
         "type": 4
     },
     "blueflare": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 551,
         "category": 2,
         "power": 130,
         "type": 1
     },
     "fierydance": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 552,
         "category": 2,
         "power": 80,
         "type": 1
     },
     "freezeshock": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 553,
         "category": 1,
         "power": 140,
         "type": 6
     },
     "iceburn": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 554,
         "category": 2,
         "power": 140,
         "type": 6
     },
     "snarl": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 555,
         "category": 2,
         "power": 55,
         "type": 8
     },
     "iciclecrash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 556,
         "category": 1,
         "power": 85,
         "type": 6
     },
     "vcreate": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 557,
         "category": 1,
         "power": 180,
         "type": 1
     },
     "fusionflare": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 558,
         "category": 2,
         "power": 100,
         "type": 1
     },
     "fusionbolt": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 559,
         "category": 1,
         "power": 100,
         "type": 4
     },
     "flyingpress": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 560,
         "category": 1,
         "power": 100,
         "type": 10
     },
     "matblock": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 561,
         "category": 0,
         "power": 0,
         "type": 10
     },
     "belch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 562,
         "category": 2,
         "power": 120,
         "type": 12
     },
     "rototiller": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 563,
         "category": 0,
         "power": 0,
         "type": 13
     },
     "stickyweb": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 564,
         "category": 0,
         "power": 0,
         "type": 15
     },
     "fellstinger": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 565,
         "category": 1,
         "power": 50,
         "type": 15
     },
     "phantomforce": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 566,
         "category": 1,
         "power": 90,
         "type": 16
     },
     "trickortreat": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 567,
         "category": 0,
         "power": 0,
         "type": 16
     },
     "nobleroar": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 568,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "iondeluge": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 569,
         "category": 0,
         "power": 0,
         "type": 4
     },
     "paraboliccharge": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 570,
         "category": 2,
         "power": 65,
         "type": 4
     },
     "forestscurse": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 571,
         "category": 0,
         "power": 0,
         "type": 3
     },
     "petalblizzard": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 572,
         "category": 1,
         "power": 90,
         "type": 3
     },
     "freezedry": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 573,
         "category": 2,
         "power": 70,
         "type": 6
     },
     "disarmingvoice": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 574,
         "category": 2,
         "power": 40,
         "type": 9
     },
     "partingshot": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 575,
         "category": 0,
         "power": 0,
         "type": 8
     },
     "topsyturvy": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 576,
         "category": 0,
         "power": 0,
         "type": 8
     },
     "drainingkiss": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 577,
         "category": 2,
         "power": 50,
         "type": 9
     },
     "craftyshield": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 578,
         "category": 0,
         "power": 0,
         "type": 9
     },
     "flowershield": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 579,
         "category": 0,
         "power": 0,
         "type": 9
     },
     "grassyterrain": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 580,
         "category": 0,
         "power": 0,
         "type": 3
     },
     "mistyterrain": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 581,
         "category": 0,
         "power": 0,
         "type": 9
     },
     "electrify": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 582,
         "category": 0,
         "power": 0,
         "type": 4
     },
     "playrough": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 583,
         "category": 1,
         "power": 90,
         "type": 9
     },
     "fairywind": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 584,
         "category": 2,
         "power": 40,
         "type": 9
     },
     "moonblast": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 585,
         "category": 2,
         "power": 95,
         "type": 9
     },
     "boomburst": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 586,
         "category": 2,
         "power": 140,
         "type": 0
     },
     "fairylock": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 587,
         "category": 0,
         "power": 0,
         "type": 9
     },
     "kingsshield": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 588,
         "category": 0,
         "power": 0,
         "type": 17
     },
     "playnice": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 589,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "confide": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 590,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "diamondstorm": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 591,
         "category": 1,
         "power": 100,
         "type": 14
     },
     "steameruption": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 592,
         "category": 2,
         "power": 110,
         "type": 2
     },
     "hyperspacehole": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 593,
         "category": 2,
         "power": 80,
         "type": 5
     },
     "watershuriken": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 594,
         "category": 2,
         "power": 15,
         "type": 2
     },
     "mysticalfire": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 595,
         "category": 2,
         "power": 75,
         "type": 1
     },
     "spikyshield": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 596,
         "category": 0,
         "power": 0,
         "type": 3
     },
     "aromaticmist": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 597,
         "category": 0,
         "power": 0,
         "type": 9
     },
     "eerieimpulse": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 598,
         "category": 0,
         "power": 0,
         "type": 4
     },
     "venomdrench": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 599,
         "category": 0,
         "power": 0,
         "type": 12
     },
     "powder": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 600,
         "category": 0,
         "power": 0,
         "type": 15
     },
     "geomancy": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 601,
         "category": 0,
         "power": 0,
         "type": 9
     },
     "magneticflux": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 602,
         "category": 0,
         "power": 0,
         "type": 4
     },
     "happyhour": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 603,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "electricterrain": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 604,
         "category": 0,
         "power": 0,
         "type": 4
     },
     "dazzlinggleam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 605,
         "category": 2,
         "power": 80,
         "type": 9
     },
     "celebrate": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 606,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "holdhands": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 607,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "babydolleyes": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 608,
         "category": 0,
         "power": 0,
         "type": 9
     },
     "nuzzle": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 609,
         "category": 1,
         "power": 20,
         "type": 4
     },
     "holdback": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 610,
         "category": 1,
         "power": 40,
         "type": 0
     },
     "infestation": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 611,
         "category": 2,
         "power": 20,
         "type": 15
     },
     "poweruppunch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 612,
         "category": 1,
         "power": 40,
         "type": 10
     },
     "oblivionwing": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 613,
         "category": 2,
         "power": 80,
         "type": 11
     },
     "thousandarrows": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 614,
         "category": 1,
         "power": 90,
         "type": 13
     },
     "thousandwaves": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 615,
         "category": 1,
         "power": 90,
         "type": 13
     },
     "landswrath": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 616,
         "category": 1,
         "power": 90,
         "type": 13
     },
     "lightofruin": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 617,
         "category": 2,
         "power": 140,
         "type": 9
     },
     "originpulse": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 618,
         "category": 2,
         "power": 110,
         "type": 2
     },
     "precipiceblades": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 619,
         "category": 1,
         "power": 120,
         "type": 13
     },
     "dragonascent": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 620,
         "category": 1,
         "power": 120,
         "type": 11
     },
     "hyperspacefury": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 621,
         "category": 1,
         "power": 100,
         "type": 8
     },
     "breakneckblitzphysical": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 622,
         "category": 1,
         "power": 0,
         "type": 0
     },
     "breakneckblitzspecial": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 623,
         "category": 2,
         "power": 0,
         "type": 0
     },
     "alloutpummelingphysical": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 624,
         "category": 1,
         "power": 0,
         "type": 10
     },
     "alloutpummelingspecial": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 625,
         "category": 2,
         "power": 0,
         "type": 10
     },
     "supersonicskystrikephysical": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 626,
         "category": 1,
         "power": 0,
         "type": 11
     },
     "supersonicskystrikespecial": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 627,
         "category": 2,
         "power": 0,
         "type": 11
     },
     "aciddownpourphysical": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 628,
         "category": 1,
         "power": 0,
         "type": 12
     },
     "aciddownpourspecial": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 629,
         "category": 2,
         "power": 0,
         "type": 12
     },
     "tectonicragephysical": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 630,
         "category": 1,
         "power": 0,
         "type": 13
     },
     "tectonicragespecial": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 631,
         "category": 2,
         "power": 0,
         "type": 13
     },
     "continentalcrushphysical": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 632,
         "category": 1,
         "power": 0,
         "type": 14
     },
     "continentalcrushspecial": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 633,
         "category": 2,
         "power": 0,
         "type": 14
     },
     "savagespinoutphysical": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 634,
         "category": 1,
         "power": 0,
         "type": 15
     },
     "savagespinoutspecial": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 635,
         "category": 2,
         "power": 0,
         "type": 15
     },
     "neverendingnightmarephysical": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 636,
         "category": 1,
         "power": 0,
         "type": 16
     },
     "neverendingnightmarespecial": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 637,
         "category": 2,
         "power": 0,
         "type": 16
     },
     "corkscrewcrashphysical": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 638,
         "category": 1,
         "power": 0,
         "type": 17
     },
     "corkscrewcrashspecial": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 639,
         "category": 2,
         "power": 0,
         "type": 17
     },
     "infernooverdrivephysical": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 640,
         "category": 1,
         "power": 0,
         "type": 1
     },
     "infernooverdrivespecial": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 641,
         "category": 2,
         "power": 0,
         "type": 1
     },
     "hydrovortexphysical": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 642,
         "category": 1,
         "power": 0,
         "type": 2
     },
     "hydrovortexspecial": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 643,
         "category": 2,
         "power": 0,
         "type": 2
     },
     "bloomdoomphysical": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 644,
         "category": 1,
         "power": 0,
         "type": 3
     },
     "bloomdoomspecial": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 645,
         "category": 2,
         "power": 0,
         "type": 3
     },
     "gigavolthavocphysical": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 646,
         "category": 1,
         "power": 0,
         "type": 4
     },
     "gigavolthavocspecial": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 647,
         "category": 2,
         "power": 0,
         "type": 4
     },
     "shatteredpsychephysical": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 648,
         "category": 1,
         "power": 0,
         "type": 5
     },
     "shatteredpsychespecial": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 649,
         "category": 2,
         "power": 0,
         "type": 5
     },
     "subzeroslammerphysical": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 650,
         "category": 1,
         "power": 0,
         "type": 6
     },
     "subzeroslammerspecial": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 651,
         "category": 2,
         "power": 0,
         "type": 6
     },
     "devastatingdrakephysical": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 652,
         "category": 1,
         "power": 0,
         "type": 7
     },
     "devastatingdrakespecial": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 653,
         "category": 2,
         "power": 0,
         "type": 7
     },
     "blackholeeclipsephysical": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 654,
         "category": 1,
         "power": 0,
         "type": 8
     },
     "blackholeeclipsespecial": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 655,
         "category": 2,
         "power": 0,
         "type": 8
     },
     "twinkletacklephysical": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 656,
         "category": 1,
         "power": 0,
         "type": 9
     },
     "twinkletacklespecial": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 657,
         "category": 2,
         "power": 0,
         "type": 9
     },
     "catastropika": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 658,
         "category": 1,
         "power": 210,
         "type": 4
     },
     "shoreup": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 659,
         "category": 0,
         "power": 0,
         "type": 13
     },
     "firstimpression": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 660,
         "category": 1,
         "power": 90,
         "type": 15
     },
     "banefulbunker": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 661,
         "category": 0,
         "power": 0,
         "type": 12
     },
     "spiritshackle": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 662,
         "category": 1,
         "power": 80,
         "type": 16
     },
     "darkestlariat": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 663,
         "category": 1,
         "power": 85,
         "type": 8
     },
     "sparklingaria": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 664,
         "category": 2,
         "power": 90,
         "type": 2
     },
     "icehammer": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 665,
         "category": 1,
         "power": 100,
         "type": 6
     },
     "floralhealing": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 666,
         "category": 0,
         "power": 0,
         "type": 9
     },
     "highhorsepower": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 667,
         "category": 1,
         "power": 95,
         "type": 13
     },
     "strengthsap": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 668,
         "category": 0,
         "power": 0,
         "type": 3
     },
     "solarblade": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 669,
         "category": 1,
         "power": 125,
         "type": 3
     },
     "leafage": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 670,
         "category": 1,
         "power": 40,
         "type": 3
     },
     "spotlight": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 671,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "toxicthread": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 672,
         "category": 0,
         "power": 0,
         "type": 12
     },
     "laserfocus": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 673,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "gearup": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 674,
         "category": 0,
         "power": 0,
         "type": 17
     },
     "throatchop": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 675,
         "category": 1,
         "power": 80,
         "type": 8
     },
     "pollenpuff": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 676,
         "category": 2,
         "power": 90,
         "type": 15
     },
     "anchorshot": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 677,
         "category": 1,
         "power": 80,
         "type": 17
     },
     "psychicterrain": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 678,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "lunge": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 679,
         "category": 1,
         "power": 80,
         "type": 15
     },
     "firelash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 680,
         "category": 1,
         "power": 80,
         "type": 1
     },
     "powertrip": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 681,
         "category": 1,
         "power": 20,
         "type": 8
     },
     "burnup": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 682,
         "category": 2,
         "power": 130,
         "type": 1
     },
     "speedswap": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 683,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "smartstrike": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 684,
         "category": 1,
         "power": 70,
         "type": 17
     },
     "purify": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 685,
         "category": 0,
         "power": 0,
         "type": 12
     },
     "revelationdance": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 686,
         "category": 2,
         "power": 90,
         "type": 0
     },
     "coreenforcer": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 687,
         "category": 2,
         "power": 100,
         "type": 7
     },
     "tropkick": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 688,
         "category": 1,
         "power": 70,
         "type": 3
     },
     "instruct": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 689,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "beakblast": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 690,
         "category": 1,
         "power": 100,
         "type": 11
     },
     "clangingscales": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 691,
         "category": 2,
         "power": 110,
         "type": 7
     },
     "dragonhammer": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 692,
         "category": 1,
         "power": 90,
         "type": 7
     },
     "brutalswing": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 693,
         "category": 1,
         "power": 60,
         "type": 8
     },
     "auroraveil": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 694,
         "category": 0,
         "power": 0,
         "type": 6
     },
     "sinisterarrowraid": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 695,
         "category": 1,
         "power": 180,
         "type": 16
     },
     "maliciousmoonsault": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 696,
         "category": 1,
         "power": 180,
         "type": 8
     },
     "oceanicoperetta": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 697,
         "category": 2,
         "power": 195,
         "type": 2
     },
     "guardianofalola": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 698,
         "category": 2,
         "power": 0,
         "type": 9
     },
     "soulstealing7starstrike": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 699,
         "category": 1,
         "power": 195,
         "type": 16
     },
     "stokedsparksurfer": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 700,
         "category": 2,
         "power": 175,
         "type": 4
     },
     "pulverizingpancake": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 701,
         "category": 1,
         "power": 210,
         "type": 0
     },
     "extremeevoboost": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 702,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "genesissupernova": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 703,
         "category": 2,
         "power": 185,
         "type": 5
     },
     "shelltrap": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 704,
         "category": 2,
         "power": 150,
         "type": 1
     },
     "fleurcannon": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 705,
         "category": 2,
         "power": 130,
         "type": 9
     },
     "psychicfangs": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 706,
         "category": 1,
         "power": 85,
         "type": 5
     },
     "stompingtantrum": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 707,
         "category": 1,
         "power": 75,
         "type": 13
     },
     "shadowbone": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 708,
         "category": 1,
         "power": 85,
         "type": 16
     },
     "accelerock": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 709,
         "category": 1,
         "power": 40,
         "type": 14
     },
     "liquidation": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 710,
         "category": 1,
         "power": 85,
         "type": 2
     },
     "prismaticlaser": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 711,
         "category": 2,
         "power": 160,
         "type": 5
     },
     "spectralthief": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 712,
         "category": 1,
         "power": 90,
         "type": 16
     },
     "sunsteelstrike": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 713,
         "category": 1,
         "power": 100,
         "type": 17
     },
     "moongeistbeam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 714,
         "category": 2,
         "power": 100,
         "type": 16
     },
     "tearfullook": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 715,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "zingzap": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 716,
         "category": 1,
         "power": 80,
         "type": 4
     },
     "naturesmadness": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 717,
         "category": 2,
         "power": 0,
         "type": 9
     },
     "multiattack": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 718,
         "category": 1,
         "power": 120,
         "type": 0
     },
     "10000000voltthunderbolt": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 719,
         "category": 2,
         "power": 195,
         "type": 4
     },
     "mindblown": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 720,
         "category": 2,
         "power": 150,
         "type": 1
     },
     "plasmafists": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 721,
         "category": 1,
         "power": 100,
         "type": 4
     },
     "photongeyser": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 722,
         "category": 2,
         "power": 100,
         "type": 5
     },
     "lightthatburnsthesky": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 723,
         "category": 2,
         "power": 200,
         "type": 5
     },
     "searingsunrazesmash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 724,
         "category": 1,
         "power": 200,
         "type": 17
     },
     "menacingmoonrazemaelstrom": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 725,
         "category": 2,
         "power": 200,
         "type": 16
     },
     "letssnuggleforever": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 726,
         "category": 1,
         "power": 190,
         "type": 9
     },
     "splinteredstormshards": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 727,
         "category": 1,
         "power": 190,
         "type": 14
     },
     "clangoroussoulblaze": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 728,
         "category": 2,
         "power": 185,
         "type": 7
     },
     "zippyzap": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 729,
         "category": 1,
         "power": 80,
         "type": 4
     },
     "splishysplash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 730,
         "category": 2,
         "power": 90,
         "type": 2
     },
     "floatyfall": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 731,
         "category": 1,
         "power": 90,
         "type": 11
     },
     "pikapapow": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 732,
         "category": 2,
         "power": 0,
         "type": 4
     },
     "bouncybubble": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 733,
         "category": 2,
         "power": 60,
         "type": 2
     },
     "buzzybuzz": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 734,
         "category": 2,
         "power": 60,
         "type": 4
     },
     "sizzlyslide": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 735,
         "category": 1,
         "power": 60,
         "type": 1
     },
     "glitzyglow": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 736,
         "category": 2,
         "power": 80,
         "type": 5
     },
     "baddybad": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 737,
         "category": 2,
         "power": 80,
         "type": 8
     },
     "sappyseed": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 738,
         "category": 1,
         "power": 100,
         "type": 3
     },
     "freezyfrost": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 739,
         "category": 2,
         "power": 100,
         "type": 6
     },
     "sparklyswirl": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 740,
         "category": 2,
         "power": 120,
         "type": 9
     },
     "veeveevolley": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 741,
         "category": 1,
         "power": 0,
         "type": 0
     },
     "doubleironbash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 742,
         "category": 1,
         "power": 60,
         "type": 17
     },
     "maxguard": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 743,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "dynamaxcannon": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 744,
         "category": 2,
         "power": 100,
         "type": 7
     },
     "snipeshot": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 745,
         "category": 2,
         "power": 80,
         "type": 2
     },
     "jawlock": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 746,
         "category": 1,
         "power": 80,
         "type": 8
     },
     "stuffcheeks": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 747,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "noretreat": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 748,
         "category": 0,
         "power": 0,
         "type": 10
     },
     "tarshot": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 749,
         "category": 0,
         "power": 0,
         "type": 14
     },
     "magicpowder": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 750,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "dragondarts": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 751,
         "category": 1,
         "power": 50,
         "type": 7
     },
     "teatime": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 752,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "octolock": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 753,
         "category": 0,
         "power": 0,
         "type": 10
     },
     "boltbeak": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 754,
         "category": 1,
         "power": 85,
         "type": 4
     },
     "fishiousrend": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 755,
         "category": 1,
         "power": 85,
         "type": 2
     },
     "courtchange": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 756,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "maxflare": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 757,
         "category": 1,
         "power": 100,
         "type": 1
     },
     "maxflutterby": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 758,
         "category": 1,
         "power": 10,
         "type": 15
     },
     "maxlightning": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 759,
         "category": 1,
         "power": 10,
         "type": 4
     },
     "maxstrike": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 760,
         "category": 1,
         "power": 10,
         "type": 0
     },
     "maxknuckle": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 761,
         "category": 1,
         "power": 10,
         "type": 10
     },
     "maxphantasm": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 762,
         "category": 1,
         "power": 10,
         "type": 16
     },
     "maxhailstorm": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 763,
         "category": 1,
         "power": 10,
         "type": 6
     },
     "maxooze": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 764,
         "category": 1,
         "power": 10,
         "type": 12
     },
     "maxgeyser": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 765,
         "category": 1,
         "power": 10,
         "type": 2
     },
     "maxairstream": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 766,
         "category": 1,
         "power": 10,
         "type": 11
     },
     "maxstarfall": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 767,
         "category": 1,
         "power": 10,
         "type": 9
     },
     "maxwyrmwind": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 768,
         "category": 1,
         "power": 10,
         "type": 7
     },
     "maxmindstorm": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 769,
         "category": 1,
         "power": 10,
         "type": 5
     },
     "maxrockfall": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 770,
         "category": 1,
         "power": 10,
         "type": 14
     },
     "maxquake": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 771,
         "category": 1,
         "power": 10,
         "type": 13
     },
     "maxdarkness": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 772,
         "category": 1,
         "power": 10,
         "type": 8
     },
     "maxovergrowth": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 773,
         "category": 1,
         "power": 10,
         "type": 3
     },
     "maxsteelspike": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 774,
         "category": 1,
         "power": 10,
         "type": 17
     },
     "clangoroussoul": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 775,
         "category": 0,
         "power": 0,
         "type": 7
     },
     "bodypress": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 776,
         "category": 1,
         "power": 80,
         "type": 10
     },
     "decorate": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 777,
         "category": 0,
         "power": 0,
         "type": 9
     },
     "drumbeating": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 778,
         "category": 1,
         "power": 80,
         "type": 3
     },
     "snaptrap": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 779,
         "category": 1,
         "power": 35,
         "type": 3
     },
     "pyroball": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 780,
         "category": 1,
         "power": 120,
         "type": 1
     },
     "behemothblade": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 781,
         "category": 1,
         "power": 100,
         "type": 17
     },
     "behemothbash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 782,
         "category": 1,
         "power": 100,
         "type": 17
     },
     "aurawheel": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 783,
         "category": 1,
         "power": 110,
         "type": 4
     },
     "breakingswipe": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 784,
         "category": 1,
         "power": 60,
         "type": 7
     },
     "branchpoke": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 785,
         "category": 1,
         "power": 40,
         "type": 3
     },
     "overdrive": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 786,
         "category": 2,
         "power": 80,
         "type": 4
     },
     "appleacid": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 787,
         "category": 2,
         "power": 80,
         "type": 3
     },
     "gravapple": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 788,
         "category": 1,
         "power": 80,
         "type": 3
     },
     "spiritbreak": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 789,
         "category": 1,
         "power": 75,
         "type": 9
     },
     "strangesteam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 790,
         "category": 2,
         "power": 90,
         "type": 9
     },
     "lifedew": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 791,
         "category": 0,
         "power": 0,
         "type": 2
     },
     "obstruct": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 792,
         "category": 0,
         "power": 0,
         "type": 8
     },
     "falsesurrender": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 793,
         "category": 1,
         "power": 80,
         "type": 8
     },
     "meteorassault": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 794,
         "category": 1,
         "power": 150,
         "type": 10
     },
     "eternabeam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 795,
         "category": 2,
         "power": 160,
         "type": 7
     },
     "steelbeam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 796,
         "category": 2,
         "power": 140,
         "type": 17
     },
     "expandingforce": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 797,
         "category": 2,
         "power": 80,
         "type": 5
     },
     "steelroller": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 798,
         "category": 1,
         "power": 130,
         "type": 17
     },
     "scaleshot": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 799,
         "category": 1,
         "power": 25,
         "type": 7
     },
     "meteorbeam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 800,
         "category": 2,
         "power": 120,
         "type": 14
     },
     "shellsidearm": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 801,
         "category": 2,
         "power": 90,
         "type": 12
     },
     "mistyexplosion": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 802,
         "category": 2,
         "power": 100,
         "type": 9
     },
     "grassyglide": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 803,
         "category": 1,
         "power": 55,
         "type": 3
     },
     "risingvoltage": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 804,
         "category": 2,
         "power": 70,
         "type": 4
     },
     "terrainpulse": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 805,
         "category": 2,
         "power": 50,
         "type": 0
     },
     "skittersmack": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 806,
         "category": 1,
         "power": 70,
         "type": 15
     },
     "burningjealousy": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 807,
         "category": 2,
         "power": 70,
         "type": 1
     },
     "lashout": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 808,
         "category": 1,
         "power": 75,
         "type": 8
     },
     "poltergeist": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 809,
         "category": 1,
         "power": 110,
         "type": 16
     },
     "corrosivegas": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 810,
         "category": 0,
         "power": 0,
         "type": 12
     },
     "coaching": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 811,
         "category": 0,
         "power": 0,
         "type": 10
     },
     "flipturn": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 812,
         "category": 1,
         "power": 60,
         "type": 2
     },
     "tripleaxel": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 813,
         "category": 1,
         "power": 20,
         "type": 6
     },
     "dualwingbeat": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 814,
         "category": 1,
         "power": 40,
         "type": 11
     },
     "scorchingsands": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 815,
         "category": 2,
         "power": 70,
         "type": 13
     },
     "junglehealing": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 816,
         "category": 0,
         "power": 0,
         "type": 3
     },
     "wickedblow": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 817,
         "category": 1,
         "power": 75,
         "type": 8
     },
     "surgingstrikes": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 818,
         "category": 1,
         "power": 25,
         "type": 2
     },
     "thundercage": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 819,
         "category": 2,
         "power": 80,
         "type": 4
     },
     "dragonenergy": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 820,
         "category": 2,
         "power": 150,
         "type": 7
     },
     "freezingglare": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 821,
         "category": 2,
         "power": 90,
         "type": 5
     },
     "fierywrath": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 822,
         "category": 2,
         "power": 90,
         "type": 8
     },
     "thunderouskick": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 823,
         "category": 1,
         "power": 90,
         "type": 10
     },
     "glaciallance": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 824,
         "category": 1,
         "power": 120,
         "type": 6
     },
     "astralbarrage": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 825,
         "category": 2,
         "power": 120,
         "type": 16
     },
     "eeriespell": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 826,
         "category": 2,
         "power": 80,
         "type": 5
     },
     "direclaw": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 827,
         "category": 1,
         "power": 80,
         "type": 12
     },
     "psyshieldbash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 828,
         "category": 1,
         "power": 70,
         "type": 5
     },
     "powershift": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 829,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "stoneaxe": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 830,
         "category": 1,
         "power": 65,
         "type": 14
     },
     "springtidestorm": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 831,
         "category": 2,
         "power": 100,
         "type": 9
     },
     "mysticalpower": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 832,
         "category": 2,
         "power": 70,
         "type": 5
     },
     "ragingfury": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 833,
         "category": 1,
         "power": 120,
         "type": 1
     },
     "wavecrash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 834,
         "category": 1,
         "power": 120,
         "type": 2
     },
     "chloroblast": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 835,
         "category": 2,
         "power": 150,
         "type": 3
     },
     "mountaingale": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 836,
         "category": 1,
         "power": 100,
         "type": 6
     },
     "victorydance": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 837,
         "category": 0,
         "power": 0,
         "type": 10
     },
     "headlongrush": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 838,
         "category": 1,
         "power": 120,
         "type": 13
     },
     "barbbarrage": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 839,
         "category": 1,
         "power": 60,
         "type": 12
     },
     "esperwing": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 840,
         "category": 2,
         "power": 80,
         "type": 5
     },
     "bittermalice": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 841,
         "category": 2,
         "power": 75,
         "type": 16
     },
     "shelter": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 842,
         "category": 0,
         "power": 0,
         "type": 17
     },
     "triplearrows": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 843,
         "category": 1,
         "power": 90,
         "type": 10
     },
     "infernalparade": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 844,
         "category": 2,
         "power": 60,
         "type": 16
     },
     "ceaselessedge": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 845,
         "category": 1,
         "power": 65,
         "type": 8
     },
     "bleakwindstorm": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 846,
         "category": 2,
         "power": 100,
         "type": 11
     },
     "wildboltstorm": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 847,
         "category": 2,
         "power": 100,
         "type": 4
     },
     "sandsearstorm": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 848,
         "category": 2,
         "power": 100,
         "type": 13
     },
     "lunarblessing": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 849,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "takeheart": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 850,
         "category": 0,
         "power": 0,
         "type": 5
     },
     "terablast": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 851,
         "category": 2,
         "power": 80,
         "type": 0
     },
     "silktrap": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 852,
         "category": 0,
         "power": 0,
         "type": 15
     },
     "axekick": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 853,
         "category": 1,
         "power": 120,
         "type": 10
     },
     "lastrespects": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 854,
         "category": 1,
         "power": 50,
         "type": 16
     },
     "luminacrash": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 855,
         "category": 2,
         "power": 80,
         "type": 5
     },
     "orderup": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 856,
         "category": 1,
         "power": 80,
         "type": 7
     },
     "jetpunch": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 857,
         "category": 1,
         "power": 60,
         "type": 2
     },
     "spicyextract": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 858,
         "category": 0,
         "power": 0,
         "type": 3
     },
     "spinout": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 859,
         "category": 1,
         "power": 100,
         "type": 17
     },
     "populationbomb": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 860,
         "category": 1,
         "power": 20,
         "type": 0
     },
     "icespinner": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 861,
         "category": 1,
         "power": 80,
         "type": 6
     },
     "glaiverush": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 862,
         "category": 1,
         "power": 120,
         "type": 7
     },
     "revivalblessing": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 863,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "saltcure": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 864,
         "category": 1,
         "power": 40,
         "type": 14
     },
     "tripledive": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 865,
         "category": 1,
         "power": 30,
         "type": 2
     },
     "mortalspin": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 866,
         "category": 1,
         "power": 30,
         "type": 12
     },
     "doodle": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 867,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "filletaway": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 868,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "kowtowcleave": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 869,
         "category": 1,
         "power": 85,
         "type": 8
     },
     "flowertrick": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 870,
         "category": 1,
         "power": 70,
         "type": 3
     },
     "torchsong": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 871,
         "category": 2,
         "power": 80,
         "type": 1
     },
     "aquastep": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 872,
         "category": 1,
         "power": 80,
         "type": 2
     },
     "ragingbull": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 873,
         "category": 1,
         "power": 90,
         "type": 0
     },
     "makeitrain": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 874,
         "category": 2,
         "power": 120,
         "type": 17
     },
     "psyblade": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 875,
         "category": 1,
         "power": 80,
         "type": 5
     },
     "hydrosteam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 876,
         "category": 2,
         "power": 80,
         "type": 2
     },
     "ruination": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 877,
         "category": 2,
         "power": 1,
         "type": 8
     },
     "collisioncourse": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 878,
         "category": 1,
         "power": 100,
         "type": 10
     },
     "electrodrift": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 879,
         "category": 2,
         "power": 100,
         "type": 4
     },
     "shedtail": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 880,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "chillyreception": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 881,
         "category": 0,
         "power": 0,
         "type": 6
     },
     "tidyup": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 882,
         "category": 0,
         "power": 0,
         "type": 0
     },
     "snowscape": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 883,
         "category": 0,
         "power": 0,
         "type": 6
     },
     "pounce": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 884,
         "category": 1,
         "power": 50,
         "type": 15
     },
     "trailblaze": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 885,
         "category": 1,
         "power": 50,
         "type": 3
     },
     "chillingwater": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 886,
         "category": 2,
         "power": 50,
         "type": 2
     },
     "hyperdrill": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 887,
         "category": 1,
         "power": 100,
         "type": 0
     },
     "twinbeam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 888,
         "category": 2,
         "power": 40,
         "type": 5
     },
     "ragefist": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 889,
         "category": 1,
         "power": 50,
         "type": 16
     },
     "armorcannon": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 890,
         "category": 2,
         "power": 120,
         "type": 1
     },
     "bitterblade": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 891,
         "category": 1,
         "power": 90,
         "type": 1
     },
     "doubleshock": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 892,
         "category": 1,
         "power": 120,
         "type": 4
     },
     "gigatonhammer": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 893,
         "category": 1,
         "power": 160,
         "type": 17
     },
     "comeuppance": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 894,
         "category": 1,
         "power": 1,
         "type": 8
     },
     "aquacutter": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 895,
         "category": 1,
         "power": 70,
         "type": 2
     },
     "blazingtorque": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 896,
         "category": 1,
         "power": 80,
         "type": 1
     },
     "wickedtorque": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 897,
         "category": 1,
         "power": 80,
         "type": 8
     },
     "noxioustorque": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 898,
         "category": 1,
         "power": 100,
         "type": 12
     },
     "combattorque": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 899,
         "category": 1,
         "power": 100,
         "type": 10
     },
     "magicaltorque": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 900,
         "category": 1,
         "power": 100,
         "type": 9
     },
     "bloodmoon": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 901,
         "category": 2,
         "power": 140,
         "type": 0
     },
     "matchagotcha": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 902,
         "category": 2,
         "power": 80,
         "type": 3
     },
     "syrupbomb": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 903,
         "category": 2,
         "power": 60,
         "type": 3
     },
     "ivycudgel": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 904,
         "category": 1,
         "power": 100,
         "type": 3
     },
     "electroshot": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 905,
         "category": 2,
         "power": 130,
         "type": 4
     },
     "terastarstorm": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 906,
         "category": 2,
         "power": 120,
         "type": 0
     },
     "ficklebeam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 907,
         "category": 2,
         "power": 80,
         "type": 7
     },
     "burningbulwark": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 908,
         "category": 0,
         "power": 0,
         "type": 1
     },
     "thunderclap": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 909,
         "category": 2,
         "power": 70,
         "type": 4
     },
     "mightycleave": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 910,
         "category": 1,
         "power": 95,
         "type": 14
     },
     "tachyoncutter": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 911,
         "category": 2,
         "power": 50,
         "type": 17
     },
     "hardpress": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 912,
         "category": 1,
         "power": 0,
         "type": 17
     },
     "dragoncheer": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 913,
         "category": 0,
         "power": 0,
         "type": 7
     },
     "alluringvoice": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 914,
         "category": 2,
         "power": 80,
         "type": 9
     },
     "temperflare": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 915,
         "category": 1,
         "power": 75,
         "type": 1
     },
     "supercellslam": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 916,
         "category": 1,
         "power": 100,
         "type": 4
     },
     "psychicnoise": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 917,
         "category": 2,
         "power": 75,
         "type": 5
     },
     "upperhand": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
         "moveid": 918,
         "category": 1,
         "power": 65,
         "type": 10
     },
     "malignantchain": {
+        "disabled": 0,
+        "locked": 0,
+        "pp": 0,
+        "disabled": 0,
+        "locked": 0,
+
         "moveid": 919,
         "category": 2,
         "power": 100,
