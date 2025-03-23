@@ -9,16 +9,18 @@ import random
 class PokeNet(nn.Module):
     def __init__(self, state_dim, action_dim):
         super(PokeNet, self).__init__()
+        self.lstm = nn.LSTM(state_dim, 128, batch_first=True)
         self.network = nn.Sequential(
-            nn.Linear(state_dim, 256),
+            nn.Linear(128, 256),
             nn.ReLU(),
             nn.Linear(256, 128),
             nn.ReLU(),
             nn.Linear(128, action_dim)
         )
         
-    def forward(self, x):
-        return self.network(x)
+    def forward(self, x, hidden=None):
+        lstm_out, hidden = self.lstm(x.unsqueeze(1), hidden)
+        return self.network(lstm_out.squeeze(1)), hidden
 
 
 class Agent:
