@@ -4,3 +4,6 @@ package.json
 /archive/
 __pycache__/
 turn-output.txt
+/data/models/
+/data/memory/
+/data/stats/
