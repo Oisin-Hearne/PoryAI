@@ -1,4 +1,5 @@
 import json
+import math
 import copy
 from difflib import get_close_matches
 
@@ -23,6 +24,9 @@ class Interpreter:
     def resetState(self):
         self.prevSelfHp = 1
         self.prevOppHp = 1
+        self.prevAction = ""
+        self.opponentHalved = False
+        self.action_counts = {'move': 0, 'switch': 0}
         
         with open('data/sample-state.json') as f:
             self.state = json.load(f)
@@ -297,6 +301,9 @@ class Interpreter:
                 if "Terrain" in splitData[2]:
                     fieldEffect = splitData[2].split(" ")[1:]
                     fieldEffect = "".join(fieldEffect).replace(" ", "").replace("-", "").lower()
+                elif "Trick Room" in splitData[2]:
+                    fieldEffect = splitData[2].split(" ")[1:]
+                    fieldEffect = "".join(fieldEffect).replace(" ", "").replace("-", "").lower()
                 else:
                     fieldEffect = splitData[3].split(" ")[1:]
                     fieldEffect = "".join(fieldEffect).replace(" ", "").replace("-", "").lower()
@@ -348,14 +355,14 @@ class Interpreter:
                 return
         
 
-    def countTurn(self, turnData):
+    def countTurn(self, turnData, lastAction):
         turnPoints = 0
-        damageThreshold = 0.25
+        damageThreshold = 0.15
         healThreshold = 0.25
         damageBase = 1
         healBase = 1
         healBonus = 2
-        koBase = 5
+        koBase = 3
         statusBase = 1
         toxBonus = 2
         sleepBonus = 1
@@ -366,10 +373,33 @@ class Interpreter:
         effectiveBase = 2
         weatherBase = 1
         failBase = 3
+        winBase = 4
+        attackIncentive = 3
+        switchDecentive = 2
+
     
+        # Penalise consecutive switches
+        if len(self.prevAction) > 0 and len(lastAction) > 0:
+            if "switch" in lastAction[0] and "switch" in self.prevAction[0]:
+                print("Consecutive Switches Detected")
+                turnPoints -= switchDecentive
+        # Slight incentive to attacking
+        if "move" in lastAction[0]:
+            self.action_counts['move'] += 1
+            turnPoints += attackIncentive
+        elif "switch" in lastAction[0]:
+            self.action_counts['switch'] += 1
+            
+        action_ratio = max(0.1, min(self.action_counts["move"] / max(1, self.action_counts["switch"]), 10))
+        print(f"Action Ratio: {action_ratio}")
+        print(f"Action Counts: {self.action_counts}")
+        if action_ratio < 0.5:
+            turnPoints -= 2
         
         for line in turnData:
             splitData = line.split("|")
+            
+            
             
             # Action - Dealing/Taking Damage
             if "damage" in splitData[1]:
@@ -381,10 +411,23 @@ class Interpreter:
                 print(f"Previous HP: {self.prevSelfHp}, New HP: {newHp}")
                 # Dealing damage above a certain amount is rewarded, but punished if too little damage is done.
                 # Receiving very little damage is rewarded, receiving too much is punished.
-                turnPoints += damageBase if (damage > damageThreshold and side == "opposingSide") or (damage < damageThreshold and side == "playerSide") else -damageBase
+                #turnPoints += damageBase if (damage > damageThreshold and side == "opposingSide") or (damage < damageThreshold and side == "playerSide") else -damageBase
+                
+                # Damage calculation is seemingly off, going with something simpler for now.
+                turnPoints += damageBase if side == "opposingSide" else -damageBase
+                
+                print(f"Damage Related Points: {turnPoints}, side: {side}")
+                
+                
                 
                 self.prevSelfHp = newHp if side == "playerSide" else self.prevSelfHp
                 self.prevOppHp = newHp if side == "opposingSide" else self.prevOppHp
+                
+                if self.prevOppHp < 0.5 and not self.opponentHalved:
+                    self.opponentHalved = True
+                    turnPoints += 2
+                if self.prevOppHp > 0.5 and self.opponentHalved:
+                    self.opponentHalved = False
                 
             # Action - Healing
             if "heal" in splitData[1]:
@@ -466,9 +509,16 @@ class Interpreter:
                 turnPoints -= failBase
                 
             if "|win|" in line:
-                turnPoints += 8 if "PoryAI" in line else -8
-                
-        return max(min(turnPoints / 8.0, 1.0), -1.0)
+                turnPoints += winBase if "PoryAI" in line else 0
+        
+        self.prevAction = lastAction
+        
+        max_reward = (damageBase + healBase + healBonus + koBase + statusBase + 
+             toxBonus + sleepBonus + boostBase*6 + fieldBase + 
+             hazardBase + hazardClear + effectiveBase + weatherBase + 
+             failBase + attackIncentive + switchDecentive)
+        
+        return math.tanh(turnPoints / max_reward )
 
 
 
