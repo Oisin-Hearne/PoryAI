@@ -28,10 +28,10 @@ class Agent:
         self.action_dim = action_dim
         self.gamma = gamma
         self.epsilon = epsilon
-        self.epsilon_min = 0.01
-        self.epsilon_decay = 0.995
+        self.epsilon_min = 0.1
+        self.epsilon_decay = 0.999
         self.memory = []
-        self.batch_size = 64
+        self.batch_size = 128
         self.device = device
         
         # Receives a list of actions and creates a dictionary to map them to indices.
@@ -50,7 +50,7 @@ class Agent:
         # Flatten the dictionary into a 1D vector with values from 0 to 1.
         def _flatten(d, prefix=""):
             
-            for key in sorted(d.keys()):
+            for key in d.keys():
                 value = d[key]
                 
                 if isinstance(value, dict):
@@ -109,7 +109,7 @@ class Agent:
             def _flatten(d, prefix=""):
             
                 
-                for key in sorted(d.keys()):
+                for key in d.keys():
                     value = d[key]
                     
                     if isinstance(value, dict):
@@ -165,22 +165,60 @@ class Agent:
     def act(self, state, valid_actions):
         state_tensor = self.get_state(state)
         
+        # Count how many moves & switches
+        moveCount = sum(1 for a in valid_actions if a.startswith("/choose move"))
+        switchCount = sum(1 for a in valid_actions if a.startswith("/choose switch"))
+        move_actions = [a for a in valid_actions if a.startswith("/choose move")]
+        switch_actions = [a for a in valid_actions if a.startswith("/choose switch")]
+        
         # Select randomly from the list of valid actions.
         
         if np.random.rand() <= self.epsilon:
-            action = np.random.choice(valid_actions)
-            return action
+            # Forcing it to pick lower options sometimes.
+            if hasattr(self, 'action_counts') and moveCount > 0 and switchCount > 0:
+                moveTotal = sum(self.action_counts.get(a, 0) for a in valid_actions if a.startswith("/choose move"))
+                switchTotal = sum(self.action_counts.get(a, 0) for a in valid_actions if a.startswith("/choose switch"))
+                
+                if moveTotal < switchTotal * 0.7 and moveCount > 0:
+                    
+                    print(f"Forcing move: {move_actions}")
+                    return np.random.choice(move_actions)
+                elif any(self.action_counts.get(m, 0) > 3 * self.action_counts.get(move_actions[0], 1) for m in move_actions[1:]) and len(move_actions) > 1:
+                    overused = max(move_actions, key=lambda m: self.action_counts.get(m, 0))
+                    return np.random.choice([m for m in move_actions if m != overused])
+            return np.random.choice(valid_actions)
         
-        valid_actions = [self.action_index[action] for action in valid_actions]
+        valid_indices = [self.action_index[action] for action in valid_actions]
         
 
         self.model.eval()
         with torch.no_grad():
             q_values = self.model(state_tensor)
-        valid_q = [q_values[0, i].item() for i in valid_actions]
-        print(f"Decision: {valid_actions[np.argmax(valid_q)]}")
-        decision = valid_actions[np.argmax(valid_q)]
-        return self.index_action[decision]
+        valid_q = [q_values[0, i].item() - (i * 0.1) for i in valid_indices]
+        
+        # move bias
+        if moveCount > 0 and switchCount > 0:
+            for i, action in enumerate(valid_actions):
+                if action.startswith("/choose move"):
+                    valid_q[i] += 0.3
+                    
+                    if "move 1" in action:
+                        valid_q[i] += 0.05
+                    elif "move 2" in action:
+                        valid_q[i] += 0.03
+                    elif "move 3" in action:
+                        valid_q[i] += 0.01
+                
+        
+        if not hasattr(self, "action_counts"):
+            self.action_counts = {}
+        
+        bestActionIndex = np.argmax(valid_q)
+        decision = valid_indices[bestActionIndex]
+        chosenAction = self.index_action[decision]
+        self.action_counts[chosenAction] = self.action_counts.get(chosenAction, 0) + 1
+        print(chosenAction)
+        return chosenAction
 
     # Append what's just occured and the result of that action to memory.
     def remember(self, state, action, reward, next_state, done):
@@ -197,6 +235,10 @@ class Agent:
         
         # Take a random sample of the memory to learn from.
         batch = random.sample(self.memory, self.batch_size)
+        recentBatchSize = min(self.batch_size // 4, len(self.memory) // 10)
+        recentBatch = self.memory[-recentBatchSize:]
+        batch = batch + recentBatch
+        
         statesBatch = [state for state, _, _, _, _ in batch]
         nextStatesBatch = [nextState for _, _, _, nextState, _ in batch]
         
@@ -229,6 +271,12 @@ class Agent:
             'optimizer_state_dict': self.optimizer.state_dict(),
             'epsilon': self.epsilon
         }, path)
+        
+    def saveMemory(self, path):
+        torch.save(self.memory, path)
+    
+    def loadMemory(self, path):
+        self.memory = torch.load(path)
         
     def loadModel(self, path):
         checkpoint = torch.load(path)
