@@ -33,6 +33,8 @@ class Agent:
         self.epsilon_min = 0.1
         self.epsilon_decay = 0.999
         self.memory = []
+        self.battles = []
+        self.currentBattle = []
         self.batch_size = 128
         self.device = device
         
@@ -195,7 +197,7 @@ class Agent:
 
         self.model.eval()
         with torch.no_grad():
-            q_values = self.model(state_tensor)
+            q_values, _ = self.model(state_tensor)
         valid_q = [q_values[0, i].item() - (i * 0.1) for i in valid_indices]
         
         # move bias
@@ -226,7 +228,16 @@ class Agent:
     def remember(self, state, action, reward, next_state, done):
         print("Remembering")
         index_of_action = self.action_index[action] # Action translated to index for storage
-        self.memory.append((state, index_of_action, reward, next_state, done))
+        battleResults = (state, index_of_action, reward, next_state, done)
+        self.memory.append(battleResults)
+        self.currentBattle.append(battleResults)
+        
+        if done:
+            self.battles.append(self.currentBattle)
+            self.currentBattle = []
+            
+            if len(self.battles) > 10000:
+                self.battles.pop(0)
         
     # Replay part of memory to learn from it
     def replay(self):
@@ -236,10 +247,20 @@ class Agent:
             return
         
         # Take a random sample of the memory to learn from.
-        batch = random.sample(self.memory, self.batch_size)
-        recentBatchSize = min(self.batch_size // 4, len(self.memory) // 10)
-        recentBatch = self.memory[-recentBatchSize:]
-        batch = batch + recentBatch
+        batch = random.sample(self.memory, self.batch_size // 2)
+        battleBatch = []
+        if len(self.battles) > 0:
+            sampleBattles = random.sample(self.battles, min(10, len(self.battles)))
+            for battle in sampleBattles:
+                if len(battle) <= 12:
+                    battleBatch.extend(battle)
+                else:
+                    start = random.randint(0, len(battle) - 12)
+                    battleBatch.extend(battle[start:start+12])
+                    
+        batch = batch + battleBatch
+        if (len(batch) > self.batch_size):
+            batch = random.sample(batch, self.batch_size)
         
         statesBatch = [state for state, _, _, _, _ in batch]
         nextStatesBatch = [nextState for _, _, _, nextState, _ in batch]
@@ -252,9 +273,11 @@ class Agent:
         rewards = torch.tensor([reward for _, _, reward, _, _ in batch], dtype=torch.float).to(self.device)
         dones = torch.tensor([done for _, _, _, _, done in batch], dtype=torch.float).to(self.device)
         
-        current_q_vals = self.model(states).gather(1, actions.unsqueeze(1)).squeeze(1)
+        q_vals, _ = self.model(states)
+        current_q_vals = q_vals.gather(1, actions.unsqueeze(1)).squeeze(1)
         with torch.no_grad():
-            next_q_vals = self.model(next_states).max(1)[0]
+            next_q, _ = self.model(next_states)
+            next_q_vals = next_q.max(1)[0]
             target_q_vals = rewards + (1- dones) * self.gamma * next_q_vals
             
         loss = self.criterion(current_q_vals, target_q_vals)
@@ -271,7 +294,8 @@ class Agent:
         torch.save({
             'model_state_dict': self.model.state_dict(),
             'optimizer_state_dict': self.optimizer.state_dict(),
-            'epsilon': self.epsilon
+            'epsilon': self.epsilon,
+            'battles': self.battles[:10000]
         }, path)
         
     def saveMemory(self, path):
@@ -285,6 +309,8 @@ class Agent:
         self.model.load_state_dict(checkpoint['model_state_dict'])
         self.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
         self.epsilon = checkpoint['epsilon']
+        if 'battles' in checkpoint:
+            self.battles = checkpoint['battles']
 
 
     # #Select randomly for now        
