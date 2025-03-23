@@ -490,8 +490,8 @@ class Interpreter:
             if "-fail" in splitData[1] and "p1a" in line:
                 turnPoints -= self.rewards["failBase"]
                 
-            if "|win|" in line:
-                turnPoints += self.rewards["winBase"] if "PoryAI" in line else 0
+            #if "|win|" in line:
+             #   turnPoints += self.rewards["winBase"] if "PoryAI" in line else 0
         
         self.prevAction = lastAction
         
