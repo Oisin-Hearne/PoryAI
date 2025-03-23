@@ -20,6 +20,8 @@ class Interpreter:
             self.miscData = json.load(f)
         with open('data/itemdata.json') as f:
             self.itemData = json.load(f)
+        with open('data/rewards.json') as f:
+            self.rewards = json.load(f)
             
     def resetState(self):
         self.prevSelfHp = 1
@@ -357,36 +359,16 @@ class Interpreter:
 
     def countTurn(self, turnData, lastAction):
         turnPoints = 0
-        damageThreshold = 0.15
-        healThreshold = 0.25
-        damageBase = 1
-        healBase = 1
-        healBonus = 2
-        koBase = 3
-        statusBase = 1
-        toxBonus = 2
-        sleepBonus = 1
-        boostBase = 2
-        fieldBase = 2
-        hazardBase = 2
-        hazardClear = 3
-        effectiveBase = 2
-        weatherBase = 1
-        failBase = 3
-        winBase = 4
-        attackIncentive = 3
-        switchDecentive = 2
-
     
         # Penalise consecutive switches
         if len(self.prevAction) > 0 and len(lastAction) > 0:
             if "switch" in lastAction[0] and "switch" in self.prevAction[0]:
                 print("Consecutive Switches Detected")
-                turnPoints -= switchDecentive
+                turnPoints -= self.rewards["switchDecentive"]
         # Slight incentive to attacking
         if "move" in lastAction[0]:
             self.action_counts['move'] += 1
-            turnPoints += attackIncentive
+            turnPoints += self.rewards["attackIncentive"]
         elif "switch" in lastAction[0]:
             self.action_counts['switch'] += 1
             
@@ -394,7 +376,7 @@ class Interpreter:
         print(f"Action Ratio: {action_ratio}")
         print(f"Action Counts: {self.action_counts}")
         if action_ratio < 0.5:
-            turnPoints -= 2
+            turnPoints -= self.rewards["ratioPunishment"]
         
         for line in turnData:
             splitData = line.split("|")
@@ -414,7 +396,7 @@ class Interpreter:
                 #turnPoints += damageBase if (damage > damageThreshold and side == "opposingSide") or (damage < damageThreshold and side == "playerSide") else -damageBase
                 
                 # Damage calculation is seemingly off, going with something simpler for now.
-                turnPoints += damageBase if side == "opposingSide" else -damageBase
+                turnPoints += self.rewards["damageBase"] if side == "opposingSide" else -self.rewards["damageBase"]
                 
                 print(f"Damage Related Points: {turnPoints}, side: {side}")
                 
@@ -425,7 +407,7 @@ class Interpreter:
                 
                 if self.prevOppHp < 0.5 and not self.opponentHalved:
                     self.opponentHalved = True
-                    turnPoints += 2
+                    turnPoints += self.rewards["progressBase"]
                 if self.prevOppHp > 0.5 and self.opponentHalved:
                     self.opponentHalved = False
                 
@@ -436,9 +418,9 @@ class Interpreter:
                 heal = newHp - self.prevSelfHp if side == "playerSide" else newHp - self.prevOppHp
                 
                 # Healing is rewarded for the player and punished for the opponent.
-                turnPoints += healBase if side == "playerSide" else -healBase
+                turnPoints += self.rewards["healBase"] if side == "playerSide" else -self.rewards["healBase"]
                 # Additional points for above a certain threshold
-                turnPoints += healBonus if side == "playerSide" and heal > healThreshold else -healBonus if heal > healThreshold else 0
+                turnPoints += self.rewards["healBase"] if side == "playerSide" and heal > self.rewards["healThreshold"] else -self.rewards["healBase"] if heal > self.rewards["healThreshold"] else 0
                
                 self.prevSelfHp = newHp if side == "playerSide" else self.prevSelfHp
                 self.prevOppHp = newHp if side == "opposingSide" else self.prevOppHp
@@ -446,34 +428,34 @@ class Interpreter:
             # Action - Knockout
             if "faint" in splitData[1]:
                 side = "playerSide" if "p1" in line else "opposingSide"
-                turnPoints += koBase if side == "opposingSide" else -koBase
+                turnPoints += self.rewards["koBase"] if side == "opposingSide" else -self.rewards["koBase"]
                 
             # Action - Status Change
             if "-status" in splitData[1]:
                 side = "playerSide" if "p1" in line else "opposingSide"
                 status = splitData[3]
-                turnPoints += statusBase if side == "opposingSide" else -statusBase
-                turnPoints += toxBonus if "tox" in status else -toxBonus
-                turnPoints += sleepBonus if "slp" in status else -sleepBonus
+                turnPoints += self.rewards["statusBase"] if side == "opposingSide" else -self.rewards["statusBase"]
+                turnPoints += self.rewards["statusBonus"] if status in ["tox, slp"] and side == "opposingSide" else -self.rewards["statusBonus"] if status in ["tox, slp"] and side == "playerSide" else 0
+
                 
             if "-curestatus" in splitData[1]:
                 side = "playerSide" if "p1" in line else "opposingSide"
-                turnPoints += statusBase if side == "playerSide" else -statusBase
+                turnPoints += self.rewards["statusBase"] if side == "playerSide" else -self.rewards["statusBase"]
                 
             # Action - Boosts/Unboosts
             if "-boost" in splitData[1] or "-unboost" in splitData[1]:
                 side = "playerSide" if "p1" in line else "opposingSide"
                 modifier = 1 if "-boost" in splitData[1] else -1
                 boostAmnt = int(splitData[4])
-                turnPoints += (modifier*boostBase*boostAmnt) if side == "playerSide" else -(modifier*boostBase*boostAmnt)
+                turnPoints += (modifier*self.rewards["boostBase"]*boostAmnt) if side == "playerSide" else -(modifier*self.rewards["boostBase"]*boostAmnt)
                         
             # Action - Supereffective & Resisted Hits
             if "supereffective" in splitData[1]:
                 side = "playerSide" if "p1" in line else "opposingSide"
-                turnPoints += effectiveBase if side == "opposingSide" else -effectiveBase
+                turnPoints += self.rewards["effectiveBase"] if side == "opposingSide" else -self.rewards["effectiveBase"]
             if "resisted" in splitData[1] or "immune" in splitData[1]:
                 side = "playerSide" if "p1" in line else "opposingSide"
-                turnPoints += -effectiveBase if side == "opposingSide" else effectiveBase
+                turnPoints += -self.rewards["effectiveBase"] if side == "opposingSide" else self.rewards["effectiveBase"]
                 
             # Action - Field Effects
             if "sidestart" in splitData[1]:
@@ -482,9 +464,9 @@ class Interpreter:
                 negatives = ["|Spikes", "Toxic Spikes", "Stealth Rock", "Sticky Web"]
                 
                 if any(x in line for x in positives):
-                    turnPoints += fieldBase if side == "playerSide" else -fieldBase
+                    turnPoints += self.rewards["fieldBase"] if side == "playerSide" else -self.rewards["fieldBase"]
                 elif any(x in line for x in negatives):
-                    turnPoints += hazardBase if side == "opposingSide" else -hazardBase
+                    turnPoints += self.rewards["hazardSetBase"] if side == "opposingSide" else -self.rewards["hazardSetBase"]
                     
             if "sideend" in splitData[1]:
                 side = "playerSide" if "p1" in splitData[2] else "opposingSide"
@@ -495,28 +477,25 @@ class Interpreter:
                                 
                 # If upkeep is in the line, the effect ended naturally and should not be counted.
                 if any(x in line for x in positives) and len(splitData) > 4:
-                    turnPoints += -fieldBase if side == "playerSide" else fieldBase
+                    turnPoints += -self.rewards["fieldBase"] if side == "playerSide" else self.rewards["fieldBase"]
                 elif any(x in line for x in negatives):
-                    turnPoints += -hazardClear if side == "opposingSide" else hazardClear
+                    turnPoints += -self.rewards["hazardClearBase"] if side == "opposingSide" else self.rewards["hazardClearBase"]
             
             # Action - Setting Weather
             if "weather" in splitData[1]:
                 side = "playerSide" if "p1a" in line else "opposingSide" if "p2a" in line else "universal"
-                turnPoints += weatherBase if side == "playerSide" else -weatherBase if side == "opposingSide" else 0
+                turnPoints += self.rewards["weatherBase"] if side == "playerSide" else -self.rewards["weatherBase"] if side == "opposingSide" else 0
             
             # Action - Failed Move
             if "-fail" in splitData[1] and "p1a" in line:
-                turnPoints -= failBase
+                turnPoints -= self.rewards["failBase"]
                 
             if "|win|" in line:
-                turnPoints += winBase if "PoryAI" in line else 0
+                turnPoints += self.rewards["winBase"] if "PoryAI" in line else 0
         
         self.prevAction = lastAction
         
-        max_reward = (damageBase + healBase + healBonus + koBase + statusBase + 
-             toxBonus + sleepBonus + boostBase*6 + fieldBase + 
-             hazardBase + hazardClear + effectiveBase + weatherBase + 
-             failBase + attackIncentive + switchDecentive)
+        max_reward = sum([self.rewards[key] for key in self.rewards.keys()])
         
         return math.tanh(turnPoints / max_reward )
 

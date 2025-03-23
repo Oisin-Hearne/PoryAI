@@ -1,0 +1,21 @@
+{
+    "damageThreshold": 0.15,
+    "healThreshold": 0.25,
+    "damageBase": 1,
+    "healBase": 1,
+    "koBase": 8,
+    "statusBase": 1,
+    "statusBonus": 2,
+    "boostBase": 2,
+    "fieldBase": 2,
+    "weatherBase": 2,
+    "hazardSetBase": 2,
+    "hazardClearBase": 3,
+    "effectiveBase": 3,
+    "failBase": 3,
+    "attackIncentive": 3,
+    "ratioPunishment": 2,
+    "switchDecentive": 2,
+    "progressBase": 2,
+    "winBase": 10
+}
