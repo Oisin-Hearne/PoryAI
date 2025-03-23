@@ -78,6 +78,7 @@ class Showdown:
         while True:
             recv = recv.split("|")
             if 'battle' in recv[0] and 'init' in recv[1]:
+                print(f"New Battle tag: {recv[0][1:].strip()}")
                 return recv[0][1:].strip()
             
             recv = await self.socket.recv()
@@ -101,6 +102,14 @@ class Showdown:
                 self.currentRewards = 0
                 print(f"Current Rewards: {self.currentRewards}")
                 
+            elif '/choose - must be used in a chat room' in recv: # handle bot being too eager
+                time.sleep(1)
+                print("Bot was too eager!")
+                print(self.currentTag)
+                print(self.latestRequest)
+                print(self.currentCommand)
+                await self.socket.send(self.currentCommand)
+                
             elif "Can't switch: You have to pass to a fainted Pokémon" in recv: # man i hate rabsca
                 print("rabsca moment")
                 await self.socket.send([f"{self.currentTag}|/choose default|{self.latestRequest['rqid']}"])
@@ -119,8 +128,15 @@ class Showdown:
                     self.latestRequest = requestOutput
                     return False, 0 # Battle not done
             
-            elif msgs[1] == "c" or msgs[1] == "l":
+            elif msgs[1] in ["c", "l", "expire", "deinit"]:
                 print("Chat message: "+recv)
+                chatTag = msgs[0].strip()
+                # Attempt to use FoulPlay's introductory message to get back into the right tag.
+                if "battle" in chatTag and msgs[1] == "c" and "hf" in msgs[3] and  self.currentTag != chatTag:
+                    print("Trying to reset tag!")
+                    self.currentTag = chatTag.replace(">" , "")
+                    print(f"New tag: {self.currentTag}")
+                    await self.socket.send([f"{self.currentTag}|{self.currentAction}|{self.latestRequest['rqid']}"])
 
             elif 't:' in msgs[2] and "Time left" not in msgs[2]:
                 # Send turn content to interpreter here, then reset it.
@@ -128,7 +144,7 @@ class Showdown:
                 print(f"TURN {turnContent[-1:]}"+self.user)
                 print(turnContent)
                 
-                self.currentRewards = self.inter.countTurn(turnContent)
+                self.currentRewards = self.inter.countTurn(turnContent, self.currentCommand)
                 self.state = self.inter.updateTurnState(turnContent, self.turnCount)
                 print(f"State: {self.state}")
                 
@@ -141,7 +157,9 @@ class Showdown:
             
 
             if '|win|' in recv: # Battle is over.
-                time.sleep(2)
+                #time.sleep(1)
+                print(f"Leaving via : |/leave {self.currentTag}")
+                await self.socket.send([f"|/leave {self.currentTag}"])
                 if 'PoryAI' in recv:
                     return True, 1
                 else:
@@ -159,8 +177,7 @@ class Showdown:
         self.inter.resetState()
         self.turnCount = 0
         print(f"{self.user} looking for a battle...")
-        battleTag = await self.challengeFoulPlay(self.format)
-        self.currentTag = battleTag
+        self.currentTag = await self.challengeFoulPlay(self.format)
         await self.manageBattle()
     
     def getState(self):
@@ -168,7 +185,9 @@ class Showdown:
         
     async def executeAction(self, action):
         print(f"{self.currentTag}|{action}|{self.latestRequest['rqid']}")
-        await self.socket.send([f"{self.currentTag}|{action}|{self.latestRequest['rqid']}"])
+        self.currentAction = action
+        self.currentCommand = [f"{self.currentTag}|{action}|{self.latestRequest['rqid']}"]
+        await self.socket.send(self.currentCommand)
         battleDone, winner = await self.manageBattle()
         newState = self.inter.state
         rewards = self.currentRewards
