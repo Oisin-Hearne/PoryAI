@@ -9,13 +9,15 @@ import random
 class PokeNet(nn.Module):
     def __init__(self, state_dim, action_dim):
         super(PokeNet, self).__init__()
-        self.lstm = nn.LSTM(state_dim, 128, batch_first=True)
+        self.lstm = nn.LSTM(state_dim, 256, batch_first=True, num_layers=2, dropout=0.1)
+        self.attention = nn.MultiheadAttention(256, 4)
         self.network = nn.Sequential(
-            nn.Linear(128, 256),
+            nn.Linear(256, 512),
             nn.ReLU(),
-            nn.Linear(256, 128),
+            nn.Dropout(0.2),
+            nn.Linear(512, 256),
             nn.ReLU(),
-            nn.Linear(128, action_dim)
+            nn.Linear(256, action_dim)
         )
         
     def forward(self, x, hidden=None):
