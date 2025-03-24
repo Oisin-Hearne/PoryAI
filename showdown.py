@@ -145,9 +145,10 @@ class Showdown:
                 print(f"TURN {turnContent[-1:]}"+self.user)
                 print(turnContent)
                 
+                self.state = self.inter.updateTurnState(turnContent, self.turnCount)
+
                 self.currentRewards, battleContent = self.inter.countTurn(turnContent, self.currentCommand)
                 self.battleLog += battleContent + "\n"
-                self.state = self.inter.updateTurnState(turnContent, self.turnCount)
                 print(f"State: {self.state}")
                 
                 

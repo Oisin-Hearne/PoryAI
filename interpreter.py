@@ -154,8 +154,8 @@ class Interpreter:
                 self.state["playerSide"]["reserves"][poke-1]["stats"][stat] = pokeStats[stat]
 
     def updateTurnState(self, turnData, startOfBattle):
-        self.prevSelfHp = self.state["playerSide"]["activeMon"]["condition"]["hp"]
-        self.prevOppHp = self.state["opposingSide"]["activeMon"]["condition"]["hp"]
+        self.prevSelfHp = copy.deepcopy(self.state["playerSide"]["activeMon"]["condition"]["hp"])
+        self.prevOppHp = copy.deepcopy(self.state["opposingSide"]["activeMon"]["condition"]["hp"])
         
         
         # Extract information from Turn Data.
@@ -390,24 +390,23 @@ class Interpreter:
             if "damage" in splitData[1]:
                 side = "playerSide" if "p1" in line else "opposingSide"
                 newHp = self.state[side]["activeMon"]["condition"]["hp"]
-                damage = self.prevSelfHp - newHp if side == "playerSide" else self.prevOppHp - newHp
-                damage = round(damage, 2)
-                print(f"Damage Dealt: {damage}, Side: {side}")
-                print(f"Previous HP: {self.prevSelfHp}, New HP: {newHp}")
+                
+                if side == "playerSide":
+                    damage = self.prevSelfHp - newHp
+                    self.prevSelfHp = newHp
+                else:
+                    damage = self.prevOppHp - newHp
+                    self.prevOppHp = newHp
+                
+                damage = max(0, round(damage, 3))
+                print(f"Damage Dealt: {damage}, Side: {side}, Old Player HP: {self.prevSelfHp}, Old Opp HP: {self.prevOppHp}, New HP: {newHp}")
                 # Dealing damage above a certain amount is rewarded, but punished if too little damage is done.
                 # Receiving very little damage is rewarded, receiving too much is punished.
                 #turnPoints += damageBase if (damage > damageThreshold and side == "opposingSide") or (damage < damageThreshold and side == "playerSide") else -damageBase
                 
                 # Damage calculation is seemingly off, going with something simpler for now.
                 turnPoints += self.rewards["damageBase"] if side == "opposingSide" else -self.rewards["damageBase"]
-                
-                print(f"Damage Related Points: {turnPoints}, side: {side}")
-                
-                
-                
-                self.prevSelfHp = copy.deepcopy(newHp) if side == "playerSide" else self.prevSelfHp
-                self.prevOppHp = copy.deepcopy(newHp) if side == "opposingSide" else self.prevOppHp
-                
+               
                 if self.prevOppHp < 0.5 and not self.opponentHalved:
                     self.opponentHalved = True
                     turnPoints += self.rewards["progressBase"]
@@ -418,16 +417,22 @@ class Interpreter:
             if "heal" in splitData[1]:
                 side = "playerSide" if "p1" in line else "opposingSide"
                 newHp = self.state[side]["activeMon"]["condition"]["hp"]
-                heal = newHp - self.prevSelfHp if side == "playerSide" else newHp - self.prevOppHp
                 
+                if side == "playerSide":
+                    heal = newHp - self.prevSelfHp
+                    self.prevSelfHp = newHp
+                else:
+                    heal = newHp - self.prevOppHp
+                    self.prevOppHp = newHp  
+                         
+                heal = max(0, round(heal, 3))
+                
+                print(f"Healing Done: {heal}, Side: {side}")   
                 # Healing is rewarded for the player and punished for the opponent.
                 turnPoints += self.rewards["healBase"] if side == "playerSide" else -self.rewards["healBase"]
                 # Additional points for above a certain threshold
                 turnPoints += self.rewards["healBase"] if side == "playerSide" and heal > self.rewards["healThreshold"] else -self.rewards["healBase"] if heal > self.rewards["healThreshold"] else 0
-               
-                self.prevSelfHp = copy.deepcopy(newHp) if side == "playerSide" else self.prevSelfHp
-                self.prevOppHp = copy.deepcopy(newHp) if side == "opposingSide" else self.prevOppHp
-                                
+                               
             # Action - Knockout
             if "faint" in splitData[1]:
                 side = "playerSide" if "p1" in line else "opposingSide"
