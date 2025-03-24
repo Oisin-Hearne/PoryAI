@@ -81,6 +81,9 @@ class Interpreter:
                             self.state["playerSide"]["activeMon"]["moves"][move]["disabled"] = 0 if not activeMoves[move]["disabled"] else 1
                         self.state["playerSide"]["activeMon"]["moves"][move]["locked"] = 0
                         self.state["playerSide"]["activeMon"]["condition"]["struggling"] = 0
+                elif(pokeMoves[0] != "Transform"):
+                    print("Transform detected")
+                    self.state["playerSide"]["activeMon"]["moves"][0] = self.moveData[pokeMoves[0]]
                 elif(pokeMoves[0] != "Struggle"):
                     self.state["playerSide"]["activeMon"]["moves"][pokeMoves[0]]["locked"] = 1
                 else:
