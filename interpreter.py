@@ -408,11 +408,11 @@ class Interpreter:
                 self.prevSelfHp = newHp if side == "playerSide" else self.prevSelfHp
                 self.prevOppHp = newHp if side == "opposingSide" else self.prevOppHp
                 
-                if self.prevOppHp < 0.5 and not self.opponentHalved:
-                    self.opponentHalved = True
-                    turnPoints += self.rewards["progressBase"]
-                if self.prevOppHp > 0.5 and self.opponentHalved:
-                    self.opponentHalved = False
+                # if self.prevOppHp < 0.5 and not self.opponentHalved:
+                #     self.opponentHalved = True
+                #     turnPoints += self.rewards["progressBase"]
+                # if self.prevOppHp > 0.5 and self.opponentHalved:
+                #     self.opponentHalved = False
                 
             # Action - Healing
             if "heal" in splitData[1]:
@@ -499,8 +499,10 @@ class Interpreter:
         self.prevAction = lastAction
         
         max_reward = sum([self.rewards[key] for key in self.rewards.keys()])
-        
-        return math.tanh(turnPoints / max_reward )
+        actualReward = math.tanh(turnPoints / max_reward )
+        turnString = "".join(turnData)+": "+str(actualReward)
+        print("Turn String: ", turnString)
+        return actualReward, turnString 
 
 
 

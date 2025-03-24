@@ -89,6 +89,7 @@ class Showdown:
     async def manageBattle(self):
 
 
+
         while True:
             recv = await self.socket.recv()
             msgs = recv.split("|")
@@ -144,7 +145,8 @@ class Showdown:
                 print(f"TURN {turnContent[-1:]}"+self.user)
                 print(turnContent)
                 
-                self.currentRewards = self.inter.countTurn(turnContent, self.currentCommand)
+                self.currentRewards, battleContent = self.inter.countTurn(turnContent, self.currentCommand)
+                self.battleLog += battleContent + "\n"
                 self.state = self.inter.updateTurnState(turnContent, self.turnCount)
                 print(f"State: {self.state}")
                 
@@ -160,6 +162,13 @@ class Showdown:
                 #time.sleep(1)
                 print(f"Leaving via : |/leave {self.currentTag}")
                 await self.socket.send([f"|/leave {self.currentTag}"])
+                
+                result = "Won" if "PoryAI" in recv else "Lost"
+                
+                # Write battle to file
+                with open(f"data/logs/{result}-{self.currentTag}.txt", "a") as f:
+                    f.write(self.battleLog)
+                
                 if 'PoryAI' in recv:
                     return True, 1
                 else:
@@ -176,6 +185,7 @@ class Showdown:
     async def restart(self):
         self.inter.resetState()
         self.turnCount = 0
+        self.battleLog = ""
         print(f"{self.user} looking for a battle...")
         self.currentTag = await self.challengeFoulPlay(self.format)
         await self.manageBattle()
