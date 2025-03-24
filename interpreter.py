@@ -405,14 +405,14 @@ class Interpreter:
                 
                 
                 
-                self.prevSelfHp = newHp if side == "playerSide" else self.prevSelfHp
-                self.prevOppHp = newHp if side == "opposingSide" else self.prevOppHp
+                self.prevSelfHp = copy.deepcopy(newHp) if side == "playerSide" else self.prevSelfHp
+                self.prevOppHp = copy.deepcopy(newHp) if side == "opposingSide" else self.prevOppHp
                 
-                # if self.prevOppHp < 0.5 and not self.opponentHalved:
-                #     self.opponentHalved = True
-                #     turnPoints += self.rewards["progressBase"]
-                # if self.prevOppHp > 0.5 and self.opponentHalved:
-                #     self.opponentHalved = False
+                if self.prevOppHp < 0.5 and not self.opponentHalved:
+                    self.opponentHalved = True
+                    turnPoints += self.rewards["progressBase"]
+                if self.prevOppHp > 0.5 and self.opponentHalved:
+                    self.opponentHalved = False
                 
             # Action - Healing
             if "heal" in splitData[1]:
@@ -425,8 +425,8 @@ class Interpreter:
                 # Additional points for above a certain threshold
                 turnPoints += self.rewards["healBase"] if side == "playerSide" and heal > self.rewards["healThreshold"] else -self.rewards["healBase"] if heal > self.rewards["healThreshold"] else 0
                
-                self.prevSelfHp = newHp if side == "playerSide" else self.prevSelfHp
-                self.prevOppHp = newHp if side == "opposingSide" else self.prevOppHp
+                self.prevSelfHp = copy.deepcopy(newHp) if side == "playerSide" else self.prevSelfHp
+                self.prevOppHp = copy.deepcopy(newHp) if side == "opposingSide" else self.prevOppHp
                                 
             # Action - Knockout
             if "faint" in splitData[1]:
