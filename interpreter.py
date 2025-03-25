@@ -396,7 +396,7 @@ class Interpreter:
         #Decentivize using the same move slot too often
         averageMoveCount = sum([self.action_counts[key] for key in self.action_counts.keys() if "move" in key]) / 4
         for key in self.action_counts.keys():
-            if "move" in key and self.action_counts[key] > (averageMoveCount*self.rewards["moveLeeway"]):
+            if "move" in key and self.action_counts[key] > (averageMoveCount*self.rewards["moveLeeway"]) and action_ratio > 0.5:
                 turnPoints -= self.rewards["movePunishment"]
         
         for line in turnData:
