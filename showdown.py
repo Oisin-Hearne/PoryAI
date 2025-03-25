@@ -129,7 +129,7 @@ class Showdown:
                     self.latestRequest = requestOutput
                     return False, 0 # Battle not done
             
-            elif msgs[1] in ["c", "l", "expire", "deinit"]:
+            elif msgs[1] in ["c", "l", "expire", "deinit", "j"]:
                 #print("Chat message: "+recv)
                 chatTag = msgs[0].strip()
                 # Attempt to use FoulPlay's introductory message to get back into the right tag.
