@@ -200,7 +200,7 @@ class Agent:
         self.model.eval()
         with torch.no_grad():
             q_values, _ = self.model(state_tensor)
-        valid_q = [q_values[0, i].item() - (i * 0.1) for i in valid_indices]
+        valid_q = [q_values[0, i].item() - (i * 0.01) for i in valid_indices]
         
         # move bias
         if moveCount > 0 and switchCount > 0:
@@ -208,14 +208,14 @@ class Agent:
                 if action.startswith("/choose move"):
                     valid_q[i] += 0.3
                     
-                    if "move 1" in action:
+                    if "move" in action:
                         valid_q[i] += 0.03
-                    elif "move 2" in action:
-                        valid_q[i] += 0.03
-                    elif "move 3" in action:
-                        valid_q[i] += 0.02
-                    elif "move 3" in action:
-                        valid_q[i] += 0.02
+                    # elif "move 2" in action:
+                    #     valid_q[i] += 0.03
+                    # elif "move 3" in action:
+                    #     valid_q[i] += 0.02
+                    # elif "move 3" in action:
+                    #     valid_q[i] += 0.02
                 
         
         if not hasattr(self, "action_counts"):
