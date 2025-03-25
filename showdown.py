@@ -164,13 +164,13 @@ class Showdown:
                 print(f"Leaving via : |/leave {self.currentTag}")
                 await self.socket.send([f"|/leave {self.currentTag}"])
                 
-                result = "Won" if "PoryAI" in recv else "Lost"
+                result = "Won" if "win|PoryAI" in recv else "Lost"
                 
                 # Write battle to file
                 with open(f"data/logs/{result}-{self.currentTag}.txt", "a") as f:
                     f.write(self.battleLog)
                 
-                if 'PoryAI' in recv:
+                if 'win|PoryAI' in recv:
                     return True, 1
                 else:
                     return True, -1
