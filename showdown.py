@@ -167,7 +167,7 @@ class Showdown:
                 result = "Won" if "win|PoryAI" in recv else "Lost"
                 
                 # Write battle to file
-                with open(f"data/logs/{result}-{self.currentTag}.txt", "a") as f:
+                with open(f"data/logs/battles/{result}-{self.currentTag}-{time.strftime("%Y%m%d-%H%M%S")}.txt", "a") as f:
                     f.write(self.battleLog)
                 
                 if 'win|PoryAI' in recv:
