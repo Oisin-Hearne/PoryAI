@@ -390,15 +390,20 @@ class Interpreter:
         print(f"Action Counts: {self.action_counts}")
         
         #Decentivize too much switching
-        if action_ratio < 0.5:
+        if action_ratio < 0.5 and "switch" in lastAction[0]:
             print("Detecting too many switches...")
             turnPoints -= self.rewards["ratioPunishment"]
         
-        #Decentivize using the same move slot too often
-        averageMoveCount = sum([self.action_counts[key] for key in self.action_counts.keys() if "move" in key]) / 4
-        for key in self.action_counts.keys():
-            if "move" in key and self.action_counts[key] > (averageMoveCount*self.rewards["moveLeeway"]) and action_ratio > 0.5:
-                turnPoints -= self.rewards["movePunishment"]
+        # Decentivize using the same move slot too often
+        moveCount = sum([self.action_counts[key] for key in self.action_counts.keys() if "move" in key])
+        averageMoveCount = moveCount / 4
+        #TODO: When a move is locked, don't let it effect this.
+                
+        if "switch" not in lastAction[0] and action_ratio > 0.5 and moveCount > 8:
+            for key in self.action_counts.keys():
+                if "move" in key and self.action_counts[key] > (averageMoveCount*self.rewards["moveLeeway"]) and key in lastAction[0].replace(" ", ""):
+                    print(f"Detecting too many moves in slot {key}... {self.action_counts[key]} > {averageMoveCount*self.rewards['moveLeeway']}")
+                    turnPoints -= self.rewards["movePunishment"]
         
         for line in turnData:
             splitData = line.split("|")
