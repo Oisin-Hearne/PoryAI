@@ -93,7 +93,7 @@ class Showdown:
         while True:
             recv = await self.socket.recv()
             msgs = recv.split("|")
-            print(recv)
+            #print(recv)
             battleStarted = False
             
             if 'start\n' in recv and not battleStarted:
@@ -101,7 +101,7 @@ class Showdown:
                 _, _, firstTurn = recv.partition("start\n")
                 self.inter.updateTurnState(firstTurn.split("\n"), True)
                 self.currentRewards = 0
-                print(f"Current Rewards: {self.currentRewards}")
+                #print(f"Current Rewards: {self.currentRewards}")
                 
             elif '/choose - must be used in a chat room' in recv: # handle bot being too eager
                 time.sleep(1)
@@ -130,26 +130,26 @@ class Showdown:
                     return False, 0 # Battle not done
             
             elif msgs[1] in ["c", "l", "expire", "deinit"]:
-                print("Chat message: "+recv)
+                #print("Chat message: "+recv)
                 chatTag = msgs[0].strip()
                 # Attempt to use FoulPlay's introductory message to get back into the right tag.
                 if "battle" in chatTag and msgs[1] == "c" and "hf" in msgs[3] and  self.currentTag != chatTag:
-                    print("Trying to reset tag!")
+                    #print("Trying to reset tag!")
                     self.currentTag = chatTag.replace(">" , "")
-                    print(f"New tag: {self.currentTag}")
+                    #print(f"New tag: {self.currentTag}")
                     await self.socket.send([f"{self.currentTag}|{self.currentAction}|{self.latestRequest['rqid']}"])
 
             elif 't:' in msgs[2] and "Time left" not in msgs[2]:
                 # Send turn content to interpreter here, then reset it.
                 turnContent = recv.split("\n")[3:]
-                print(f"TURN {turnContent[-1:]}"+self.user)
-                print(turnContent)
+                #print(f"TURN {turnContent[-1:]}"+self.user)
+                #print(turnContent)
                 
                 self.state = self.inter.updateTurnState(turnContent, self.turnCount)
 
                 self.currentRewards, battleContent = self.inter.countTurn(turnContent, self.currentCommand)
                 self.battleLog += battleContent + "\n"
-                print(f"State: {self.state}")
+                #print(f"State: {self.state}")
                 
                 
                 self.turnCount += 1
@@ -208,7 +208,7 @@ class Showdown:
 
     def getValidActions(self):
         valid_actions = []
-        print(f"Latest request: {self.latestRequest}")
+        #print(f"Latest request: {self.latestRequest}")
         
         # Showdown requesting a move/switch.
         if 'active' in self.latestRequest:
@@ -248,5 +248,5 @@ class Showdown:
             print("No options found! Going with default...")
             valid_actions.append("/choose default")
             
-        print(valid_actions)
+        #print(valid_actions)
         return valid_actions

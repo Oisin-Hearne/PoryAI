@@ -366,7 +366,7 @@ class Interpreter:
         # Penalise consecutive switches
         if len(self.prevAction) > 0 and len(lastAction) > 0:
             if "switch" in lastAction[0] and "switch" in self.prevAction[0]:
-                print("Consecutive Switches Detected")
+                #print("Consecutive Switches Detected")
                 turnPoints -= self.rewards["switchDecentive"]
         # Slight incentive to attacking
         if "move 1" in lastAction[0]:
@@ -386,8 +386,8 @@ class Interpreter:
             
         move_actions = sum([self.action_counts[key] for key in self.action_counts.keys() if "move" in key])
         action_ratio = max(0.1, min(move_actions / max(1, self.action_counts["switch"]), 10))
-        print(f"Action Ratio: {action_ratio}")
-        print(f"Action Counts: {self.action_counts}")
+        #print(f"Action Ratio: {action_ratio}")
+        #print(f"Action Counts: {self.action_counts}")
         
         #Decentivize too much switching
         if action_ratio < 0.5:
@@ -417,7 +417,7 @@ class Interpreter:
                     self.prevOppHp = newHp
                 
                 damage = max(0, round(damage, 3))
-                print(f"Damage Dealt: {damage}, Side: {side}, Old Player HP: {self.prevSelfHp}, Old Opp HP: {self.prevOppHp}, New HP: {newHp}")
+                #print(f"Damage Dealt: {damage}, Side: {side}, Old Player HP: {self.prevSelfHp}, Old Opp HP: {self.prevOppHp}, New HP: {newHp}")
                 # Dealing damage above a certain amount is rewarded, but punished if too little damage is done.
                 # Receiving very little damage is rewarded, receiving too much is punished.
                 #turnPoints += damageBase if (damage > damageThreshold and side == "opposingSide") or (damage < damageThreshold and side == "playerSide") else -damageBase
@@ -445,7 +445,7 @@ class Interpreter:
                          
                 heal = max(0, round(heal, 3))
                 
-                print(f"Healing Done: {heal}, Side: {side}")   
+                #print(f"Healing Done: {heal}, Side: {side}")   
                 # Healing is rewarded for the player and punished for the opponent.
                 turnPoints += self.rewards["healBase"] if side == "playerSide" else -self.rewards["healBase"]
                 # Additional points for above a certain threshold
