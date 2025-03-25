@@ -7,7 +7,7 @@ import agent
 import concurrent.futures
 import timeit
 import time
-
+from datetime import datetime
 class Showdown:
     def __init__(self, uri, user, password, websocket, format):
         self.uri = uri
@@ -165,9 +165,9 @@ class Showdown:
                 await self.socket.send([f"|/leave {self.currentTag}"])
                 
                 result = "Won" if "win|PoryAI" in recv else "Lost"
-                
+                timestamp = datetime.now().strftime("%Y_%m%d-%p%I_%M_%S")
                 # Write battle to file
-                with open(f"data/logs/battles/{result}-{self.currentTag}-{time.strftime("%Y%m%d-%H%M%S")}.txt", "a") as f:
+                with open(f"data/logs/battles/{result}-{self.currentTag}-{timestamp}.txt", "a") as f:
                     f.write(self.battleLog)
                 
                 if 'win|PoryAI' in recv:

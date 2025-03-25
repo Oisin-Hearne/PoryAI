@@ -209,11 +209,13 @@ class Agent:
                     valid_q[i] += 0.3
                     
                     if "move 1" in action:
-                        valid_q[i] += 0.05
+                        valid_q[i] += 0.03
                     elif "move 2" in action:
                         valid_q[i] += 0.03
                     elif "move 3" in action:
-                        valid_q[i] += 0.01
+                        valid_q[i] += 0.02
+                    elif "move 3" in action:
+                        valid_q[i] += 0.02
                 
         
         if not hasattr(self, "action_counts"):

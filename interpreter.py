@@ -28,7 +28,7 @@ class Interpreter:
         self.prevOppHp = 1
         self.prevAction = ""
         self.opponentHalved = False
-        self.action_counts = {'move': 0, 'switch': 0}
+        self.action_counts = {'move1': 0, 'move2': 0, 'move3': 0, 'move4':0, 'switch': 0}
         
         with open('data/sample-state.json') as f:
             self.state = json.load(f)
@@ -369,17 +369,35 @@ class Interpreter:
                 print("Consecutive Switches Detected")
                 turnPoints -= self.rewards["switchDecentive"]
         # Slight incentive to attacking
-        if "move" in lastAction[0]:
-            self.action_counts['move'] += 1
+        if "move 1" in lastAction[0]:
+            self.action_counts['move1'] += 1
+            turnPoints += self.rewards["attackIncentive"]
+        elif "move 2" in lastAction[0]:
+            self.action_counts['move2'] += 1
+            turnPoints += self.rewards["attackIncentive"]
+        elif "move 3" in lastAction[0]:
+            self.action_counts['move3'] += 1
+            turnPoints += self.rewards["attackIncentive"]
+        elif "move 4" in lastAction[0]:
+            self.action_counts['move4'] += 1
             turnPoints += self.rewards["attackIncentive"]
         elif "switch" in lastAction[0]:
             self.action_counts['switch'] += 1
             
-        action_ratio = max(0.1, min(self.action_counts["move"] / max(1, self.action_counts["switch"]), 10))
+        move_actions = sum([self.action_counts[key] for key in self.action_counts.keys() if "move" in key])
+        action_ratio = max(0.1, min(move_actions / max(1, self.action_counts["switch"]), 10))
         print(f"Action Ratio: {action_ratio}")
         print(f"Action Counts: {self.action_counts}")
+        
+        #Decentivize too much switching
         if action_ratio < 0.5:
             turnPoints -= self.rewards["ratioPunishment"]
+        
+        #Decentivize using the same move slot too often
+        averageMoveCount = sum([self.action_counts[key] for key in self.action_counts.keys() if "move" in key]) / 4
+        for key in self.action_counts.keys():
+            if "move" in key and self.action_counts[key] > (averageMoveCount*self.rewards["moveLeeway"]):
+                turnPoints -= self.rewards["movePunishment"]
         
         for line in turnData:
             splitData = line.split("|")

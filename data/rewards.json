@@ -16,5 +16,7 @@
     "attackIncentive": 4,
     "ratioPunishment": 3,
     "switchDecentive": 4,
-    "progressBase": 3
+    "progressBase": 3,
+    "movePunishment": 2,
+    "moveLeeway": 1.2
 }
