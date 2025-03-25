@@ -391,6 +391,7 @@ class Interpreter:
         
         #Decentivize too much switching
         if action_ratio < 0.5:
+            print("Detecting too many switches...")
             turnPoints -= self.rewards["ratioPunishment"]
         
         #Decentivize using the same move slot too often

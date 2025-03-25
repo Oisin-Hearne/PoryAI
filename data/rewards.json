@@ -14,7 +14,7 @@
     "effectiveBase": 3,
     "failBase": 3,
     "attackIncentive": 4,
-    "ratioPunishment": 3,
+    "ratioPunishment": 5,
     "switchDecentive": 4,
     "progressBase": 3,
     "movePunishment": 2,
