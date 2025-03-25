@@ -393,6 +393,12 @@ class Interpreter:
         if action_ratio < 0.5 and "switch" in lastAction[0]:
             print("Detecting too many switches...")
             turnPoints -= self.rewards["ratioPunishment"]
+            
+            # Do it again if it's really bad
+            if action_ratio < 0.3:
+                turnPoints -= self.rewards["ratioPunishment"]
+            if action_ratio < 0.1:
+                turnPoints -= self.rewards["ratioPunishment"]
         
         # Decentivize using the same move slot too often
         moveCount = sum([self.action_counts[key] for key in self.action_counts.keys() if "move" in key])
