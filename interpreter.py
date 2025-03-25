@@ -386,8 +386,8 @@ class Interpreter:
             
         move_actions = sum([self.action_counts[key] for key in self.action_counts.keys() if "move" in key])
         action_ratio = max(0.1, min(move_actions / max(1, self.action_counts["switch"]), 10))
-        #print(f"Action Ratio: {action_ratio}")
-        #print(f"Action Counts: {self.action_counts}")
+        print(f"Action Ratio: {action_ratio}")
+        print(f"Action Counts: {self.action_counts}")
         
         #Decentivize too much switching
         if action_ratio < 0.5:
