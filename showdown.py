@@ -9,13 +9,14 @@ import timeit
 import time
 from datetime import datetime
 class Showdown:
-    def __init__(self, uri, user, password, websocket, format):
+    def __init__(self, uri, user, password, websocket, format, challenger):
         self.uri = uri
         self.user = user
         self.password = password
         self.websocket = websocket
         self.inter = interpreter.Interpreter()
         self.format = format
+        self.challenger = challenger
 
     async def connectToShowdown(self):
         self.socket = await websockets.connect(self.websocket)
@@ -72,9 +73,9 @@ class Showdown:
                     await self.sendMessage(f"|/accept {recv[2]}|")
             recv = await self.socket.recv()
 
-    async def challengeFoulPlay(self, format):
-        foulPlayUser = self.user.replace("PoryAI", "FoulPlay")
-        recv = await self.sendMessage(f"|/challenge {foulPlayUser}, {format}|")
+    async def challengeUser(self, format, user):
+        
+        recv = await self.sendMessage(f"|/challenge {user}, {format}|")
         while True:
             recv = recv.split("|")
             if 'battle' in recv[0] and 'init' in recv[1]:
@@ -82,6 +83,17 @@ class Showdown:
                 return recv[0][1:].strip()
             
             recv = await self.socket.recv()
+            
+    async def waitForChallenge(self, user):
+        while True:
+            recv = await self.socket.recv()
+            recv = recv.split("|")
+            if len(recv) > 4 and '/challenge gen9randombattle' in recv[4]:
+                await self.socket.send(f"|/accept {user}")
+            if len(recv) > 1 and 'battle' in recv[0] and 'init' in recv[1]:
+                print(f"New Battle tag: {recv[0][1:].strip()}")
+                return recv[0][1:].strip()
+            
 
     # Runs the logic for the given battle tag
     # Communicates with the Interpreter for state,
@@ -187,8 +199,12 @@ class Showdown:
         self.inter.resetState()
         self.turnCount = 0
         self.battleLog = ""
-        print(f"{self.user} looking for a battle...")
-        self.currentTag = await self.challengeFoulPlay(self.format)
+        if self.challenger:
+            print(f"{self.user} looking for a battle...")
+            self.currentTag = await self.challengeUser(self.format, "PoryAI-2")
+        else: 
+            print(f"{self.user} awaiting challenge...")
+            self.currentTag = await self.waitForChallenge("PoryAI-1")
         await self.manageBattle()
     
     def getState(self):
