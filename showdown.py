@@ -78,9 +78,8 @@ class Showdown:
         recv = await self.sendMessage(f"|/challenge {user}, {format}|")
         while True:
             recv = recv.split("|")
-            if 'battle' in recv[0] and '|init' in recv[1]:
+            if 'battle' in recv[0] and 'init' in recv[1] and not 'deinit' in recv[1]:
                 print(f"New Battle tag: {recv[0][1:].strip()}")
-                print(recv)
                 return recv[0][1:].strip()
             
             recv = await self.socket.recv()
@@ -91,7 +90,7 @@ class Showdown:
             recv = recv.split("|")
             if len(recv) > 4 and '/challenge gen9randombattle' in recv[4]:
                 await self.socket.send(f"|/accept {user}")
-            if len(recv) > 1 and 'battle' in recv[0] and '|init' in recv[1]:
+            if len(recv) > 1 and 'battle' in recv[0] and 'init' in recv[1] and not 'deinit' in recv[1]:
                 print(f"New Battle tag: {recv[0][1:].strip()}")
                 return recv[0][1:].strip()
             
@@ -100,20 +99,19 @@ class Showdown:
     # Communicates with the Interpreter for state,
     # and the agent for actions.
     async def manageBattle(self):
-
+        self.currentRewards = 0
 
 
         while True:
             recv = await self.socket.recv()
             msgs = recv.split("|")
-            print(recv)
+           # print(recv)
             battleStarted = False
             
             if 'start\n' in recv and not battleStarted:
                 battleStarted = True
                 _, _, firstTurn = recv.partition("start\n")
                 self.inter.updateTurnState(firstTurn.split("\n"), True)
-                self.currentRewards = 0
                 #print(f"Current Rewards: {self.currentRewards}")
                 
             elif '/choose - must be used in a chat room' in recv: # handle bot being too eager
@@ -185,7 +183,7 @@ class Showdown:
                     with open(f"data/logs/battles/{result}-{self.currentTag}-{timestamp}.txt", "a") as f:
                         f.write(self.battleLog)
                 
-                if 'win|PoryAI' in recv:
+                if f'win|{self.user}' in recv:
                     return True, 1
                 else:
                     return True, -1
