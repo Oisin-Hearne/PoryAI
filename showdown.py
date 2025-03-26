@@ -78,8 +78,9 @@ class Showdown:
         recv = await self.sendMessage(f"|/challenge {user}, {format}|")
         while True:
             recv = recv.split("|")
-            if 'battle' in recv[0] and 'init' in recv[1]:
+            if 'battle' in recv[0] and '|init' in recv[1]:
                 print(f"New Battle tag: {recv[0][1:].strip()}")
+                print(recv)
                 return recv[0][1:].strip()
             
             recv = await self.socket.recv()
@@ -90,7 +91,7 @@ class Showdown:
             recv = recv.split("|")
             if len(recv) > 4 and '/challenge gen9randombattle' in recv[4]:
                 await self.socket.send(f"|/accept {user}")
-            if len(recv) > 1 and 'battle' in recv[0] and 'init' in recv[1]:
+            if len(recv) > 1 and 'battle' in recv[0] and '|init' in recv[1]:
                 print(f"New Battle tag: {recv[0][1:].strip()}")
                 return recv[0][1:].strip()
             
@@ -105,7 +106,7 @@ class Showdown:
         while True:
             recv = await self.socket.recv()
             msgs = recv.split("|")
-            #print(recv)
+            print(recv)
             battleStarted = False
             
             if 'start\n' in recv and not battleStarted:
@@ -172,15 +173,17 @@ class Showdown:
             
 
             if '|win|' in recv: # Battle is over.
-                #time.sleep(1)
+                
                 print(f"Leaving via : |/leave {self.currentTag}")
                 await self.socket.send([f"|/leave {self.currentTag}"])
+                time.sleep(1)
                 
                 result = "Won" if "win|PoryAI" in recv else "Lost"
                 timestamp = datetime.now().strftime("%Y_%m%d-%p%I_%M_%S")
                 # Write battle to file
-                with open(f"data/logs/battles/{result}-{self.currentTag}-{timestamp}.txt", "a") as f:
-                    f.write(self.battleLog)
+                if self.user == "PoryAI-1": # Only need one copy of it.
+                    with open(f"data/logs/battles/{result}-{self.currentTag}-{timestamp}.txt", "a") as f:
+                        f.write(self.battleLog)
                 
                 if 'win|PoryAI' in recv:
                     return True, 1
