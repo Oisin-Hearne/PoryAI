@@ -48,6 +48,9 @@ class Agent:
         self.model = PokeNet(state_dim, action_dim).to(device)
         self.optimizer = optim.Adam(self.model.parameters(), lr=lr)
         self.criterion = nn.MSELoss()
+        
+        self.target_model = PokeNet(state_dim, action_dim).to(device)
+        self.target_model.load_state_dict(self.model.state_dict())
     
     def get_state(self, state):
         
@@ -206,16 +209,16 @@ class Agent:
         if moveCount > 0 and switchCount > 0:
             for i, action in enumerate(valid_actions):
                 if action.startswith("/choose move"):
-                    valid_q[i] += 0.3
+                    valid_q[i] += 0.4
                     
-                    if "move" in action:
-                        valid_q[i] += 0.03
-                    # elif "move 2" in action:
-                    #     valid_q[i] += 0.03
-                    # elif "move 3" in action:
-                    #     valid_q[i] += 0.02
-                    # elif "move 3" in action:
-                    #     valid_q[i] += 0.02
+                    # if "move" in action:
+                    #     valid_q[i] += 0.04
+                    # # elif "move 2" in action:
+                    # #     valid_q[i] += 0.03
+                    # # elif "move 3" in action:
+                    # #     valid_q[i] += 0.02
+                    # # elif "move 3" in action:
+                    # #     valid_q[i] += 0.02
                 
         
         if not hasattr(self, "action_counts"):
@@ -293,6 +296,8 @@ class Agent:
         if self.epsilon > self.epsilon_min:
             self.epsilon *= self.epsilon_decay
             
+    def loadTargetModel(self):
+        self.target_model.load_state_dict(self.model.state_dict())
     
     def saveModel(self, path):
         torch.save({
