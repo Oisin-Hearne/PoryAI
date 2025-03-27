@@ -17,6 +17,7 @@ class Showdown:
         self.inter = interpreter.Interpreter()
         self.format = format
         self.challenger = challenger
+        self.player = ""
 
     async def connectToShowdown(self):
         self.socket = await websockets.connect(self.websocket)
@@ -105,13 +106,18 @@ class Showdown:
         while True:
             recv = await self.socket.recv()
             msgs = recv.split("|")
-           # print(recv)
+            print(recv)
             battleStarted = False
+            
+            if f"player|p1|{self.user}" in recv:
+                self.player = "p1"
+            elif f"player|p2|{self.user}" in recv:
+                self.player = "p2"
             
             if 'start\n' in recv and not battleStarted:
                 battleStarted = True
                 _, _, firstTurn = recv.partition("start\n")
-                self.inter.updateTurnState(firstTurn.split("\n"), True)
+                self.inter.updateTurnState(firstTurn.split("\n"), True, self.player)
                 #print(f"Current Rewards: {self.currentRewards}")
                 
             elif '/choose - must be used in a chat room' in recv: # handle bot being too eager
@@ -156,9 +162,9 @@ class Showdown:
                 #print(f"TURN {turnContent[-1:]}"+self.user)
                 #print(turnContent)
                 
-                self.state = self.inter.updateTurnState(turnContent, self.turnCount)
+                self.state = self.inter.updateTurnState(turnContent, self.turnCount, self.player)
 
-                self.currentRewards, battleContent = self.inter.countTurn(turnContent, self.currentCommand)
+                self.currentRewards, battleContent = self.inter.countTurn(turnContent, self.currentCommand, self.player)
                 self.battleLog += battleContent + "\n"
                 #print(f"State: {self.state}")
                 
