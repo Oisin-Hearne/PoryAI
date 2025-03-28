@@ -469,7 +469,7 @@ class Interpreter:
             # Action - Knockout
             if "faint" in splitData[1]:
                 side = "playerSide" if player in line else "opposingSide"
-                turnPoints += self.rewards["koBase"] if side == "opposingSide" else -self.rewards["koBase"]
+                turnPoints += self.rewards["koBase"] if side == "opposingSide" else -(self.rewards["koBase"] /2)
                 
             # Action - Status Change
             if "-status" in splitData[1]:

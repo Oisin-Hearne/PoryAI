@@ -13,9 +13,9 @@
     "hazardClearBase": 3,
     "effectiveBase": 3,
     "failBase": 3,
-    "attackIncentive": 3,
-    "ratioPunishment": 2,
-    "switchDecentive": 2,
+    "attackIncentive": 5,
+    "ratioPunishment": 4,
+    "switchDecentive": 4,
     "progressBase": 4,
     "movePunishment": 2,
     "moveLeeway": 2.0
