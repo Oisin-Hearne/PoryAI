@@ -9,7 +9,7 @@ import timeit
 import time
 from datetime import datetime
 class Showdown:
-    def __init__(self, uri, user, password, websocket, format, challenger):
+    def __init__(self, uri, user, password, websocket, format, challenger, verbose):
         self.uri = uri
         self.user = user
         self.password = password
@@ -18,6 +18,7 @@ class Showdown:
         self.format = format
         self.challenger = challenger
         self.player = ""
+        self.verbose = verbose
 
     async def connectToShowdown(self):
         self.socket = await websockets.connect(self.websocket)
@@ -65,7 +66,6 @@ class Showdown:
         recv = await self.sendMessage(f"|/search {format}|")
 
         while True:
-            #print(recv)
             recv = recv.split("|")
             if 'battle' in recv[0]:
                 return recv[0][1:].strip()
@@ -80,7 +80,6 @@ class Showdown:
         while True:
             recv = recv.split("|")
             if 'battle' in recv[0] and 'init' in recv[1] and not 'deinit' in recv[1]:
-                print(f"New Battle tag: {recv[0][1:].strip()}")
                 return recv[0][1:].strip()
             
             recv = await self.socket.recv()
@@ -92,7 +91,6 @@ class Showdown:
             if len(recv) > 4 and '/challenge gen9randombattle' in recv[4]:
                 await self.socket.send(f"|/accept {user}")
             if len(recv) > 1 and 'battle' in recv[0] and 'init' in recv[1] and not 'deinit' in recv[1]:
-                print(f"New Battle tag: {recv[0][1:].strip()}")
                 return recv[0][1:].strip()
             
 
@@ -106,7 +104,6 @@ class Showdown:
         while True:
             recv = await self.socket.recv()
             msgs = recv.split("|")
-            print(recv)
             battleStarted = False
             
             if f"player|p1|{self.user}" in recv:
@@ -118,14 +115,8 @@ class Showdown:
                 battleStarted = True
                 _, _, firstTurn = recv.partition("start\n")
                 self.inter.updateTurnState(firstTurn.split("\n"), True, self.player)
-                #print(f"Current Rewards: {self.currentRewards}")
-                
             elif '/choose - must be used in a chat room' in recv: # handle bot being too eager
                 time.sleep(1)
-                print("Bot was too eager!")
-                print(self.currentTag)
-                print(self.latestRequest)
-                print(self.currentCommand)
                 await self.socket.send(self.currentCommand)
                 
             elif "Can't switch: You have to pass to a fainted Pokémon" in recv: # man i hate rabsca
@@ -159,15 +150,14 @@ class Showdown:
             elif 't:' in msgs[2] and "Time left" not in msgs[2]:
                 # Send turn content to interpreter here, then reset it.
                 turnContent = recv.split("\n")[3:]
-                #print(f"TURN {turnContent[-1:]}"+self.user)
-                #print(turnContent)
                 
                 self.state = self.inter.updateTurnState(turnContent, self.turnCount, self.player)
 
                 self.currentRewards, battleContent = self.inter.countTurn(turnContent, self.currentCommand, self.player)
                 self.battleLog += battleContent + "\n"
-                #print(f"State: {self.state}")
                 
+                if self.verbose:
+                    print(f"Turn {self.turnCount}:{self.turnContent} \n Rewards: {self.currentRewards} \n State: {self.state} \n")
                 
                 self.turnCount += 1
                 turnContent = []
@@ -178,16 +168,15 @@ class Showdown:
 
             if '|win|' in recv: # Battle is over.
                 
-                print(f"Leaving via : |/leave {self.currentTag}")
                 await self.socket.send([f"|/leave {self.currentTag}"])
-                time.sleep(1)
                 
-                result = "Won" if "win|PoryAI" in recv else "Lost"
+                result = "Won" if ("win|"+self.user) in recv else "Lost"
                 timestamp = datetime.now().strftime("%Y_%m%d-%p%I_%M_%S")
                 # Write battle to file
-                if self.user == "PoryAI-1": # Only need one copy of it.
+                if self.verbose:
                     with open(f"data/logs/battles/{result}-{self.currentTag}-{timestamp}.txt", "a") as f:
                         f.write(self.battleLog)
+                        print(f"User {self.user} {result} the battle!\n=====================================================================")
                 
                 if f'win|{self.user}' in recv:
                     return True, 1
@@ -198,7 +187,6 @@ class Showdown:
     async def run(self):
         await self.connectNoSecurity()
         while True:
-            print("looking for battle "+self.user)
             battleTag = await self.challengeFoulPlay(self.format)
             await self.manageBattle(battleTag)
     
@@ -207,10 +195,8 @@ class Showdown:
         self.turnCount = 0
         self.battleLog = ""
         if self.challenger:
-            print(f"{self.user} looking for a battle...")
             self.currentTag = await self.challengeUser(self.format, "PoryAI-2")
         else: 
-            print(f"{self.user} awaiting challenge...")
             self.currentTag = await self.waitForChallenge("PoryAI-1")
         await self.manageBattle()
     
@@ -218,7 +204,6 @@ class Showdown:
         return self.inter.state
         
     async def executeAction(self, action):
-        print(f"{self.currentTag}|{action}|{self.latestRequest['rqid']}")
         self.currentAction = action
         self.currentCommand = [f"{self.currentTag}|{action}|{self.latestRequest['rqid']}"]
         await self.socket.send(self.currentCommand)
@@ -231,7 +216,6 @@ class Showdown:
 
     def getValidActions(self):
         valid_actions = []
-        #print(f"Latest request: {self.latestRequest}")
         
         # Showdown requesting a move/switch.
         if 'active' in self.latestRequest:
@@ -271,5 +255,4 @@ class Showdown:
             print("No options found! Going with default...")
             valid_actions.append("/choose default")
             
-        #print(valid_actions)
         return valid_actions
