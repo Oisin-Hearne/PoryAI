@@ -157,7 +157,7 @@ class Showdown:
                 self.battleLog += battleContent + "\n"
                 
                 if self.verbose:
-                    print(f"Turn {self.turnCount}:{self.turnContent} \n Rewards: {self.currentRewards} \n State: {self.state} \n")
+                    print(f"Turn {self.turnCount}:{turnContent} \n Rewards: {self.currentRewards} \n State: {self.state} \n")
                 
                 self.turnCount += 1
                 turnContent = []

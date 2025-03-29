@@ -539,7 +539,7 @@ class Interpreter:
         max_reward = sum([self.rewards[key] for key in self.rewards.keys()])
         actualReward = math.tanh(turnPoints / max_reward )
         turnString = "".join(turnData)+": "+str(actualReward)
-        print(f"Player: {player}, \n Turn String: {turnData}, \n Reward: {actualReward}")
+        #print(f"Player: {player}, \n Turn String: {turnData}, \n Reward: {actualReward}")
         return actualReward, turnString 
 
 
