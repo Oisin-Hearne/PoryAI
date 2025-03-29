@@ -37,7 +37,7 @@ class Agent:
         self.memory = []
         self.battles = []
         self.currentBattle = []
-        self.batch_size = 128
+        self.batch_size = 500
         self.device = device
         
         # Receives a list of actions and creates a dictionary to map them to indices.
