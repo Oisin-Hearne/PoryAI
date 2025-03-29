@@ -283,7 +283,7 @@ class Agent:
         q_vals, _ = self.model(states)
         current_q_vals = q_vals.gather(1, actions.unsqueeze(1)).squeeze(1)
         with torch.no_grad():
-            next_q, _ = self.model(next_states)
+            next_q, _ = self.target_model(next_states)
             next_q_vals = next_q.max(1)[0]
             target_q_vals = rewards + (1- dones) * self.gamma * next_q_vals
             
