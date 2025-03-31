@@ -7,6 +7,8 @@ class Interpreter:
 
     def __init__(self):
         self.loadData()
+        self.stats = {"superEffective": 0, "resisted": 0, "fainted": 0, "boosted": 0, "damaged": 0, "setHazards": 0, "clearedHazards": 0, "switched": 0}
+        self.actionRatio = 0.0
 
     # Load in previously fetched data for use in state.
     def loadData(self):
@@ -29,10 +31,15 @@ class Interpreter:
         self.prevAction = ""
         self.opponentHalved = False
         self.action_counts = {'move1': 0, 'move2': 0, 'move3': 0, 'move4':0, 'switch': 0}
+        self.actionRatio = 0
         
         with open('data/sample-state.json') as f:
             self.state = json.load(f)
 
+    def resetStats(self):
+        self.stats = {"superEffective": 0, "resisted": 0, "fainted": 0, "boosted": 0, "damaged": 0, "setHazards": 0, "clearedHazards": 0, "switched": 0}
+    def getStats(self):
+        return self.stats
 
     # Update state w/ Active Request
     def updateStateActive(self, newState):
@@ -363,6 +370,7 @@ class Interpreter:
         
 
     def countTurn(self, turnData, lastAction, player):
+        self.battleLength += 1
         turnPoints = 0
         opponent = "p1" if player == "p2" else "p2"
     
@@ -388,19 +396,19 @@ class Interpreter:
             self.action_counts['switch'] += 1
             
         move_actions = sum([self.action_counts[key] for key in self.action_counts.keys() if "move" in key])
-        action_ratio = max(0.1, min(move_actions / max(1, self.action_counts["switch"]), 10))
-        print(f"Action Ratio: {action_ratio}")
+        self.actionRatio = max(0.1, min(move_actions / max(1, self.action_counts["switch"]), 10))
+        print(f"Action Ratio: {self.actionRatio}")
         print(f"Action Counts: {self.action_counts}")
         
         #Decentivize too much switching
-        if action_ratio < 0.5 and "switch" in lastAction[0]:
+        if self.actionRatio < 0.5 and "switch" in lastAction[0]:
             print("Detecting too many switches...")
             turnPoints -= self.rewards["ratioPunishment"]
-            
+            self.stats["switched"] += 1
             # Do it again if it's really bad
-            if action_ratio < 0.3:
+            if self.actionRatio < 0.3:
                 turnPoints -= self.rewards["ratioPunishment"]
-            if action_ratio < 0.1:
+            if self.actionRatio < 0.1:
                 turnPoints -= self.rewards["ratioPunishment"]
         
         # Decentivize using the same move slot too often
@@ -408,7 +416,7 @@ class Interpreter:
         averageMoveCount = moveCount / 4
         #TODO: When a move is locked, don't let it effect this.
                 
-        if "switch" not in lastAction[0] and action_ratio > 0.5 and moveCount > 8:
+        if "switch" not in lastAction[0] and self.actionRatio > 0.5 and moveCount > 8:
             for key in self.action_counts.keys():
                 if "move" in key and self.action_counts[key] > (averageMoveCount*self.rewards["moveLeeway"]) and key in lastAction[0].replace(" ", ""):
                     print(f"Detecting too many moves in slot {key}... {self.action_counts[key]} > {averageMoveCount*self.rewards['moveLeeway']}")
@@ -430,6 +438,7 @@ class Interpreter:
                 else:
                     damage = self.prevOppHp - newHp
                     self.prevOppHp = newHp
+                    self.stats["damaged"] += 1
                 
                 damage = max(0, round(damage, 3))
                 #print(f"Damage Dealt: {damage}, Side: {side}, Old Player HP: {self.prevSelfHp}, Old Opp HP: {self.prevOppHp}, New HP: {newHp}")
@@ -470,6 +479,8 @@ class Interpreter:
             if "faint" in splitData[1]:
                 side = "playerSide" if player in line else "opposingSide"
                 turnPoints += self.rewards["koBase"] if side == "opposingSide" else -(self.rewards["koBase"] /2)
+                if side == "opposingSide":
+                    self.stats["fainted"] += 1
                 
             # Action - Status Change
             if "-status" in splitData[1]:
@@ -489,14 +500,22 @@ class Interpreter:
                 modifier = 1 if "-boost" in splitData[1] else -1
                 boostAmnt = int(splitData[4])
                 turnPoints += (modifier*self.rewards["boostBase"]*boostAmnt) if side == "playerSide" else -(modifier*self.rewards["boostBase"]*boostAmnt)
+                
+                if side == "playerSide":
+                    self.stats["boosted"] += 1        
                         
             # Action - Supereffective & Resisted Hits
             if "supereffective" in splitData[1]:
                 side = "playerSide" if player in line else "opposingSide"
                 turnPoints += self.rewards["effectiveBase"] if side == "opposingSide" else -self.rewards["effectiveBase"]
+                if side == "opposingSide":
+                    self.stats["superEffective"] += 1
+                
             if "resisted" in splitData[1] or "immune" in splitData[1]:
                 side = "playerSide" if player in line else "opposingSide"
                 turnPoints += -self.rewards["effectiveBase"] if side == "opposingSide" else self.rewards["effectiveBase"]
+                if side == "playerSide":
+                    self.stats["resisted"] += 1
                 
             # Action - Field Effects
             if "sidestart" in splitData[1]:
@@ -508,6 +527,8 @@ class Interpreter:
                     turnPoints += self.rewards["fieldBase"] if side == "playerSide" else -self.rewards["fieldBase"]
                 elif any(x in line for x in negatives):
                     turnPoints += self.rewards["hazardSetBase"] if side == "opposingSide" else -self.rewards["hazardSetBase"]
+                    if side == "opposingSide":
+                        self.stats["setHazards"] += 1
                     
             if "sideend" in splitData[1]:
                 side = "playerSide" if player in splitData[2] else "opposingSide"
@@ -521,6 +542,8 @@ class Interpreter:
                     turnPoints += -self.rewards["fieldBase"] if side == "playerSide" else self.rewards["fieldBase"]
                 elif any(x in line for x in negatives):
                     turnPoints += -self.rewards["hazardClearBase"] if side == "opposingSide" else self.rewards["hazardClearBase"]
+                    if side == "playerSide":
+                        self.stats["clearedHazards"] += 1
             
             # Action - Setting Weather
             if "weather" in splitData[1]:

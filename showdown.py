@@ -9,7 +9,7 @@ import timeit
 import time
 from datetime import datetime
 class Showdown:
-    def __init__(self, uri, user, password, websocket, format, challenger, verbose):
+    def __init__(self, uri, user, password, websocket, format, challenger, verbose, opponent):
         self.uri = uri
         self.user = user
         self.password = password
@@ -17,6 +17,7 @@ class Showdown:
         self.inter = interpreter.Interpreter()
         self.format = format
         self.challenger = challenger
+        self.opponent = opponent
         self.player = ""
         self.verbose = verbose
 
@@ -195,9 +196,9 @@ class Showdown:
         self.turnCount = 0
         self.battleLog = ""
         if self.challenger:
-            self.currentTag = await self.challengeUser(self.format, "PoryAI-2")
+            self.currentTag = await self.challengeUser(self.format, self.opponent)
         else: 
-            self.currentTag = await self.waitForChallenge("PoryAI-1")
+            self.currentTag = await self.waitForChallenge(self.opponent)
         await self.manageBattle()
     
     def getState(self):
