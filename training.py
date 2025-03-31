@@ -91,7 +91,7 @@ class Trainer:
         for battle in range(self.battles):
             
             # Concurrently execute both agents and get the results from agent_battle
-            results = await asyncio.gather(self.agent_battle(self.agent[0], self.showdown[0]), self.agent_battle(self.agent[1], self.showdown[1]))
+            results = await asyncio.gather(self.agent_battle(self.agents[0], self.showdowns[0]), self.agent_battle(self.agents[1], self.showdowns[1]))
             winner = results[0][0]
             print(results)
             if winner == 1:
@@ -174,7 +174,7 @@ class Trainer:
         for battle in range(self.battles):
             
             # Concurrently execute both agents and get the results from agent_battle
-            results = await self.agent_battle(self.agent[0], self.showdown[0])
+            results = await self.agent_battle(self.agents[0], self.showdowns[0])
             winner = results[0][0]
             print(results)
             if winner == 1:
