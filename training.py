@@ -33,7 +33,7 @@ class Trainer:
         with open('data/rewards.json') as f:
             self.rewardScheme = json.load(f)
         
-    async def analyseBattle(self, showdown, battleLength, winner):
+    def analyseBattle(self, showdown, battleLength, winner):
         # Reward is limited by battle length and switchy behaviour.
         actionRatio = showdown.inter.actionRatio
         
@@ -175,16 +175,16 @@ class Trainer:
             
             # Concurrently execute both agents and get the results from agent_battle
             results = await self.agent_battle(self.agents[0], self.showdowns[0])
-            winner = results[0][0]
+            winner = results[0]
             print(results)
             if winner == 1:
                 agent1Wins += 1
                 latestWins += 1
-                rewards += results[0][1]
-                plotY.append(results[0][1])
+                rewards += results[1]
+                plotY.append(results[1])
             else:
-                rewards += results[0][1]
-                plotY.append(results[0][1])
+                rewards += results[1]
+                plotY.append(results[1])
                 
             self.agents[0].replay()
             

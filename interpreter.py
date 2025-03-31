@@ -370,7 +370,6 @@ class Interpreter:
         
 
     def countTurn(self, turnData, lastAction, player):
-        self.battleLength += 1
         turnPoints = 0
         opponent = "p1" if player == "p2" else "p2"
     
