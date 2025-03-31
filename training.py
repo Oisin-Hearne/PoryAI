@@ -70,7 +70,7 @@ class Trainer:
         print("Finishing battle...")
         return winner, totalReward
 
-    def makePlot(x, y, battle, timestamp, winrate, ratio):
+    def makePlot(self, x, y, battle, timestamp, winrate, ratio):
             plt.plot(x, y)
             plt.xlabel('Battles')
             plt.ylabel('Rewards')
@@ -135,7 +135,7 @@ class Trainer:
                 self.agents[0].saveMemory(f"data/memory/memory_{battle}.json")
                 
                 # Save plot
-                self.makePlot(plotX, plotY, battle, timestamp, winRatio, currentBestRatio)
+                self.makePlot(plotX, plotY, battle, timestamp, winRatio)
                 
 
 
@@ -174,17 +174,15 @@ class Trainer:
         for battle in range(self.battles):
             
             # Concurrently execute both agents and get the results from agent_battle
-            results = await self.agent_battle(self.agents[0], self.showdowns[0])
-            winner = results[0]
-            print(results)
+            winner, reward = await self.agent_battle(self.agents[0], self.showdowns[0])
             if winner == 1:
                 agent1Wins += 1
                 latestWins += 1
-                rewards += results[1]
-                plotY.append(results[1])
+                rewards += reward
+                plotY.append(rewards)
             else:
-                rewards += results[1]
-                plotY.append(results[1])
+                rewards += reward
+                plotY.append(rewards)
                 
             self.agents[0].replay()
             
@@ -218,7 +216,9 @@ class Trainer:
                 self.agents[0].saveMemory(f"data/memory/memory_{battle}.json")
                 
                 # Save plot
-                self.makePlot(plotX, plotY, battle, timestamp, winRatio, currentBestRatio)
+                print(plotX)
+                print(plotY)
+                self.makePlot(plotX, plotY, battle, timestamp, winRatio)
                 
 
 
