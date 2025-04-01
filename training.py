@@ -36,12 +36,15 @@ class Trainer:
     def analyseBattle(self, showdown, battleLength, winner):
         # Reward is limited by battle length and switchy behaviour.
         actionRatio = showdown.inter.actionRatio
+        repeatMoves = showdown.inter.repeatMoves
         
         battleReward = -self.rewardScheme["win"] if not winner else self.rewardScheme["win"]
         if winner and battleLength < self.rewardScheme["lengthThreshold"]:
             battleReward += self.rewardScheme["shortBattle"]
         if actionRatio < self.rewardScheme["actionThreshold"]:
             battleReward -= self.rewardScheme["switchyBattle"]
+        if repeatMoves > self.rewardScheme["repeatThreshold"]:
+            battleReward -= self.rewardScheme["repeatBattle"]
             
         return battleReward
         
@@ -86,8 +89,7 @@ class Trainer:
         plotX = []
         plotY = []
         currentBestModel = 0
-        self.agents[1].model.load_state_dict(self.agents[0].model.state_dict())
-        
+
         for battle in range(self.battles):
             
             # Concurrently execute both agents and get the results from agent_battle

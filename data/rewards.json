@@ -18,10 +18,12 @@
     "switchDecentive": 4,
     "progressBase": 4,
     "movePunishment": 7,
-    "moveLeeway": 2.0,
+    "moveLeeway": 1.3,
     "win": 8,
     "lengthThreshold": 50,
     "shortBattle": 2,
     "actionThreshold": 0.5,
-    "switchyBattle": 3
+    "switchyBattle": 3,
+    "repeatThreshold": 5,
+    "repeatBattle": 3
 }

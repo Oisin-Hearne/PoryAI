@@ -9,6 +9,7 @@ class Interpreter:
         self.loadData()
         self.stats = {"superEffective": 0, "resisted": 0, "fainted": 0, "boosted": 0, "damaged": 0, "setHazards": 0, "clearedHazards": 0, "switched": 0}
         self.actionRatio = 0.0
+        self.repeatMoves = 0
 
     # Load in previously fetched data for use in state.
     def loadData(self):
@@ -32,6 +33,7 @@ class Interpreter:
         self.opponentHalved = False
         self.action_counts = {'move1': 0, 'move2': 0, 'move3': 0, 'move4':0, 'switch': 0}
         self.actionRatio = 0
+        self.repeatMoves = 0
         
         with open('data/sample-state.json') as f:
             self.state = json.load(f)
@@ -420,6 +422,7 @@ class Interpreter:
                 if "move" in key and self.action_counts[key] > (averageMoveCount*self.rewards["moveLeeway"]) and key in lastAction[0].replace(" ", ""):
                     print(f"Detecting too many moves in slot {key}... {self.action_counts[key]} > {averageMoveCount*self.rewards['moveLeeway']}")
                     turnPoints -= self.rewards["movePunishment"]
+                    self.repeatMoves += 1
         
         for line in turnData:
             splitData = line.split("|")
