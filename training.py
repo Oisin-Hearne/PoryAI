@@ -135,7 +135,7 @@ class Trainer:
                 self.agents[0].saveMemory(f"data/memory/memory_{battle}.json")
                 
                 # Save plot
-                self.makePlot(plotX, plotY, battle, timestamp, winRatio)
+                self.makePlot(plotX, plotY, battle, timestamp, winRatio, currentBestRatio)
                 
 
 
@@ -179,10 +179,10 @@ class Trainer:
                 agent1Wins += 1
                 latestWins += 1
                 rewards += reward
-                plotY.append(rewards)
+                plotY.append(reward)
             else:
                 rewards += reward
-                plotY.append(rewards)
+                plotY.append(reward)
                 
             self.agents[0].replay()
             
@@ -216,9 +216,8 @@ class Trainer:
                 self.agents[0].saveMemory(f"data/memory/memory_{battle}.json")
                 
                 # Save plot
-                print(plotX)
                 print(plotY)
-                self.makePlot(plotX, plotY, battle, timestamp, winRatio)
+                self.makePlot(plotX, plotY, battle, timestamp, winRatio, currentBestRatio)
                 
 
 
