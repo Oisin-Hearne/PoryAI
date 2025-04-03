@@ -17,13 +17,13 @@
     "ratioPunishment": 4,
     "switchDecentive": 4,
     "progressBase": 4,
-    "movePunishment": 7,
+    "movePunishment": 4,
     "moveLeeway": 1.3,
     "win": 8,
     "lengthThreshold": 50,
     "shortBattle": 2,
     "actionThreshold": 0.5,
-    "switchyBattle": 3,
+    "switchyBattle": 5,
     "repeatThreshold": 5,
-    "repeatBattle": 3
+    "repeatBattle": 5
 }
