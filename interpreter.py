@@ -423,6 +423,13 @@ class Interpreter:
                     print(f"Detecting too many moves in slot {key}... {self.action_counts[key]} > {averageMoveCount*self.rewards['moveLeeway']}")
                     turnPoints -= self.rewards["movePunishment"]
                     self.repeatMoves += 1
+                    
+                    # If the move is used too many times, punish it more
+                    if self.action_counts[key] > 1.5*(averageMoveCount*self.rewards["moveLeeway"]):
+                        turnPoints -= self.rewards["movePunishment"]
+                    if self.action_counts[key] > 2*(averageMoveCount*self.rewards["moveLeeway"]):
+                        turnPoints -= self.rewards["movePunishment"]
+                        
         
         for line in turnData:
             splitData = line.split("|")
