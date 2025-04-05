@@ -569,8 +569,9 @@ class Interpreter:
         
         self.prevAction = lastAction
         
-        max_reward = sum([self.rewards[key] for key in self.rewards.keys()])
-        actualReward = math.tanh(turnPoints / max_reward )
+        # First 19 items of rewards json
+        usual_max = self.rewards["usualMax"]
+        actualReward = math.tanh(turnPoints / usual_max )
         turnString = "".join(turnData)+": "+str(actualReward)
         #print(f"Player: {player}, \n Turn String: {turnData}, \n Reward: {actualReward}")
         return actualReward, turnString 

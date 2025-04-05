@@ -19,11 +19,12 @@
     "progressBase": 4,
     "movePunishment": 4,
     "moveLeeway": 1.8,
-    "win": 8,
+    "win": 15,
     "lengthThreshold": 50,
     "shortBattle": 2,
     "actionThreshold": 0.5,
     "switchyBattle": 5,
     "repeatThreshold": 5,
-    "repeatBattle": 5
+    "repeatBattle": 5,
+    "usualMax": 15
 }
