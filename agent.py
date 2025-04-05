@@ -203,7 +203,7 @@ class Agent:
         self.model.eval()
         with torch.no_grad():
             q_values, _ = self.model(state_tensor)
-        valid_q = [q_values[0, i].item() - (i * 0.1) for i in valid_indices]
+        valid_q = [q_values[0, i].item() for i in valid_indices]
         
         # move bias
         if moveCount > 0 and switchCount > 0:
