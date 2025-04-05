@@ -163,6 +163,11 @@ class Trainer:
                     print("Reloading Model...!")
                     self.agents[0].loadModel(currentBestModel)
                     self.agents[0].epsilon = 0.3
+                    
+                    
+                if self.showdowns[0].inter.getStats()["repeatMoves"] > 200 or self.showdowns[0].inter.getStats()["switched"] > 200:
+                    print("Resetting Epsilon")
+                    self.agents[0].epsilon = 0.7
             
     async def trainingLoopExpert(self):
         agent1Wins = 0
