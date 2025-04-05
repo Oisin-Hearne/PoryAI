@@ -7,7 +7,7 @@ class Interpreter:
 
     def __init__(self):
         self.loadData()
-        self.stats = {"superEffective": 0, "resisted": 0, "fainted": 0, "boosted": 0, "damaged": 0, "setHazards": 0, "clearedHazards": 0, "switched": 0}
+        self.stats = {"superEffective": 0, "resisted": 0, "fainted": 0, "boosted": 0, "damaged": 0, "setHazards": 0, "clearedHazards": 0, "switched": 0, "repeatMoves": 0}
         self.actionRatio = 0.0
         self.repeatMoves = 0
 
@@ -39,7 +39,7 @@ class Interpreter:
             self.state = json.load(f)
 
     def resetStats(self):
-        self.stats = {"superEffective": 0, "resisted": 0, "fainted": 0, "boosted": 0, "damaged": 0, "setHazards": 0, "clearedHazards": 0, "switched": 0}
+        self.stats = {"superEffective": 0, "resisted": 0, "fainted": 0, "boosted": 0, "damaged": 0, "setHazards": 0, "clearedHazards": 0, "switched": 0, "repeatMoves": 0}
     def getStats(self):
         return self.stats
 
@@ -423,6 +423,7 @@ class Interpreter:
                     print(f"Detecting too many moves in slot {key}... {self.action_counts[key]} > {averageMoveCount*self.rewards['moveLeeway']}")
                     turnPoints -= self.rewards["movePunishment"]
                     self.repeatMoves += 1
+                    self.stats["repeatMoves"] += 1
                     
                     # If the move is used too many times, punish it more
                     if self.action_counts[key] > 1.5*(averageMoveCount*self.rewards["moveLeeway"]):
