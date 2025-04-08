@@ -18,7 +18,9 @@ class Trainer:
         self.stateSize = stateSize
         self.actionSize = actionSize
         
-        if len(agents) < 2:
+        if len(agents) < 1:
+            self.mode = "random"
+        elif len(agents) < 2:
             self.mode = "single"
         else:
             self.mode = "self-play"
@@ -72,6 +74,18 @@ class Trainer:
         
         print("Finishing battle...")
         return winner, totalReward
+    
+    async def random_battle(self, showdown):
+        await showdown.restart()
+        done = False
+        
+        while not done:
+            validActions = showdown.getValidActions()
+            
+            action = np.random.choice(validActions)
+            nextState, reward, done, winner = await showdown.executeAction(action)
+        
+        return winner
 
     def makePlot(self, x, y, battle, timestamp, winrate, ratio):
             plt.plot(x, y)
@@ -249,8 +263,23 @@ class Trainer:
                     self.agents[0].loadModel(currentBestModel)
                     self.agents[0].epsilon = 0.3        
                     
+    async def trainingLoopRandom(self):
+        agentWins = 0
+        
+        for battle in range(self.battles):
+            winner = await self.random_battle(self.showdowns[0])
+            if winner == 1:
+                agentWins += 1
+                
+            if battle % 10 == 0 and battle > 0:
+                clear_output(wait=True)
+                print(f"Current Wins: {agentWins} \n Battles: {battle}")            
+
+    
     async def run(self):
         if self.mode == "self-play":
             await self.trainingLoopSelf()
         elif self.mode == "single":
             await self.trainingLoopExpert()
+        elif self.mode == "random":
+            await self.trainingLoopRandom()
