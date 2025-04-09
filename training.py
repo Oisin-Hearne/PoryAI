@@ -261,7 +261,9 @@ class Trainer:
                 else:
                     print("Reloading Model...!")
                     self.agents[0].loadModel(currentBestModel)
-                    self.agents[0].epsilon = 0.3        
+                    self.agents[0].epsilon = 0.3 
+                    
+                winRatio = 0.0       
                     
     async def trainingLoopRandom(self):
         agentWins = 0
