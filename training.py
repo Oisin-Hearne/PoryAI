@@ -138,13 +138,7 @@ class Trainer:
             # Every 50 battles, save the model and memory.
             if battle % 50 == 0 and battle > 0:
                 
-                # Reset epsilon according to win ratio
-                winRatio = agent1Wins / battle
-                
-                if float(winRatio) < 0.7 and float(winRatio) > 0.3:
-                    
-                    # Reset Epsilon
-                    self.agents[0].epsilon = max(self.agents[0].epsilon, 0.5)
+
                 
                 # Save model and memory
                 self.agents[0].saveModel(f"data/models/model_{battle}.pt")
@@ -168,6 +162,15 @@ class Trainer:
             if battle % 500 == 0 and battle > 0:
                 # If the previous 500 battles went worse than the current 500, revert to the previous model.
                 self.showdowns[0].inter.resetStats()
+
+                # Reset epsilon according to win ratio
+                winRatio = agent1Wins / battle
+                
+                # If win ratio is too uneven, something's gone wrong. Reset epsilon.
+                if float(winRatio) < 0.7 and float(winRatio) > 0.3:
+                    
+                    # Reset Epsilon
+                    self.agents[0].epsilon = max(self.agents[0].epsilon, 0.5)
 
                 if winRatio > currentBestRatio:
                     print("Noting best model")
@@ -223,14 +226,7 @@ class Trainer:
             
             # Every 50 battles, save the model and memory.
             if battle % 50 == 0 and battle > 0:
-                
-                # Reset epsilon according to win ratio
-                winRatio = agent1Wins / battle
-                
-                if float(winRatio) < 0.7 and float(winRatio) > 0.3:
-                    
-                    # Reset Epsilon
-                    self.agents[0].epsilon = max(self.agents[0].epsilon, 0.5)
+            
                 
                 # Save model and memory
                 self.agents[0].saveModel(f"data/models/model_{battle}.pt")
@@ -253,7 +249,15 @@ class Trainer:
             if battle % 500 == 0 and battle > 0:
                 # If the previous 500 battles went worse than the current 500, revert to the previous model.
                 self.showdowns[0].inter.resetStats()
-
+                
+                # Reset epsilon according to win ratio
+                winRatio = agent1Wins / battle
+                
+                if float(winRatio) < 0.1:
+                    
+                    # Reset Epsilon
+                    self.agents[0].epsilon = min(0.7, self.agents[0].epsilon +0.2)
+                    
                 if winRatio > currentBestRatio:
                     print("Noting best model")
                     currentBestModel = f"data/models/model_{battle}.pt"
