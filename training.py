@@ -137,7 +137,8 @@ class Trainer:
             
             # Every 50 battles, save the model and memory.
             if battle % 50 == 0 and battle > 0:
-                
+                winRatio = agent1Wins / battle
+
 
                 
                 # Save model and memory
@@ -163,8 +164,6 @@ class Trainer:
                 # If the previous 500 battles went worse than the current 500, revert to the previous model.
                 self.showdowns[0].inter.resetStats()
 
-                # Reset epsilon according to win ratio
-                winRatio = agent1Wins / battle
                 
                 # If win ratio is too uneven, something's gone wrong. Reset epsilon.
                 if float(winRatio) < 0.7 and float(winRatio) > 0.3:
@@ -226,7 +225,7 @@ class Trainer:
             
             # Every 50 battles, save the model and memory.
             if battle % 50 == 0 and battle > 0:
-            
+                winRatio = agent1Wins / battle
                 
                 # Save model and memory
                 self.agents[0].saveModel(f"data/models/model_{battle}.pt")
@@ -246,12 +245,9 @@ class Trainer:
             if battle % 100 == 0 and battle > 0:
                 self.agents[0].loadTargetModel()
                 
-            if battle % 500 == 0 and battle > 0:
-                # If the previous 500 battles went worse than the current 500, revert to the previous model.
+            if battle % 1000 == 0 and battle > 0:
+                # If the previous 1000 battles went worse than the current 1000, revert to the previous model.
                 self.showdowns[0].inter.resetStats()
-                
-                # Reset epsilon according to win ratio
-                winRatio = agent1Wins / battle
                 
                 if float(winRatio) < 0.1:
                     
