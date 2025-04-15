@@ -19,7 +19,7 @@
     "progressBase": 4,
     "movePunishment": 4,
     "moveLeeway": 1.8,
-    "win": 20,
+    "win": 10,
     "lengthThreshold": 100,
     "shortBattle": 2,
     "actionThreshold": 0.5,

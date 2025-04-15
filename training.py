@@ -31,6 +31,7 @@ class Trainer:
             for agent in agents:
                 agent.loadModel(f"data/models/model_{self.loadModel}.pt")
                 agent.loadMemory(f"data/memory/memory_{self.loadModel}.json")
+                agent.epsilon = 0.2
             
         with open('data/rewards.json') as f:
             self.rewardScheme = json.load(f)
@@ -40,7 +41,8 @@ class Trainer:
         actionRatio = showdown.inter.actionRatio
         repeatMoves = showdown.inter.repeatMoves
         
-        battleReward = -self.rewardScheme["win"] if not winner else self.rewardScheme["win"]
+        battleReward = self.rewardScheme["win"] if (winner == 1) else 0
+        print(f"Winner: {winner}, Battle Length: {battleLength}, Action Ratio: {actionRatio}, Repeat Moves: {repeatMoves}")
         if winner and battleLength < self.rewardScheme["lengthThreshold"]:
             battleReward += self.rewardScheme["shortBattle"]
         if actionRatio < self.rewardScheme["actionThreshold"]:
@@ -87,8 +89,9 @@ class Trainer:
         
         return winner
 
-    def makePlot(self, x, y, battle, timestamp, winrate, ratio):
-            plt.plot(x, y)
+    def makePlot(self, x, y, battle, timestamp, winrate, ratio, col):
+            plt.scatter(x, y, s=1, c=col, alpha=0.5, label="Win or Loss")
+            plt.plot(x, y, c='blue', alpha=0.5, label="Rewards")
             plt.xlabel('Battles')
             plt.ylabel('Rewards')
             plt.title(f'Learning Curve - Winrate: {winrate} - Best Ratio: {ratio}')
@@ -102,6 +105,7 @@ class Trainer:
         rewards1 = 0
         plotX = []
         plotY = []
+        plotCol = []
         currentBestModel = 0
 
         for battle in range(self.battles):
@@ -114,9 +118,11 @@ class Trainer:
                 agent1Wins += 1
                 latestWins += 1
                 rewards1 += results[0][1]
+                plotCol.append("green")
                 plotY.append(results[0][1])
             else:
                 rewards1 += results[0][1]
+                plotCol.append("red")
                 plotY.append(results[0][1])
                 
             self.agents[0].replay()
@@ -146,7 +152,7 @@ class Trainer:
                 self.agents[0].saveMemory(f"data/memory/memory_{battle}.json")
                 
                 # Save plot
-                self.makePlot(plotX, plotY, battle, timestamp, winRatio, currentBestRatio)
+                self.makePlot(plotX, plotY, battle, timestamp, winRatio, currentBestRatio, plotCol)
                 
 
 
@@ -163,25 +169,9 @@ class Trainer:
             if battle % 500 == 0 and battle > 0:
                 # If the previous 500 battles went worse than the current 500, revert to the previous model.
                 self.showdowns[0].inter.resetStats()
-
-                
-                # If win ratio is too uneven, something's gone wrong. Reset epsilon.
-                if float(winRatio) < 0.7 and float(winRatio) > 0.3:
-                    
-                    # Reset Epsilon
-                    self.agents[0].epsilon = max(self.agents[0].epsilon, 0.5)
-
-                if winRatio > currentBestRatio:
-                    print("Noting best model")
-                    currentBestModel = f"data/models/model_{battle}.pt"
-                    currentBestRatio = winRatio
-                else:
-                    print("Reloading Model...!")
-                    self.agents[0].loadModel(currentBestModel)
-                    self.agents[0].epsilon = 0.3
                     
                     
-                if self.showdowns[0].inter.getStats()["repeatMoves"] > 200 or self.showdowns[0].inter.getStats()["switched"] > 200:
+                if self.showdowns[0].inter.getStats()["repeatMoves"] > 2000 or self.showdowns[0].inter.getStats()["switched"] > 2000:
                     print("Resetting Epsilon")
                     self.agents[0].epsilon = 0.7
             
@@ -192,6 +182,7 @@ class Trainer:
         rewards = 0
         plotX = []
         plotY = []
+        plotCol = []
         currentBestModel = 0
         
         for battle in range(self.battles):
@@ -202,9 +193,11 @@ class Trainer:
                 agent1Wins += 1
                 latestWins += 1
                 rewards += reward
+                plotCol.append("green")
                 plotY.append(reward)
             else:
                 rewards += reward
+                plotCol.append("red")
                 plotY.append(reward)
                 
             self.agents[0].replay()
@@ -233,7 +226,7 @@ class Trainer:
                 
                 # Save plot
                 print(plotY)
-                self.makePlot(plotX, plotY, battle, timestamp, winRatio, currentBestRatio)
+                self.makePlot(plotX, plotY, battle, timestamp, winRatio, currentBestRatio, plotCol)
                 
 
 
@@ -245,8 +238,8 @@ class Trainer:
             if battle % 100 == 0 and battle > 0:
                 self.agents[0].loadTargetModel()
                 
-            if battle % 1000 == 0 and battle > 0:
-                # If the previous 1000 battles went worse than the current 1000, revert to the previous model.
+            if battle % 500 == 0 and battle > 0:
+                # If the previous 500 battles went worse than the current 500, revert to the previous model.
                 self.showdowns[0].inter.resetStats()
                 
                 if float(winRatio) < 0.1:
