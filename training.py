@@ -30,7 +30,7 @@ class Trainer:
         if self.loadModel:
             for agent in agents:
                 agent.loadModel(f"data/models/model_{self.loadModel}.pt")
-                agent.loadMemory(f"data/memory/memory_{self.loadModel}.json")
+                #agent.loadMemory(f"data/memory/memory_{self.loadModel}.json")
                 agent.epsilon = 0.2
             
         with open('data/rewards.json') as f:
@@ -72,6 +72,10 @@ class Trainer:
         for i, (state, action, reward, nextState, done) in enumerate(battleProgress):
             adjustedReward = reward + (battleReward / (len(battleProgress)))
             totalReward += adjustedReward
+            if(battleReward > 3):
+                for j in range(4): # Remember winning battles more.
+                    print("Won! Remembering more...")
+                    agent.remember(state, action, adjustedReward, nextState, done)
             agent.remember(state, action, adjustedReward, nextState, done)
         
         print("Finishing battle...")
@@ -90,13 +94,22 @@ class Trainer:
         return winner
 
     def makePlot(self, x, y, battle, timestamp, winrate, ratio, col):
-            plt.scatter(x, y, s=1, c=col, alpha=0.5, label="Win or Loss")
+            plt.scatter(x, y, s=2, c=col, alpha=1, label="Win or Loss")
             plt.plot(x, y, c='blue', alpha=0.5, label="Rewards")
             plt.xlabel('Battles')
             plt.ylabel('Rewards')
             plt.title(f'Learning Curve - Winrate: {winrate} - Best Ratio: {ratio}')
             plt.savefig(f"data/logs/plots/plot-{battle}-{timestamp}.png")
             plt.show()
+            
+    def rewardsPlot(self, x, y, battle, timestamp):
+        plt.scatter(x, y, s=2, c="blue", alpha=1, label="Average Rewards")
+        plt.plot(x, y)
+        plt.xlabel('Battles')
+        plt.ylabel('Rewards')
+        plt.title(f'Average Rewards over Time')
+        plt.savefig(f"data/logs/plots/plot-{battle}-{timestamp}-avg.png")
+        plt.show()
             
     async def trainingLoopSelf(self):
         agent1Wins = 0
@@ -105,8 +118,10 @@ class Trainer:
         rewards1 = 0
         plotX = []
         plotY = []
+        plotAvg = []
         plotCol = []
         currentBestModel = 0
+        currentBestRewards = -50
 
         for battle in range(self.battles):
             
@@ -128,7 +143,7 @@ class Trainer:
             self.agents[0].replay()
             
             plotX.append(battle)
-            
+            plotAvg.append(sum(plotY)/len(plotY))
             # Every 10 battles, output the current state and clear the old output.
             # Notebooks are so laggy.
             if battle % 10 == 0 and battle > 0:
@@ -137,9 +152,9 @@ class Trainer:
                 timestamp = datetime.now().strftime("%Y_%m%d-%p%I_%M_%S")
                 # Save output to file
                 with open(f"data/logs/outputs/output-{battle}-{timestamp}.txt", "w") as file:
-                    file.write(f"Current Stats: \n Wins This Cycle: {agent1Wins} \n Battles: {battle} \n Epsilon: {self.agents[0].epsilon}")
+                    file.write(f"Current Stats: \n Wins This Cycle: {agent1Wins} \n Battles: {battle} \n Epsilon: {self.agents[0].epsilon}, \n Average Reward: {sum(plotY)/len(plotY)}")
                 
-                print(f"Cleared Output! Current Stats: \n Wins This Cycle: {agent1Wins} \n  Battles: {battle} \n Epsilon: {self.agents[0].epsilon}, \n Latest Wins: {latestWins} \n Stats: {self.showdowns[0].inter.getStats()}")
+                print(f"Cleared Output! Current Stats: \n Wins This Cycle: {agent1Wins} \n  Battles: {battle} \n Epsilon: {self.agents[0].epsilon}, \n Latest Wins: {latestWins} \n Stats: {self.showdowns[0].inter.getStats()}\n Average Reward: {sum(plotY)/len(plotY)}")
             
             # Every 50 battles, save the model and memory.
             if battle % 50 == 0 and battle > 0:
@@ -153,6 +168,7 @@ class Trainer:
                 
                 # Save plot
                 self.makePlot(plotX, plotY, battle, timestamp, winRatio, currentBestRatio, plotCol)
+                self.rewardsPlot(plotX, plotAvg, battle, timestamp)
                 
 
 
@@ -165,25 +181,41 @@ class Trainer:
                 self.agents[0].loadTargetModel()
                 # Set agent 2's weights to agent 1's.
                 self.agents[1].model.load_state_dict(self.agents[0].model.state_dict())
-                
-            if battle % 500 == 0 and battle > 0:
-                # If the previous 500 battles went worse than the current 500, revert to the previous model.
-                self.showdowns[0].inter.resetStats()
-                    
-                    
                 if self.showdowns[0].inter.getStats()["repeatMoves"] > 2000 or self.showdowns[0].inter.getStats()["switched"] > 2000:
                     print("Resetting Epsilon")
-                    self.agents[0].epsilon = 0.7
+                    self.agents[0].epsilon = 0.2
+                self.showdowns[0].inter.resetStats()
+            if battle % 500 == 0 and battle > 0:
+                # If the previous 500 battles went worse than the current 500, revert to the previous model.
+                
+                self.agents[0].epsilon += 0.2
+                
+                # Get cumulative rewards for last 500 battles from plotY.
+                currentAverage = sum(plotY[-500:]) / 500
+                if currentAverage > currentBestRewards:
+                    print("Noting best model")
+                    currentBestModel = f"data/models/model_{battle}.pt"
+                    currentBestRewards = currentAverage
+                else:
+                    print("Reloading Model...!")
+                    self.agents[0].loadModel(currentBestModel)
+                    self.agents[0].epsilon = 0.3
+                    
+                    
+
             
     async def trainingLoopExpert(self):
         agent1Wins = 0
         latestWins = 0
         currentBestRatio = 0
+        currentWins = 0
         rewards = 0
         plotX = []
         plotY = []
+        plotAvg = []
         plotCol = []
         currentBestModel = 0
+        currentBestRewards = -50
         
         for battle in range(self.battles):
             
@@ -192,6 +224,7 @@ class Trainer:
             if winner == 1:
                 agent1Wins += 1
                 latestWins += 1
+                currentWins += 1
                 rewards += reward
                 plotCol.append("green")
                 plotY.append(reward)
@@ -200,6 +233,7 @@ class Trainer:
                 plotCol.append("red")
                 plotY.append(reward)
                 
+            plotAvg.append(sum(plotY)/len(plotY))
             self.agents[0].replay()
             
             plotX.append(battle)
@@ -212,7 +246,7 @@ class Trainer:
                 timestamp = datetime.now().strftime("%Y_%m%d-%p%I_%M_%S")
                 # Save output to file
                 with open(f"data/logs/outputs/output-{battle}-{timestamp}.txt", "w") as file:
-                    file.write(f"Current Stats: \n Wins This Cycle: {agent1Wins} \n Battles: {battle} \n Epsilon: {self.agents[0].epsilon}")
+                    file.write(f"Current Stats: \n Wins This Cycle: {agent1Wins} \n Battles: {battle} \n Epsilon: {self.agents[0].epsilon}, \n: Average Reward: {sum(plotY)/len(plotY)}")
                 
                 print(f"Cleared Output! Current Stats: \n Wins This Cycle: {agent1Wins} \n  Battles: {battle} \n Epsilon: {self.agents[0].epsilon}, \n Latest Wins: {latestWins} \n Stats: {self.showdowns[0].inter.getStats()}")
             
@@ -227,6 +261,7 @@ class Trainer:
                 # Save plot
                 print(plotY)
                 self.makePlot(plotX, plotY, battle, timestamp, winRatio, currentBestRatio, plotCol)
+                self.rewardsPlot(plotX, plotAvg, battle, timestamp)
                 
 
 
@@ -238,25 +273,25 @@ class Trainer:
             if battle % 100 == 0 and battle > 0:
                 self.agents[0].loadTargetModel()
                 
-            if battle % 500 == 0 and battle > 0:
-                # If the previous 500 battles went worse than the current 500, revert to the previous model.
+                if self.showdowns[0].inter.getStats()["repeatMoves"] > 2000 or self.showdowns[0].inter.getStats()["switched"] > 2000:
+                    print("Resetting Epsilon")
+                    self.agents[0].epsilon = 0.2
                 self.showdowns[0].inter.resetStats()
                 
-                if float(winRatio) < 0.1:
-                    
-                    # Reset Epsilon
-                    self.agents[0].epsilon = min(0.7, self.agents[0].epsilon +0.2)
-                    
-                if winRatio > currentBestRatio:
+            if battle % 500 == 0 and battle > 0:
+                # If the previous 500 battles went worse than the current 500, revert to the previous model.
+                self.agents[0].epsilon += 0.2
+                
+                # Get cumulative rewards for last 500 battles from plotY.
+                currentAverage = sum(plotY[-500:]) / 500
+                if currentAverage > currentBestRewards:
                     print("Noting best model")
                     currentBestModel = f"data/models/model_{battle}.pt"
-                    currentBestRatio = winRatio
+                    currentBestRewards = currentAverage
                 else:
                     print("Reloading Model...!")
                     self.agents[0].loadModel(currentBestModel)
-                    self.agents[0].epsilon = 0.3 
-                    
-                winRatio = 0.0       
+                    self.agents[0].epsilon = 0.3
                     
     async def trainingLoopRandom(self):
         agentWins = 0
