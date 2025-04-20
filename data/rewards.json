@@ -1,17 +1,17 @@
 {
     "damageThreshold": 0.15,
     "healThreshold": 0.25,
-    "damageBase": 4,
+    "damageBase": 3,
     "healBase": 1,
     "koBase": 12,
-    "statusBase": 3,
+    "statusBase": 4,
     "statusBonus": 2,
     "boostBase": 2,
     "fieldBase": 5,
     "weatherBase": 2,
     "hazardSetBase": 2,
     "hazardClearBase": 3,
-    "effectiveBase": 5,
+    "effectiveBase": 6,
     "failBase": 3,
     "attackIncentive": 5,
     "ratioPunishment": 4,
@@ -19,7 +19,7 @@
     "progressBase": 4,
     "movePunishment": 4,
     "moveLeeway": 1.8,
-    "win": 10,
+    "win": 20,
     "lengthThreshold": 100,
     "shortBattle": 2,
     "actionThreshold": 0.5,
@@ -28,3 +28,5 @@
     "repeatBattle": 5,
     "usualMax": 15
 }
+
+
