@@ -246,9 +246,9 @@ class Trainer:
                 timestamp = datetime.now().strftime("%Y_%m%d-%p%I_%M_%S")
                 # Save output to file
                 with open(f"data/logs/outputs/output-{battle}-{timestamp}.txt", "w") as file:
-                    file.write(f"Current Stats: \n Wins This Cycle: {agent1Wins} \n Battles: {battle} \n Epsilon: {self.agents[0].epsilon}, \n: Average Reward: {sum(plotY)/len(plotY)}")
+                    file.write(f"Current Stats: \n Wins This Cycle: {agent1Wins} \n Battles: {battle} \n Epsilon: {self.agents[0].epsilon}")
                 
-                print(f"Cleared Output! Current Stats: \n Wins This Cycle: {agent1Wins} \n  Battles: {battle} \n Epsilon: {self.agents[0].epsilon}, \n Latest Wins: {latestWins} \n Stats: {self.showdowns[0].inter.getStats()}")
+                print(f"Cleared Output! Current Stats: \n Wins This Cycle: {agent1Wins} \n  Battles: {battle} \n Epsilon: {self.agents[0].epsilon}, \n Latest Wins: {latestWins} \n Stats: {self.showdowns[0].inter.getStats()}, \n: Average Reward: {sum(plotY)/len(plotY)}")
             
             # Every 50 battles, save the model and memory.
             if battle % 50 == 0 and battle > 0:
