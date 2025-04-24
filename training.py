@@ -30,7 +30,7 @@ class Trainer:
         if self.loadModel:
             for agent in agents:
                 agent.loadModel(f"data/models/model_{self.loadModel}.pt")
-                #agent.loadMemory(f"data/memory/memory_{self.loadModel}.json")
+                agent.loadMemory(f"data/memory/memory_{self.loadModel}.json")
                 agent.epsilon = 0.2
             
         with open('data/rewards.json') as f:
@@ -285,11 +285,13 @@ class Trainer:
                 # Get cumulative rewards for last 500 battles from plotY.
                 currentAverage = sum(plotY[-500:]) / 500
                 if currentAverage > currentBestRewards:
-                    print("Noting best model")
+                    print(f"Noting best model {battle}...")
+                    print(f"Current Average: {currentAverage}, Current Best: {currentBestRewards}")
                     currentBestModel = f"data/models/model_{battle}.pt"
                     currentBestRewards = currentAverage
                 else:
-                    print("Reloading Model...!")
+                    print(f"Reloading Model {currentBestModel}...!")
+                    print(f"Current Average: {currentAverage}, Current Best: {currentBestRewards}")
                     self.agents[0].loadModel(currentBestModel)
                     self.agents[0].epsilon = 0.3
                     
