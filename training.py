@@ -305,7 +305,65 @@ class Trainer:
                 
             if battle % 10 == 0 and battle > 0:
                 clear_output(wait=True)
-                print(f"Current Wins: {agentWins} \n Battles: {battle}")            
+                print(f"Current Wins: {agentWins} \n Battles: {battle}")
+    
+    
+    # Training is not necessarily the goal when playing against humans, so a smaller training loop is used.
+    async def trainingLoopHuman(self):
+        agentWins = 0
+        latestWins = 0
+        currentBestRatio = 0
+        rewards = 0
+        plotX = []
+        plotY = []
+        plotAvg = []
+        plotCol = []
+        
+        for battle in range(self.battles):
+            winner, reward = await self.agent_battle(self.agents[0], self.showdowns[0])
+            if winner == 1:
+                agentWins += 1
+                latestWins += 1
+                rewards += reward
+                plotCol.append("green")
+                plotY.append(reward)
+            else:
+                rewards += reward
+                plotCol.append("red")
+                plotY.append(reward)
+            
+            plotAvg.append(sum(plotY)/len(plotY))
+            plotX.append(battle)
+            
+            if battle % 10 == 0 and battle > 0:
+                clear_output(wait=True)
+                
+                timestamp = datetime.now().strftime("%Y_%m%d-%p%I_%M_%S")
+                # Save output to file
+                with open(f"data/logs/outputs/output-VSHUMAN-{battle}-{timestamp}.txt", "w") as file:
+                    file.write(f"Current Stats: \n Wins This Cycle: {agentWins} \n Battles: {battle} \n Epsilon: {self.agents[0].epsilon}")
+                
+                print(f"Cleared Output! Current Stats: \n Wins This Cycle: {agentWins} \n  Battles: {battle} \n Epsilon: {self.agents[0].epsilon}, \n Latest Wins: {latestWins} \n Stats: {self.showdowns[0].inter.getStats()}, \n: Average Reward: {sum(plotY)/len(plotY)}")
+            
+            if battle % 50 == 0 and battle > 0:
+                winRatio = agentWins / battle
+                
+                # Save model and memory
+                self.agents[0].saveModel(f"data/models/model_vsHUMAN_{battle}.pt")
+                self.agents[0].saveMemory(f"data/memory/memory_vsHUMAN_{battle}.json")
+                
+                # Save plot
+                print(plotY)
+                self.makePlot(plotX, plotY, battle, timestamp, winRatio, currentBestRatio, plotCol)
+                self.rewardsPlot(plotX, plotAvg, battle, timestamp)
+                
+
+
+                f = open(f"data/stats/{battle}.json", "w")
+                f.write(json.dumps({"wins": agentWins, "rewards": rewards, "winsThisCycle": latestWins, "epsilon": self.agents[0].epsilon, "stats": self.showdowns[0].inter.getStats()}))
+                f.close()
+                latestWins = 0
+                 
 
     
     async def run(self):
