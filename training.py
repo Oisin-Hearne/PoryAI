@@ -21,9 +21,14 @@ class Trainer:
         if len(agents) < 1:
             self.mode = "random"
         elif len(agents) < 2:
-            self.mode = "single"
+            if self.showdowns[0].ladder:
+                self.mode = "human"
+            else:
+                self.mode = "single"
         else:
             self.mode = "self-play"
+            
+        print(self.mode)
             
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         
@@ -306,10 +311,17 @@ class Trainer:
             if battle % 10 == 0 and battle > 0:
                 clear_output(wait=True)
                 print(f"Current Wins: {agentWins} \n Battles: {battle}")
+                
+                timestamp = datetime.now().strftime("%Y_%m%d-%p%I_%M_%S")
+
+                with open(f"data/logs/outputs/output-RANDOM-{battle}-{timestamp}.txt", "w") as file:
+                    file.write(f"Current Stats: \n Wins This Cycle: {agentWins} \n Battles: {battle}, \n Stats: {self.showdowns[0].inter.getStats()}")
+              
     
     
     # Training is not necessarily the goal when playing against humans, so a smaller training loop is used.
     async def trainingLoopHuman(self):
+        print("Starting loop!")
         agentWins = 0
         latestWins = 0
         currentBestRatio = 0
@@ -373,3 +385,5 @@ class Trainer:
             await self.trainingLoopExpert()
         elif self.mode == "random":
             await self.trainingLoopRandom()
+        elif self.mode == "human": 
+            await self.trainingLoopHuman()
