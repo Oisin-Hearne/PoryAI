@@ -139,6 +139,9 @@ class Showdown:
                 return False, 0
         
                 
+            elif msgs[1] in ["l", "deinit", "c", "j"] or len(msgs[1]) < 3:
+                if self.verbose:
+                    print(msgs)
             
             # Requests for the user to do something. These should be sent to the interpreter.
             elif 'request' in msgs[1] and len(msgs[2]) > 2:
@@ -153,8 +156,6 @@ class Showdown:
                     self.latestRequest = requestOutput
                     return False, 0 # Battle not done
 
-            elif msgs[1] in ["l", "deinit", "c"] or len(msgs) < 3:
-                print(msgs)
             
 
             elif ('t:' in msgs[2]) and (len(recv.split("\n")) > 3) and ("Time left" not in recv):
@@ -192,7 +193,6 @@ class Showdown:
                 timestamp = datetime.now().strftime("%Y_%m%d-%p%I_%M_%S")
                 # Write battle to file
                 if self.verbose:
-                    print(self.battleLog)
                     with open(f"data/logs/battles/{result}-{self.currentTag}-{timestamp}.txt", "a") as f:
                         f.write(self.battleLog)
                     print(f"User {self.user} {result} the battle!\n=====================================================================")

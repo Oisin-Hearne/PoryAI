@@ -91,7 +91,6 @@ class Interpreter:
                         self.state["playerSide"]["activeMon"]["moves"][move]["locked"] = 0
                         self.state["playerSide"]["activeMon"]["condition"]["struggling"] = 0
                 elif(pokeMoves[0] != "Transform"):
-                    print("Transform detected")
                     self.state["playerSide"]["activeMon"]["moves"][0] = self.moveData[pokeMoves[0]]
                 elif(pokeMoves[0] != "Struggle"):
                     self.state["playerSide"]["activeMon"]["moves"][pokeMoves[0]]["locked"] = 1
@@ -207,11 +206,9 @@ class Interpreter:
             if '-damage' in splitData[1] or '-heal' in splitData[1]:
                 status = splitData[3].split(" ")
                 side = "playerSide" if player in splitData[2] else "opposingSide"
-                print(f"Changing HP of {side} by {status[0]}. Current hp is {self.state[side]['activeMon']['condition']['hp']}")
                 self.state[side]["activeMon"]["condition"]["hp"] = round(eval(status[0]), 2)
 
                 if len(status) > 1:
-                    print(f"Changing status of {side} to {status[1]}. Current status is {self.state[side]['activeMon']['condition']['status']}")
                     self.state[side]["activeMon"]["condition"]["status"] = self.miscData["conditions"][status[1]]
             if "-curestatus" in splitData[1]:
                 side = "playerSide" if player in splitData[2] else "opposingSide"
@@ -222,7 +219,6 @@ class Interpreter:
                 stat = splitData[3]+"Mod"
                 side = "playerSide" if player in splitData[2] else "opposingSide"
                 
-                print(f"Boosting {stat} by {boost}. Current stat is {self.state[side]['activeMon']['stats'][stat]}, new stat will be {eval(str(self.state[side]['activeMon']['stats'][stat])+'+'+boost)}")
 
                 self.state[side]["activeMon"]["stats"][stat] = eval(str(self.state[side]["activeMon"]["stats"][stat])+"+"+boost)
             
@@ -330,7 +326,6 @@ class Interpreter:
                 self.state[side]["activeMon"]["teraType"] = self.miscData["types"][splitData[3].lower()]
             
             
-        print(f"Player: {player}, State: {self.state}")
         return self.state
 
     # Set the active mon state to the new opponent.
@@ -338,7 +333,6 @@ class Interpreter:
         opponentName = opponentMon[0].split(",")[0].replace(" ", "").replace("-", "").lower()
         opponentName = get_close_matches(opponentName, self.pokeData.keys(), n=1, cutoff=0.5)[0]
         opponentCondition = opponentMon[1].split(" ")
-        print(f"Recording Active Mon: {opponentName}, with condition: {opponentCondition}")
         
         self.state["opposingSide"]["activeMon"]["pokeid"] = self.pokeData[opponentName]["pokeid"]
         self.state["opposingSide"]["activeMon"]["type1"] = self.pokeData[opponentName]["type1"]
@@ -352,7 +346,6 @@ class Interpreter:
     
         # A painful way to learn about python's pass by reference.
         opponentMon = copy.deepcopy(newReserve)
-        print(f"Adding Reserve: {opponentMon}")        
         for mon in range(len(self.state["opposingSide"]["reserves"])):
             if self.state["opposingSide"]["reserves"][mon]["pokeid"] == opponentMon["pokeid"]:
                 return
@@ -378,7 +371,6 @@ class Interpreter:
         # Penalise consecutive switches
         if len(self.prevAction) > 0 and len(lastAction) > 0:
             if "switch" in lastAction[0] and "switch" in self.prevAction[0]:
-                #print("Consecutive Switches Detected")
                 turnPoints -= self.rewards["switchDecentive"]
         # Slight incentive to attacking
         if "move 1" in lastAction[0]:
@@ -398,12 +390,10 @@ class Interpreter:
             
         move_actions = sum([self.action_counts[key] for key in self.action_counts.keys() if "move" in key])
         self.actionRatio = max(0.1, min(move_actions / max(1, self.action_counts["switch"]), 10))
-        print(f"Action Ratio: {self.actionRatio}")
-        print(f"Action Counts: {self.action_counts}")
+
         
         #Decentivize too much switching
         if self.actionRatio < 0.5 and "switch" in lastAction[0]:
-            print("Detecting too many switches...")
             turnPoints -= self.rewards["ratioPunishment"]
             self.stats["switched"] += 1
             # Do it again if it's really bad
@@ -420,7 +410,6 @@ class Interpreter:
         if "switch" not in lastAction[0] and self.actionRatio > 0.5 and moveCount > 8:
             for key in self.action_counts.keys():
                 if "move" in key and self.action_counts[key] > (averageMoveCount*self.rewards["moveLeeway"]) and key in lastAction[0].replace(" ", ""):
-                    print(f"Detecting too many moves in slot {key}... {self.action_counts[key]} > {averageMoveCount*self.rewards['moveLeeway']}")
                     turnPoints -= self.rewards["movePunishment"]
                     self.repeatMoves += 1
                     self.stats["repeatMoves"] += 1
@@ -451,7 +440,6 @@ class Interpreter:
                     self.stats["damaged"] += 1
                 
                 damage = max(0, round(damage, 3))
-                #print(f"Damage Dealt: {damage}, Side: {side}, Old Player HP: {self.prevSelfHp}, Old Opp HP: {self.prevOppHp}, New HP: {newHp}")
                 # Dealing damage above a certain amount is rewarded, but punished if too little damage is done.
                 # Receiving very little damage is rewarded, receiving too much is punished.
                 #turnPoints += damageBase if (damage > damageThreshold and side == "opposingSide") or (damage < damageThreshold and side == "playerSide") else -damageBase
