@@ -1,0 +1,19 @@
+{
+    "agents": [
+        {
+            "username": "PoryAI-0",
+            "password": "password",
+            "opponent": "FoulPlay-0",
+            "verbose": false,
+            "challenger": true
+        }
+    ],
+    "websocket": "ws://localhost:8000/showdown/websocket",
+    "uri": "https://play.pokemonshowdown.com/action.php",
+    "format": "gen9randombattle",
+    "mode": "RANDOM",
+    "offline": true,
+    "iterations": 10001,
+    "lastModel": 700,
+    "stateSize": 671
+}

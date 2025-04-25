@@ -1,45 +1,115 @@
 import showdown
 import agent
 import asyncio
-import torch
 import json
-
-async def training_loop(agent, showdown, numBattles=1000):
-    for battle in range(numBattles):
+import os
+import training
+import torch
         
-        
-        await showdown.restart()
-        battleDone = False
-        totalReward = 0
-        
-        while not battleDone:
-            state = showdown.getState()
-            
-            validActions = showdown.getValidActions()
-            action = agent.act(state, validActions)
-            nextState, reward, battleDone = await showdown.executeAction(action)
-            print(f"Action: {action}, Reward: {reward}")
-            
-            agent.remember(state, action, reward, nextState, battleDone)
-            agent.replay()
-            totalReward += reward
-            
-            if battleDone:
-                print(f"Battle {battle} done. Total reward: {totalReward}")
-                
-        
-    if battle % 100 == 0:
-        agent.saveModel(f"model_{battle}.pt")
-        
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-stateSize = 671
 
-possibleActions = json.load(open("data/possible_actions.json", "r"))
-actionSize = len(possibleActions)
+async def run():
+    agents = config["agents"]
+    mode = config["mode"]
 
-newAgent = agent.Agent(stateSize, actionSize, device, possibleActions)
+    
+    if len(agents) > 2:
+        print("Error: Only two agents are allowed.")
+        return
+    elif len(agents) < 1 and mode != "RANDOM":
+        print("Error: For non-random modes, at least one agent is required.")
+        return
+    elif len(agents) > 1 and mode == "SELFPLAY":
+        print("Error: Selfplay mode only allows one agent.")
+        return
+    
+    if mode == "RANDOM":
+        await beginRandomMode(config)
+    elif mode == "SELFPLAY":
+        await beginSelfPlayMode(config)
+    elif mode == "EXPERT":
+        await beginExpertMode(config)
+    elif mode == "QUEUE":
+        await beginHumanMode(config)
+    else:
+        print("Error: Invalid mode. Please choose RANDOM, SELFPLAY, EXPERT, or QUEUE.")
+        return
+    
+async def beginRandomMode(config):
+    sd = showdown.Showdown(config["uri"], config["agents"][0]["username"], config["agents"][0]["password"], config["websocket"], config["format"], config["agents"][0]["challenger"], config["agents"][0]["verbose"], config["agents"][0]["opponent"])
+    
+    if config["offline"]:
+        await sd.connectNoSecurity()
+    else:
+        await sd.connectToShowdown()
+        
+    print("Running Random Mode")
+    trainer = training.Trainer([], [sd], stateSize, actionSize, config["iterations"])
+    await trainer.run()
+    
+async def beginExpertMode(config):
+    sd = showdown.Showdown(config["uri"], config["agents"][0]["username"], config["agents"][0]["password"], config["websocket"], config["format"], config["agents"][0]["challenger"], config["agents"][0]["verbose"], config["agents"][0]["opponent"])
 
-sd = showdown.Showdown("https://play.pokemonshowdown.com/action.php", "PoryAI-0", "password", "ws://localhost:8000/showdown/websocket", "gen9randombattle")
+    if config["offline"]:
+        await sd.connectNoSecurity()
+    else:
+        await sd.connectToShowdown()
+    
+    agent = agent.Agent(stateSize, actionSize, device, possibleActions)
+    
+    model = None if not modelPresent else config['lastModel']
+    print(f"Running Expert Mode with model {model}")
+    trainer = training.Trainer([agent], [sd], stateSize, actionSize, config["iterations"], model)
+    await trainer.run()
 
-asyncio.run(sd.connectNoSecurity())
-asyncio.run(training_loop(newAgent, sd, 1000))
+async def beginSelfPlayMode(config):
+    sd1 = showdown.Showdown(config["uri"], config["agents"][0]["username"], config["agents"][0]["password"], config["websocket"], config["format"], config["agents"][0]["challenger"], config["agents"][0]["verbose"], config["agents"][0]["opponent"])
+    sd2 = showdown.Showdown(config["uri"], config["agents"][1]["username"], config["agents"][1]["password"], config["websocket"], config["format"], config["agents"][1]["challenger"], config["agents"][1]["verbose"], config["agents"][1]["opponent"])
+    
+    if config["offline"]:
+        await sd1.connectNoSecurity()
+        await sd2.connectNoSecurity()
+    else:
+        await sd1.connectToShowdown()
+        await sd2.connectToShowdown()
+    
+    agent1 = agent.Agent(stateSize, actionSize, device, possibleActions)
+    agent2 = agent.Agent(stateSize, actionSize, device, possibleActions)
+    
+    model = None if not modelPresent else config['lastModel']
+    print(f"Running Self-Play Mode with model {model}")
+    trainer = training.Trainer([agent1, agent2], [sd1, sd2], stateSize, actionSize, config["iterations"], model)
+    await trainer.run()
+    
+async def beginHumanMode(config):
+    sd = showdown.Showdown(config["uri"], config["agents"][0]["username"], config["agents"][0]["password"], config["websocket"], config["format"], config["agents"][0]["challenger"], config["agents"][0]["verbose"], config["agents"][0]["opponent"], True)
+    
+    if config["offline"]:
+        await sd.connectNoSecurity()
+    else:
+        await sd.connectToShowdown()
+    
+    agent = agent.Agent(stateSize, actionSize, device, possibleActions)
+    
+    model = None if not modelPresent else config['lastModel']
+    print(f"Running Human Mode with model {model}")
+    trainer = training.Trainer([agent], [sd], stateSize, actionSize, config["iterations"], model)
+    await trainer.run()
+
+
+if __name__ == "__main__":
+    fopen = open("config.json", "r")
+    config = json.load(fopen)
+    fopen.close()
+    "data/models/model_{battle}.pt"
+    stateSize = config["stateSize"]
+    possibleActions = json.load(open("data/possible_actions.json", "r"))
+    actionSize = len(possibleActions)
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    modelPresent = os.path.isfile(f"data/models/model_{config['lastModel']}.pt") and os.path.isfile(f"data/memory/memory_{config['lastModel']}.json")
+    print(f"Model present: {modelPresent}")
+    
+    try:
+        asyncio.run(run())
+        print("Finished running...")
+    except Exception as e:
+        print(f"An error occured: {e}")
