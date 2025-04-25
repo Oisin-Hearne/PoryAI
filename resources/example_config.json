@@ -1,0 +1,19 @@
+{
+    "agents": [
+        {
+            "username": "Change This!",
+            "password": "Change This!",
+            "opponent": "",
+            "verbose": true,
+            "challenger": false
+        }
+    ],
+    "websocket": "wss://sim3.psim.us/showdown/websocket",
+    "uri": "https://play.pokemonshowdown.com/action.php",
+    "format": "gen9randombattle",
+    "mode": "QUEUE",
+    "offline": false,
+    "iterations": 10001,
+    "lastModel": 0,
+    "stateSize": 671
+}
