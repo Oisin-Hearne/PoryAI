@@ -69,6 +69,8 @@ class Showdown:
 
         while True:
             recv = recv.split("|")
+            if self.verbose:
+                print(recv)
             if 'battle' in recv[0]:
                 return recv[0][1:].strip()
             elif len(recv) > 4:
@@ -106,17 +108,27 @@ class Showdown:
         while True:
             recv = await self.socket.recv()
             msgs = recv.split("|")
+            if self.verbose:
+                print(recv)
             battleStarted = False
             
             if f"player|p1|{self.user}" in recv:
                 self.player = "p1"
             elif f"player|p2|{self.user}" in recv:
                 self.player = "p2"
-            
+            if ">battle" in msgs[0]:
+                chatTag = msgs[0].strip().replace(">", "")
+                if chatTag != self.currentTag:
+                    self.currentTag = chatTag
+                    print(f"New tag: {self.currentTag}")
+                    await self.socket.send([f"{self.currentTag}|{self.currentAction}|{self.latestRequest['rqid']}"])
             if 'start\n' in recv and not battleStarted:
                 battleStarted = True
                 _, _, firstTurn = recv.partition("start\n")
                 self.inter.updateTurnState(firstTurn.split("\n"), True, self.player)
+                await self.socket.send([f"{self.currentTag}|/timer on"])
+                await self.socket.send([f"{self.currentTag}|I'm PoryAI, a RL-Bot. I learn by playing!"])
+            
             elif '/choose - must be used in a chat room' in recv: # handle bot being too eager
                 time.sleep(1)
                 await self.socket.send(self.currentCommand)
@@ -125,6 +137,8 @@ class Showdown:
                 print("rabsca moment")
                 await self.socket.send([f"{self.currentTag}|/choose default|{self.latestRequest['rqid']}"])
                 return False, 0
+        
+                
             
             # Requests for the user to do something. These should be sent to the interpreter.
             elif 'request' in msgs[1] and len(msgs[2]) > 2:
@@ -138,18 +152,12 @@ class Showdown:
                 if not "wait" in requestOutput:
                     self.latestRequest = requestOutput
                     return False, 0 # Battle not done
-            
-            elif msgs[1] in ["c", "l", "expire", "deinit", "j"]:
-                #print("Chat message: "+recv)
-                chatTag = msgs[0].strip()
-                # Attempt to use FoulPlay's introductory message to get back into the right tag.
-                if "battle" in chatTag and msgs[1] == "c" and "hf" in msgs[3] and  self.currentTag != chatTag:
-                    #print("Trying to reset tag!")
-                    self.currentTag = chatTag.replace(">" , "")
-                    #print(f"New tag: {self.currentTag}")
-                    await self.socket.send([f"{self.currentTag}|{self.currentAction}|{self.latestRequest['rqid']}"])
 
-            elif 't:' in msgs[2] and "Time left" not in msgs[2]:
+            elif msgs[1] in ["l", "deinit", "c"] or len(msgs) < 3:
+                print(msgs)
+            
+
+            elif ('t:' in msgs[2]) and (len(recv.split("\n")) > 3) and ("Time left" not in recv):
                 # Send turn content to interpreter here, then reset it.
                 turnContent = recv.split("\n")[3:]
                 
@@ -167,7 +175,15 @@ class Showdown:
             elif self.turnCount > 0 and (msgs[1] in ["switch", "move", "faint"] or msgs[1][1] == "-"):
                 turnContent.append(recv)
             
-
+            if 'forfeited.' in recv or "due to inactivity" in recv:
+                print("Opponent forfeited!")
+                await self.socket.send([f"|/leave {self.currentTag}"])
+                with open(f"data/logs/battles/forfeit-{self.currentTag}.txt", "a") as f:
+                    f.write(self.battleLog)
+                print(f"Opponent forfeited the battle!\n=====================================================================")
+                return True, 0
+            
+            
             if '|win|' in recv: # Battle is over.
                 
                 await self.socket.send([f"|/leave {self.currentTag}"])
@@ -176,9 +192,10 @@ class Showdown:
                 timestamp = datetime.now().strftime("%Y_%m%d-%p%I_%M_%S")
                 # Write battle to file
                 if self.verbose:
+                    print(self.battleLog)
                     with open(f"data/logs/battles/{result}-{self.currentTag}-{timestamp}.txt", "a") as f:
                         f.write(self.battleLog)
-                        print(f"User {self.user} {result} the battle!\n=====================================================================")
+                    print(f"User {self.user} {result} the battle!\n=====================================================================")
                 
                 if f'win|{self.user}' in recv:
                     return True, 1
