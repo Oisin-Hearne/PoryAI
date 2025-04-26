@@ -139,7 +139,7 @@ class Showdown:
                 return False, 0
         
                 
-            elif msgs[1] in ["l", "deinit", "c", "j"] or len(msgs[1]) < 3:
+            elif msgs[1] in ["l", "deinit", "c", "j", "J", "L"]:
                 if self.verbose:
                     print(msgs)
             
