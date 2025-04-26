@@ -40,3 +40,5 @@ The config requires some modification for a username and password in order to co
 Additionally, [here](https://drive.google.com/file/d/1GQT1EglpOhPajA422-FyoEinaFqHxi5G/view?usp=sharing) is a link to the latest and best trained model. This would've been included in the repository, but it is too large to store on Github effectively. 
 
 The memory and model can be used in the Running section in order to run a pre-trained agent. Place the trained model and memory in **data/models** and **data/memory** respectively.
+
+[Screencast demo](https://youtu.be/c534bu7IDqg), showcasing the project running.
