@@ -22,7 +22,7 @@ This project is highly configurable. It can be run with a locally hosted server 
     - This alternate config starts in vs Human mode, instead of self-play.
 - Run the command `python runner.py` in the root folder of the project.
 
-Alternatively, `modularTesting.ipynb` in the archive folder can be used for quickly changing modes and what agents are used. Note that notebooks outputting this much text can be somewhat laggy, so verbose mode being turned off may help. 
+Alternatively, `modularTesting.ipynb` in the root folder can be used for quickly changing modes and what agents are used. Note that notebooks outputting this much text can be somewhat laggy, so verbose mode being turned off may help. 
 
 ## Output
 Various statistics and plots are output in the /data/ folder. These can be used to monitor how the program is performing. This includes
