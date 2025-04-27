@@ -43,6 +43,10 @@ class Interpreter:
     def getStats(self):
         return self.stats
 
+
+    # The following "update state" methods and their helpers are ugly, but there is not much to do to improve them.
+    # They could perhaps be made more efficient, but some translation between what the websocket receives and what is contained in the state is necessary.
+
     # Update state w/ Active Request
     def updateStateActive(self, newState):
         # Extract information from newState
@@ -364,6 +368,7 @@ class Interpreter:
                 return
         
 
+    # Calc the reward for a turn.
     def countTurn(self, turnData, lastAction, player):
         turnPoints = 0
         opponent = "p1" if player == "p2" else "p2"
@@ -420,7 +425,7 @@ class Interpreter:
                     if self.action_counts[key] > 2*(averageMoveCount*self.rewards["moveLeeway"]):
                         turnPoints -= self.rewards["movePunishment"]
                         
-        
+        # Turns consist of several happenings in sequence, each one needs to be checked.
         for line in turnData:
             splitData = line.split("|")
             
@@ -553,15 +558,15 @@ class Interpreter:
                 turnPoints -= self.rewards["failBase"]
                 
             #if "|win|" in line:
-             #   turnPoints += self.rewards["winBase"] if "PoryAI" in line else 0
+             #   turnPoints += self.rewards["winBase"] if "PoryAI" in line else 0  <- This was moved to analyseBattle in the training loop.
         
         self.prevAction = lastAction
         
-        # First 19 items of rewards json
+        # Normalise the reward based on how big the reward can be normally.
+        # It is not possible for all of the reward conditions to be true at once, so a "usual" max needs to be chosen.
         usual_max = self.rewards["usualMax"]
         actualReward = math.tanh(turnPoints / usual_max )
-        turnString = "".join(turnData)+": "+str(actualReward)
-        #print(f"Player: {player}, \n Turn String: {turnData}, \n Reward: {actualReward}")
+        turnString = "".join(turnData)+": "+str(actualReward) # Show what the agent did that turn and what reward it got.
         return actualReward, turnString 
 
 

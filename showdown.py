@@ -22,6 +22,8 @@ class Showdown:
         self.verbose = verbose
         self.ladder = ladder
 
+    # Logging in to a registered showdown instance.
+    # (Registered showdown instances require passwords to log in and do validation.)
     async def connectToShowdown(self):
         self.socket = await websockets.connect(self.websocket)
             # challstr and chall id represent the current user token.
@@ -54,11 +56,13 @@ class Showdown:
         jsonOut = json.loads(loggedIn.text[1:])
         await self.sendMessage(f"|/trn {self.user},0,{jsonOut['assertion']}|")
 
+    # When we're on a local server, just set the username.
     async def connectNoSecurity(self):
         self.socket = await websockets.connect(self.websocket)
         await self.sendMessage(f"|/trn {self.user}")
 
-
+    # Helper method for sending messages to the showdown server.
+    # May be refactored in the future. At the moment, this has caused more trouble than help.
     async def sendMessage(self, message):
         await self.socket.send([message])
         return await self.socket.recv()
@@ -78,6 +82,7 @@ class Showdown:
                     await self.sendMessage(f"|/accept {recv[2]}|")
             recv = await self.socket.recv()
 
+    # Challenge a specified user to a battle and return the battle tag.
     async def challengeUser(self, format, user):
         
         recv = await self.sendMessage(f"|/challenge {user}, {format}|")
@@ -88,6 +93,7 @@ class Showdown:
             
             recv = await self.socket.recv()
             
+    # Wait for a challenge from a specified user and return the battle tag.
     async def waitForChallenge(self, user):
         while True:
             recv = await self.socket.recv()
@@ -112,33 +118,40 @@ class Showdown:
                 print(recv)
             battleStarted = False
             
+            
+            # This big long messy if-else chain is somewhat necessary but could likely be cleaned up quite a bit.
+            # This formed mostly through trial and error, as it was difficult to form a set of conditions that would work for all cases.
+            # Check what's received from the server, and perform different actions accordingly.
+            
+            # p1 and p2 are determined alphabetically, so we need to check which one the user is.
             if f"player|p1|{self.user}" in recv:
                 self.player = "p1"
             elif f"player|p2|{self.user}" in recv:
                 self.player = "p2"
+                
+            # New battle, set a new tag.
             if ">battle" in msgs[0]:
                 chatTag = msgs[0].strip().replace(">", "")
                 if chatTag != self.currentTag:
                     self.currentTag = chatTag
                     print(f"New tag: {self.currentTag}")
                     await self.socket.send([f"{self.currentTag}|{self.currentAction}|{self.latestRequest['rqid']}"])
-            if 'start\n' in recv and not battleStarted:
+            if 'start\n' in recv and not battleStarted: # Reset previous info.
                 battleStarted = True
                 _, _, firstTurn = recv.partition("start\n")
                 self.inter.updateTurnState(firstTurn.split("\n"), True, self.player)
-                await self.socket.send([f"{self.currentTag}|/timer on"])
-                await self.socket.send([f"{self.currentTag}|I'm PoryAI, a RL-Bot. I learn by playing!"])
+                await self.socket.send([f"{self.currentTag}|/timer on"]) # Make sure stalling doesn't happen.
+                await self.socket.send([f"{self.currentTag}|I'm PoryAI, a RL-Bot. I learn by playing!"]) # Inform users that they are battling a bot.
             
-            elif '/choose - must be used in a chat room' in recv: # handle bot being too eager
+            elif '/choose - must be used in a chat room' in recv: # If the bot sends a decision too fast, it may need to wait and send it again.
                 time.sleep(1)
                 await self.socket.send(self.currentCommand)
                 
-            elif "Can't switch: You have to pass to a fainted Pokémon" in recv: # man i hate rabsca
-                print("rabsca moment")
+            elif "Can't switch: You have to pass to a fainted Pokémon" in recv: # Handling Revival Blessing, a niche move that causes issues.
                 await self.socket.send([f"{self.currentTag}|/choose default|{self.latestRequest['rqid']}"])
                 return False, 0
         
-                
+            # Chat messages. Need to be covered before the other statements.
             elif msgs[1] in ["l", "deinit", "c", "j", "J", "L"]:
                 if self.verbose:
                     print(msgs)
@@ -156,8 +169,7 @@ class Showdown:
                     self.latestRequest = requestOutput
                     return False, 0 # Battle not done
 
-            
-
+            # Typically means a turn has ended, so take all the data from the turn and send it to the interpreter.
             elif ('t:' in msgs[2]) and (len(recv.split("\n")) > 3) and ("Time left" not in recv):
                 # Send turn content to interpreter here, then reset it.
                 turnContent = recv.split("\n")[3:]
@@ -173,9 +185,11 @@ class Showdown:
                 self.turnCount += 1
                 turnContent = []
 
+            # Turn has been updated, append it.
             elif self.turnCount > 0 and (msgs[1] in ["switch", "move", "faint"] or msgs[1][1] == "-"):
                 turnContent.append(recv)
             
+            # Don't count forfeits or timeouts as wins.
             if 'forfeited.' in recv or "due to inactivity" in recv:
                 print("Opponent forfeited!")
                 await self.socket.send([f"|/leave {self.currentTag}"])
@@ -183,7 +197,6 @@ class Showdown:
                     f.write(self.battleLog)
                 print(f"Opponent forfeited the battle!\n=====================================================================")
                 return True, 0
-            
             
             if '|win|' in recv: # Battle is over.
                 
@@ -209,6 +222,7 @@ class Showdown:
             battleTag = await self.challengeFoulPlay(self.format)
             await self.manageBattle(battleTag)
     
+    # Reset the state, turn count and battle log and start a new battle based on the current mode.
     async def restart(self):
         self.inter.resetState()
         self.turnCount = 0
@@ -225,6 +239,7 @@ class Showdown:
     def getState(self):
         return self.inter.state
         
+    # Send an action and get the results of it.
     async def executeAction(self, action):
         self.currentAction = action
         self.currentCommand = [f"{self.currentTag}|{action}|{self.latestRequest['rqid']}"]
@@ -236,6 +251,8 @@ class Showdown:
         return newState, rewards, battleDone, winner
         
 
+    # A list of possible valid actions is needed for the agent to choose from.
+    # This would perhaps fit better in the interpreter, but for now it's here.
     def getValidActions(self):
         valid_actions = []
         

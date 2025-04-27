@@ -18,6 +18,7 @@ class Trainer:
         self.stateSize = stateSize
         self.actionSize = actionSize
         
+        # Set the mode based on the number of agents and whether or not laddering is enabled.
         if len(agents) < 1:
             self.mode = "random"
         elif len(agents) < 2:
@@ -32,6 +33,7 @@ class Trainer:
             
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         
+        # Load the model if specified.
         if self.loadModel:
             for agent in agents:
                 agent.loadModel(f"data/models/model_{self.loadModel}.pt")
@@ -41,6 +43,7 @@ class Trainer:
         with open('data/rewards.json') as f:
             self.rewardScheme = json.load(f)
         
+    # Adjust the reward for a battle based on the length of the battle, action ratio, and repeat moves.
     def analyseBattle(self, showdown, battleLength, winner):
         # Reward is limited by battle length and switchy behaviour.
         actionRatio = showdown.inter.actionRatio
@@ -58,6 +61,8 @@ class Trainer:
         return battleReward
         
 
+    # Execute a battle using the agent and showdown instance. 
+    # Handles the general loop of the battle, including action execution and memory.
     async def agent_battle(self, agent, showdown):
         await showdown.restart()
         done = False
@@ -86,6 +91,7 @@ class Trainer:
         print("Finishing battle...")
         return winner, totalReward
     
+    # Select random options from the valid actions list.
     async def random_battle(self, showdown):
         await showdown.restart()
         done = False
@@ -98,6 +104,8 @@ class Trainer:
         
         return winner
 
+
+    # These plotting methods are for visualising the training process.
     def makePlot(self, x, y, battle, timestamp, winrate, ratio, col):
             plt.scatter(x, y, s=2, c=col, alpha=1, label="Win or Loss")
             plt.plot(x, y, c='blue', alpha=0.5, label="Rewards")
@@ -116,6 +124,7 @@ class Trainer:
         plt.savefig(f"data/logs/plots/plot-{battle}-{timestamp}-avg.png")
         plt.show()
             
+    # SelfPlay training loop.
     async def trainingLoopSelf(self):
         agent1Wins = 0
         latestWins = 0
@@ -150,7 +159,6 @@ class Trainer:
             plotX.append(battle)
             plotAvg.append(sum(plotY)/len(plotY))
             # Every 10 battles, output the current state and clear the old output.
-            # Notebooks are so laggy.
             if battle % 10 == 0 and battle > 0:
                 clear_output(wait=True)
                 
@@ -164,9 +172,6 @@ class Trainer:
             # Every 50 battles, save the model and memory.
             if battle % 50 == 0 and battle > 0:
                 winRatio = agent1Wins / battle
-
-
-                
                 # Save model and memory
                 self.agents[0].saveModel(f"data/models/model_{battle}.pt")
                 self.agents[0].saveMemory(f"data/memory/memory_{battle}.json")
@@ -175,8 +180,7 @@ class Trainer:
                 self.makePlot(plotX, plotY, battle, timestamp, winRatio, currentBestRatio, plotCol)
                 self.rewardsPlot(plotX, plotAvg, battle, timestamp)
                 
-
-
+                # Save statistics
                 f = open(f"data/stats/{battle}.json", "w")
                 f.write(json.dumps({"wins": agent1Wins, "rewards": rewards1, "winsThisCycle": latestWins, "epsilon": self.agents[0].epsilon, "stats": self.showdowns[0].inter.getStats()}))
                 f.close()
@@ -184,16 +188,17 @@ class Trainer:
                 
             if battle % 100 == 0 and battle > 0:
                 self.agents[0].loadTargetModel()
-                # Set agent 2's weights to agent 1's.
+                # Set agent 2's weights to agent 1's, so that agent 2 grows with agent 1. 
                 self.agents[1].model.load_state_dict(self.agents[0].model.state_dict())
                 if self.showdowns[0].inter.getStats()["repeatMoves"] > 2000 or self.showdowns[0].inter.getStats()["switched"] > 2000:
                     print("Resetting Epsilon")
                     self.agents[0].epsilon = 0.2
                 self.showdowns[0].inter.resetStats()
+                
             if battle % 500 == 0 and battle > 0:
                 # If the previous 500 battles went worse than the current 500, revert to the previous model.
                 
-                self.agents[0].epsilon += 0.2
+                self.agents[0].epsilon += 0.2 # Increase exploration.
                 
                 # Get cumulative rewards for last 500 battles from plotY.
                 currentAverage = sum(plotY[-500:]) / 500
@@ -206,9 +211,8 @@ class Trainer:
                     self.agents[0].loadModel(currentBestModel)
                     self.agents[0].epsilon = 0.3
                     
-                    
 
-            
+    # Expert mode training loop.
     async def trainingLoopExpert(self):
         agent1Wins = 0
         latestWins = 0
@@ -224,8 +228,10 @@ class Trainer:
         
         for battle in range(self.battles):
             
-            # Concurrently execute both agents and get the results from agent_battle
+            # Execute the agent battle and get the results.
             winner, reward = await self.agent_battle(self.agents[0], self.showdowns[0])
+            
+            # Plotting and logging.
             if winner == 1:
                 agent1Wins += 1
                 latestWins += 1
@@ -244,7 +250,6 @@ class Trainer:
             plotX.append(battle)
             
             # Every 10 battles, output the current state and clear the old output.
-            # Notebooks are so laggy.
             if battle % 10 == 0 and battle > 0:
                 clear_output(wait=True)
                 
@@ -268,8 +273,7 @@ class Trainer:
                 self.makePlot(plotX, plotY, battle, timestamp, winRatio, currentBestRatio, plotCol)
                 self.rewardsPlot(plotX, plotAvg, battle, timestamp)
                 
-
-
+                # Save stats
                 f = open(f"data/stats/{battle}.json", "w")
                 f.write(json.dumps({"wins": agent1Wins, "rewards": rewards, "winsThisCycle": latestWins, "epsilon": self.agents[0].epsilon, "stats": self.showdowns[0].inter.getStats()}))
                 f.close()
@@ -278,6 +282,7 @@ class Trainer:
             if battle % 100 == 0 and battle > 0:
                 self.agents[0].loadTargetModel()
                 
+                # Train more if the agent is overusing moves/switching.
                 if self.showdowns[0].inter.getStats()["repeatMoves"] > 2000 or self.showdowns[0].inter.getStats()["switched"] > 2000:
                     print("Resetting Epsilon")
                     self.agents[0].epsilon = 0.2
@@ -300,6 +305,7 @@ class Trainer:
                     self.agents[0].loadModel(currentBestModel)
                     self.agents[0].epsilon = 0.3
                     
+    # Random training loop.
     async def trainingLoopRandom(self):
         agentWins = 0
         
@@ -320,6 +326,7 @@ class Trainer:
     
     
     # Training is not necessarily the goal when playing against humans, so a smaller training loop is used.
+    # This may be changed in the future, but for gathering results, I want to see how the bot performs against humans.
     async def trainingLoopHuman(self):
         print("Starting loop!")
         agentWins = 0

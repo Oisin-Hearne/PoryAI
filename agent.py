@@ -8,10 +8,14 @@ import random
 
 class PokeNet(nn.Module):
     def __init__(self, state_dim, action_dim):
+        # Neural Net
+    
         super(PokeNet, self).__init__()
-        self.lstm = nn.LSTM(state_dim, 256, batch_first=True, num_layers=2, dropout=0.1)
+        self.lstm = nn.LSTM(state_dim, 256, batch_first=True, num_layers=2, dropout=0.1) # RNN layer at input.
+        
+        # Fully connected after LSTM
         self.attention = nn.MultiheadAttention(256, 4)
-        self.network = nn.Sequential(
+        self.network = nn.Sequential( # NN is maybe a bit bulky, but it was performing poorly with less.
             nn.Linear(256, 512),
             nn.ReLU(),
             nn.Dropout(0.2),
@@ -205,21 +209,12 @@ class Agent:
             q_values, _ = self.model(state_tensor)
         valid_q = [q_values[0, i].item() for i in valid_indices]
         
-        # move bias
+        # move bias, incentive to pick moves. Needs to be done to offset the fact that they're indexed lower.
         if moveCount > 0 and switchCount > 0:
             for i, action in enumerate(valid_actions):
                 if action.startswith("/choose move"):
                     valid_q[i] += 0.4
                     
-                    # if "move" in action:
-                    #     valid_q[i] += 0.04
-                    # # elif "move 2" in action:
-                    # #     valid_q[i] += 0.03
-                    # # elif "move 3" in action:
-                    # #     valid_q[i] += 0.02
-                    # # elif "move 3" in action:
-                    # #     valid_q[i] += 0.02
-                
         
         if not hasattr(self, "action_counts"):
             self.action_counts = {}
@@ -280,6 +275,7 @@ class Agent:
         rewards = torch.tensor([reward for _, _, reward, _, _ in batch], dtype=torch.float).to(self.device)
         dones = torch.tensor([done for _, _, _, _, done in batch], dtype=torch.float).to(self.device)
         
+        # Get the Q values for the current states and actions.
         q_vals, _ = self.model(states)
         current_q_vals = q_vals.gather(1, actions.unsqueeze(1)).squeeze(1)
         with torch.no_grad():
@@ -287,6 +283,7 @@ class Agent:
             next_q_vals = next_q.max(1)[0]
             target_q_vals = rewards + (1- dones) * self.gamma * next_q_vals
             
+        # Calculate the loss and update the model.
         loss = self.criterion(current_q_vals, target_q_vals)
         self.optimizer.zero_grad()
         loss.backward()
@@ -295,9 +292,13 @@ class Agent:
         # This is the epsilon decay. It's a way to make the agent less random over time.
         if self.epsilon > self.epsilon_min:
             self.epsilon *= self.epsilon_decay
-            
+    
+    # Target model for more stable learning.        
     def loadTargetModel(self):
         self.target_model.load_state_dict(self.model.state_dict())
+    
+    
+    # Methods for saving & loading the model & memory.
     
     def saveModel(self, path):
         torch.save({
@@ -320,32 +321,3 @@ class Agent:
         self.epsilon = checkpoint['epsilon']
         if 'battles' in checkpoint:
             self.battles = checkpoint['battles']
-
-
-    # #Select randomly for now        
-    # def getAction(self, state, tag):
-
-    #     if 'active' in state:
-    #         invalidMove = True
-
-    #         # Pokémon can be locked into moves, so we need to check that the chosen move hasn't been disabled.
-    #         while invalidMove:
-    #             randomMove = random.choice(state["active"][0]["moves"])
-    #             if("disabled" not in randomMove.keys()):
-    #                 invalidMove = False
-    #                 return tag+'|/choose move '+randomMove["id"]+"|"+str(state["rqid"])
-    #             elif (not randomMove["disabled"]):
-    #                 invalidMove = False
-    #                 return tag+'|/choose move '+randomMove["id"]+"|"+str(state["rqid"])
-            
-    #     if 'forceSwitch' in state:
-    #         invalidMon = True
-            
-    #         while invalidMon:
-    #             randomMon = random.randint(0,5)
-    #             # Don't send in a fainted mon or try to send in the current one.
-    #             if(state["side"]["pokemon"][randomMon]["condition"] != "0 fnt") and (state["side"]["pokemon"][randomMon]["active"] == False):
-    #                 invalidMon = False
-    #                 #print(tag+'|/choose switch '+str(randomMon+1)+"|"+str(state["rqid"]))
-    #                 return tag+'|/choose switch '+str(randomMon+1)+"|"+str(state["rqid"])
-                
